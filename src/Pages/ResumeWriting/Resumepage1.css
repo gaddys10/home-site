@@ -49,6 +49,7 @@ body {
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
 }
+
 #location {
     margin-top: 0px;
     font-family: 'FUTR', sans-serif;
@@ -185,7 +186,7 @@ body {
     background-color: black;
     height: 2px;
     width: 100%;
-    top: -132px;
+    top: -62px;
 }
 
 #customText {
@@ -317,28 +318,28 @@ body {
 
     #services, #syrus, #subtitle, #location {
         transform: scale(2.25);
-        position: absolute;
+        position: relative;
     }
 
     #syrus{
         margin-top: 0px;
-        /* top: 30vh; */
-        left: 45vw;
+        top: 0vh;
+        /* left: 45vw; */
     }
 
     #services{
-        top: 50vh;
-        left: 45vw;
+        top: 38vh;
+        /* left: 45vw; */
     }
 
     #subtitle{
-        left: 46vw;
-        top: 37vh;
+        /* left: 46vw; */
+        top: 23vh;
     }
 
     #location {
         transform: scale(3);
-        left: 48vw;
-        top: 39vh;
+        /* left: 48vw; */
+        top: 28vh;
     }
 }

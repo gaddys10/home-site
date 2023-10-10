@@ -97,15 +97,14 @@ src: url("FUTRFW.TTF");
 }
 #subtitle{
     margin-top: 0px;
-
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     font-size: 16px;
     opacity: 0;
-        animation-name: appear;
-        animation-duration: 4s;
+    animation-name: appear;
+    animation-duration: 4s;
     animation-delay: .5s;
-        animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 #location{
     margin-top: 0px;
@@ -544,12 +543,11 @@ src: url("FUTRFW.TTF");
 
 #page4 {
     background-image: url('backgroudnreserve.jpeg');
-    background-size: 100%;
+    background-size: cover;
     background-position: top right;
     background-attachment: fixed;
     height: 100%;
     box-shadow: inset 0px 10px 15px;
-    /* padding-right: 100px; */
     overflow-x: hidden;
 }
 
@@ -652,7 +650,6 @@ form input {
         left: 50%;
         margin-top: 40vh;
         margin-right: 70vw;
-        
     }
 
     #twitter, #fb, #ig, #linkedin{

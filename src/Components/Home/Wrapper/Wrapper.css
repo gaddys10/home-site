@@ -1,11 +1,11 @@
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
-/* .contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
+.contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
     font-size: 16px;
-} */
+}
 
-/* .cv-hgihlights li{
+/* .cv-highlights li{
     line-height: 200%;
 } */
 
@@ -19,7 +19,7 @@
 } */
 
 .cv-highlights, .contact-info {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     line-height: 150%;
     list-style-type: circle;
     ;
@@ -79,16 +79,18 @@
 .contact-info li {
     text-decoration: none;
     /* list-style: none; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .coursework {
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .coursework-classes {
     margin-left: 20px;
     margin-bottom: 100px;
+    margin-top: 0px;
 }
 
 .educationTitle {
@@ -112,10 +114,9 @@ hr {
 .jobBody {
     margin-top: 10px;
     line-height: 200%;
-    /* margin-top: 95px; */
+    margin-top: 45px;
     padding-right: 20px;
     /* line-height: 225%; */
-
 }
 
 .jobDate {
@@ -126,7 +127,7 @@ hr {
     font-weight: normal;
     margin-left: 15px;
     list-style-type: circle;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .jobTitleContainer {
@@ -134,7 +135,7 @@ hr {
     white-space: nowrap; 
     height: 30px;
     width: 100%;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     margin-bottom: 0px;
 }
 
@@ -315,7 +316,7 @@ hr {
     }
 
     .jobBody{
-        margin-top: 50px;
+        margin-top: 90px;
     }
     
     /* put your css styles in here */
@@ -428,5 +429,9 @@ hr {
 
     .wrapper::-webkit-scrollbar {
         width: 15px;
+    }
+
+    .coursework {
+        margin-bottom: -40px;
     }
 }

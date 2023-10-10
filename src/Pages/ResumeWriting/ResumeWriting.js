@@ -18,14 +18,6 @@ class ResumeWriting extends React.Component {
     render(){
         return(
             <>
-                {/* <head>
-                    <link href = "MarketingSite.css" type="text/css" rel="stylesheet"/>
-                    <link href = "Resumepage1.css" type="text/css" rel="stylesheet"/>
-                    <link href = "Resumepage2.css" type="text/css" rel="stylesheet"/>
-                    <link href = "Resumepage3.css" type="text/css" rel="stylesheet"/>
-                    <link href = "Resumepage4.css" type="text/css" rel="stylesheet"/> 
-                    <title>Syrus's Portfolio (Resume Writing)</title>
-                </head> */}
                 <meta name="viewport" content="width=device-width, initial-scale=0.1" />
                 <body>
                     <div className="photo-body">
@@ -45,7 +37,7 @@ class ResumeWriting extends React.Component {
                                 <div id ="icon2">
                                     <div id="paper">
                                         <div id = "line1"></div>
-                                        <div id = "line2"></div>
+                                        {/* <div id = "line2"></div> */}
                                         <div id = "line3"></div>
                                     </div>
                                 </div>
@@ -137,7 +129,7 @@ class ResumeWriting extends React.Component {
                         </div>
                         <div id = "page4">
                             <br/><br/><br/><br/><br/><br/>
-                            <div id = 'formContainer'>
+                            <div id = 'cv-formContainer'>
                                 <h3 id = "requestTitle"> Request Information </h3>
                                 <form method="post" name="myemailform" action="form-to-email.php">
                                     <p>

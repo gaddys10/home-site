@@ -129,7 +129,6 @@ class Home extends React.Component {
 
                         <h1 id = "pgraph">Graphic Design</h1>
 
-
                         <img id = "gt1" src={london} alt='Flyer for Lunch and Learn Event' />
                         <p id = 'gsub1'> University Event Flyer</p>
 

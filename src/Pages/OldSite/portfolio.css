@@ -1,4 +1,4 @@
-.gr, .wd {
+/* .gr, .wd {
     position: absolute;
     margin-top: 100px;
     transform: rotate(45deg);
@@ -17,4 +17,4 @@
 
 .gr:hover, .wd:hover {
     -webkit-filter:invert(100%);
-}
+} */

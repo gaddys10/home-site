@@ -1,0 +1,76 @@
+body {
+    overflow-x: hidden;
+}
+
+.animate {
+    animation: appear2;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#cv-page2, #brands, #brands2 {
+    text-align: center;
+}
+
+#cv-page2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./index-images/resumedeskpage2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: bottom right;
+    box-shadow: 5px 15px 25px 1px;
+    box-shadow: -10px -5px 15px 1px #999;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+}
+
+#bio {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    /* opacity: 0; */
+    padding-right: 500px;
+    width: 600px; 
+}
+
+#brands, #brands2 {
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 5vh;
+}
+
+#anchor, #desc, #hook {
+    font-size: 12px;
+    font-family: 'arial', sans-serif;
+}
+
+.pageTwoText {
+    color: black;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    #brands, #hook, #brands2, #anchor{
+        transform: scale(2.5);
+    }
+
+    #hook {
+        transform: scale(3.5);
+        padding-top: 9vh;
+    }
+
+    #anchor{
+        transform: scale(3.5);
+        padding-top: 30vh;
+    }
+
+    #brands, #brands2{
+        padding-top: 15vh;
+    }
+
+    #position-talk {
+        transform: scale(3.5);
+        padding-top: 9vh;
+    }
+}

@@ -1,0 +1,20 @@
+.gr, .wd {
+    position: absolute;
+    margin-top: 100px;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 2px #000;
+    -webkit-transition: all 1s;
+    -webkit-filter: invert(0%);
+}
+
+.gr {
+    margin-left: 610px;
+}
+
+.wd {
+    margin-left: 185px;
+}
+
+.gr:hover, .wd:hover {
+    -webkit-filter:invert(100%);
+}

@@ -1,0 +1,378 @@
+/*v CHARACTER v*/
+#character {
+    left: 640px;
+    top: 160px;
+    transform: scale(1);
+}
+
+/*v Upper Body v*/
+#character, .mynose, .mysmile, .myhead_highlight, .neck, .neck_shadow, 
+.mybody, .left_sleeve, .left_arm, .left_arm_shadow, .right_sleeve,
+.right_arm, .right_forearm, .legs, .leg_leftShadow, .leg_rightShadow,
+.right_shoe, .right_cuff, .left_cuff, .left_shoe, .mylefteye, .myrighteye, .myleftear, .myrightear,
+.myhair1, .myhair2, .myhair3, .myhair4, .myhair5, .myhair6, .myhair7 {
+    position: absolute;
+}
+
+.neck, .neck_shadow, .myhead_highlight, .myleftear, .left_arm_shadow, .right_arm, .right_forearm {
+    background-color: burlywood;
+}
+
+.myhead, .myhead_highlight, .left_shoe, .right_sleeve {
+    z-index: 1;
+}
+
+.myhair1, .myhair2, .myhair3, .myhair4, .myhair5, .myhair6, .myhair7, .mylefteye, .myrighteye,
+.mynose, .mysmile, .left_sleeve, .legs, .leg_leftShadow, .leg_rightShadow, .left_cuff, .right_cuff, .right_shoe {
+    z-index: 2;
+}
+
+/*v Head v*/
+.myhair1, .myhair2, .myhair3, .myhair4, .myhair5, .myhair6, .myhair7 {
+    background-color: black;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.myhead, .myhead_highlight, .neck_shadow {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.myhead {
+    height: 80px;
+    width: 75px;
+    border-color:black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    left: 388px;
+    top: 250;
+}
+
+.myhair1, .myhair3, .myhair5 {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.myhair2, .myhair4, .myhair6, .myhair7, .mysmile {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.myhair1 {
+    height: 40px;
+    width: 65px;
+    top: 240px;
+    left: 390px;
+    box-shadow: inset 5px 2px 1px #333;
+}
+
+.myhair2 {
+    height: 30px;
+    width: 25px;
+    top: 255px;
+    left: 377px;
+    box-shadow: inset 5px 2px 1px #333;
+}
+
+.myhair3 {
+    height: 35px;
+    width: 3px;
+    top: 270px;
+    left:386px;
+}
+
+.myhair4 {
+    height: 30px;
+    width: 25px;
+    top: 255px;
+    left: 443px;
+}
+
+.myhair5 {
+    height: 35px;
+    width: 3px;
+    top: 270px;
+    left: 457px;
+}
+
+.myhair6 {
+    height: 25px;
+    width: 20px;
+    top: 247px;
+    left: 440px;
+}
+
+.myhair7 {
+    height: 25px;
+    width: 20px;
+    top: 247px;
+    left: 384px;
+    box-shadow: inset 2px 4px 1px #333;
+}
+
+.mylefteye, .myrighteye {
+    height: 15px;
+    width: 13px;
+    background-color: #ad8f68;
+    top: 283px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.mylefteye {
+    left: 403px;
+}
+
+.myrighteye {
+    left: 432px;
+}
+
+.myleftear, .myrightear {
+    height: 10px;
+    width: 7px;
+    top: 300px;
+}
+
+.myleftear {
+    left: 382px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.myrightear {
+    background-color: #ba996f;
+    left: 457px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.mynose {
+    height: 5px;
+    width: 10px;
+    top: 304px;
+    left: 419.5px;
+    background-color: #ad8f68;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.mysmile {
+    height: 10px;
+    width: 20px;
+    background-color: darkred;
+    top: 320px;
+    left: 415px;
+}
+
+.myhead_highlight {
+    height: 88px;
+    width: 70px;
+    top: 255px;
+    left: 388px;
+    border-color:black;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: inset -1px -2px 0px 1px #ba996f, inset 1px 2px 0px 1px #b8a184;
+}
+/*^ Head ^*/
+
+.neck {
+    height: 50px;
+    width: 20px;
+    top: 330px;
+    left: 415px;
+    box-shadow: inset -1px -2px 0px 1px #ba996f ;
+}
+
+.neck_shadow {
+    height: 20px;
+    width: 30px;
+    top: 323px;
+    left: 410px;
+}
+
+.mybody, .left_sleeve, .right_sleeve { 
+    background-color: #e8eaed;
+}
+
+/*v Torso v*/
+.mybody {
+    height: 76px;
+    width: 50px;
+    top: 350px;
+    left: 400px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 3;
+    box-shadow: inset -5px -3px 2px #d0d4db;
+    animation: bodyBreathing 3s infinite;
+}
+
+.left_sleeve {
+    height: 30px;
+    width: 18px;
+    top: 355px;
+    left: 390px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(50deg);
+    box-shadow: inset -5px 2px 1px #d0d4db;
+    animation: leftSleeveBreathing 3s infinite;
+}
+
+.left_arm, .left_arm_shadow {
+    height: 50px;
+    width: 13px;
+    top: 355px;
+    left: 380px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(50deg);
+}
+
+.left_arm {
+    background-color: #ffffde;
+    box-shadow: inset -1px -2px 0px 1px #ba996f;
+    animation: leftSleeveBreathing 3s infinite;
+}
+
+.left_arm_shadow {
+    box-shadow: inset -1px 1px 0px 1px #ba996f 
+}
+
+.right_sleeve, .right_forearm {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.right_sleeve {
+    height: 30px;
+    width: 18px;
+    top: 347px;
+    left: 440px;
+    animation: rightSleeveBreathing 3s infinite;
+    box-shadow: inset -5px 1px #d0d4db;
+}
+
+.right_arm {
+    height: 13px;
+    width: 50px;
+    top: 356px;
+    left: 425px;
+    animation: rightArmBreathing 3s infinite;
+}
+
+.right_forearm {
+    height: 13px;
+    width: 40px;
+    top: 343.46px;
+    left: 453px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    animation: handWave .25s 7, rightForearmBreathing 3s infinite;
+    box-shadow: inset 1px 2px 0px 1px #ba996f 
+}  
+/*^ Upper Body ^*/
+
+/*v Lower Body v*/
+.legs, .leg_leftShadow, .leg_rightShadow {
+    height: 70px;
+    top: 390px;
+}
+
+.leg_leftShadow, .leg_rightShadow {
+    width: 5px;
+    background-color: #5e90db;
+}
+
+.legs {
+    width: 35px;
+    background-color: #75aaf9;
+    left: 407px;
+}
+
+.leg_leftShadow {
+    left: 420px;
+}
+
+.leg_rightShadow {
+    left: 437px;
+}
+
+.left_cuff, .right_cuff {
+    height: 8px;
+    background-color: skyblue;
+    top: 459px;
+    box-shadow: inset -3px -1px 0px 1px #73b1c9;
+}
+
+.right_cuff {
+    width: 27px;
+    left: 425px;
+}
+
+.left_cuff {
+    width: 30px;
+    left: 395px;
+}
+
+.left_shoe, .right_shoe {
+    height: 18px;
+    width: 33px;
+    top: 465px;
+    background-color: white;
+    box-shadow: inset -3px -1px 0px 1px #9b7676;
+    background-color: rosybrown;
+}
+
+.left_shoe {
+    left: 425px; 
+    border-top-right-radius: 15px;
+}
+
+.right_shoe {
+    left: 390px; 
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+    /* put your css styles in here */
+    #character {
+        transform: scale(3);
+        left: 50px;
+        top: 1100px;
+    }
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+/* put your css styles in here */
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+/* put your css styles in here */
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+/* put your css styles in here */
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+/* put your css styles in here */
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+/* put your css styles in here */
+}

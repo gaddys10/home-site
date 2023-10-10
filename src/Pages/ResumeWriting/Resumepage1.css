@@ -1,0 +1,344 @@
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity:1}
+}
+
+body {
+    overflow-x: hidden;
+    height: fit-content;
+    /* overflow-y: scroll; */
+}
+
+.photo-body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+#cv-page1 {
+    background-image: url("./index-images/backgroudnreserve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: white;
+    background-attachment: fixed;
+    /* background-blend-mode:hue; */
+    overflow: hidden;
+}
+
+/** vvv LOGO vvv **/
+#syrus, #subtitle, #location {
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#syrus {
+    font-family: 'FUTRFW', sans-serif;
+    font-size: 48px;
+    margin-bottom: 0px;
+    padding-top: 20vh;
+}
+
+#subtitle {
+    margin-top: 0px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+}
+#location {
+    margin-top: 0px;
+    font-family: 'FUTR', sans-serif;
+    font-size: 12px;
+}
+/** ^^^ LOGO ^^^ **/
+
+/** vvv SPLASH BODY vvv **/
+#services{
+    width: 170px;
+    height:133px;
+    margin: auto;
+}
+
+#services p, #icon1, #head1, #body1, #head2, #body2, #table, #icon2,
+#line1, #line2, #line3, #icon3, #tieLine1,
+#tieLine2, #tieLine3, #tieLine4, #tieLine5, #icon4{
+    position: relative;
+}
+#services p{
+    font-family: 'FUTR', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    left: -250px;
+    position: relative;
+}
+
+    /** vvv PRIVATE SESSIONS vvv **/
+#icon1 {
+    width: 100%;
+    height: 99px;
+    left: -250px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+#head1, #body1, #head2, #body2 {
+    background-color: black;
+}
+
+#head1{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    left: 39px;
+    top: 40px;   
+    float: left;
+}
+#body1{
+    height: 40px;
+    width: 30px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    left: 33px;
+    top: 41px;
+}
+#head2{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    left: 105px;
+    top: 40px;   
+
+}
+#body2{
+    height: 40px;
+    width: 30px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    left: 107px;
+    top: 1px;
+    float: left;
+}
+#table {
+    height: 20px;
+    width: 10px;
+    left: 75px;
+    top: 16px;
+    border: solid 5px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+}
+
+#sessionsText {
+    opacity: 0;
+    animation: appear;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-duration: 4s;
+}
+    /** ^^^ PRIVATE SESSIONS ^^^ **/
+
+/** CUSTOM DESIGNS **/
+#icon2 {
+    width: 100%;
+    height: 99px;
+    left: -20px;
+    top: -100px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#paper {
+    height: 70px;
+    width: 55px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#line1 {
+    background-color: black;
+    height: 100%;
+    width: 2px;
+    left: 5px;
+}
+
+#line2 {
+    background-color: black;
+    height: 100%;
+    width: 2px;
+    left: 9px;
+    top: 300px;
+}
+
+#line3 {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    top: -132px;
+}
+
+#customText {
+    top: -133px;
+    opacity: 0;
+    margin-left: 233px;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+/** CUSTOM DESIGNS **/
+    
+/** vvv INTERVIEW COACHING vvv **/
+#icon3{
+    width: 100%;
+    height: 99px;
+    left: 122px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#tieLine1{
+    height: 60px;
+    background-color: black;
+    width: 3px;
+    transform: rotate(25deg);
+    top: -251px;
+    left: 39px;
+}
+#tieLine2{
+    height: 60px;
+    background-color: black;
+    width: 3px;
+    transform: rotate(-25deg);
+    top: -311px;
+    left: 44px;  
+    border-radius: 10%;
+}
+#tieLine3{
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    top: -369px;
+    left: 33px;
+    border-radius: 25%;
+}
+#tieLine4{
+    height: 24px;
+    background-color: black;
+    width: 3px;
+    transform: rotate(-40deg);
+    top: -321px;
+    left: 34px;  
+    border-bottom-left-radius: 50%;
+}
+#tieLine5{
+    height: 24px;
+    background-color: black;
+    width: 3px;
+    transform: rotate(40deg);
+    top: -345px;
+    left: 49px;  
+    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#interviewText{
+    top: -280px;
+    margin-left: 383px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+/** ^^^ INTERVIEW COACHING ^^^ **/
+
+/** vvv COVER LETTERS vvv **/
+#icon4{
+    position: relative;
+    /* top: -40vh; */
+    font-family: 'FUTRFW';
+    width: 110px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+#icon4{
+    margin-left:510px;
+    top: -370px;
+    /* left: 506px; */
+    font-family: 'FUTRFW';
+    font-size: 128px;
+    font-weight: bold ;
+
+}
+
+/* #icon4 p{
+    font-size: 20px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+} */
+/** ^^^ COVER LETTERS ^^^ **/
+/** ^^^ SPLASH BODY ^^^ **/
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        text-size-adjust:100%; 
+        overflow-x: hidden;
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    #services, #syrus, #subtitle, #location {
+        transform: scale(2.25);
+        position: absolute;
+    }
+
+    #syrus{
+        margin-top: 0px;
+        /* top: 30vh; */
+        left: 45vw;
+    }
+
+    #services{
+        top: 50vh;
+        left: 45vw;
+    }
+
+    #subtitle{
+        left: 46vw;
+        top: 37vh;
+    }
+
+    #location {
+        transform: scale(3);
+        left: 48vw;
+        top: 39vh;
+    }
+}

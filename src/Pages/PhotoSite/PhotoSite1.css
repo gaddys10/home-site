@@ -1,0 +1,249 @@
+@font-face {
+    font-family: VHS;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(Vogue.ttf);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#page1, #page2, #page3, #page4, #page5 {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#page1, #page5, #leftBox, #leftBox2, #leftBox3, #rightBox3 {
+    background-repeat: no-repeat;
+}
+
+#page1 {
+    background-image: url('adult-beautiful-curly-1234901.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding: 15px; */
+    padding-bottom: 0px;
+    background-position: center;
+    opacity: 1;
+    width: 100vw;
+}
+
+#photo-subtitle, 
+#title{
+    color: white;
+    font-family: VHS;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #111;
+    margin-left: 10px;
+}
+
+#photo-subtitle {
+    width: fit-content;
+}
+
+#leftBox, #leftBox2, #leftBox3 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#leftBox, #leftBox2, #rightBox2{
+    background-position: left;
+}
+
+#leftBox {
+    background-image: url('black-and-white-bouquet-love-71298.jpg');
+    background-size: cover;
+    margin: auto;
+}
+
+#leftBox2, #leftBox3 {
+    text-align: center;
+    color: white;
+}
+
+#leftBox2 {
+    background-color: black;
+    background-size: 1600px;
+    background-image: url('audience-concert-crowd-167591.jpg');
+    font-family: "Georgia";
+}
+
+#leftBox3 {
+    background-color: #CC530A;
+    background-size: 800px;
+    font-size: 36px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#RBHeader {
+    text-align: center;
+    font-family: 'Vogue';
+}
+
+#rightBox, #rightBox2, #rightBox3 {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin: auto;
+}
+
+#rightBox {
+    background-color: transparent;
+}
+
+#rightBox2, #rightBox3 {
+    background-attachment: fixed;
+    text-align: center;
+    background-size: 1600px;
+}
+
+#rightBox2 {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
+
+#page5 {
+    height: 110%;
+    background-image: url("black-and-white-business-camera-326316.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#rightBox3 {
+    background-color: white;
+    margin-right: 0px;
+    background-position: right;
+    background-size: cover;
+    background-image: url('attractive-beautiful-beautiful-girl-1865964.jpg');
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#centerBox {
+    /* height: 100%; */
+    margin-top: 25vh;
+    font-family: "arial"; 
+    margin-right: 0px;
+    width: fit-content;
+}
+
+#formContainer, #infoBox {
+    height: 400px;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#infoBox {
+    background-color: white;
+    margin: auto;
+    box-shadow: 2px 2px 5px #111;
+    position: relative;
+    left: calc(50vw - 175px);
+    /* top: 25vh; */
+}
+
+#requestTItle {
+    color: black;
+    font-family: "FUTRFW", sans-serif;
+}
+
+#formContainer {
+    border-style: solid;
+    border-color: black;
+    float: right;
+    /* margin-right: 300px; */
+    opacity: 0;
+}
+
+form {
+    display: table;
+    color:black;
+    font-family: "FUTRFW", sans-serif;
+    margin:auto;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form p {
+    display: table-row;
+}
+
+form label {
+    display: table-cell;
+    text-align: left;
+    padding-right: 15px;
+}
+
+form input {
+    display: table-cell;
+}
+
+#message {
+    height: 150px;
+    margin-top: -19px;
+    margin-left: 0px;
+    width: 150px;
+}
+
+#success {
+    opacity: 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+}
+
+#page5 {
+    /* margin-top: 500px; */
+    height: 100vh;
+}
+
+#RBHeader, #leftBox3 p, #rightBox2 p {
+    margin-top: 50vh;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    #title, #photo-subtitle {
+        font-size: 48px;
+        margin-left: 25px;
+    }
+
+    #page1, #page2, #page3, #page4, #page5 {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #leftBox, #leftBox2, #rightBox3 {
+        background-size: cover;
+    }
+
+    #rightBox3, #leftBox {
+        background-position: center;
+    }
+
+    #formContainer {
+        margin-right: 0px;
+    }
+
+    #infoBox {
+        left: calc(17vw);
+    }
+
+    #centerBox{
+        transform: scale(2);
+    }
+}

@@ -1,0 +1,668 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/** vvv ANIMATIONS vvv **/
+@font-face {
+font-family: "FUTRFW";
+src: url("FUTRFW.TTF");
+}
+
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity:1}
+}
+@keyframes rise{
+    0%{ top: 450px;}
+    100%{top: 350px;}
+}
+
+@keyframes rise2{
+    0%{
+        border-left: 1000px solid transparent;
+        border-right: 1000px solid transparent;
+        border-bottom: 0px solid black;
+    }
+    100%{
+        border-left: 1000px solid transparent;
+        border-right: 1000px solid transparent;
+        border-bottom: 100px solid black;
+    }
+}
+
+@keyframes appear2{
+    0%{
+        top: 170px;
+        opacity: 0;
+    }
+    100%{
+        top:100px;
+        opacity: 1;
+    }
+}
+@keyframes appearFromRight{
+    0%{
+        margin-right: 200px;
+        opacity: 0;
+    }
+    100%{
+        margin-right:300px;
+        opacity: 1;
+    }
+}
+
+
+/** ^^^ ANIMATIONS ^^^ **/
+
+/** vvv ADDITIONAL CLASSES vvv **/
+.animate{
+    animation: appear2;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.animate2{
+    animation: appearFromRight;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/** ^^^ ADDITIONAL CLASSES ^^^ **/
+
+#cv-page1{
+    background-image: url('backgroudnreserve.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+/** vvv LOGO vvv **/
+#syrus{
+    font-family: 'FUTRFW', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    
+    margin-bottom: 0px;
+    opacity: 0;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
+}
+#subtitle{
+    margin-top: 0px;
+
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+        animation-name: appear;
+        animation-duration: 4s;
+    animation-delay: .5s;
+        animation-fill-mode: forwards;
+}
+#location{
+    margin-top: 0px;
+    font-family: 'FUTR', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+/** ^^^ LOGO ^^^ **/
+
+/** vvv SPLASH BODY vvv **/
+#services{
+    width: 170px;
+    height:133px;
+    margin: auto;
+}
+#services p{
+    font-family: 'FUTR', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    left: -250px;
+    position: relative;
+    
+}
+
+    /** vvv PRIVATE SESSIONS vvv **/
+    #icon1{
+        width: 100%;
+        height: 99px;
+        position: relative;
+        left: -250px;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: 1s;
+
+
+    }
+    #head1{
+        background-color: black;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        position: relative;
+        left: 39px;
+        top: 40px;   
+        float: left;
+    }
+    #body1{
+        background-color: black;
+        height: 40px;
+        width: 30px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        position: relative;
+        left: 33px;
+        top: 41px;
+    }
+    #head2{
+        background-color: black;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        position: relative;
+        left: 105px;
+        top: 40px;   
+
+    }
+    #body2{
+        background-color: black;
+        height: 40px;
+        width: 30px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        position: relative;
+        left: 107px;
+        top: 1px;
+        float: left;
+    }
+    #table{
+
+        height: 20px;
+        width: 10px;
+        left: 75px;
+        position: relative;
+        top: 16px;
+        border: solid 5px #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+    }
+    #sessionsText{
+        opacity: 0;
+        animation: appear;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        animation-duration: 4s;
+    }
+    /** ^^^ PRIVATE SESSIONS ^^^ **/
+
+    /** CUSTOM DESIGNS **/
+    #icon2{
+
+        width: 100%;
+        height: 99px;
+        position: relative;
+        left: -20px;
+        top: -100px;
+
+        opacity: 0;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    #paper{
+        height: 70px;
+        width: 55px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+    #line1{
+        background-color: black;
+        height: 100%;
+        width: 2px;
+        position: relative;
+        left: 5px;
+    }
+    #line2{
+        background-color: black;
+        height: 100%;
+        width: 2px;
+        position: relative;
+        left: 9px;
+        top: -70;
+    }
+    #line3{
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        position: relative;
+        top: -132px;
+    }
+    #customText{
+        top: -133px;
+        opacity: 0;
+        margin-left: 233px;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+
+    }
+    /** CUSTOM DESIGNS **/
+    
+    /** vvv INTERVIEW COACHING vvv **/
+    #icon3{
+        width: 100%;
+        height: 99px;
+        position: relative;
+        left: 122px;
+        opacity: 0;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+
+    }
+    #tieLine1{
+        height: 60px;
+        background-color: black;
+        width: 3px;
+        transform: rotate(25deg);
+        position: relative;
+        top: -251px;
+        left: 39px;
+    }
+    #tieLine2{
+        height: 60px;
+        background-color: black;
+        width: 3px;
+        transform: rotate(-25deg);
+        position: relative;
+        top: -311px;
+        left: 44px;  
+        border-radius: 10%;
+    }
+    #tieLine3{
+        width: 22px;
+        height: 3px;
+        background-color: black;
+        position: relative;
+        top: -369px;
+        left: 33px;
+        border-radius: 25%;
+    }
+    #tieLine4{
+        height: 24px;
+        background-color: black;
+        width: 3px;
+        transform: rotate(-40deg);
+        position: relative;
+        top: -321px;
+        left: 34px;  
+        border-bottom-left-radius: 50%;
+    }
+    #tieLine5{
+        height: 24px;
+        background-color: black;
+        width: 3px;
+        transform: rotate(40deg);
+        position: relative;
+        top: -345px;
+        left: 49px;  
+        border-bottom-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    #interviewText{
+        top: -280px;
+        margin-left: 383px;
+        opacity: 0;
+        animation-name: appear;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    /** ^^^ INTERVIEW COACHING ^^^ **/
+/** ^^^ SPLASH BODY ^^^ **/
+
+
+/** --------------------------------------------- **/
+
+/** vvv PAGE TWO vvv **/
+
+/** vvv BIO vvv **/
+#cv-page2 {
+    width: 100%;
+    height: 810px;
+    text-align: center;
+    font-size: 14px;
+    background-image: url('apple-magic-keyboard-coffee-desk-162616.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: bottom right;
+    box-shadow: 5px 15px 25px 1px;
+    box-shadow: -10px -5px 15px 1px #999;
+    padding-bottom: 0px;
+    margin-bottom: 0px;        
+}
+
+#bio {
+    font-family: 'Helvetica', sans-serif;
+    position: relative;
+    opacity: 1;
+    width: 600px; 
+}
+
+#hook{
+    font-size: 12px;
+}
+
+#anchor {
+    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#desc {
+    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.pageTwoText {
+    color: black;
+}
+
+#pageThree {
+    background-image: url(abstract-blank-board-296884.jpeg);
+    /* padding-top: 300px; */
+    background-size: 100%;
+    height: 100%;
+    color: white;
+    box-shadow: inset 0px 35px 55px 0px #000;
+    font-family: "Helvetica", sans-serif;
+    text-shadow: 2px 5px 1px #000;
+    text-align: center;
+}
+
+#sampleTitle {
+    padding-top: 150px;
+    text-align: center;  
+    margin-top: 0px;
+    font-family: 'Helvetica', sans-serif
+}
+/** ^^^ PAGE TWO ^^^ **/
+
+/** vvv PAGE THREE vvv **/
+.thumbnail1 {
+    max-width: 125px;
+    margin-right: 400px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 15px #000;
+}
+
+.sub1{
+    margin-right: 400px;
+}
+
+.thumbnail2 {
+    max-width: 125px;
+    /* margin-top: -300px; */
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 15px #000;
+}
+
+.sub2 {
+    margin-top: -34px;
+}
+
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+/** LIGHTBOX MARKUP **/
+.lightbox2 {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+    bottom: 50px;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox2 img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 0;
+}
+
+.lightbox2:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.lightbox3 {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox3 img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox3:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.sub3 {
+    margin-top: -33px;
+    margin-left: 408px;
+    
+}
+
+.thumbnail3 {
+    max-width: 125px;
+    margin-top: -200px;
+    margin-left: 408px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 15px #000;
+}
+
+#page4 {
+    background-image: url('backgroudnreserve.jpeg');
+    background-size: 100%;
+    background-position: top right;
+    background-attachment: fixed;
+    height: 100%;
+    box-shadow: inset 0px 10px 15px;
+    /* padding-right: 100px; */
+    overflow-x: hidden;
+}
+
+#requestTItle {
+    color: black;
+    font-family: "FUTRFW", sans-serif;
+}
+
+#formContainer {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin-right: 300px;
+    border-radius: 5%;
+    background-color: white;
+    /* opacity: 0; */
+}
+
+form {
+    display: table;
+    color:black;
+    font-family: "FUTRFW", sans-serif;
+    margin:auto;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form p {
+    display: table-row;
+}
+
+form label { 
+    display: table-cell;
+    text-align: left;
+    padding-right: 15px;
+}
+
+placeholder {
+    color: #fff;
+}
+
+form input {
+    display: table-cell;
+}
+
+#message {
+    height: 150px;
+    margin-top: -19px;
+    margin-left: 0px;
+    width: 130px;
+}
+
+#success {
+    opacity: 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+}
+
+#twitter {
+    height: 30px;
+    float: right;
+    margin-right: -225px;
+    margin-top: 410px;
+    cursor: pointer;
+}
+
+#fb {
+    height: 30px;
+    float: right;
+    margin-right: -265px;
+    margin-top: 410px;
+    cursor: pointer;
+}
+
+#ig {
+    height: 30px;
+    float: right;
+    margin-right: -305px;
+    margin-top: 410px;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+}
+
+#linkedIn {
+    height: 30px;
+    float: right;
+    margin-right: -345px;
+    margin-top: 410px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+    #formContainer{
+        transform: scale(3);
+        left: 50%;
+        margin-top: 40vh;
+        margin-right: 70vw;
+        
+    }
+
+    #twitter, #fb, #ig, #linkedin{
+        transform: scale(3);
+    }
+
+    #twitter{
+        margin-right: 500px;
+    }
+    #fb{
+        margin-right: 0;
+    }
+}

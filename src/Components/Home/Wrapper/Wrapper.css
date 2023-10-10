@@ -1,0 +1,432 @@
+/**********************/
+/* vvvvv Resume vvvvv */
+/**********************/
+/* .contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
+    font-size: 16px;
+} */
+
+/* .cv-hgihlights li{
+    line-height: 200%;
+} */
+
+.cv-highlights{
+    margin-bottom: 25px;
+}
+
+/* .cvBody {
+    overflow-y: hidden;
+    height: fit-content;
+} */
+
+.cv-highlights, .contact-info {
+    margin-left: 30px;
+    line-height: 150%;
+    list-style-type: circle;
+    ;
+}
+
+.coursework, .jobDate, .edu-date, .jobTitle, .edu-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.coursework, .experience-title, .name-position, .summary-info, .contact-info{
+    margin-left: 10px;
+}
+
+/* .experience-title {
+    margin-left: 20px;
+} */
+
+.educationDate, .jobDate, .edu-date {
+    float: right;
+}
+
+/* .coursework, .edu-date {
+    padding-right: 10px;
+} */
+
+/* .jobDate, .edu-date {
+    text-align: right;
+    width: 40%;
+} */
+
+.jobTitle, .edu-title {
+    float: left;
+    width: 40%;
+    padding-left: 10px;
+}
+
+.name-position, .summary-info {
+    margin-top: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.summary-info{
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 25px;
+}
+
+.contact-info li {
+    text-decoration: none;
+    /* list-style: none; */
+    margin-left: 20px;
+}
+
+.coursework {
+    font-weight: bold;
+}
+
+.coursework-classes {
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.educationTitle {
+    float: left;
+    width: 325px;
+}
+
+.experience-title {
+    font-size: 36px;
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+hr {
+    border-top-color: black;
+    border-top-width: thin;
+    border-top-style: dashed;
+}
+
+.jobBody {
+    margin-top: 10px;
+    line-height: 200%;
+    /* margin-top: 95px; */
+    padding-right: 20px;
+    /* line-height: 225%; */
+
+}
+
+.jobDate {
+    padding-right: 20px;
+}
+
+.jobDesc {
+    font-weight: normal;
+    margin-left: 15px;
+    list-style-type: circle;
+    margin-left: 30px;
+}
+
+.jobTitleContainer {
+    display: inline-block;
+    white-space: nowrap; 
+    height: 30px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.skill-cat {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.wrapper {
+    font-family: 'Helvetica', sans-serif;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    height: 100vh;
+    width: 800px;
+    overflow-x: hidden;
+    background-color:#FFF;
+    border-right: 15px solid #1666e5;
+    position: absolute;
+    box-shadow: 2px 2px 5px #555;
+    color:#131313;
+    overflow-y: scroll;
+    z-index: 4;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wrapper::-webkit-scrollbar-thumb{
+    background-color: #0e49a5;
+    border-radius: 20px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background-color: #fff;        /* color of the tracking area */
+}
+
+/* .wrapper_container{
+    height: 100%;
+} */
+/**********************/
+/* ^^^^^ Resume ^^^^^ */
+/**********************/
+
+/*****************************/
+/* vvvv Wrapper Ribbons vvvv */
+/*****************************/
+.ribbon, .ribbon1, .ribbon2 {
+    position: absolute;
+    background: #1666e5;
+    text-align: center;
+    color: #fff;
+    animation-name: ribbonSweep;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    border-top-right-radius: 7px;
+    margin: 2em auto 3em;
+    padding: 1em 2em;
+    left: 815px;
+    width: 100px;
+    font-size: 16px !important;
+    height: 75px;
+}
+
+.ribbon {
+    top: 0px;
+}
+
+.ribbon1 {
+    top: 125px;
+}
+
+.ribbon2 {
+    top: 250px;
+}
+
+.ribbon:before, .ribbon:after, .ribbon1:before, .ribbon1:after, .ribbon2:before, .ribbon2:after {
+    content:"";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    border: 1.2em solid #0e49a5;
+    border-right-color: transparent;
+    bottom: -.71em;
+    left: 82px;
+}
+
+.ribbon:after, .ribbon1:after, .ribbon2:after {
+    right: -1.5em;
+    border-left-width: 3em;
+    border-top-width: 3em;
+    border-bottom-width: 2.5em;
+    border-right-color: transparent;
+}
+
+.ribbon:before, .ribbon2:before {
+    left: -2em;
+    border-right-width: 1.2em;
+    border-color: transparent;
+}
+
+.ribbon2:after {
+    z-index: -1;
+}
+
+.ribbon a, .ribbon1 a, .ribbon2 a{
+    position: absolute;
+    top: 35px;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.ribbon a {
+    left:33px;
+}
+
+.ribbon1 a {
+    left:40px;
+}
+
+.ribbon2 a {
+    left:31px;
+}
+
+.ribbon a:visited, .ribbon2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.ribbonfold, .ribbonfold1, .ribbonfold2 {
+    position: absolute;
+    border: 5.5px solid #0a3982;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 0;
+    width: 75px;
+    left: 897px;
+}
+
+.ribbonfold {
+    top: 140px;
+}
+
+.ribbonfold1 {
+    border-left-width:7px;
+    top: 265px;
+}
+
+.ribbonfold2 {
+    top: 390px;
+}
+/*******************************/
+/* ^^^^^ Wrapper Ribbons ^^^^^ */
+/*******************************/
+
+/*****************************/
+/* ^^^^^ Mobile Styles ^^^^^ */
+/*****************************/
+@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        text-size-adjust:100%; 
+    }
+
+    .coursework, .coursework-classes, .jobDesc, .skill-cat, .contact-info li, .cv-highlights li {
+        font-size: 300%;
+    }
+
+    .coursework-classes {
+        line-height: 150%;
+        padding-right: 15px;
+        margin-bottom: 400px;
+    }
+
+    .jobBody{
+        margin-top: 50px;
+    }
+    
+    /* put your css styles in here */
+    .wrapper {
+        width: 1000px;
+        padding-left: 15px;
+    }
+    .cvBody{
+        height: 100vh;
+    }
+
+    .ribbon, .ribbon1, .ribbon2 {
+        left: 1015px;
+        width: 350px;
+        height: 150px;
+    }
+
+    .ribbon a, .ribbon1 a, .ribbon2 a {
+        font-size: 56px;
+        margin-top: 25px;
+        margin-left: 70px;
+    }
+
+    .ribbonfold, .ribbonfold1, .ribbonfold2 {
+        left: 1097px;
+        width: 322px;
+    }
+
+    .ribbonfold{
+        top: 265px;
+    }
+
+    .ribbonfold1{
+        top: 490px;
+    }
+
+    .ribbonfold2{
+        top: 715px;
+    }
+
+    .cv-highlights {
+        line-height: 400%;
+        margin-bottom: 30px;
+    }
+
+    .cv-highlights li{
+        margin-bottom: 7px;
+        margin-right: 10px;
+        list-style-type: square;
+    }
+
+    .jobDate {
+        font-size: 36px;
+        padding-right: 20px;
+    }
+
+    .jobDesc {
+        margin-bottom: 10px;
+        line-height: 150%;
+    }
+    
+    .jobTitle{
+        font-size: 36px;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    .ribbon{
+        top: 50px;
+    }
+
+    .ribbon1 { 
+        top: 275px;
+    }
+
+    .ribbon2 {
+        top: 500px;
+    }
+
+    .ribbon2:after, .ribbon:after, .ribbon1:after {
+        right: -1.5em;
+        border-left-width: 3em;
+        border-top-width: 4.5em;
+        border-bottom-width: 4.5em;
+        border-right-color: transparent;
+        z-index: -1;
+    }
+
+    .skill-cat {
+        margin-bottom: 45px;
+    }
+
+    .experience-title, .summary-info, .name-position {
+        font-size: 500%;
+    }
+
+    .contact-info li {
+        margin-bottom: 25px;
+    }
+
+    .contact-info li:first-of-type {
+        margin-top: 25px;
+    }
+
+    .wrapper::-webkit-scrollbar-thumb{
+        background-color: #0e49a5;
+        border-radius: 20px;
+        border-width: 50px;
+    }
+
+    .wrapper::-webkit-scrollbar {
+        width: 15px;
+    }
+}

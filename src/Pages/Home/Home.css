@@ -1,0 +1,953 @@
+/*v Animations v*/
+@keyframes bodyBreathing{
+    0%{
+        top: 350px;
+        width: 50px;
+    }
+    50%{
+        top: 349px;
+        width: 51px;
+    }
+    100%{
+        top: 350px;
+        width: 50px;
+    }
+}
+
+@keyframes leftSleeveBreathing{
+    0%{
+        top: 355px;
+    }
+    50%{
+        top: 354px;
+    }
+    100%{
+        top: 355px;
+    }
+}
+
+@keyframes rightSleeveBreathing{
+    0%{
+        top: 348px;
+    }
+    50%{
+        top: 347px;
+    }
+    100%{
+        top: 348px;
+    }
+}
+
+@keyframes rightArmBreathing{
+    0%{
+        top: 357px;
+    }
+    50%{
+        top: 356px;
+    }
+    100%{
+        top: 357px;
+    }
+}
+
+@keyframes rightForearmBreathing{
+    0%{
+        top: 343.46px;
+    }
+    50%{
+        top: 342.46px;
+    }
+    100%{
+        top: 343.46px;
+    }
+}
+
+@keyframes flowerShadow{
+    0%{
+        width: 60px;
+    }
+    50%{
+        width: 62px;
+    }
+    100%{
+        width: 60px;
+    }
+}
+
+@keyframes treeShadow{
+    0%{
+        width: 360px;
+    }
+    50%{
+        width: 365px;
+    }
+    100%{
+        width: 360px;
+    }
+}
+
+@keyframes treeRustle{
+    0%{
+        left: 60px;
+    }
+    50%{
+        left: 65px;
+    }
+    100%{
+        left: 60px;
+    }
+}
+
+@keyframes bulbRustle{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 3;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes treeRustle1{
+    0%{
+        left: 140px;
+    }
+    50%{
+        left: 145px;
+    }
+    100%{
+        left: 140px;
+    }
+}
+
+@keyframes treeRustle2{
+    0%{
+        left: 120px;
+    }
+    50%{
+        left: 123px;
+    }
+    100%{
+        left: 120px;
+    }
+}
+
+@keyframes treeRustle3{
+    0%{
+        left: 200px;
+    }
+    50%{
+        left: 203px;
+    }
+    100%{
+        left: 200px;
+    }
+}
+
+@keyframes treeRustle4{
+    0%{
+        left: 200px;
+    }
+    50%{
+        left: 203px;
+    }
+    100%{
+        left: 200px;
+    }
+}
+
+@keyframes treeRustle5{
+    0%{
+        left: 60px;
+    }
+    50%{
+        left: 65px;
+    }
+    100%{
+        left: 60px;
+    }
+}
+
+@keyframes treeRustle6{
+    0%{
+        left: 180px;
+    }
+    50%{
+        left: 185px;
+    }
+    100%{
+        left: 180px;
+    }
+}
+
+@keyframes appleRustle{
+    0%{
+        left: 100px;
+    }
+    50%{
+        left: 103px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+@keyframes appleRustle1{
+    0%{
+        left: 110px;
+    }
+    50%{
+        left: 113px;
+    }
+    100%{
+        left: 110px;
+    }
+}
+
+@keyframes appleRustle2{
+    0%{
+        left: 230px;
+    }
+    50%{
+        left: 235px;
+    }
+    100%{
+        left: 230px;
+    }
+}
+
+@keyframes float{
+        0% {
+            left: 40vw;
+        }
+        25%{}
+        50%{}
+        75%{}
+        100%{
+            left: 110vw;
+        }
+}
+
+@keyframes float2{
+        0% {
+            left: 33vw;
+        }
+        25%{}
+        50%{}
+        75%{}
+        100%{
+            left: 120vw;
+        }
+}
+
+@keyframes float3{
+        0% {
+            left:25vw;
+            top: 80px;
+        }
+        25%{}
+        50%{
+    }
+        75%{
+            
+    }
+        100%{
+            left: 110vw;
+            top: 0px;
+        }
+}
+
+@keyframes float4{
+        0% {
+            left: 100vw;
+            
+        }
+        25%{}
+        50%{
+    }
+        75%{
+            
+    }
+        100%{
+            left: 30px;
+            
+        }
+}
+
+@keyframes handWave{
+    0% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50%{
+        -webkit-transform: rotate(115deg);
+        -moz-transform: rotate(115deg);
+        -o-transform: rotate(115deg);
+        -ms-transform: rotate(1115deg);
+        transform: rotate(115deg);
+        left: 458px;
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);}
+}
+
+@keyframes flutter{
+    0%{
+        top:  200px;
+    }
+    50%{
+        top: 215px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+
+@keyframes flap{
+    0%{
+        width: 0;
+        height: 0;
+        border-bottom: 8px solid darkred;
+        border-right: 15px solid transparent;
+        border-bottom-right-radius:0px;   
+        border-bottom-left-radius:10px;
+        border-top-left-radius:0px;
+        border-top-right-radius:10px;
+        left: 19px;
+        top: 5px;
+        position: absolute;
+        z-index:1;
+        transform: rotate(45deg);
+    }
+    25%{}
+    50%{
+        width: 0;
+        height: 0;
+        border-bottom: 8px solid darkred;
+        border-right: 15px solid transparent;
+        border-bottom-right-radius:0px;   
+        border-bottom-left-radius:10px;
+        border-top-left-radius:0px;
+        border-top-right-radius:10px;
+        left: 15px;
+        top: 14px;
+        position: absolute;
+        z-index:1;
+        transform: rotate(-65deg);}
+    75%{}
+    100%{
+        width: 0;
+        height: 0;
+        border-bottom: 8px solid darkred;
+        border-right: 15px solid transparent;
+        border-bottom-right-radius:0px;   
+        border-bottom-left-radius:10px;
+        border-top-left-radius:0px;
+        border-top-right-radius:10px;
+        left: 18px;
+        top: 5px;
+        position: absolute;
+        z-index:1;
+        transform: rotate(45deg);
+    }
+}
+/*^ Animations ^*/
+
+html{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: helvetica;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#sky{
+    background: linear-gradient(to bottom, rgba(67,160,165,1) 0%,rgba(83,199,204,1) 100%);
+    height: 60%;
+    width: 100vw;
+    /* width: 3000; */
+    z-index: -6;
+}
+
+#sky, #react, #tree, #stem, #stemShadow, #stemHole, #stemBranch, #treeTop1, #treeTop2,
+#treeTop3, #treeTop4, #treeTop5, #treeTop6, #apple1, #apple2, #apple3, .birdStyle, .cloud1,
+.cloud2, .cloud3, .cloud4, .cloud5, .cloud6, .puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a,
+.puff3a, .puff4a{
+    position: absolute;
+}
+
+#treeTop1, #treeTop2, #treeTop4, #treeTop6, #birdpart6, .birdpart7, .puff2, .puff3, .puff2a, .puff3a {
+    z-index: 0;
+}
+
+#stem, #stemShadow, #stemHole, #treeTop3, #treeTop5, #apple1, #apple2, #apple3, .birdpart8,
+.puff1, .puff1a{
+    z-index: 1;
+}
+
+#stem, #stemBranch {
+    background-color: saddlebrown;
+}
+
+#treeTop1, #treeTop2, #treeTop3, #treeTop4, #treeTop5, #treeTop6 {
+    background-color: darkgreen;
+
+}
+
+#stemHole{
+    
+}
+/*v ground v*/
+#react{
+    bottom: 0px;
+    right: 15px;
+    color: white;
+}
+/*^ CHARACTER ^*/
+/*#1666e5*/
+/*v Tree v*/
+#tree{
+    height: 500px;
+    width: 350px;
+    left: 1000px;
+    top: 100px;
+}
+#stem{
+    width: 50px;
+    height: 300px;
+    left: 150px;
+    top: 200px;
+    box-shadow: inset 3px 0px 1px #ab5e27;
+}
+#stemShadow{
+    width: 15px;
+    height: 300px;
+    background-color: #562a0b;
+    left: 190px;
+    top: 200px;
+    box-shadow: inset -2px 1px 1px 1px #3d1e09;
+}
+#stemHole{
+    background-color: black;
+    height: 50px;
+    width: 10px;
+    border-radius: 100px;
+    top: 300px;
+    left: 160px;
+    box-shadow: -1px -1px 1px #562a0b;
+}
+#stemBranch{
+    height: 80px;
+    width: 10px;
+    transform: rotate(-40deg);
+    top: 190px;
+    left: 130px;
+    box-shadow: inset -1px 1px 1px 1px #61300e;   
+}
+#treeTop1{
+    height: 150px;
+    width: 150px;
+    top: 120px;
+    left:140px;
+    animation: treeRustle1 4s infinite;
+    animation-delay: .5s;
+    border-radius: 100px;
+    box-shadow: inset -5px -5px 0px 1px #003300, inset 1px 1px 0 1px #027002;
+}
+#treeTop2{
+    height: 70px;
+    width: 70px;
+    top: 150px;
+    left: 120px;
+    animation-delay: .25s;
+    animation: treeRustle2 4s infinite;
+    border-radius: 100px;
+    z-index: 2;
+    box-shadow: inset -3px -3px 0px 1px #003300;
+}
+#treeTop3{
+    height: 220px;
+    width: 220px;
+    top: 0px;
+    left: 60px;
+    border-radius: 100px;
+    animation-delay: .5s;
+    animation: treeRustle 4s infinite;
+    box-shadow: inset -10px -15px 0px 1px #003300, inset 5px 5px 0 1px #027002;
+}
+#treeTop4{
+    height: 100px;
+    width: 100px;
+    top: 0px;
+    left: 200px;
+    animation-delay: .25s;
+    animation: treeRustle3 4s infinite;
+    border-radius: 100px;
+    box-shadow: inset -2px -5px 0px 1px #003300, inset 2px 5px 0 1px #027002;
+
+}
+#treeTop5{
+    height: 120px;
+    width: 120px;
+    top: 100px;
+    left: 60px;
+    animation-delay: .375s;
+    animation: treeRustle5 4s infinite;
+    border-radius: 100px;
+    box-shadow: inset -8px -9px 0px 1px #003300, inset 2px 2px 0 1px #027002;
+}
+#treeTop6{
+    height: 150px;
+    width: 150px;
+    top: 50px;
+    left: 180px;
+    animation-delay: .375s;
+    animation: treeRustle6 4s infinite;
+    border-radius: 100px;
+    box-shadow: inset -1px -5px 0px 1px #003300;
+}
+
+#apple1, #apple2, #apple3{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#apple1{
+    animation-delay:  .25s;
+    animation-name:appleRustle;
+    top: 100px;
+    left: 100px;
+    box-shadow: inset -2px -2px 1px 1px darkred, inset 6px 7px 1px 1px #fa3737;
+}
+#apple2{
+    animation-delay: .42s;
+    animation-name: appleRustle1;
+    top: 200px;
+    left: 110px;
+    box-shadow: inset -4px -4px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
+}
+#apple3{
+    animation-delay: .375;
+    animation-name: appleRustle2;
+    top: 180px;
+    left: 230px;
+    box-shadow: inset -4px -5px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
+}
+/*^ Tree ^*/
+/*vSky v*/
+/*v Bird v*/
+.bird{
+    height: 50px;
+    width: 50px;
+    left: 1990px;
+    top:  200px;
+    /*flip the bird*/
+    transform:scaleX(-1);
+    animation: float4 19s infinite, flutter 1s infinite;
+    z-index: -1;
+}
+
+.birdpart1, .birdpart2, .birdpart3, .birdpart4, .birdpart5{
+    background-color: red;
+}
+
+.birdpart1{
+    height:8px;
+    width: 9px;
+    border-radius: 50%;
+    left: 30px;
+    top: 7px;
+}
+.birdpart2{
+    height:11px;
+    width: 11px;
+    border-radius: 50%;
+    left: 22px;
+    top: 10px;
+    transform: rotate(5deg);
+}
+.birdpart3{
+    height:1px;
+    width: 27px;
+    left: 8px;
+    top: 11px;
+    transform: rotate(-1deg);
+}
+.birdpart4{
+    height:1px;
+    width: 27px;
+    left: 10px;
+    top: 10px;
+    transform: rotate(-5deg);
+}
+
+.birdpart5{
+    height:10px;
+    width: 14px;
+    left: 16px;
+    top: 11px;
+    transform: rotate(-5deg);
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 1px -1px 1px 1px darkred;
+}
+.birdpart6{
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid orange;
+    border-right: 5px solid transparent;
+    border-bottom-right-radius:0px;
+    left: 38px;
+    top: 9px;
+}
+.birdpart7{
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid red;
+    border-right: 5px solid transparent;
+    border-bottom-right-radius:0px;
+    left: 32px;
+    top: 5px;
+}
+.birdpart8{
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid darkred;
+    border-right: 15px solid transparent;
+    border: 0px 10px 10px 0px;
+    left: 19px;
+    top: 5px;
+    transform: rotate(45deg);
+    animation: flap .25s infinite;
+    animation-delay: 1s;
+}
+.birdpart9{
+    height: 1px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: black;
+    left: 36px;
+    top: 9px;
+    z-index: 2
+}
+/*^ Bird ^*/
+
+.cloud1, .cloud2, .cloud3, .cloud4, .cloud5, .cloud6 {
+    animation-iteration-count: 100;
+    opacity: 1;
+    z-index: -2;
+}
+
+.cloud1 {
+    height: 80px;
+    width: 55px;
+    left: 40vw;
+    top: 200px;
+    animation-name: float;
+    animation-duration: 175s;
+}
+
+.cloud2 {
+    height: 160px;
+    width: 110px;
+    left: 30vw;
+    animation-name:float2;
+    animation-duration: 105s;
+}
+
+.cloud3 {
+    height:160px;
+    width: 110px;
+    left: 20vw;
+    top: 100px;
+    animation-name:float2;
+    animation-duration: 90s;
+}
+
+.cloud4 {
+    height:160px;
+    width: 110px;
+    left: 50px;
+    top: 270px;
+    animation-name:float2;
+    animation-duration: 150s;
+}
+
+.cloud5 {
+    height:160px;
+    width: 110px;
+    top: 200px;
+    left: -250px;
+    animation-name:float2;
+    animation-duration: 111s;
+}
+
+.cloud6 {
+    height:160px;
+    width: 110px;
+    left: -250px;
+    top: 110px;
+    animation-name:float2;
+    animation-duration: 200s;
+}
+
+.puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a, .puff3a, .puff4a {
+    background-color: white;
+}
+
+.puff2, .puff3, .puff4, .puff2a, .puff3a, .puff4a {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.puff2, .puff3, .puff2a, .puff3a {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.puff1 {
+    top: 75px;
+    height: 5px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: inset -1px -2px 0px  #ddd;
+}
+
+.puff2 {
+    top: 65px;
+    left: 30px;
+    height: 15px;
+    width: 20px;
+}
+
+.puff3 {
+    top: 54px;
+    left: 18px;
+    height: 25px;
+    width: 25px;
+}
+.puff4 {
+    top: 65px;
+    left: 10px;
+    height: 15px;
+    width: 20px;
+}
+
+.puff1a {
+    top: 95px;
+    height: 10px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: inset -1px -2px 0px  #ddd;
+}
+
+.puff2a {
+    top: 75px;
+    left: 20px;
+    height: 30px;
+    width: 40px;
+}
+
+.puff3a {
+    top: 55px;
+    left: 38px;
+    height: 50px;
+    width: 50px;
+}
+
+.puff4a{
+    top: 69px;
+    left: 60px;
+    height: 30px;
+    width: 40px;
+}
+/*^ Sky ^*/
+
+/*******************************/
+/********** Light Box **********/
+/*******************************/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox div {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.thumbnail1 {
+    max-width: 125px;
+    margin-right: 400px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 3px 3px 15px #000;
+}
+
+#portfolioBox{
+    text-decoration: none;
+}
+
+#folio{
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #fff;
+    margin: auto;
+    width: 590px;
+    height: 435px;
+    font-family: "Helvetica", sans-serif;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: calc(50vh - 242px);
+}
+
+#rt, #psub1, #pt, #psub2, #ot, #psub3, #pgraph, #folio hr, #gt1, #gsub1, #gt2, #gsub2 {
+    position: relative;
+}
+
+#rt, #pt, #ot, #gt1, #gt2 {
+    box-shadow: 5x 5x 5x #313131;
+}
+
+#rt {
+    width: 90px;
+    height: 65px;
+    bottom: -15px;
+    /* box-shadow: 5px 5px 5px #000; */
+    border-radius: 5%;
+    margin-right: 300px;
+}
+
+#psub1, #psub2, #psub3, #pweb, #pgraph, #gsub1, #gsub2 {
+    color: black;
+    font-size: 12px;
+}
+
+#pweb {
+   position: relative;
+   bottom: 15px;
+   font-size: 16px;
+}
+
+#psub1 {
+    margin-right: 300px;
+    bottom: -30px;
+    text-decoration-color: white;
+}
+
+#pt {
+    width: 90px;
+    height: 65px;;
+    border-radius: 5%;
+    bottom: 90px;
+}
+
+.ph
+
+#psub2 {
+    bottom: 75px;
+    text-decoration: none;
+}
+
+#ot {
+    width: 90px;
+    height: 65px;
+    bottom: 195px;
+    border-radius: 5%;
+    margin-left: 300px;
+}
+
+#psub3 {
+    bottom: 180px;
+    margin-left: 300px;
+}
+
+#pgraph {
+    bottom: 95px;
+    font-size: 16px;
+}
+
+#folio hr {
+    bottom: 125px;
+    border: 1px solid rgb(154, 154, 154);
+}
+
+#gt1 {
+    width: 100px;
+    bottom: 100px;
+    border-radius: 5px;
+    margin-right: 250px
+}
+
+#gsub1 {
+    bottom: 80px;
+    margin-right: 250px;
+}
+
+#gt2 {
+    width: 90px;
+    bottom: 238px;
+    border-radius: 5px;
+    margin-left: 250px;
+}
+
+#gsub2 {
+    bottom: 225px;
+    margin-left: 250px;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+    /* put your css styles in here */
+    #tree{
+        transform: scale(1.5);
+        top: 920px;
+        position: absolute;
+        left: 1040px;
+    }
+
+    #folio{
+        transform: scale(2);
+    }
+}

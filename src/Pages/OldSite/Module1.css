@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**^^^^^^^^^^ RESET ^^^^^^^**/
+
+.intro, .tbar, .nav1, #art, .cv, .bio, .blog, .folio, .video, .audio, .name {
+    position: absolute;
+}
+
+.intro{
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: .4;
+}
+
+.tbar {
+    width: 450px;
+    height: 20px;
+    background-color: #85BF7E;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    bottom: 75px;
+    z-index: 3;
+    box-shadow: -1px 2px 3px #080809;
+}
+
+.nav1 {
+    height: 100px;
+    width: 400;
+    background-color: #ffffed;
+    bottom: 0px;
+    margin-left: 10px;
+    border: 2px solid #A8A8A8;
+    border-bottom-width: 0px;
+    z-index: 1;
+}
+
+#art {
+    margin-left: 790;
+}
+
+#butt {
+    z-index: 1;
+    padding: 5px 5px 5px 5px;
+}
+
+.cv, .bio, .blog, .folio, .video, .audio {
+    box-shadow: 2px 2px 2px #000;
+    -webkit-transition: all 1s;
+    -webkit-filter: invert(0%);
+    transform: rotate(45deg);
+}
+
+.blog:hover, .cv:hover, .folio:hover, .video:hover, .audio:hover, .bio:hover {
+    -webkit-filter: invert(100%)
+}
+
+.cv {
+    margin-top: 200px;   
+    margin-left: 500px;
+}
+
+.bio {
+    margin-top: 309px;
+    margin-left: 645px;
+}
+
+.blog {
+    margin-top: 420px;
+    margin-left: 1063px;
+}
+
+.folio {
+    margin-top: 385px;
+    margin-left: 705px;
+}
+
+.video {
+    margin-top: 20px;
+    margin-left: 690px;
+}
+
+.audio {
+    margin-top: 136px;
+    margin-left: 645px;
+}
+
+.name {
+    bottom: 50px;
+    margin-left: 14px;
+    z-index: 4;
+}
+
+.template {
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.template:active {
+    border-style: double;
+}
+
+.template1, .template3 {
+    margin-top: 40px;
+    margin-right: 10px;
+    float: right;
+}
+
+.template2 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    .name, .nav1, .cv, .bio, .folio { 
+        transform: scale(2);
+    }
+
+    .name {
+        left: 200px;
+        bottom: 150px;
+    }
+
+    .tbar {
+        transform: scale(3);
+        bottom: 150px;
+    }
+
+    .nav1 {
+        left: 200px;
+        bottom: 50px;
+    }
+
+    .bio {
+        top: 300px;
+        left: 150px;
+    }
+
+    .folio {
+        top: 650px;
+        left: -125px;
+    }
+
+    .intro {
+        transform: scale(1.5);
+        left: 150px;
+        top: 500px;
+    }
+}

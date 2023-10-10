@@ -910,25 +910,25 @@ body{
 
 #gt1 {
     width: 100px;
-    bottom: 100px;
+    bottom: 200px;
     border-radius: 5px;
     margin-right: 250px
 }
 
 #gsub1 {
-    bottom: 80px;
+    bottom: 190px;
     margin-right: 250px;
 }
 
 #gt2 {
     width: 90px;
-    bottom: 238px;
+    bottom: 358px;
     border-radius: 5px;
     margin-left: 250px;
 }
 
 #gsub2 {
-    bottom: 225px;
+    bottom: 360px;
     margin-left: 250px;
 }
 

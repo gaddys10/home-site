@@ -48,7 +48,7 @@ table {
 /* } */
 /**^^^^^^^^^^ RESET ^^^^^^^**/
 
-/* .intro, .tbar, .nav1, #art, .cv, .bio, .blog, .folio, .video, .audio, .name {
+.intro, .tbar, .nav1, #art, .cv, .bio, .blog, .folio, .video, .audio, .name {
     position: absolute;
 }
 
@@ -154,9 +154,9 @@ table {
 .template2 {
     margin-top: 40px;
     margin-left: 10px;
-} */
+}
 
-/* @media only screen and (max-width: 3300px) and (min-height: 1500px) {
+@media only screen and (max-width: 3300px) and (min-height: 1500px) {
     .name, .nav1, .cv, .bio, .folio { 
         transform: scale(2);
     }
@@ -191,4 +191,4 @@ table {
         left: 150px;
         top: 500px;
     }
-} */
+}

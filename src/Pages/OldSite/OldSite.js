@@ -22,12 +22,14 @@ class OldSite extends React.Component {
                 <body>
                     <img className = "intro" alt="Intro text" src={ it } />
                     <Link to="/Portfolio/OldHomeSite/Resume">
-                        <a className = "cvLink" 
-                            href = "../src/Pages/OldSite/resume.html"
-                        >
-                            <img className = "cv" id = "butt" alt="resume button" src = { rb } /></a>
+                        <a className = "cvLink" href = "../src/Pages/OldSite/resume.html">
+                            <img className = "cv" id = "butt" alt="resume button" src = { rb } />
+                        </a>
                     </Link>
-                    <a className = "bioLink" href = "bio.html"><img id = "butt" className = "bio" alt="biography button" src = { bb } /></a>
+                    <Link to="/Portfolio/OldHomeSite/Bio">
+                        <a className = "bioLink" href = "bio.html"><img id = "butt" className = "bio" alt="biography button" src = { bb } /></a>
+                    </Link>
+
                     <a className = "folioLink" href = "imsorry.html"><img className = "folio" id = "butt" alt="Portfolio button" src = { pb } /></a>
                     <img className = "name" alt="My name, 'Syrus Gaddy'" src={ name }/>
                     <div className = "tbar"></div>

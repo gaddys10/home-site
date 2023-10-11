@@ -124,6 +124,7 @@ class Home extends React.Component {
                             <img id = "ot" src={ old } alt='Icon for Old Home Site' />
                             <p id = 'psub3'> Old Home Site </p>
                         </Link>
+                        
                         <hr />
 
 
@@ -136,7 +137,7 @@ class Home extends React.Component {
                             src={ london2 }
                             alt='Icon for Mock Resume Site'
                             onClick={() => window.open('./index-images/Londonflyerplustext.png')}
-                            />
+                        />
                         <p id = 'gsub2'
                             // onClick = "window.open('http://www.syrusgaddy.com/Photography/PhotoSite.html', '_self')"
                         >

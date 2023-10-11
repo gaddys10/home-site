@@ -161,6 +161,10 @@ body {
     font-family: "FUTRFW", sans-serif;
 }
 
+.photo-body {
+    overflow-y: scroll;
+}
+
 /* #formContainer {
     border-style: solid;
     border-color: black;

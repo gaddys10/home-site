@@ -1,6 +1,13 @@
 import React from "react";
 import "./OldSiteBio.css";
-import "./bio.css";
+import bt from "./bioTitle.png";
+import h2 from "../../OldSite/home2.png";
+import r2 from "../../OldSite/Resume2.png";
+import b2 from "../../OldSite/blog2.png";
+import p2 from "../../OldSite/portfolio2.png";
+import blog2 from '../blog2.png';
+import port2 from '../portfolio2.png';
+import { Link } from "react-router-dom";
 
 class OldSiteBio extends React.Component {
     constructor(props){
@@ -12,14 +19,22 @@ class OldSiteBio extends React.Component {
         return (
             <>
                 <body>
-                    <img className = "cvTitle" src="bioTitle.png" alt="biography title"/>
-                    <div className = "tbar"></div>
-                    <a href = "index.html"><img className = "home2" src = "home2.png" href = "Module1.html" alt="home button" /></a>
-                    <a href = "resume.html"><img className = "resume2" src = "Resume2.png" alt="resume button"/></a>
-                    <a href = "imsorry.html"><img className = "blog2" src = "blog2.png" alt="resume button" /></a>
-                    <a href = "portfolio.html"><img className = "portfolio2" src = "portfolio2.png" alt="portfolio button"/></a>
-                    <div className = "wrapper">
-                        <div className = "wrappertext">
+                    <img className = "cvTitle" src={bt} alt="biography title"/>
+                    <div className = "bio-tbar"></div>
+                    <Link to="/Portfolio/OldHomeSite">
+                        <a href = "index.html"><img className = "home2" src = {h2} href = "Module1.html" alt="home button" /></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Resume">
+                        <a href = "resume.html"><img className = "resume2" src = {r2} alt="resume button"/></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Sorry">
+                        <a href = "imsorry.html"><img className = "cv-icon blog2" src = {blog2} alt="blog button"/></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Sorry">
+                        <a href = "imsorry.html"><img className = "cv-icon portfolio2" src = {port2} alt="portfolio button"/></a>
+                    </Link>
+                    <div className = "bio-wrapper">
+                        <div className = "bio-wrappertext">
                             <p>
                                 My name is Syrus Maurice Gaddy.
                                 <br/><br/> 

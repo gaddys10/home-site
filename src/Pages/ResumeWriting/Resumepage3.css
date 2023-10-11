@@ -4,6 +4,7 @@ body {
 
 #pageThree{
     text-align: center;
+	background-size: cover;
 	background-image: url("./index-images/abstract-blank-board-296884.jpg");
 	overflow-x: hidden;
 	height: 100vh;
@@ -80,10 +81,32 @@ body {
     margin-left: 408px;
 }
 
+#cv-formContainer {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin-right: 300px;
+    border-radius: 5%;
+    background-color: white;
+    /* opacity: 0; */
+}
+
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {
+	#cv-formContainer{
+        transform: scale(3);
+        /* left: 50%; */
+        margin-top: 40vh;
+        margin-right: 40vw;
+        
+    }
+	
 	#sampleBox{
 		transform: scale(2.5);
 		padding-top: 15vh;
+		margin-right: 0px;
 	}
 
 	#sampleTitle{

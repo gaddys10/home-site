@@ -1,28 +1,21 @@
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
-/* .contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
+.contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
     font-size: 16px;
-} */
+}
 
-/* .cv-hgihlights li{
-    line-height: 200%;
-} */
-
-.cv-highlights{
+.cv-highlights {
     margin-bottom: 25px;
 }
 
-/* .cvBody {
-    overflow-y: hidden;
-    height: fit-content;
-} */
+.cv-highlights li {
+    margin-left: 10px;
+}
 
 .cv-highlights, .contact-info {
-    margin-left: 30px;
     line-height: 150%;
     list-style-type: circle;
-    ;
 }
 
 .coursework, .jobDate, .edu-date, .jobTitle, .edu-title {
@@ -30,30 +23,17 @@
     font-weight: bold;
 }
 
-.bold-text{
+.bold-text {
     font-weight: bold;
 }
 
-.coursework, .experience-title, .name-position, .summary-info, .contact-info{
+.coursework, .experience-title, .name-position, .summary-info, .contact-info {
     margin-left: 10px;
 }
-
-/* .experience-title {
-    margin-left: 20px;
-} */
 
 .educationDate, .jobDate, .edu-date {
     float: right;
 }
-
-/* .coursework, .edu-date {
-    padding-right: 10px;
-} */
-
-/* .jobDate, .edu-date {
-    text-align: right;
-    width: 40%;
-} */
 
 .jobTitle, .edu-title {
     float: left;
@@ -68,8 +48,8 @@
     margin-bottom: 0px;
 }
 
-.summary-info{
-    margin-bottom: 20px;
+.summary-info {
+    margin-bottom: 25px;
 }
 
 .contact-info {
@@ -78,17 +58,17 @@
 
 .contact-info li {
     text-decoration: none;
-    /* list-style: none; */
-    margin-left: 20px;
 }
 
 .coursework {
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .coursework-classes {
     margin-left: 20px;
     margin-bottom: 100px;
+    margin-top: 0px;
 }
 
 .educationTitle {
@@ -98,8 +78,9 @@
 
 .experience-title {
     font-size: 36px;
-    margin: 0px;
-    margin-top: 10px;
+    /* margin: 0px; */
+    margin-bottom: 10px;
+    margin-top: 30px;
     font-weight: bold;
 }
 
@@ -112,10 +93,8 @@ hr {
 .jobBody {
     margin-top: 10px;
     line-height: 200%;
-    /* margin-top: 95px; */
+    margin-top: 45px;
     padding-right: 20px;
-    /* line-height: 225%; */
-
 }
 
 .jobDate {
@@ -126,7 +105,6 @@ hr {
     font-weight: normal;
     margin-left: 15px;
     list-style-type: circle;
-    margin-left: 30px;
 }
 
 .jobTitleContainer {
@@ -134,7 +112,6 @@ hr {
     white-space: nowrap; 
     height: 30px;
     width: 100%;
-    margin-top: 25px;
     margin-bottom: 0px;
 }
 
@@ -143,7 +120,7 @@ hr {
     margin-top: 10px;
 }
 
-.wrapper {
+.home-wrapper {
     font-family: 'Helvetica', sans-serif;
     padding-top: 7px;
     padding-left: 5px;
@@ -165,18 +142,15 @@ hr {
     width: 6px;
 }
 
-.wrapper::-webkit-scrollbar-thumb{
+.wrapper::-webkit-scrollbar-thumb {
     background-color: #0e49a5;
     border-radius: 20px;
 }
 
 .wrapper::-webkit-scrollbar-track {
-    background-color: #fff;        /* color of the tracking area */
+    background-color: #fff; /* color of the tracking area */
 }
 
-/* .wrapper_container{
-    height: 100%;
-} */
 /**********************/
 /* ^^^^^ Resume ^^^^^ */
 /**********************/
@@ -315,7 +289,7 @@ hr {
     }
 
     .jobBody{
-        margin-top: 50px;
+        margin-top: 90px;
     }
     
     /* put your css styles in here */
@@ -428,5 +402,9 @@ hr {
 
     .wrapper::-webkit-scrollbar {
         width: 15px;
+    }
+
+    .coursework {
+        margin-bottom: -40px;
     }
 }

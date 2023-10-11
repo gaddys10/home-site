@@ -1,11 +1,9 @@
-
-
-.home2, .bio2, .resume2, .audio2, .video2, .blog2, .portfolio2, .wrapper, .wrappertext, .cvTitle, .tbar {
+ .home2, .bio2, .resume2, .audio2, .video2, .blog2, .portfolio2, .wrapper, .wrappertext, .cvTitle, .sorry-tbar {
     position: absolute;
 }
 
 .home2:hover, .bio2:hover, .resume2:hover, .audio2:hover, .video2:hover, .blog2:hover  {
-    -webkit-filter: invert(100%);
+    -webkit-filter:invert(100%);
 }
 
 .bio2, .resume2, .audio2, .video2, .blog2, .portfolio2, .home2 {
@@ -21,44 +19,52 @@
     margin-top: 100px;
 }
 
-.resume2 {
+.bio2{
     margin-top: 175px;
 }
 
-.audio2 {
+.resume2 {
     margin-top: 250px;
 }
 
-.video2 {
+.audio2 {
     margin-top: 325px;
 }
 
-.blog2 {
+.video2{
     margin-top: 400px;
 }
 
-.portfolio2 {         
+.blog2{
+    margin-top: 400px;
+}
+
+.portfolio2 {                    
     margin-top: 475px;
 }
 
-/* .wrapper {
+.sorry-wrapper {
     width: 750px;
-    height: 525px;
+    height: 110vh;
     background-color: #ffffed;
     border: 2px solid #a8a8a8;
     font-family: "Helvetica";
     box-shadow: 2px 2px 2px #000;
-    margin-top:25px;
-} */
+    margin-top: -25px;
+    /* z-index: -2; */
+}
 
-.wrappertext {
+.sorry-wrappertext {
     margin-top: 70px;
     margin-left: 7px;
     margin-right: 7px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 100px;
 }
 
 .degreetxt {
-    font-size:16px;
+    font-size: 16px;
 }
 
 .ed {
@@ -76,16 +82,16 @@
 .cvTitle {
     margin-right: 500px;
     padding-left: 250px;
-    z-index: 4; 
+    /* z-index: 4; */
 }
 
-.tbar {
-    /* width: 800px; */
+.sorry-tbar {
+    width: 800px;
     height: 20px;
     background-color: #85BF7E;
     margin-top: 40px;
     border-radius: 45px;
     margin-left: -20px;
-    z-index: 3;
+    /* z-index: 999; */
     box-shadow: -1px 2px 3px #080809;
 }

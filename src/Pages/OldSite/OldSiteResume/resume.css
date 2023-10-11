@@ -1,4 +1,4 @@
-.home2, .bio2, .resume2, .audio2, .video2, .blog2, .portfolio2, .wrapper, .wrappertext, .cvTitle, .tbar {
+.home2, .bio2, .resume2, .audio2, .video2, .blog2, .portfolio2, .cv-wrapper, .wrappertext, .cvTitle, .tbar2 {
     position: absolute;
 }
 
@@ -23,42 +23,47 @@
     margin-top: 250px;
 }
 
-.audio2 {
+.sorry-audio {
     margin-top: 250px;
 }
 
-.video2 {
+.sorry-video {
     margin-top: 325px;
 }
 
-.blog2 {
+.sorry-blog {
     margin-top: 370px;
     margin-left: 740px;
     position: fixed;
 }
 
-.portfolio2 {                    
+.sorry-portfolio2 {                    
     margin-top: 475px;
     margin-left: 740px;
     position: fixed;
 }
 
-/* .wrapper {
+.additional {
+    margin-bottom: 100px;
+}
+
+.cv-wrapper {
     width: 750px;
-    height: 1475px;
+    height: 100vh;
     background-color: #ffffed;
     border: 2px solid #a8a8a8;
     font-family: "Helvetica";
     box-shadow: 2px 2px 2px #000;
-    margin-top:-25px;
+    margin-top: 0px;
     z-index: -1;
+    overflow-y: scroll;
 }
 
 .wrappertext {
     margin-top: 70px;
     margin-left: 7px;
     margin-right: 7px;
-} */
+}
 
 .degreetxt {
     font-size:16px;
@@ -93,6 +98,6 @@
     margin-top: 40px;
     border-radius: 45px;
     margin-left: -20px;
-    z-index: 4;
-    box-shadow: 1px 2px 3px #080809;
+    /* z-index: 2; */
+    box-shadow: -1px 2px 3px #080809;
 }

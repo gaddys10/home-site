@@ -12,7 +12,7 @@ class Wrapper extends React.Component {
     
     render(){
         return(
-            <div className= "wrapper">
+            <div className= "home-wrapper">
                 <div className="cvHeader">
                     <p className="name-position">Syrus Gaddy, Software Engineer</p>
                     <ul className="contact-info">

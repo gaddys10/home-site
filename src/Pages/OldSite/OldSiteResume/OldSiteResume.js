@@ -21,11 +21,19 @@ class OldSiteResume extends React.Component {
                 <body>
                     <img className = "cvTitle" src={ resumetitle } alt="resume title" />
                     <div className = "tbar2"></div>
-                    <Link to="/Portfolio/OldHomeSite"> <a href = "index.html"><img className = "cv-icon home2" src = {home2} alt = "home button" /></a></Link>
-                    <a href = "bio.html"><img className = "cv-icon bio2" src = {bio2} href = "bio.html" alt="bio button" /></a>
-                    <a href = "imsorry.html"><img className = "cv-icon blog2" src = {blog2} alt="blog button"/></a>
-                    <a href = "imsorry.html"><img className = "cv-icon portfolio2" src = {port2} alt="portfolio button"/></a>
-                    <div className = "wrapper">
+                    <Link to="/Portfolio/OldHomeSite"> 
+                        <a href = "index.html"><img className = "cv-icon home2" src = {home2} alt = "home button" /></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Bio">
+                        <a href = "bio.html"><img className = "cv-icon bio2" src = {bio2} href = "bio.html" alt="bio button" /></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Sorry">
+                        <a href = "imsorry.html"><img className = "cv-icon blog2" src = {blog2} alt="blog button"/></a>
+                    </Link>
+                    <Link to="/Portfolio/OldHomeSite/Sorry">
+                        <a href = "imsorry.html"><img className = "cv-icon portfolio2" src = {port2} alt="portfolio button"/></a>
+                    </Link>
+                    <div className = "cv-wrapper">
                         <div className = "wrappertext">
                             <p>EMAIL: gaddys10@gmail.com | PHONE: 910-308-3896</p>
                             <hr/>
@@ -121,7 +129,7 @@ class OldSiteResume extends React.Component {
                             <br/>
                             <hr/>
                             <br/>
-                            <p>
+                            <p className="additional">
                                 <b><u>ADDITIONAL SKILLS & EXPERIENCE</u></b>
                                 <br/>
                                 - Experienced in using Eclipse, Ubuntu Linux, Github, and Virtual Box

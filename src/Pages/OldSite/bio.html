@@ -6,11 +6,16 @@
     <body>
         <img class = "cvTitle" src="bioTitle.png" />
         <div class = "tbar"></div>
-        <a href = "index.html"><img class = "home2" src = "home2.png" href = "Module1.html" /></a>
-        <a href = "resume.html"><img class = "resume2" src = "Resume2.png"/></a>
-        <a href = "imsorry.html"><img class = "blog2" src = "blog2.png"/></a>
-        <a href = "portfolio.html"><img class = "portfolio2" src = "portfolio2.png"/></a>
-        <div class = "wrapper">
+        <Link to="/Portfolio/OldHomeSite"> 
+            <a href = "index.html"><img className = "cv-icon home2" src = {home2} alt = "home button" /></a>
+        </Link>
+                <a href = "resume.html"><img class = "resume2" src = "Resume2.png"/></a>
+        <Link to="/Portfolio/OldHomeSite/Sorry">
+            <a href = "imsorry.html"><img className = "cv-icon blog2" src = {blog2} alt="blog button"/></a>
+        </Link>
+        <Link to="/Portfolio/OldHomeSite/Sorry">
+            <a href = "imsorry.html"><img className = "cv-icon portfolio2" src = {port2} alt="portfolio button"/></a>
+        </Link>        <div class = "wrapper">
             <div class = "wrappertext">
                 <p>
                     My name is Syrus Maurice Gaddy.

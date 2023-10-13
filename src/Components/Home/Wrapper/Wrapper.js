@@ -63,6 +63,7 @@ class Wrapper extends React.Component {
                         <br/> 
                         Figma, Adobe Photoshop, Adobe XD, Browserstack, GIMP, UML 
                     </p>
+                    
                     <br /> 
                     <hr/>
                     
@@ -79,7 +80,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc"> Developing & testing RESTful APIs with python & MySQL to validate & manipulate device records </li>
                         <li className= "jobDesc"> Providing leadership via coaching & documentation to develop Agile team & establish best practices</li>
                     </ul>
-                
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">Senior UI/UX Software Developer,<br/> O'Reilly Auto Parts</h3>
                         <h3 className= "jobDate">9/2022 - 6/2023</h3>
@@ -92,7 +92,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc">  Configured projects using Gradle & Spring to ensure proper dependency injection & app deployment</li>
                         <li className= "jobDesc"> Contributing to multiple projects using Mattermost, Outlook, & Atlassian tool suite to collaborate remotely </li>
                     </ul>
-                    
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">UX Software Developer,<br/>ARCOS</h3>
                         <h3 className= "jobDate">10/2021 - 7/2022</h3>
@@ -105,7 +104,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc"> Contributing to multiple projects using MS Teams, Slack, & Atlassian tool suite to collaborate remotely</li>
                         <li className= "jobDesc"> Contributing to multiple projects using Mattermost, Outlook, & Atlassian tool suite to collaborate remotely </li>
                     </ul>
-                    
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">Software Technical Lead,<br/>MAG Aerospace</h3>
                         <h3 className= "jobDate">3/2021 - 9/2021</h3>
@@ -122,7 +120,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc"> Used Python and PyQGIS to write specialized heat mapping software to aid efforts in putting out fires</li>
                         <li className= "jobDesc"> Gained requirements, demonstrated updates, & recommended solutions in meetings to assist clients</li>
                     </ul>
-                    
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">Software Engineer,<br/>MAG Aerospace</h3>
                         <h3 className= "jobDate">1/2020 - 3/2021</h3>
@@ -135,7 +132,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc"> Working remotely using MS Teams & Atlassian Tool Suite to coordinate in an Agile environment</li>
                         <li className= "jobDesc"> Wrote automated tests with Python and Cypress to test MeteorJS app UI and functionality</li>
                     </ul>
-                    
                     <span className="jobTitleContainer">
                         <h3 className="jobTitle">Automation Engineer,<br/>Verizon</h3>
                         <h3 className= "jobDate">10/2019 - 1/2020</h3>
@@ -172,7 +168,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc">Logged software deployment results into Splunk to communicate application status across team</li>
                         <li className= "jobDesc">Tested w/ Mocha, Chai, Chakram, & Protractor to ensure functionality of company’s primary web app </li>
                     </ul>
-    
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">Mac+ AppleCare Technical Advisor,<br/> Apple Inc.</h3>
                         <h4 className= "jobDate">8/2014 - 10/2015</h4>
@@ -183,7 +178,6 @@ class Wrapper extends React.Component {
                         <li className= "jobDesc">Isolated and resolved technical issues with Safari web and mobile browsers; Fixed LAN/WAN issues</li>
                         <li className= "jobDesc">Completed AppleCare Academy training to professionally troubleshoot Apple hardware & software</li>
                     </ul>
-                    
                     <span className="jobTitleContainer">
                         <h3 className= "jobTitle">Graphic Design Intern,<br/> UNCFSU</h3>
                         <h4 className= "jobDate">1/2015 - 5/2015</h4>

@@ -36,7 +36,7 @@ class OldSiteBio extends React.Component {
                     <div className = "bio-wrapper">
                         <div className = "bio-wrappertext">
                             <p>
-                                My name is Syrus Maurice Gaddy.
+                                My name is Syrus Gaddy.
                                 <br/><br/> 
                                 As of May 2016, I am a Computer Science graduate with a minor in Mathematics.<br/><br/>
                                 Objectively, I am a champion of the Inaugural Swarmathon Robotics Physical Challenge.

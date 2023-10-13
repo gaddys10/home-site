@@ -193,6 +193,7 @@
         left: 100px;
     }
 }
+
 @keyframes appleRustle1{
     0%{
         left: 110px;
@@ -311,8 +312,8 @@
     }
 }
 
-@keyframes flap{
-    0%{
+@keyframes flap {
+    0% {
         width: 0;
         height: 0;
         border-bottom: 8px solid darkred;
@@ -361,14 +362,14 @@
 }
 /*^ Animations ^*/
 
-html{
+html {
     width: 100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     padding: 0px;
     margin: 0px;
     font-family: helvetica;
@@ -379,18 +380,17 @@ body{
     overflow-x: hidden;
 }
 
-#sky{
+#sky {
     background: linear-gradient(to bottom, rgba(67,160,165,1) 0%,rgba(83,199,204,1) 100%);
     height: 60%;
     width: 100vw;
-    /* width: 3000; */
     z-index: -6;
 }
 
 #sky, #react, #tree, #stem, #stemShadow, #stemHole, #stemBranch, #treeTop1, #treeTop2,
 #treeTop3, #treeTop4, #treeTop5, #treeTop6, #apple1, #apple2, #apple3, .birdStyle, .cloud1,
 .cloud2, .cloud3, .cloud4, .cloud5, .cloud6, .puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a,
-.puff3a, .puff4a{
+.puff3a, .puff4a {
     position: absolute;
 }
 
@@ -411,29 +411,30 @@ body{
     background-color: darkgreen;
 
 }
-/*v ground v*/
-#react{
+
+#react {
     bottom: 0px;
     right: 15px;
     color: white;
 }
-/*^ CHARACTER ^*/
-/*#1666e5*/
+
 /*v Tree v*/
-#tree{
+#tree {
     height: 500px;
     width: 350px;
     left: 1000px;
     top: 100px;
 }
-#stem{
+
+#stem {
     width: 50px;
     height: 300px;
     left: 150px;
     top: 200px;
     box-shadow: inset 3px 0px 1px #ab5e27;
 }
-#stemShadow{
+
+#stemShadow {
     width: 15px;
     height: 300px;
     background-color: #562a0b;
@@ -441,7 +442,8 @@ body{
     top: 200px;
     box-shadow: inset -2px 1px 1px 1px #3d1e09;
 }
-#stemHole{
+
+#stemHole {
     background-color: black;
     height: 50px;
     width: 10px;
@@ -450,7 +452,7 @@ body{
     left: 160px;
     box-shadow: -1px -1px 1px #562a0b;
 }
-#stemBranch{
+#stemBranch {
     height: 80px;
     width: 10px;
     transform: rotate(-40deg);
@@ -458,7 +460,8 @@ body{
     left: 130px;
     box-shadow: inset -1px 1px 1px 1px #61300e;   
 }
-#treeTop1{
+
+#treeTop1 {
     height: 150px;
     width: 150px;
     top: 120px;
@@ -468,7 +471,8 @@ body{
     border-radius: 100px;
     box-shadow: inset -5px -5px 0px 1px #003300, inset 1px 1px 0 1px #027002;
 }
-#treeTop2{
+
+#treeTop2 {
     height: 70px;
     width: 70px;
     top: 150px;
@@ -489,7 +493,8 @@ body{
     animation: treeRustle 4s infinite;
     box-shadow: inset -10px -15px 0px 1px #003300, inset 5px 5px 0 1px #027002;
 }
-#treeTop4{
+
+#treeTop4 {
     height: 100px;
     width: 100px;
     top: 0px;
@@ -498,8 +503,8 @@ body{
     animation: treeRustle3 4s infinite;
     border-radius: 100px;
     box-shadow: inset -2px -5px 0px 1px #003300, inset 2px 5px 0 1px #027002;
-
 }
+
 #treeTop5{
     height: 120px;
     width: 120px;
@@ -510,7 +515,8 @@ body{
     border-radius: 100px;
     box-shadow: inset -8px -9px 0px 1px #003300, inset 2px 2px 0 1px #027002;
 }
-#treeTop6{
+
+#treeTop6 {
     height: 150px;
     width: 150px;
     top: 50px;
@@ -521,7 +527,7 @@ body{
     box-shadow: inset -1px -5px 0px 1px #003300;
 }
 
-#apple1, #apple2, #apple3{
+#apple1, #apple2, #apple3 {
     background-color: red;
     height: 30px;
     width: 30px;
@@ -529,20 +535,23 @@ body{
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-#apple1{
+
+#apple1 {
     animation-delay:  .25s;
     animation-name:appleRustle;
     top: 100px;
     left: 100px;
     box-shadow: inset -2px -2px 1px 1px darkred, inset 6px 7px 1px 1px #fa3737;
 }
-#apple2{
+
+#apple2 {
     animation-delay: .42s;
     animation-name: appleRustle1;
     top: 200px;
     left: 110px;
     box-shadow: inset -4px -4px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
 }
+
 #apple3{
     animation-delay: .375;
     animation-name: appleRustle2;
@@ -551,9 +560,8 @@ body{
     box-shadow: inset -4px -5px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
 }
 /*^ Tree ^*/
-/*vSky v*/
 /*v Bird v*/
-.bird{
+.bird {
     height: 50px;
     width: 50px;
     left: 1990px;
@@ -564,18 +572,19 @@ body{
     z-index: -1;
 }
 
-.birdpart1, .birdpart2, .birdpart3, .birdpart4, .birdpart5{
+.birdpart1, .birdpart2, .birdpart3, .birdpart4, .birdpart5 {
     background-color: red;
 }
 
-.birdpart1{
+.birdpart1 {
     height:8px;
     width: 9px;
     border-radius: 50%;
     left: 30px;
     top: 7px;
 }
-.birdpart2{
+
+.birdpart2 {
     height:11px;
     width: 11px;
     border-radius: 50%;
@@ -583,14 +592,16 @@ body{
     top: 10px;
     transform: rotate(5deg);
 }
-.birdpart3{
+
+.birdpart3 {
     height:1px;
     width: 27px;
     left: 8px;
     top: 11px;
     transform: rotate(-1deg);
 }
-.birdpart4{
+
+.birdpart4 {
     height:1px;
     width: 27px;
     left: 10px;
@@ -598,7 +609,7 @@ body{
     transform: rotate(-5deg);
 }
 
-.birdpart5{
+.birdpart5 {
     height:10px;
     width: 14px;
     left: 16px;
@@ -607,7 +618,8 @@ body{
     border-bottom-left-radius: 20px;
     box-shadow: inset 1px -1px 1px 1px darkred;
 }
-.birdpart6{
+
+.birdpart6 {
     width: 0;
     height: 0;
     border-bottom: 3px solid orange;
@@ -616,7 +628,8 @@ body{
     left: 38px;
     top: 9px;
 }
-.birdpart7{
+
+.birdpart7 {
     width: 0;
     height: 0;
     border-bottom: 3px solid red;
@@ -625,7 +638,8 @@ body{
     left: 32px;
     top: 5px;
 }
-.birdpart8{
+
+.birdpart8 {
     width: 0;
     height: 0;
     border-bottom: 8px solid darkred;
@@ -637,14 +651,15 @@ body{
     animation: flap .25s infinite;
     animation-delay: 1s;
 }
-.birdpart9{
+
+.birdpart9 {
     height: 1px;
     width: 2px;
     border-radius: 50%;
     background-color: black;
     left: 36px;
     top: 9px;
-    z-index: 2
+    z-index: 2;
 }
 /*^ Bird ^*/
 
@@ -742,6 +757,7 @@ body{
     height: 25px;
     width: 25px;
 }
+
 .puff4 {
     top: 65px;
     left: 10px;
@@ -787,8 +803,7 @@ body{
 	/** Default lightbox to hidden */
 	display: none;
 
-	/** Position and style */
-	position: fixed;
+    position: fixed;
 	z-index: 999;
 	width: 100%;
 	height: 100%;
@@ -875,7 +890,7 @@ body{
 
 #pt {
     width: 90px;
-    height: 65px;;
+    height: 65px;
     border-radius: 5%;
     bottom: 145px;
 }

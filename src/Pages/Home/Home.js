@@ -25,12 +25,7 @@ class Home extends React.Component {
     render(){
         return (
             <>
-                {/* <head>
-                    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
-                    <title>Syrus Gaddy's Home Site</title>
-                </head> */}
                 <meta name="viewport" content="width=device-width, initial-scale=0.1" />
-                
                 <div id = "sky"></div>
                 <div id = "ground_container"></div>
                 <div className= "shadow1"> </div>
@@ -86,20 +81,15 @@ class Home extends React.Component {
                     <div className= "puff3a"></div>
                     <div className= "puff4a"></div>
                 </div>  
-
                 <div id = "shark_container"></div>
-                {/* <div id = "wrapper_container"></div> */}
-
                 <div className= "ribbon">
-                    <a href="https://www.linkedin.com/in/syrus-gaddy-815ab169"> LinkedIn </a>
+                    <a href="https://www.linkedin.com/in/syrus-gaddy-815ab169">LinkedIn</a>
                 </div>
                 <div className= "ribbonfold"></div>
-                        
                 <div className= "ribbon1">
                     <a href="https://www.github.com/gaddys10"> Github </a>        
                 </div>
                 <div className= "ribbonfold1"></div>
-                
                 <div className= "ribbon2">
                     <a href="#portfolioBox">Portfolio</a>
                 </div>
@@ -108,35 +98,29 @@ class Home extends React.Component {
                 {/* <!-- lightbox container hidden with CSS --> */}
                 <a href="#_" className="lightbox" id="portfolioBox">
                     <div id="folio">
-                        <h1 id = "pweb"> Web Development</h1>
                         
+                        <h1 id = "pweb"> Web Development</h1>
+
                         <Link to="/Portfolio/MockResumeWriting" >
                             <img id = "rt" alt='Mock Resume Site Thumbnail' src={logo} />
                             <p id = 'psub1'> Mock <br /> Resume Writing Business </p>
                         </Link>
-                        
                         <Link to="/Portfolio/MockPhotography" >
                             <img id = "pt" src={ photo } alt='Icon for Mock Photography Site' />
                             <p id = 'psub2'> Mock <br /> Photography Portfolio </p>
                         </Link>
-                        
                         <Link to="/Portfolio/OldHomeSite">
                             <img id = "ot" src={ old } alt='Icon for Old Home Site' />
                             <p id = 'psub3'> Old Home Site </p>
                         </Link>
-                        
                         <hr />
-
-
                         <h1 id = "pgraph">Graphic Design</h1>
-
-                        <img id = "gt1" src={london} alt='Flyer for Lunch and Learn Event' />
+                        <img id = "gt1" src={london} alt='Flyer for Lunch and Learn Event' onClick={() => window.open(london)} />
                         <p id = 'gsub1'> University Event Flyer</p>
-
                         <img id = "gt2" 
                             src={ london2 }
                             alt='Icon for Mock Resume Site'
-                            onClick={() => window.open('./index-images/Londonflyerplustext.png')}
+                            onClick={() => window.open(london2)}
                         />
                         <p id = 'gsub2'
                             // onClick = "window.open('http://www.syrusgaddy.com/Photography/PhotoSite.html', '_self')"

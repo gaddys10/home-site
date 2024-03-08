@@ -1,4 +1,6 @@
 import React from "react"
+import "./Flower.css";
+import "../TheGround/TheGround.css";
 
 class Flower extends React.Component {
     constructor(props){

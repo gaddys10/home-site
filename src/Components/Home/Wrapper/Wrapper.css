@@ -1,12 +1,19 @@
+@font-face {
+    font-family: "PeanutButter";
+    src: url("PeanutButter.ttf");
+}
+
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
 .contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
     font-size: 16px;
+    color: #212427;
 }
 
 .cv-highlights {
     margin-bottom: 25px;
+    margin-left: 10px;
 }
 
 .cv-highlights li {
@@ -14,8 +21,15 @@
 }
 
 .cv-highlights, .contact-info {
-    line-height: 150%;
+    line-height: 200%;
     list-style-type: circle;
+}
+.divida{
+    width: 500px;
+    height: 40px;
+    stroke: black 3px;
+    margin-left: 140px;
+
 }
 
 .coursework, .jobDate, .edu-date, .jobTitle, .edu-title {
@@ -23,12 +37,26 @@
     font-weight: bold;
 }
 
+.jobTitle {
+    margin-left: 15px;
+}
+
 .bold-text {
     font-weight: bold;
 }
 
+
 .coursework, .experience-title, .name-position, .summary-info, .contact-info {
     margin-left: 10px;
+
+}
+
+.coursework {
+    margin-left: 20px;
+}
+
+.coursework-classes {
+    margin-left: 50px;
 }
 
 .educationDate, .jobDate, .edu-date {
@@ -50,10 +78,13 @@
 
 .summary-info {
     margin-bottom: 25px;
+    font-family: 'PeanutButter', sans-serif;
+    margin-left: 20px;
 }
 
 .contact-info {
     margin-top: 25px;
+    margin-left: 20px;
 }
 
 .contact-info li {
@@ -66,14 +97,16 @@
 }
 
 .coursework-classes {
-    margin-left: 20px;
+    margin-left: 50px;
     margin-bottom: 100px;
     margin-top: 0px;
+    line-height: 175%;
 }
 
 .educationTitle {
     float: left;
     width: 325px;
+    font-family: 'PeanutButter', sans-serif;
 }
 
 .experience-title {
@@ -82,10 +115,12 @@
     margin-bottom: 10px;
     margin-top: 30px;
     font-weight: bold;
+    font-family: 'PeanutButter', sans-serif;
+    margin-left: 20px;
 }
 
 hr {
-    border-top-color: black;
+    border-top-color: #212427;
     border-top-width: thin;
     border-top-style: dashed;
 }
@@ -115,9 +150,18 @@ hr {
     margin-bottom: 0px;
 }
 
+.name-position {
+    margin-left: 20px;
+    font-family: "PeanutButter", sans-serif;
+    font-size: 60px;
+}
+
+
 .skill-cat {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 10px;
+    line-height: 140%;
+
 }
 
 .home-wrapper {
@@ -132,10 +176,11 @@ hr {
     background-color:#FFF;
     border-right: 15px solid #1666e5;
     position: absolute;
-    box-shadow: 2px 2px 5px #555;
-    color:#131313;
+    /* box-shadow: 1px 1px 2px #555; */
+    color:#212427;
     overflow-y: scroll;
     z-index: 4;
+    background-color: #FCF5E5;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -150,7 +195,6 @@ hr {
 .wrapper::-webkit-scrollbar-track {
     background-color: #fff; /* color of the tracking area */
 }
-
 /**********************/
 /* ^^^^^ Resume ^^^^^ */
 /**********************/
@@ -158,7 +202,7 @@ hr {
 /*****************************/
 /* vvvv Wrapper Ribbons vvvv */
 /*****************************/
-.ribbon, .ribbon1, .ribbon2 {
+.ribbon, .ribbon1, .ribbon2, .ribbon3 {
     position: absolute;
     background: #1666e5;
     text-align: center;
@@ -187,46 +231,77 @@ hr {
     top: 250px;
 }
 
-.ribbon:before, .ribbon:after, .ribbon1:before, .ribbon1:after, .ribbon2:before, .ribbon2:after {
+.ribbon3 {
+    top: 375px;
+}
+
+@keyframes ribbonWave {
+    0%{
+        left: 82px;
+        right: -2em;
+    }
+    50%{
+        left: 90px;
+        right: -2.5em;
+    }
+    100%{
+        left: 82px;
+        right: -2em;
+    }
+}
+
+.ribbon:before, .ribbon:after, .ribbon1:before, .ribbon1:after, .ribbon2:before, .ribbon2:after, .ribbon3:before, .ribbon3:after {
     content:"";
     position: absolute;
     display: block;
-    z-index: -1;
+    z-index: -2;
     border: 1.2em solid #0e49a5;
     border-right-color: transparent;
     bottom: -.71em;
     left: 82px;
 }
 
-.ribbon:after, .ribbon1:after, .ribbon2:after {
-    right: -1.5em;
+.ribbon:after, .ribbon1:after, .ribbon2:after, .ribbon3:after {
+    right: -2em;
     border-left-width: 3em;
     border-top-width: 3em;
     border-bottom-width: 2.5em;
     border-right-color: transparent;
+    animation: ribbonWave 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
 }
 
-.ribbon:before, .ribbon2:before {
+.ribbon:before, .ribbon1:before, .ribbon2:before, .ribbon3:before {
     left: -2em;
     border-right-width: 1.2em;
     border-color: transparent;
 }
 
-.ribbon2:after {
-    z-index: -1;
+.ribbon1:after{
+    animation-delay: 4.5s;
 }
 
-.ribbon a, .ribbon1 a, .ribbon2 a{
+.ribbon2:after {
+    z-index: -1;
+    animation-delay: 5s;
+}
+
+.ribbon3:after {
+    animation-delay: 5.5s;
+}
+
+.ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
     position: absolute;
     top: 35px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 32px;
     color: white;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'PeanutButter', sans-serif;
 }
 
 .ribbon a {
-    left:33px;
+    left:30px;
 }
 
 .ribbon1 a {
@@ -237,32 +312,62 @@ hr {
     left:31px;
 }
 
+.ribbon3 a {
+    left: 25px;
+    top: 15px;
+}
+
 .ribbon a:visited, .ribbon2 a:visited {
     color: white;
     text-decoration: none;
 }
 
-.ribbonfold, .ribbonfold1, .ribbonfold2 {
+@keyframes ribbonFoldWave {
+    0%{
+        left: 897px;
+        width: 72px;
+    }
+    50%{
+        left: 905px;
+        width: 64px;
+    }
+    100%{
+        left: 897px;
+        width: 72px;
+
+    }
+}
+
+.ribbonfold, .ribbonfold1, .ribbonfold2, .ribbonfold3 {
     position: absolute;
     border: 5.5px solid #0a3982;
     border-bottom-color: transparent;
     border-right-color: transparent;
     z-index: 0;
-    width: 75px;
+    width: 72px;
     left: 897px;
+    animation: ribbonFoldWave 4s infinite;
+    animation-delay: 4s;
 }
 
 .ribbonfold {
-    top: 140px;
+    top: 139px;
 }
 
 .ribbonfold1 {
     border-left-width:7px;
-    top: 265px;
+    top: 264px;
+    animation-delay: 4.5s;
 }
 
 .ribbonfold2 {
-    top: 390px;
+    top: 389px;
+    animation-delay: 5s;
+}
+
+.ribbonfold3 {
+    top: 514px;
+    animation-delay: 5.5s;
 }
 /*******************************/
 /* ^^^^^ Wrapper Ribbons ^^^^^ */
@@ -272,6 +377,10 @@ hr {
 /* ^^^^^ Mobile Styles ^^^^^ */
 /*****************************/
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    .scroll-relief {
+        height: 200px;
+    }
+    
     body {
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
@@ -280,6 +389,9 @@ hr {
 
     .coursework, .coursework-classes, .jobDesc, .skill-cat, .contact-info li, .cv-highlights li {
         font-size: 300%;
+    }
+    .minor {
+        font-size: 90%;
     }
 
     .coursework-classes {
@@ -297,24 +409,30 @@ hr {
         width: 1000px;
         padding-left: 15px;
     }
+
     .cvBody{
-        height: 100vh;
+        height: 100%;
     }
 
-    .ribbon, .ribbon1, .ribbon2 {
-        left: 1015px;
+    .ribbon, .ribbon1, .ribbon2, .ribbon3 {
+        left: 815px;
         width: 350px;
         height: 150px;
-    }
+    } 
 
-    .ribbon a, .ribbon1 a, .ribbon2 a {
-        font-size: 56px;
+    .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
+        font-size: 64px;
         margin-top: 25px;
-        margin-left: 70px;
+        margin-left: 90px;
     }
 
-    .ribbonfold, .ribbonfold1, .ribbonfold2 {
-        left: 1097px;
+    .ribbon3 a {
+        margin-top: 5px;
+        margin-left: 70px; 
+    }
+
+    .ribbonfold, .ribbonfold1, .ribbonfold2, .ribbonfold3 {
+        left: 1897px;
         width: 322px;
     }
 
@@ -369,7 +487,11 @@ hr {
         top: 500px;
     }
 
-    .ribbon2:after, .ribbon:after, .ribbon1:after {
+    .ribbon3 {
+        top: 725px;
+    }
+
+    .ribbon2:after, .ribbon:after, .ribbon1:after, .ribbon3:after {
         right: -1.5em;
         border-left-width: 3em;
         border-top-width: 4.5em;
@@ -383,7 +505,12 @@ hr {
     }
 
     .experience-title, .summary-info, .name-position {
-        font-size: 500%;
+        font-size: 700%;
+        margin-left: 30px;
+    }
+
+    .name-position {
+        font-size: 850%;
     }
 
     .contact-info li {

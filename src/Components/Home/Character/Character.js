@@ -9,7 +9,22 @@ class Character extends React.Component {
             appVersion: ''
         }
     }
+
+    isSafari = () => {
+        let chromeFlag = navigator.userAgent.indexOf('Chrome');
+        let safariFlag = navigator.userAgent.indexOf('Safari');
+
+        if(chromeFlag === -1 && safariFlag !== -1){
+            return "right_forearm_safari"
+        } else {
+            return "right_forearm"
+        }
+    }
     
+    componentDidMount(){
+        console.log(this.isSafari());
+    }
+
     render(){
         return(
             <div id = "character">
@@ -40,7 +55,11 @@ class Character extends React.Component {
                 <div className="left_arm_shadow"></div>
                 <div className="right_arm"></div>
                 <div className="right_arm_shadow"></div>
-                <div className="right_forearm"></div>
+
+
+                <div className={this.isSafari()}></div>
+
+
                 <div className="right_sleeve"></div>
                 <div className="right_sleeve_shadow"></div>
                 <div className="right_shoe"></div>

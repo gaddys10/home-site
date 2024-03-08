@@ -1,6 +1,19 @@
-.flower, .fbulb, .fstem, .fcenter, .fpetal1, .fpetal2, .fpetal3, .fpetal4, .fpetal5, .fpetal6, .fpetal7,
+
+
+@keyframes float4 {
+    0% {
+        left: 100vw;
+        
+    }
+    100% {
+        left: 30px;
+        
+    }
+}
+
+.flower, .fstem, .fcenter, .fpetal1, .fpetal2, .fpetal3, .fpetal4, .fpetal5, .fpetal6, .fpetal7,
 .fpetal8, .shadow, .shadow1, .shadow2, .shadow3, .shadow4, .shadow5, .rock1, .rock2, .rock2highlight, 
-.rock3, .rock3highlight, .horizonbush0, .horizonBush1, .horizonbush2, .horizonbush3, .horizonBush4, .horizonBush5, .horizonBush6,
+.rock3, .rock3highlight, .rock4, .rock4highlight, .rock5, .horizonbush0, .horizonBush1, .horizonbush2, .horizonbush3, .horizonBush4, .horizonBush5, .horizonBush6,
 .horizonBush7, .horizonBush8, .horizonBush9, #grass {
     position: absolute;
 }
@@ -18,10 +31,10 @@
     height: 0px;
 }
 
-#grass{
+#grass {
     top: 380px;
     z-index: -3;
-    height: 60svh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, rgba(25,102,30,1) 0%,rgba(34,139,34,1) 50%, rgba(34,139,34,1) 100%);;
 }
@@ -29,8 +42,9 @@
 /******************************/
 /* vvvvv Horizon Bushes vvvvv */
 /******************************/
+
 .horizonbush0, .horizonBush1, .horizonbush2, .horizonbush3, .horizonBush4, .horizonBush5, .horizonBush6,
-.horizonBush7, .horizonBush8, .horizonBush9 {
+.horizonBush7, .horizonBush8, .horizonBush9, .horizonBush10 {
     background-color: rgba(25,102,30,1);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -40,11 +54,11 @@
 }
 
 .horizonBush2, .horizonBush3, .horizonBush5, .horizonBush6, .horizonBush8 {
-    box-shadow: inset -3px -1px 1px -1px rgba(15,92,20,1)
+    box-shadow: inset -10px -1px 3px -1px rgba(15,92,20,1)
 }
 
 .horizonBush1, .horizonBush4, .horizonBush9 {
-    box-shadow: inset -9px -4px 1px -1px rgba(15,92,20,1)
+    box-shadow: inset -12px -4px 3px -1px rgba(15,92,20,1)
 }
 
 .horizonBush2, .horizonBush3, .horizonBush4, .horizonBush6, .horizonBush8, .horizonBush9 {
@@ -61,7 +75,7 @@
 
 .horizonBush1 {
     height: 70px;
-    width: 70px;
+    width: 120px;
     top: 370px;
     left: 900px;
 }
@@ -83,7 +97,7 @@
 
 .horizonBush5 {
     height: 90px;
-    width: 45px;
+    width: 35px;
     top: 310px;
     left: 590px;
 }
@@ -98,7 +112,7 @@
     width: 110px;
     top: 360px;
     left: 1130px;
-    box-shadow: inset -10px -1px 1px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
 }
 
 .horizonBush8 {
@@ -108,30 +122,443 @@
 
 .horizonBush9 {
     top: 350px;
-    left: 1450px;
+    left: 1500px;
+}
+
+.horizonBush10 {
+    background-color: rgba(25,102,30,1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: -3;
+    top: 350px;
+    left:1700px;
+    height: 110px;
+    width: 119px;
+    position: absolute;
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.horizonBush11 {
+    background-color: rgba(25,102,30,1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: -3;
+    top: 350px;
+    left:2000px;
+    height: 110px;
+    width: 150px;
+    position: absolute;
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
 }
 /******************************/
 /* ^^^^^ Horizon Bushes ^^^^^ */
 /******************************/
 
+.bush1 {
+    height: 130px;
+    width: 135px;
+    left: 1158px;
+    top: 610px;
+    position: absolute;
+    z-index: -1;
+}
+
+.bush1part1 {
+    height: 50%;
+    width: 60%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    bottom:0;
+    box-shadow: inset -35px -1px 5px -1px rgba(15,92,20,1);
+    
+}
+.bush1part2 {
+    height: 30%;
+    width: 50%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -25px -1px 5px -1px rgba(15,92,20,1);
+}
+
+/* box-shadow: inset -10px -15px 3px 1px #003300, inset 20px 13px 5px 1px #027002; */
+
+.bush1part3 {
+    height: 70%;
+    width: 55%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -25px -3px 5px -5px rgba(15,92,20,1);
+}
+
+.bush2 {
+    height: 60px;
+    width: 70px;
+    left: 1270px;
+    top: 780px;
+    position: absolute;
+    z-index: 0;
+}
+
+.bush2part1 {
+    height: 50%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    bottom:0;
+    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1), inset 10px -3px 5px -4px rgb(18, 111, 24);
+}
+
+.bush2part2 {
+    height: 30%;
+    width: 45%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+}
+
+.bush2part3 {
+    height: 73%;
+    width: 55%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+}
+
+.bush3 {
+    height: 40px;
+    width: 60px;
+    left: 1250px;
+    top: 800px;
+    position: absolute;
+    z-index: 0;
+}
+
+.bush3part1 {
+    height: 50%;
+    width: 60%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    bottom:0;
+    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+}
+
+.bush3part2 {
+    height: 30%;
+    width: 50%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.bush3part3 {
+    height: 70%;
+    width: 60%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -8px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.bush4 {
+    height: 40px;
+    width: 60px;
+    left: 850px;
+    top: 500px;
+    position: absolute;
+    z-index: 0;
+}
+
+.bush4part1 {
+    height: 40%;
+    width: 67%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 20%;
+    bottom:0;
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.bush4part2 {
+    height: 30%;
+    width: 70%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.bush4part3 {
+    height: 50%;
+    width: 55%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -10px -1px 3px -1px rgba(15,92,20,1)
+}
+
+.bush5 {
+    height: 240px;
+    width: 260px;
+    left: 870px;
+    top: 810px;
+    position: absolute;
+    z-index: -1;
+}
+
+.bush5part1 {
+    height: 35%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 8%;
+    bottom:0;
+    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    z-index: 1;
+}
+
+.bush5part2 {
+    height: 40%;
+    width: 75%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+}
+
+.bush5part3 {
+    height: 60%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 8%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+}
+
+.bush6 {
+    height: 80px;
+    width: 90px;
+    left: 1570px;
+    top: 510px;
+    position: absolute;
+    z-index: -1;
+}
+
+.bush6part1 {
+    height: 35%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 8%;
+    bottom:0;
+    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    z-index: 1;
+}
+
+.bush6part2 {
+    height: 40%;
+    width: 75%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+}
+
+.bush6part3 {
+    height: 50%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 8%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+}
+
+.bush7 {
+    height: 40px;
+    width: 40px;
+    left: 1370px;
+    top: 410px;
+    position: absolute;
+    z-index: -1;
+}
+
+.bush7part1 {
+    height: 35%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 8%;
+    bottom:0;
+    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    z-index: 1;
+}
+
+.bush7part2 {
+    height: 40%;
+    width: 75%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+}
+
+.bush7part3 {
+    height: 50%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 8%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+}
+
+.bush8 {
+    height: 30px;
+    width: 30px;
+    left: 1700px;
+    top: 440px;
+    position: absolute;
+    z-index: -1;
+}
+
+.bush8part1 {
+    height: 35%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 8%;
+    bottom:0;
+    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    z-index: 1;
+}
+
+.bush8part2 {
+    height: 40%;
+    width: 75%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5%;
+    bottom:0;
+    right: 0;
+    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+}
+
+.bush8part3 {
+    height: 50%;
+    width: 65%;
+    background-color: darkgreen;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 8%;
+    bottom:0;
+    right: 15%;
+    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+}
+
 /*********************/
 /* vvvvv Rocks vvvvv */
 /*********************/
-.rock1, .rock2, .rock2highlight, .rock3, .rock3highlight {
+.rock1, .rock2, .rock2highlight, .rock3, .rock4, .rock3highlight, .rock4highlight, .rock5 {
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
 }
 
-.rock1, .rock2highlight, .rock3highlight{
+.rock1, .rock2highlight, .rock3highlight, .rock4highlight {
     background-color: gray;
 }
 
-.rock1{
+.rock1 {
     width: 100px;
     height: 55px;
-    box-shadow: inset -8px 0px 1px dimgray, inset 5px 0 1px #858585;
+    box-shadow: inset -8px 0px 3px dimgray, inset 10px 0 3px #858585;
     left: 1100px;
     top: 542px;
+    z-index: -2;
 }
 
 .rock2 {
@@ -140,6 +567,8 @@
     background-color: dimgray;
     left: 800px;
     top: 450px;
+    z-index: -2;
+
 }
 
 .rock2highlight {
@@ -159,6 +588,98 @@
     width: 35px;
     height: 15px;
 }
+
+.rock4 {
+    width: 110px;
+    height: 35px;
+    left: 1300px;
+    box-shadow: inset -15px 0px 3px dimgray, inset 5px 0 1px #858585;
+    background-color: gray;
+    /* z-index: 4; */
+    top: 800px;
+}
+
+.rock5 {
+    width: 90px;
+    height: 15px;
+    left: 1700px;
+    top: 600px;
+    background-color: gray;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 140px;
+    box-shadow: inset -5px -1px 3px dimgray, inset 10px 2px 3px #858585;
+}
+
+.rock6 {
+    position: absolute;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 150px;
+    width: 30px;
+    height: 15px;
+    left: 1500px;
+    top: 675px;
+    background-color: gray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: inset -6px -1px 3px dimgray, inset 4px 0 2px #858585;
+}
+
+.rock7 {
+    position: absolute;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 150px;
+    width: 20px;
+    height: 5px;
+    left: 1820px;
+    top: 475px;
+    background-color: gray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: inset -3px -1px 3px dimgray, inset 2px 0 3px #858585;
+}
+
+.rock8 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    left: 1020px;
+    top: 975px;
+    background-color: gray;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 80px;
+    box-shadow: inset -20px 0px 3px dimgray, inset 8px 0 3px #858585;
+}
+
+.rock9 {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 1720px;
+    top: 570px;
+    background-color: gray;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 80px;
+    box-shadow: inset -15px 0px 3px dimgray, inset 8px 0 3px #858585;
+    z-index: -1;
+}
+
+.rock10 {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 2120px;
+    top: 800px;
+    background-color: gray;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 30px;
+    box-shadow: inset -13px -1px 3px dimgray, inset 11px 2px 3px #858585;
+    z-index: 1;
+}
+
+/* .rock4highlight {
+    width: 100px;
+    height: 15px;
+} */
 /*********************/
 /* ^^^^^ Rocks ^^^^^ */
 /*********************/
@@ -168,14 +689,22 @@
 /**********************/
 .flower {
     height: 160px;
-    width: 95px;
-    left: 900px;
-    top: 490px;
+    width: 155px;
+    left: 910px;
+    top: 530px;
     z-index: 2;
 }
 
-.fbulb {
-    animation: bulbRustle 4s infinite;
+@keyframes bulb {
+    0% {
+        left: 12px;
+    }
+    50% {
+        left: 15px;
+    }
+    100% {
+        left: 12px;
+    }
 }
 
 .fstem {
@@ -187,83 +716,134 @@
     box-shadow: inset -1px 1px 1px 1px #004200;
 }  
 
+.fbulb {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 140px;
+    top: 45px;
+    animation-duration: 4s;
+    animation-name: bulb;
+    animation-iteration-count: infinite;
+    /* background-color: yellow; */
+}
+
 .fcenter {
-    top: 75px;
-    left: 30px;
+    position: relative;
+    top: 18px;
+    left: 18px;
     border-radius: 50%;
     height: 15px;
     width: 15px;
     background-color: #997735;
-    box-shadow: inset -2px -1px 0px .5px #775c28;
+    box-shadow: inset -2px -1px 3px .5px #775c28;
+    z-index: 10;
 }
 
 .fpetal1, .fpetal2, .fpetal3, .fpetal4, .fpetal5, .fpetal6, .fpetal7, .fpetal8 {
     background-color: coral;
     height: 20px;
     width: 20px;
+    /* top: -20px; */
     border-bottom-left-radius:100px;
     border-bottom-right-radius:100px;
+    position: relative;
+
+    /* animation-duration: 4s;
+    animation-name: bulbRustle;
+    animation-iteration-count: infinite; */
 }
 
 .fpetal1 {
-    top: 60px;
-    left: 28px;
+    top: 0px;
+    left: 16px;
     border-radius: 50%;
-    box-shadow: 0px 0px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    box-shadow: 0px 0px 3px 1px #c6685f, inset 5px 2px 3px #fa8c64;
+    z-index: 1;
 }
 
-.fpetal2 {
+/* .fstem {
+    height: 59px;
+    width: 5px;
     top: 85px;
-    left: 28px;
-    box-shadow: 0px 0px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    left: 35px;
+    background-color: darkgreen;
+    box-shadow: inset -1px 1px 1px 1px #004200;
+}   */
+
+.fpetal2 {
+    top: -5px;
+    left: 16px;
+    box-shadow: inset -1px -1px 2px 1px #c6685f, inset 5px 2px 3px #fa8c64;
+    z-index: 4;
+    border-top-left-radius:75px;
+    border-top-right-radius:75px;
 }
 
 .fpetal3 {
-    top: 72px;
-    left: 16px;
+    top: -39px;
+    z-index: 5;
+    left: 2px;
+    height: 19px;
+    width: 19px;
     transform: rotate(90deg);
-    box-shadow: 0px 0px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    border-top-left-radius:75px;
+    border-top-right-radius:75px;
+    box-shadow: inset -3px 1px 2px -2px #c6685f, inset 5px 2px 3px #fa8c64;
 }
 
 .fpetal4 {
-    top: 72px;
-    left: 39px;
+    top: -60px;
+    left: 28px;
+    z-index: 2;
     transform: rotate(-90deg);
-    box-shadow:-2px 1px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    border-top-left-radius:75px;
+    border-top-right-radius:75px;
+    box-shadow: inset 2px -1px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
 }
 
 .fpetal5 {
-    top: 79px;
-    left: 21px;
+    top: -70px;
+    left: 8px;
+    z-index: 4;
+    width: 19px;
+    height:22px;
     transform: rotate(45deg);
-    box-shadow: 2px 0px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    box-shadow:inset -1px 1px 3px -1px #c6685f, inset 1px -2px 1px #fa8c64;
+    border-top-left-radius:75px;
+    border-top-right-radius:75px;
 }
 
 .fpetal6, .fpetal7 {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
 }
 
 .fpetal6 {
-    top: 79px;
-    left: 35px;
+    top: -90px;
+    left: 25px;
+    z-index: 3;
     transform: rotate(-45deg);
-    box-shadow: inset -1px -1px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    box-shadow: inset 0px -2px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
 }
 
 .fpetal7 {
-    top: 64px;
-    left: 21px;
+    top: -132px;
+    left: 7px;
+    z-index: 1;
     transform: rotate(135deg);
-    box-shadow: inset 0px -4px 1px #fa8c64;
+    box-shadow: inset 3px -4px 1px #fa8c64,  inset 5px 2px 1px #fa8c64;;
 }
 
 .fpetal8 {
-    top: 63px;
-    left: 35px;
+    top: -153px;
+    left: 21px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     transform: rotate(-135deg);
+    z-index: 1;
     box-shadow: inset 2px -1px 1px 1px #c6685f, inset -2px -1px 1px 1px #fa8c64;
 }
 /**********************/
@@ -273,7 +853,9 @@
 /***********************/
 /* vvvvv Shadows vvvvv */
 /***********************/
-.shadow, .shadow1, .shadow2, .shadow3, .shadow4, .shadow5 {
+.shadow, .shadow1, .shadow2, .shadow3, .shadow4, .shadow5, .shadow6, .shadow7,
+.shadow8, .shadow9, .shadow10, .shadow11, .shadow12, .shadow13, .shadow14, .shadow15,
+.shadow16 {
     background-color: darkgreen;
     z-index: 0;
     opacity: .4;
@@ -284,25 +866,32 @@
 .shadow {
     width: 160px;
     height:4px;
-    left: 388px;
-    top: 480px;
+    left: 389px;
+    top: 481px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
 }
 
 .shadow1 {
     width: 60px;
     height:2px;
-    left: 935px;
-    top: 632px;
+    left: 945px;
+    top: 673px;
     animation-name:flowerShadow;
 }
 
 .shadow2 {
     width: 360px;
     height:5px;
-    left: 1150px;
-    top: 598px;
+    left: 1180px;
+    top: 596px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
     animation-delay: .375s;
     animation-name:treeShadow;
+    z-index: -2;
 }
 
 .shadow3 {
@@ -310,33 +899,180 @@
     height:2px;
     left: 1100px;
     top: 596px;
+    z-index: -2; 
 }
 
 .shadow4 {
-    width: 60px;
+    width: 47px;
     height:1px;
     left: 1250px;
     top: 515px;
+    background-color: rgb(0, 74, 0);
 }
 
 .shadow5 {
+    width: 160px;
+    height:3px;
+    left: 1162px;
+    top: 738px;
+}
+
+.shadow6 {
     width: 80px;
+    height:2px;
+    left: 1350px;
+    top: 834px;
+    position: absolute;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.shadow7{
+    width: 250px;
+    height:3px;
+    left: 1020px;
+    top: 1063px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.shadow8{
+    width: 45px;
+    height:2px;
+    left: 1500px;
+    top: 689px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.shadow9{
+    width: 150px;
+    height:3px;
+    left: 2135px;
+    top: 828px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.shadow10{
+    width: 50px;
+    height:2px;
+    left: 1750px;
+    top: 614px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.shadow11{
+    width: 50px;
+    height:2px;
+    left: 1790px;
+    top: 609px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow12{
+    width: 25px;
     height:1px;
-    left: 800px;
-    top: 475px;
+    left: 1820px;
+    top: 480px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow13 {
+    width: 115px;
+    height:3px;
+    left: 1569px;
+    top: 588px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow14 {
+    width: 110px;
+    height:3px;
+    left: 1252px;
+    top: 839px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow15 {
+    width: 70px;
+    height:3px;
+    left: 852px;
+    top: 539px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow16 {
+    width: 53px;
+    height:3px;
+    left: 1370px;
+    top: 449px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+}
+
+.shadow17 {
+    width: 43px;
+    height:3px;
+    left: 1702px;
+    top: 468px;
+    position: absolute;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: -2;
+    background-color: darkgreen;
 }
 /***********************/
 /* ^^^^^ Shadows ^^^^^ */
 /***********************/
 
-/*****************************/
-/* vvvvv Mobile Styles vvvvv */
-/*****************************/
 @media only screen and (max-width: 3300px) and (min-height: 1500px)  {
     /* put your css styles in here */
     #grass {
         top: 1250px;
-        height: 53.5%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    #ground {
+        overflow-y: hidden;
+    }
+    #root {
+        overflow-y: hidden;
     }
 
     body{
@@ -356,13 +1092,17 @@
     }
 
     .rock1 {
-        top: 1480px;
+        top: 1460px;
         transform: scale(1.5);
-        box-shadow: inset -13px 0px 3px dimgray, inset 13px 0 1px #858585;
+        box-shadow: inset -13px 0px 3px dimgray, inset 13px 0 3px #858585;
     }
 
     .horizonBush0, .horizonBush1, .horizonBush2, .horizonBush3, .horizonBush4, .horizonBush5, .horizonBush6, .horizonBush7, .horizonBush9, .horizonBush10 {
-        top: 1200px;
+        top: 1225px;
+    }
+
+    .horizonBush10{
+        left: 1300px;
     }
 
     .horizonBush8 {
@@ -370,9 +1110,45 @@
         left: 1400px;
     }
 
+    .rock2 {
+        top: 1375px;
+        left: 1250px;
+    }
+
     .rock3 {
         top: 1675px;
         left: 1250px;
+    }
+
+    .rock4 {
+        top: 1700px;
+        left: 1400px;
+    }
+
+    .rock5 {
+        top: 1800px;
+        left: 1600px;
+    }
+
+    .rock6 {
+        top: 1350px;
+        left: 900px;
+    }
+
+    .rock7 {
+        top: 1350px;
+        left: 1600px;
+    }
+
+    .rock8 {
+        top: 2750px;
+        left: 950px;
+        box-shadow: inset -20px 0px 3px dimgray, inset 8px 0 3px #858585;
+    }
+
+    .rock9 {
+        top: 2410px;
+        left: 900px;
     }
 
     .shadow1 {
@@ -391,7 +1167,138 @@
     }
 
     .shadow4 {
-        top: 1695px;
-        left: 1275px;
+        top: 1693px;
+        left: 1251px;
     }
+
+    .shadow5 {
+        top: 1850px;
+        left: 1300px;
+    }
+
+    .shadow6 {
+        top: 1690px;
+        left: 1270px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow7 {
+        top: 2840px;
+        left: 950px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow8 {
+        top: 1389px;
+        left: 1500px;
+        z-index: -1;
+        background-color: rgb(0, 61, 0);
+    }
+
+    .shadow9 {
+        top: 1735px;
+        left: 1400px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow10 {
+        top: 1399px;
+        left: 1260px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow11 {
+        top: 1880px;
+        left: 1500px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow12 {
+        top: 1355px;
+        left: 1600px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow13 {
+        top: 2448px;
+        left: 900px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow14 {
+        top: 1578px;
+        left: 900px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow15 {
+        top: 1338px;
+        left: 1001px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow16 {
+        top: 1864px;
+        left: 901px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow17{
+        top: 1639px;
+        left: 1601px;
+        width: 75px;
+        background-color: rgb(0, 78, 0);
+    }
+
+    .shadow18 {
+        position: absolute;
+        top: 3139px;
+        left: 1251px;
+        width: 305px;
+        height: 4px;
+        background-color: rgb(0, 78, 0);
+        opacity: 0.9;
+    }
+
+    .bush1{
+        top: 2340px;
+        left: 840px;
+        z-index: -2;
+        height: 100px;
+    }
+
+    .bush2{
+        top: 1630px;
+        left: 1260px;
+        z-index: -2;
+    }
+
+    .bush3{
+        top: 1600px;
+        left: 1600px;
+    }
+    .bush4{
+        top: 1300px;
+        left: 1000px;
+    }
+    .bush5{
+        top: 2900px;
+        left: 1250px;
+    }
+    .bush6{
+        top: 1500px;
+        left: 900px;
+    }
+
+    .bush7{
+        top: 1350px;
+        left: 1500px;
+    }
+
+    .bush8 {
+        top: 1850px;
+        left: 1500px;
+    }
+    
+
 }

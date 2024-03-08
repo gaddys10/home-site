@@ -5,21 +5,29 @@
 .shark1bodyo{
     position: absolute;
 }
+
+.shark1bodya, .shark1bodyc{
+    background-color: floralwhite;
+}
+
+.shark1bodyb, .shark1bodyd {
+    background-color: mediumpurple;
+}
 .shark1{
     width: 255px;
     height: 120px;
-    left: 100px;
-    top:150px;
+    left: 1400px;
+    top: 150px;
     animation-name: float3;
     animation-duration: 200s;
-    animation-iteration-count: 100;
+    animation-iteration-count: infinite;
     transform: rotate(-9deg);
-    z-index: -2;
+    z-index: -3;
     opacity: 1;
+    padding-right: 600px;
 }/* shade: #7c5eba */
 
 .shark1bodya{
-    background-color: floralwhite;
     height: 10px;
     width: 10px;
     top: 85px;
@@ -30,7 +38,6 @@
 
 }
 .shark1bodyb{
-    background-color: mediumpurple;
     height: 13px;
     width: 80px;
     top: 80px;
@@ -40,7 +47,6 @@
     transform: rotate(2deg);
 }
 .shark1bodyc{
-    background-color: floralwhite;
     height: 15px;
     width: 34px;
     top: 83px;
@@ -49,8 +55,8 @@
     left: 210px;
     transform: rotate(-3deg);
 }
+
 .shark1bodyd{
-    background-color: mediumpurple;
     width: 95px;
     height: 6px;
     border-top-right-radius: 5px;
@@ -59,6 +65,7 @@
     left: 149px;
     z-index: 2;
 }
+
 .shark1bodye{
     border-bottom: 15px solid mediumpurple;
     border-left: 2px solid transparent;
@@ -68,6 +75,7 @@
     left: 155px;
     top: 65px;
 }
+
 .shark1bodyf{
     background-color: mediumpurple;
     height: 5;
@@ -75,6 +83,7 @@
     left: 173px;
     top: 65px;
     transform: rotate(2deg);
+    
     border-top-right-radius: 50px;
 }
 .shark1bodyg{
@@ -88,8 +97,8 @@
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 50px;
     z-index: 1;
-    
 }
+
 .shark1bodyh{
     width: 0;
     height: 0;
@@ -100,6 +109,7 @@
     top: 50px;
     z-index:1;
 }
+
 .shark1bodyi {
     background-color: floralwhite;
     height: 2;
@@ -110,6 +120,20 @@
     border-top-right-radius: 50px;
     z-index: 3;
 }
+
+.shark1bodyj { 
+    height: 33px;
+    width: 14px;
+    background-color: mediumpurple;
+    /* margin-left: 150px;
+    margin-top: 62px; */
+    left: 143px;
+    top: 62px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    transform: rotate(-95deg);
+}
+
 .shark1bodyk { 
     width: 0;
     height: 25px;
@@ -142,6 +166,7 @@
     top: 90px;
     z-index: 1;
 }
+
 .shark1bodyn {
     width: 0;
     height: 0;
@@ -152,6 +177,7 @@
     top: 96px;
     transform:rotate(29deg);
 }
+
 .shark1bodyo {
     width: 0;
     height: 0;
@@ -162,6 +188,7 @@
     top: 102px;
     transform:rotate(49deg);
 }
+
 .shark1bodyp {
     width: 55px;
     height: 5;
@@ -175,7 +202,7 @@
 }
 
 .shark1bodyq {
-    width: 1px;
+    width: 2px;
     height: 20px;;
     background-color: #7c5eba;
     left: 134px;
@@ -183,6 +210,8 @@
     position: absolute;
     border-bottom-left-radius: 100px;
     border-top-left-radius:100px;
+    border-top-right-radius:100px;
+    z-index: -1;
     transform:rotate(0deg)
 }
 
@@ -200,13 +229,13 @@
 .shark1bodys {
     width: 0;
     height: 0;
-    border-bottom: 12px solid #7c5eba;
-    border-right: 10px solid transparent;
+    border-bottom: 13px solid #7c5eba;
+    border-right: 11px solid transparent;
     border-bottom-right-radius:0px;
-    left: 135px;
+    left: 134.5px;
     top: 65px;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 
 .shark1bodyt {
@@ -232,6 +261,7 @@
     top:95px;
     left: 226px;
 }
+
 .shark1bodyv {
     width: 0;
     height: 0;
@@ -243,6 +273,10 @@
     position: absolute;
     z-index:0;
     transform:rotate(-19deg);
+}
+
+.shark1bodyw {
+    position: absolute;
 }
 
 .shark1bodyy{

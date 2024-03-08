@@ -40,25 +40,25 @@
 
 @keyframes rightArmBreathing{
     0%{
-        top: 357px;
+        top: 358px;
     }
     50%{
-        top: 356px;
+        top: 357px;
     }
     100%{
-        top: 357px;
+        top: 358px;
     }
 }
 
 @keyframes rightForearmBreathing{
     0%{
-        top: 343.46px;
+        top: 344px;
     }
     50%{
-        top: 342.46px;
+        top: 343px;
     }
     100%{
-        top: 343.46px;
+        top: 344px;
     }
 }
 
@@ -218,97 +218,38 @@
     }
 }
 
-@keyframes float{
-        0% {
-            left: 40vw;
-        }
-        25%{}
-        50%{}
-        75%{}
-        100%{
-            left: 110vw;
-        }
-}
-
-@keyframes float2{
-        0% {
-            left: 33vw;
-        }
-        25%{}
-        50%{}
-        75%{}
-        100%{
-            left: 120vw;
-        }
-}
-
 @keyframes float3{
         0% {
-            left:25vw;
+            left:15vw;
             top: 80px;
         }
-        25%{}
-        50%{
-    }
-        75%{
-            
-    }
         100%{
             left: 110vw;
             top: 0px;
         }
 }
 
-@keyframes float4{
-        0% {
-            left: 100vw;
-            
-        }
-        25%{}
-        50%{
-    }
-        75%{
-            
-    }
-        100%{
-            left: 30px;
-            
-        }
-}
-
-@keyframes handWave{
+@keyframes float4shadow{
     0% {
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-    50%{
-        -webkit-transform: rotate(115deg);
-        -moz-transform: rotate(115deg);
-        -o-transform: rotate(115deg);
-        -ms-transform: rotate(1115deg);
-        transform: rotate(115deg);
-        left: 458px;
+        left: calc(100vw + 150px);
     }
     100%{
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);}
+        left: 180px;
+    }
 }
 
-@keyframes flutter{
+@keyframes flutterShadow{
     0%{
-        top:  200px;
+        height:  5px;
+        width: 17px;
     }
     50%{
-        top: 215px;
+        height: 6px;
+        width: 20px;
     }
     100%{
-        top: 200px;
+        height: 5px;
+        width: 17px;
     }
 }
 
@@ -328,8 +269,7 @@
         z-index:1;
         transform: rotate(45deg);
     }
-    25%{}
-    50%{
+    50% {
         width: 0;
         height: 0;
         border-bottom: 8px solid darkred;
@@ -342,9 +282,9 @@
         top: 14px;
         position: absolute;
         z-index:1;
-        transform: rotate(-65deg);}
-    75%{}
-    100%{
+        transform: rotate(-65deg);
+    }
+    100% {
         width: 0;
         height: 0;
         border-bottom: 8px solid darkred;
@@ -363,7 +303,7 @@
 /*^ Animations ^*/
 
 html {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -383,7 +323,7 @@ body {
 #sky {
     background: linear-gradient(to bottom, rgba(67,160,165,1) 0%,rgba(83,199,204,1) 100%);
     height: 60%;
-    width: 100vw;
+    width: 100%;
     z-index: -6;
 }
 
@@ -409,7 +349,6 @@ body {
 
 #treeTop1, #treeTop2, #treeTop3, #treeTop4, #treeTop5, #treeTop6 {
     background-color: darkgreen;
-
 }
 
 #react {
@@ -422,8 +361,9 @@ body {
 #tree {
     height: 500px;
     width: 350px;
-    left: 1000px;
+    left: 1030px;
     top: 100px;
+    z-index: -2;
 }
 
 #stem {
@@ -431,7 +371,7 @@ body {
     height: 300px;
     left: 150px;
     top: 200px;
-    box-shadow: inset 3px 0px 1px #ab5e27;
+    box-shadow: inset 3px 0px 3px #ab5e27;
 }
 
 #stemShadow {
@@ -440,7 +380,7 @@ body {
     background-color: #562a0b;
     left: 190px;
     top: 200px;
-    box-shadow: inset -2px 1px 1px 1px #3d1e09;
+    box-shadow: inset -2px 1px 3px 1px #3d1e09;
 }
 
 #stemHole {
@@ -450,15 +390,16 @@ body {
     border-radius: 100px;
     top: 300px;
     left: 160px;
-    box-shadow: -1px -1px 1px #562a0b;
+    box-shadow: -1px -1px 3px #562a0b;
 }
+
 #stemBranch {
     height: 80px;
     width: 10px;
     transform: rotate(-40deg);
     top: 190px;
     left: 130px;
-    box-shadow: inset -1px 1px 1px 1px #61300e;   
+    box-shadow: inset -1px 1px 3px 1px #61300e;   
 }
 
 #treeTop1 {
@@ -469,7 +410,7 @@ body {
     animation: treeRustle1 4s infinite;
     animation-delay: .5s;
     border-radius: 100px;
-    box-shadow: inset -5px -5px 0px 1px #003300, inset 1px 1px 0 1px #027002;
+    box-shadow: inset -15px -20px 3px 1px #003300, inset 1px 1px 3px 1px #027002;
 }
 
 #treeTop2 {
@@ -481,8 +422,9 @@ body {
     animation: treeRustle2 4s infinite;
     border-radius: 100px;
     z-index: 2;
-    box-shadow: inset -3px -3px 0px 1px #003300;
+    box-shadow: inset -6px -9px 3px 1px #003300;
 }
+
 #treeTop3{
     height: 220px;
     width: 220px;
@@ -491,7 +433,7 @@ body {
     border-radius: 100px;
     animation-delay: .5s;
     animation: treeRustle 4s infinite;
-    box-shadow: inset -10px -15px 0px 1px #003300, inset 5px 5px 0 1px #027002;
+    box-shadow: inset -10px -15px 3px 1px #003300, inset 20px 13px 5px 1px #027002;
 }
 
 #treeTop4 {
@@ -502,7 +444,7 @@ body {
     animation-delay: .25s;
     animation: treeRustle3 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -2px -5px 0px 1px #003300, inset 2px 5px 0 1px #027002;
+    box-shadow: inset -10px -6px 3px 1px #003300, inset 2px 5px 3px 1px #027002;
 }
 
 #treeTop5{
@@ -513,7 +455,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle5 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -8px -9px 0px 1px #003300, inset 2px 2px 0 1px #027002;
+    box-shadow: inset -8px -7px 3px 1px #003300, inset 10px 8px 3px 1px #027002;
 }
 
 #treeTop6 {
@@ -524,7 +466,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle6 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -1px -5px 0px 1px #003300;
+    box-shadow: inset -10px -15px 3px 1px #003300;
 }
 
 #apple1, #apple2, #apple3 {
@@ -541,7 +483,7 @@ body {
     animation-name:appleRustle;
     top: 100px;
     left: 100px;
-    box-shadow: inset -2px -2px 1px 1px darkred, inset 6px 7px 1px 1px #fa3737;
+    box-shadow: inset -2px -2px 3px 1px darkred, inset 6px 7px 1px 1px #fa3737;
 }
 
 #apple2 {
@@ -549,7 +491,7 @@ body {
     animation-name: appleRustle1;
     top: 200px;
     left: 110px;
-    box-shadow: inset -4px -4px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
+    box-shadow: inset -4px -4px 3px 1px darkred, inset 2px 2px 0 1px #fa3737;
 }
 
 #apple3{
@@ -557,9 +499,32 @@ body {
     animation-name: appleRustle2;
     top: 180px;
     left: 230px;
-    box-shadow: inset -4px -5px 1px 1px darkred, inset 2px 2px 0 1px #fa3737;
+    box-shadow: inset -4px -5px 3px 1px darkred, inset 2px 2px 0 1px #fa3737;
 }
 /*^ Tree ^*/
+
+
+
+@keyframes float4 {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 30px;
+    }
+}
+
+@keyframes flutter {
+    0%{
+        top:  200px;
+    }
+    50%{
+        top: 215px;
+    }
+    100%{
+        top: 200px;
+    }
+}
 /*v Bird v*/
 .bird {
     height: 50px;
@@ -569,7 +534,20 @@ body {
     /*flip the bird*/
     transform:scaleX(-1);
     animation: float4 19s infinite, flutter 1s infinite;
-    z-index: -1;
+    z-index: -3;
+}
+
+.birdShadow{
+    position: absolute; 
+    animation: float4shadow 19s infinite, flutterShadow 1s infinite;
+    width: 25px;
+    height: 7px;
+    top: 530px;
+    left: 1550px;
+    background-color: darkgreen;
+    border-radius: 90px;
+    z-index: -2;
+    opacity: .4;
 }
 
 .birdpart1, .birdpart2, .birdpart3, .birdpart4, .birdpart5 {
@@ -616,7 +594,7 @@ body {
     top: 11px;
     transform: rotate(-5deg);
     border-bottom-left-radius: 20px;
-    box-shadow: inset 1px -1px 1px 1px darkred;
+    box-shadow: inset 1px -1px 3px 1px darkred;
 }
 
 .birdpart6 {
@@ -663,63 +641,118 @@ body {
 }
 /*^ Bird ^*/
 
-.cloud1, .cloud2, .cloud3, .cloud4, .cloud5, .cloud6 {
-    animation-iteration-count: 100;
+.cloud1, .cloud2, .cloud3, .cloud4, .cloud5, .cloud6, .cloud7, .cloud8 {
+    animation-iteration-count: infinite;
     opacity: 1;
     z-index: -2;
+}
+
+@keyframes float{
+    0% {
+        left: 25vw;
+    }
+    100%{
+        left: 105vw;
+    }
 }
 
 .cloud1 {
     height: 80px;
     width: 55px;
-    left: 40vw;
+    left: 0vw;
     top: 200px;
     animation-name: float;
-    animation-duration: 175s;
+    animation-duration: 195s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float2{
+    0% {
+        left: 20vw;
+    }
+    100%{
+        left: 104vw;
+    }
 }
 
 .cloud2 {
     height: 160px;
     width: 110px;
-    left: 30vw;
+    left: 100vw;
     animation-name:float2;
-    animation-duration: 105s;
+    animation-duration: 130s;
+    animation-delay: 40s;
+    animation-iteration-count: infinite;
+
 }
 
 .cloud3 {
     height:160px;
     width: 110px;
-    left: 20vw;
+    left: 40vw;
     top: 100px;
     animation-name:float2;
     animation-duration: 90s;
+    animation-iteration-count: infinite;
 }
 
 .cloud4 {
     height:160px;
     width: 110px;
-    left: 50px;
+    left: 150px;
     top: 270px;
     animation-name:float2;
-    animation-duration: 150s;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
 }
 
 .cloud5 {
     height:160px;
     width: 110px;
     top: 200px;
-    left: -250px;
+    /* left: -250px; */
     animation-name:float2;
     animation-duration: 111s;
+    animation-iteration-count: infinite;
 }
 
 .cloud6 {
     height:160px;
     width: 110px;
-    left: -250px;
+    /* left: -250px; */
     top: 110px;
     animation-name:float2;
-    animation-duration: 200s;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    z-index: -3;
+}
+
+.cloud7{
+    background-color: white;
+    border-radius: 20px;
+    height: 10px;
+    width: 40px;
+    top: 70px;
+    position: absolute;
+    animation-duration: 160s;
+    animation-name:float2;
+    animation-iteration-count: infinite;
+    box-shadow:  inset -0px -1px 3px  #ddd;
+}
+
+.cloud8{
+    background-color: white;
+    border-radius: 20px;
+    height: 7px;
+    width: 20px;
+    top: 350px;
+    position: absolute;
+    z-index: -3;
+    animation-duration: 230s;
+    animation-name:float2;
+    animation-iteration-count: infinite;
+    box-shadow:  inset -0px -1px 3px  #ddd;
 }
 
 .puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a, .puff3a, .puff4a {
@@ -741,7 +774,7 @@ body {
     height: 5px;
     width: 50px;
     border-radius: 50px;
-    box-shadow: inset -1px -2px 0px  #ddd;
+    box-shadow: inset -1px -2px 3px  #ddd;
 }
 
 .puff2 {
@@ -770,7 +803,7 @@ body {
     height: 10px;
     width: 100px;
     border-radius: 50px;
-    box-shadow: inset -1px -2px 0px  #ddd;
+    box-shadow: inset -1px -4px 3px  #ddd;
 }
 
 .puff2a {
@@ -835,6 +868,143 @@ body {
     border-color: white;
     box-shadow: 3px 3px 15px #000;
 }
+
+.portfolioClose{
+    position: relative;
+    float: right;
+    right: 9px;
+    top: 0px;
+    font-size: 38px;
+    background-color: red;
+    height: 55px;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: inset -2px -2px 0px 0px darkred;
+    padding-top: 7px;
+    cursor: pointer;
+    border: 2px solid #313131;
+}
+
+.portfolioContainer{
+    position: absolute;
+    width: 65vw;
+    height: 75vh;
+    background-color: #FCF5E5;
+    left: 18vw;
+    top: 10vh;
+    z-index: 100;
+    box-shadow: 15px 15px 3px rgb(0 0 0 / 10%);
+    border: 2px solid #313131;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.portfolioHeader {
+    height: 75px;
+    margin: 0;
+    padding-top: 10px;
+    background-color: #1666e5;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    font-family: 'PeanutButter', sans-serif;
+    border-bottom: 2px solid #313131;
+}
+
+.portfolioBody{
+    width: 100%;
+    height: calc(100% - 87px);
+    padding-top: 10%;
+}
+
+.portfolioHeader p {
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+}
+
+.portfolioTitle{
+    font-size: 55px;
+    /* position: absolute; */
+    text-align: center;
+    left: 44%;
+    padding-left: 4%;
+    top: 1%;
+    /* text-align: center; */
+}
+
+.portfolio-body-box{
+    /* display: inline; */
+    position: absolute;
+    height: 35%;
+    width: 15%;
+    /* background-color: blue; */
+    border: 15px solid goldenrod;
+    border-radius: 10%;
+    box-shadow: 5px 5px 2px rgb(179, 136, 26);
+    background-color: #FFF;
+    background-color: rgb(241, 224, 181);
+    top: 33%;
+    cursor: pointer;
+
+}
+
+.portfolio-body-box p{
+    /* margin-top: 55%; */
+    text-align: center;
+    font-family: 'PeanutButter', sans-serif;
+    font-size: 60px;
+    font-size: 300%;
+}
+
+.art-box {
+    left: 5%;
+}
+
+.art-box p {
+    position: absolute;
+    margin-top: 53%;
+    left: 38%;
+    font-size: 220%;
+    text-align: center;
+    /* font-size: 80px; */
+}
+
+.mock-box {
+    left: 28.5%;
+ }
+
+.mock-box p {
+    margin-top: 53%;
+    font-size: 220%;
+ }
+
+.prototype-box {
+    right: 28.5%;
+}
+
+.prototype-box{
+    margin-left: 0;
+    margin-right: 0;
+    overflow-wrap: break-word;
+}
+
+.prototype-box p{
+    margin-top: 53%;
+    font-size: 220%;
+}
+
+.graphic-box {
+    right: 5%;
+ }
+
+.graphic-box p{
+    margin-top: 53%;
+    font-size: 230%;
+ }
 
 #portfolioBox {
     text-decoration: none;
@@ -948,6 +1118,22 @@ body {
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {
+    @keyframes flutter{
+        0%{
+            top:  900px;
+        }
+        50%{
+            top: 915px;
+        }
+        100%{
+            top: 900px;
+        }
+    }
+    
+    html {
+        overflow-y: hidden;
+    }
+
     /* put your css styles in here */
     #tree {
         transform: scale(1.5);
@@ -959,4 +1145,41 @@ body {
     #folio {
         transform: scale(2);
     }
+
+    body{
+        overflow-y: hidden;
+    }
+
+    .bird {
+
+        left: 1990px;
+        top:  900px;
+    }
+    
+    .birdShadow{
+
+        top: 1330px;
+        z-index: 0;
+
+    }
+
+    .cloud3{
+        top: 1100px
+    }
+
+    .cloud4{
+        top: 800px;
+    }
+
+    .cloud6{
+        top: 420px;
+    }
+
+    .cloud7{
+        top: 1000px;
+    }
+    .cloud5{
+        top: 720px;
+    }
+    
 }

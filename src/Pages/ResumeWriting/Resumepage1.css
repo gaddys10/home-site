@@ -132,8 +132,8 @@ body {
     width: 10px;
     left: 75px;
     top: 16px;
-    border: solid 5px #000;
-    border-color: #000 transparent transparent transparent;
+    border: solid 5px #212427;
+    border-color: #212427 transparent transparent transparent;
     border-radius: 50%/100px 100px 0 0;
 }
 

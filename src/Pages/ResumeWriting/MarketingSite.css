@@ -90,11 +90,12 @@ src: url("FUTRFW.TTF");
     
     margin-bottom: 0px;
     opacity: 0;
-        animation-name: appear;
-        animation-duration: 4s;
-        animation-delay: .5s;
-        animation-fill-mode: forwards;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 }
+
 #subtitle{
     margin-top: 0px;
     font-family: 'Helvetica', sans-serif;
@@ -196,8 +197,8 @@ src: url("FUTRFW.TTF");
         left: 75px;
         position: relative;
         top: 16px;
-        border: solid 5px #000;
-        border-color: #000 transparent transparent transparent;
+        border: solid 5px #212427;
+        border-color: #212427 transparent transparent transparent;
         border-radius: 50%/100px 100px 0 0;
     }
     #sessionsText{

@@ -22,7 +22,7 @@ class Character extends React.Component {
     }
     
     componentDidMount(){
-        console.log(this.isSafari());
+        // console.log(this.isSafari());
     }
 
     render(){

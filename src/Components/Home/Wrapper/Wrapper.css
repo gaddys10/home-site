@@ -3,6 +3,12 @@
     src: url("PeanutButter.ttf");
 }
 
+@font-face {
+    font-family: "Rightwood";
+    src: url("Rightwood.ttf");
+}
+
+
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
@@ -24,11 +30,11 @@
     line-height: 200%;
     list-style-type: circle;
 }
-.divida{
-    width: 500px;
-    height: 40px;
+.divida {
+    width: 300px;
+    height: 20px;
     stroke: black 3px;
-    margin-left: 140px;
+    margin-left: 250px;
 
 }
 
@@ -78,7 +84,7 @@
 
 .summary-info {
     margin-bottom: 25px;
-    font-family: 'PeanutButter', sans-serif;
+    font-family: 'Rightwood', sans-serif;
     margin-left: 20px;
 }
 
@@ -106,7 +112,7 @@
 .educationTitle {
     float: left;
     width: 325px;
-    font-family: 'PeanutButter', sans-serif;
+    font-family: 'Rightwood', sans-serif;
 }
 
 .experience-title {
@@ -115,7 +121,7 @@
     margin-bottom: 10px;
     margin-top: 30px;
     font-weight: bold;
-    font-family: 'PeanutButter', sans-serif;
+    font-family: 'Rightwood', sans-serif;
     margin-left: 20px;
 }
 
@@ -152,10 +158,9 @@ hr {
 
 .name-position {
     margin-left: 20px;
-    font-family: "PeanutButter", sans-serif;
-    font-size: 60px;
+    font-family: 'Rightwood', sans-serif;
+    font-size: 48px;
 }
-
 
 .skill-cat {
     margin-left: 40px;
@@ -182,6 +187,7 @@ hr {
     z-index: 4;
     background-color: #FCF5E5;
 }
+
 
 .wrapper::-webkit-scrollbar {
     width: 6px;
@@ -213,10 +219,14 @@ hr {
     border-top-right-radius: 7px;
     margin: 2em auto 3em;
     padding: 1em 2em;
-    left: 815px;
+    left: 820px;
     width: 100px;
     font-size: 16px !important;
     height: 75px;
+
+
+
+    /* z-index: 4 */
 }
 
 .ribbon {
@@ -254,7 +264,6 @@ hr {
     content:"";
     position: absolute;
     display: block;
-    z-index: -2;
     border: 1.2em solid #0e49a5;
     border-right-color: transparent;
     bottom: -.71em;
@@ -270,12 +279,15 @@ hr {
     animation: ribbonWave 4s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
+    z-index: -1;
+    
 }
 
 .ribbon:before, .ribbon1:before, .ribbon2:before, .ribbon3:before {
     left: -2em;
     border-right-width: 1.2em;
     border-color: transparent;
+    /* z-index: 4;  */
 }
 
 .ribbon1:after{
@@ -283,7 +295,7 @@ hr {
 }
 
 .ribbon2:after {
-    z-index: -1;
+    /* z-index: 4; */
     animation-delay: 5s;
 }
 
@@ -293,11 +305,13 @@ hr {
 
 .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
     position: absolute;
-    top: 35px;
+    top: 30px;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 38px;
     color: white;
-    font-family: 'PeanutButter', sans-serif;
+    font-family: 'Rightwood', sans-serif;
+    /* z-index: 0; */
+    margin-left: 10px;
 }
 
 .ribbon a {
@@ -314,7 +328,7 @@ hr {
 
 .ribbon3 a {
     left: 25px;
-    top: 15px;
+    top: 10px;
 }
 
 .ribbon a:visited, .ribbon2 a:visited {
@@ -324,49 +338,48 @@ hr {
 
 @keyframes ribbonFoldWave {
     0%{
-        left: 897px;
-        width: 72px;
+        left: 902px;
+        width: 75px;
     }
     50%{
-        left: 905px;
-        width: 64px;
+        left: 910px;
+        width: 68px;
     }
     100%{
-        left: 897px;
-        width: 72px;
+        left: 903px;
+        width: 75px;
 
     }
 }
 
 .ribbonfold, .ribbonfold1, .ribbonfold2, .ribbonfold3 {
     position: absolute;
-    border: 5.5px solid #0a3982;
+    border: 4px solid #0a3982;
     border-bottom-color: transparent;
     border-right-color: transparent;
     z-index: 0;
-    width: 72px;
-    left: 897px;
+    width: 75px;
+    left: 902px;
     animation: ribbonFoldWave 4s infinite;
     animation-delay: 4s;
 }
 
 .ribbonfold {
-    top: 139px;
+    top: 140px;
 }
 
 .ribbonfold1 {
-    border-left-width:7px;
-    top: 264px;
+    top: 263px;
     animation-delay: 4.5s;
 }
 
 .ribbonfold2 {
-    top: 389px;
+    top: 390px;
     animation-delay: 5s;
 }
 
 .ribbonfold3 {
-    top: 514px;
+    top: 515px;
     animation-delay: 5.5s;
 }
 /*******************************/

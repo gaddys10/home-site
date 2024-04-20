@@ -10,11 +10,14 @@ import Shark from '../../Components/Home/Shark/Shark';
 import Wrapper from '../../Components/Home/Wrapper/Wrapper';
 import Flower from '../../Components/Home/Flower/Flower';
 import Bird from '../../Components/Home/Bird/Bird';
-import logo from './index-images/ResumeThumbnail.png';
-import photo from './index-images/PhotoThumbnail.png';
-import old from './index-images/OldThumbnail.png';
-import london from './index-images/LunchAndLearn_flyer2-Recovered.png'
-import london2 from './index-images/Londonflyerplustext.png';
+// import logo from './index-images/ResumeThumbnail.png';
+// import photo from './index-images/PhotoThumbnail.png';
+// import old from './index-images/OldThumbnail.png';
+// import london from './index-images/LunchAndLearn_flyer2-Recovered.png'
+// import london2 from './index-images/Londonflyerplustext.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLeftLong } from '@fortawesome/free-solid-svg-icons';
+
 
 class Home extends React.Component {
     constructor(props){
@@ -24,23 +27,42 @@ class Home extends React.Component {
             showArt: false,
             showMocks: false,
             showPrototypes: false,
-            showGraphics: false
+            showGraphics: false,
+            showGraphicCategories: false,
+            showPrototypeCategories: false,
+            showLogos: false,
+            showResponsive: false,
+            showFeature: false,
+            showIPad: false
         }
-        this.togglePortfolio = this.togglePortfolio.bind(this);
+        this.showPortfolio = this.showPortfolio.bind(this);
         this.closePortfolio = this.closePortfolio.bind(this);
-        this.toggleArt = this.toggleArt.bind(this);
+
+        this.showArt = this.showArt.bind(this);
         this.turnOffArt = this.turnOffArt.bind(this);
-        this.toggleMocks = this.toggleMocks.bind(this);
+
+        this.showMocks = this.showMocks.bind(this);
         this.turnOffMocks = this.turnOffMocks.bind(this);
-        this.togglePrototypes = this.togglePrototypes.bind(this);
+
+        this.turnOnPrototypes = this.turnOnPrototypes.bind(this);
         this.turnOffPrototypes = this.turnOffPrototypes.bind(this);
-        this.toggleGraphics = this.toggleGraphics.bind(this);
+        this.turnOnPrototypeCategories = this.turnOnPrototypeCategories.bind(this);
+        this.turnOnFeature = this.turnOnFeature.bind(this);
+        this.turnOnResponsive = this.turnOnResponsive.bind(this);
+        this.turnOnIPad = this.turnOnIPad.bind(this);
+
+        this.turnOnGraphics = this.turnOnGraphics.bind(this);
         this.turnOffGraphics = this.turnOffGraphics.bind(this);
+        this.turnOffGraphicsCategories = this.turnOffGraphicsCategories.bind(this);
+        this.turnOnGraphicsCategories = this.turnOnGraphicsCategories.bind(this);
+
+        this.turnOnLogos = this.turnOnLogos.bind(this);
+
+        this.turnOffPages = this.turnOffPages.bind(this);
     }
 
-    togglePortfolio(){
+    showPortfolio(){
         this.setState(prevState => ({ showPortfolio: !prevState.showPortfolio }))
-        console.log(this.state.showPortfolio);
     }
 
     closePortfolio(){
@@ -50,59 +72,492 @@ class Home extends React.Component {
                 showPortfolio: false,
                 showGraphics: false,
                 showMocks: false,
-                showPrototypes: false
+                showPrototypes: false,
+                showGraphicCategories: false,
+                showPrototypeCategories: false,
+                showLogos: false,
+                showResponsive: false,
+                showFeature: false,
+                showIPad: false
             })
         )
     }
 
-    toggleArt(){
-        this.setState(prevState => ({ showArt: !prevState.showArt }))
-        console.log(this.state.showArt);
+    showArt(){
+        this.setState(prevState => ({ showArt: true }))
     }
 
     turnOffArt(){
         this.setState(prevState => ({showArt: false}))
     }
 
-    toggleMocks(){
-        this.setState(prevState => ({ showMocks: !prevState.showMocks }))
-        console.log(this.state.showMocks);
+    showMocks(){
+        this.setState(prevState => ({ showMocks: true }))
     }
 
     turnOffMocks(){
         this.setState(prevState => ({showMocks: false}))
     }
 
-    togglePrototypes(){
-        this.setState(prevState => ({ showPrototypes: !prevState.showPrototypes }))
-        console.log(this.state.showPrototypes);
+
+    turnOnPrototypes(){
+        this.setState(prevState => ({ showPrototypes: true }))
     }
 
     turnOffPrototypes(){
         this.setState(prevState => ({showPrototypes: false}))
     }
 
-    toggleGraphics(){
-        this.setState(prevState => ({ showGraphics: !prevState.showGraphics }))
-        console.log(this.state.showGraphics);
+    turnOnPrototypeCategories(){
+        this.setState(prevState => ({ showPrototypeCategories: true }))
+    }
+
+
+    turnOnResponsive(){
+        this.setState(prevState => ({
+            showResponsive: true,
+            showPrototypeCategories: false
+        }))
+    }
+
+    turnOnFeature(){
+        this.setState(prevState => ({
+            showFeature: true,
+            showPrototypeCategories: false
+        }))
+    }
+
+    turnOnIPad(){
+        this.setState(prevState => ({
+            showIPad: true,
+            showPrototypeCategories: false
+        }))
+    }
+
+
+    turnOffGraphicsCategories(){
+        this.setState(prevState => ({ showPrototypeCategories: false }))
+    }
+
+    turnOnGraphics(){
+        this.setState(prevState => ({ 
+            showGraphicCategories: false,
+            showGraphics: true 
+        }))
     }
 
     turnOffGraphics(){
         this.setState(prevState => ({showGraphics: false}))
     }
 
+    turnOnGraphicsCategories(){
+        this.setState(prevState => (
+            {
+                showGraphicCategories: true,
+                showGraphics: false
+            }
+        ))
+    }
+
+    turnOnLogos(){
+        this.setState(prevState => ({
+            showGraphicCategories: false,
+            showLogos: true
+        }))
+    }
+
+
     turnOffPages(){
-        this.turnOffArt();
-        this.turnOffGraphics();
-        this.turnOffMocks();
-        this.turnOffPrototypes();
+        if(this.state.showGraphics === true || this.state.showLogos === true){
+            this.setState(prevState => ({
+                showGraphics: false,
+                showLogos: false,
+                showGraphicCategories: true
+            }))
+        } else if (this.state.showPrototypes === true ){
+            this.setState(prevState => ({
+                showPrototypes: false,
+                showPrototypeCategories: true
+            }))
+        } else {
+        this.setState(prevState => (
+            {
+                showArt: false,
+                showPortfolio: true,
+                showGraphics: false,
+                showMocks: false,
+                showPrototypes: false, 
+                showGraphicCategories: false,
+                showPrototypeCategories: false,
+                showLogos: false,
+                showResponsive: false,
+                showFeature: false,
+                showIPad: false
+            }))
+        }
+        console.log(this.state);
     }
 
     render() {
         return (
             <>
-
                 <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+                
+                <TheGround />
+                <Tree />
+                <Character />
+                <Shark />
+                <Wrapper />
+                <Flower />
+                <Bird />
+            { 
+                this.state.showPortfolio &&
+                    <div className='portfolioContainer'>
+                        <div className='portfolioHeader'>
+                            {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
+                            <div className='back-box' onClick={this.turnOffPages}><FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} /></div>
+                            <p className='portfolioTitle' >Portfolio</p>
+                            <p className='portfolioClose' onClick={ this.closePortfolio }>X</p>
+                        </div>
+                        <div className='portfolioBody'>
+                            {
+                                //  showPortfolio: false,
+                                //  showArt: false,
+                                //  showMocks: false,
+                                //  showPrototypes: false,
+                                //  showGraphics: false,
+                                //  showGraphicCategories: false,
+                                //  showPrototypeCategories: false,
+                                //  showLogos: false,
+                                //  showResponsive: false,
+                                //  showFeature: false,
+                                //  showIPad: false
+                                // Portfolio splash
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes &&
+                                !this.state.showGraphics &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showFeature &&
+                                !this.state.showIPad &&
+                                    <>
+                                        <div onClick={this.showArt} className='art-box portfolio-body-box'>
+                                            <p className='art-box-title'> Art </p>
+                                        </div>
+
+                                        <div onClick={this.turnOnPrototypeCategories} className='prototype-box portfolio-body-box'>
+                                            <p className='prototype-box-title'> Prototypes </p>
+                                        </div>
+
+                                        <div onClick={this.turnOnGraphicsCategories} className='graphic-box portfolio-body-box'>
+                                            <p className='graphics-box-title'> Graphics </p>
+                                        </div>
+
+                                        <div onClick={this.showMocks} className='mock-box portfolio-body-box'>
+                                            <p className='mock-box-title'> Mock Websites </p>
+                                        </div>
+                                    </>
+                            }
+                            {
+                                //Art Page
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                this.state.showArt && 
+                                    <>
+                                        {/* <div className='imageContainer'> */}
+                                            <img className="portfolio-img" src="/ActualArt/IMG_0339.jpeg" onClick={() => window.open("/ActualArt/IMG_0339.jpeg")} />
+                                            <img className="portfolio-img" src="/ActualArt/IMG_0346.jpeg" onClick={() => window.open("/ActualArt/IMG_0346.jpeg")}/>
+                                            <img className="portfolio-img" src="/ActualArt/IMG_0347.jpeg" onClick={() => window.open("/ActualArt/IMG_0347.jpeg")}/>
+                                        {/* </div> */}
+                                    </>
+                            }
+
+                            {
+                                //Graphic design categories
+                                !this.state.showArt && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes && 
+                                !this.state.showGraphics && 
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                this.state.showGraphicCategories &&
+                                    <>
+                                        <div onClick={this.turnOnGraphics } className='art-box portfolio-body-box'>
+                                            <p className='art-box-title'> Graphic Designs </p>
+                                        </div>
+
+                                        <div onClick={this.turnOnLogos} className='prototype-box portfolio-body-box'>
+                                            <p className='prototype-box-title'> Logo Designs </p>
+                                        </div>
+
+                                    </>
+
+                            }
+                            {
+                                //Graphic Designs page
+                                !this.state.showArt && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes && 
+                                !this.state.showGraphicCategories &&
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                this.state.showGraphics && 
+                                    //Graphic Designs 
+                                    <>
+                                        <p className='logo-subtitle'> Fayetteville State University Class & Event Infographics</p>
+                                        <img className="portfolio-img" src="/ActualDesigns/IMG_0338_fixed.png" onClick={() => window.open("/ActualArt/IMG_0338_fixed.png")} />
+                                        <img className="portfolio-img" src="/ActualDesigns/LunchAndLearn_flyer2-Recovered.png" onClick={() => window.open("/ActualArt/LunchAndLearn_flyer2-Recovered.png")} />
+                                        <img className="portfolio-img" src="/ActualDesigns/Londonflyerplustext.png" onClick={() => window.open("/ActualDesigns/Londonflyerplustext.png")} />
+                                    </>
+                            }
+                            {
+                                //Logo design page
+                                !this.state.showArt && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes && 
+                                !this.state.showGraphicCategories &&
+                                !this.state.showPrototypeCategories &&
+                                this.state.showLogos &&
+                                !this.state.showIPad &&
+                                !this.state.showGraphics && 
+                                !this.state.showResponsive &&
+                                !this.state.showFeature &&
+                                    //Logo Designs 
+                                    <>
+                                    
+                                        <p className='logo-subtitle'>Logo Design for MAG Aerospace's Software Technology Operations Division</p>
+                                        <div className='img-container'>
+                                            <img src="/ActualDesigns/IMG_0348.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0348.jpeg")} />
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualDesigns/IMG_0349.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0349.jpeg")}/>   
+                                        </div>             
+                                        <div className='img-container'>                      
+                                            <img src="/ActualDesigns/IMG_0350.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0350.jpeg")}/>
+                                        </div>
+                                        <div className='img-container'>                      
+                                            <img src="/ActualDesigns/STOPS logo Profile A.png" onClick={() => window.open("/ActualDesigns/STOPS logo Profile A.png")}/>
+                                        </div>
+                                        <div className='img-container'>                      
+                                            <img src="/ActualDesigns/STOPS logo.png" onClick={() => window.open("/ActualDesigns/STOPS logo.png")}/>
+                                        </div>
+                                    </>
+                            }
+                            {
+                                //Mock websites page
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showPrototypes &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponse &&
+                                !this.state.showIPad &&
+                                !this.state.showResponsive &&
+                                this.state.showMocks && 
+                                    <>
+                                    {/* <div className="img-container">
+                                            <img className="portfolio-img" src="/ActualPrototypes/android_pixel_4_XL.png" onClick={() => window.open("/ActualPrototypes/android_pixel_4_XL.png")} />
+                                            <p className='picture-sub'>Google Pixel 4 XL</p>
+                                        </div> */}
+                                        <div className='mock-big-container'>
+                                            <div className='mock-container mock-1'>
+                                                <Link to="/Portfolio/OldHomeSite" >
+                                                    <img className="mock-img" src='/OldThumbnail.png' />
+                                                </Link>
+                                                <p className='mock-sub'>Old Home Site</p>
+                                            </div>
+                                            <div className='mock-container mock-2'>
+                                                <Link to="/Portfolio/MockPhotography" >
+                                                    <img className="mock-img" src='/PhotoThumbnail.png' />
+                                                </Link>
+                                                <p className='mock-sub'>Photography Mock Website</p>
+                                            </div>
+                                            <div className='mock-container mock-3'>
+                                                <Link to="/Portfolio/MockResumeWriting" >
+                                                    <img className="mock-img" src='/ResumeThumbnail.png' />
+                                                </Link>
+                                                <p className='mock-sub sub-3'>Resume Writing Mock Website</p>
+                                            </div>
+                                        </div>
+                                    </>
+                            }
+                            
+                            {
+                                //Prototype Categories
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypes && 
+                                !this.state.showGraphicCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                !this.state.showGraphics && 
+                                this.state.showPrototypeCategories &&
+                                    //Prototypes
+                                    <>
+                                        <div className='art-box portfolio-body-box' onClick={this.turnOnResponsive}>
+                                            <p className='art-box-title'> Responsive Mobile Login </p>
+                                        </div>
+
+                                        {/* <div className='prototype-box portfolio-body-box' onClick={this.turnOnFeature}>
+                                            <p className='prototype-box-title'> Feature Walkthrough </p>
+                                        </div> */}
+
+                                        <div className='graphic-box portfolio-body-box' onClick={this.turnOnIPad}>
+                                            <p className='graphics-box-title'> iPad feature walkthrough </p>
+                                        </div>
+                                    </>
+                            }
+                            {
+                                //Responsive Mobile Design
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showLogos &&
+                                this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                !this.state.showGraphics && 
+                                !this.state.showPrototypes && 
+                                    <>
+                                        <div className="img-container">
+                                            <img className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 4 XL fixed.png" onClick={() => window.open("/ActualPrototypes/android_pixel_4_XL fixed.png")} />
+                                            <p className='picture-sub'>Google Pixel 4 XL</p>
+                                        </div>
+
+                                        <div className="img-container">
+                                            <img className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG")}/>
+                                            <p className='picture-sub'>Google PIxel 5</p>
+                                        </div>
+
+                                        <div className='img-container'>
+                                            <img className="portfolio-img" src="/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png")}/>
+                                            <p className='picture-sub'>iPhone 12 Pro</p>
+                                        </div>
+
+                                        <div className='img-container'>
+                                            <img className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.PNG")}/>
+                                            <p className='picture-sub'>Nexus 6</p>
+                                        </div>
+
+                                        <div className='img-container'>
+                                            <img className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 10 fixed.PNG")}/>
+                                            <p className='picture-sub'>Nexus 10</p>
+                                        </div>
+                                        
+                                    </>
+                            }
+                            {
+                                //feature walkthrough
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                !this.state.showIPad &&
+                                !this.state.showGraphics && 
+                                this.state.showFeature && 
+
+                                    //Responsive Mobile Login Prototypes
+                                    <>
+                                        {/* Split into Responsive Mobile Login, Feature walkthrough, & iPad walkthrough  */}
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/iosDevice fixed.png"/>
+                                        </div>
+                                    </>
+                            }
+                            {
+                                //iPad feature walkthrough
+                                !this.state.showArt && 
+                                !this.state.showGraphics && 
+                                !this.state.showMocks && 
+                                !this.state.showPrototypeCategories &&
+                                !this.state.showGraphicCategories &&
+                                !this.state.showLogos &&
+                                !this.state.showResponsive &&
+                                this.state.showIPad &&
+                                !this.state.showGraphics && 
+                                !this.state.showPrototypes && 
+
+                                    //Responsive Mobile Login Prototypes
+                                    <>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png")}/>
+                                        </div>
+                                        
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png")}/>
+                                        </div>
+
+
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png")}/>
+                                        </div>
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png")}/>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div className='img-container'>
+                                            <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png")}/>
+                                        </div>
+                                    </>
+                            }
+                        </div>
+    
+                    </div>
+            }
+
                 <div id = "sky"></div>
                 <div id = "ground_container"></div>
                 <div className= "shadow1"> </div>
@@ -123,8 +578,6 @@ class Home extends React.Component {
                 <div className='shadow16'></div>
                 <div className='shadow17'></div>
                 <div className='shadow18'></div>
-
-
                 <div className= "birdShadow"></div>
                 <div id = "character_container"></div>
                 <div id = "tree_container"></div>
@@ -213,10 +666,8 @@ class Home extends React.Component {
                 </div>
                 <div className= "ribbonfold1"></div>
 
-                <div className= "ribbon2" onClick={this.togglePortfolio}>
+                <div className= "ribbon2" onClick={this.showPortfolio}>
                     <a href="#">Portfolio</a>
-                    {/* <a href="#portfolioBox">Portfolio</a> */}
-
                 </div>
                 <div className= "ribbonfold2"></div>
 
@@ -226,104 +677,6 @@ class Home extends React.Component {
                     </a>
                 </div>
                 <div className= "ribbonfold3"></div>
-                    
-                {/* <!-- lightbox container hidden with CSS --> */}
-                <a href="#_" className="lightbox" id="portfolioBox">
-                    <div id="folio">
-                        
-                        <h1 id = "pweb"> Web Development</h1>
-
-                        <Link to="/Portfolio/MockResumeWriting" >
-                            <img id = "rt" alt='Mock Resume Site Thumbnail' src={logo} />
-                            <p id = 'psub1'> Mock <br /> Resume Writing Business </p>
-                        </Link>
-                        <Link to="/Portfolio/MockPhotography" >
-                            <img id = "pt" src={ photo } alt='Icon for Mock Photography Site' />
-                            <p id = 'psub2'> Mock <br /> Photography Portfolio </p>
-                        </Link>
-                        <Link to="/Portfolio/OldHomeSite">
-                            <img id = "ot" src={ old } alt='Icon for Old Home Site' />
-                            <p id = 'psub3'> Old Home Site </p>
-                        </Link>
-                        <hr />
-                        <h1 id = "pgraph">Graphic Design</h1>
-                        <img id = "gt1" src={london} alt='Flyer for Lunch and Learn Event' onClick={() => window.open(london)} />
-                        <p id = 'gsub1'> University Event Flyer</p>
-                        <img id = "gt2" 
-                            src={ london2 }
-                            alt='Icon for Mock Resume Site'
-                            onClick={() => window.open(london2)}
-                        />
-                        <p id = 'gsub2'
-                            // onClick = "window.open('http://www.syrusgaddy.com/Photography/PhotoSite.html', '_self')"
-                        >
-                            University Course Flyer
-                        </p>
-                    </div>
-                </a>
-                <TheGround />
-                <Tree />
-                <Character />
-                <Shark />
-                <Wrapper />
-                <Flower />
-                <Bird />
-            { 
-            this.state.showPortfolio &&
-                    <div className='portfolioContainer'>
-                        <div className='portfolioHeader'>
-                            <p className='portfolioTitle'>Portfolio</p>
-                            <p className='portfolioClose' onClick={this.closePortfolio }>X</p>
-                        </div>
-                        <div className='portfolioBody'>
-                            {
-                                !this.state.showArt && !this.state.showGraphics && !this.state.showMocks && !this.state.showPrototypes &&
-                                    <>
-                                        <div onClick={this.toggleArt} className='art-box portfolio-body-box'>
-                                            <p className='art-box-title'> Art </p>
-                                        </div>
-
-                                        <div onClick={this.togglePrototypes} className='prototype-box portfolio-body-box'>
-                                            <p className='prototype-box-title'> Prototypes </p>
-                                        </div>
-
-                                        <div onClick={this.toggleGraphics} className='graphic-box portfolio-body-box'>
-                                            <p className='graphics-box-title'> Graphics </p>
-                                        </div>
-
-                                        <div onClick={this.toggleMocks} className='mock-box portfolio-body-box'>
-                                            <p className='mock-box-title'> Mock Websites </p>
-                                        </div>
-                                    </>
-                            }
-                            {
-                                this.state.showArt && !this.state.showGraphics && !this.state.showMocks && !this.state.showPrototypes &&
-                                    <>
-                                        
-                                    </>
-                            }
-                            {
-                                !this.state.showArt && this.state.showGraphics && !this.state.showMocks && !this.state.showPrototypes &&
-                                    <>
-                                        
-                                    </>
-                            }
-                            {
-                                !this.state.showArt && !this.state.showGraphics && this.state.showMocks && !this.state.showPrototypes &&
-                                    <>
-                                        
-                                    </>
-                            }
-                            {
-                                !this.state.showArt && !this.state.showGraphics && !this.state.showMocks && this.state.showPrototypes &&
-                                    <>
-                                        
-                                    </>
-                            }
-                        </div>
-    
-                    </div>
-            }
                 <script
                     src="https://code.jquery.com/jquery-3.3.1.min.js"
                     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

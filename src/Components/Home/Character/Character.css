@@ -64,7 +64,7 @@
     width: 65px;
     top: 240px;
     left: 390px;
-    box-shadow: inset 5px 2px 3px #333;
+    box-shadow: inset 5px 2px 0px #333;
 }
 
 .myhair2 {
@@ -72,7 +72,7 @@
     width: 25px;
     top: 255px;
     left: 377px;
-    box-shadow: inset 5px 2px 3px #333;
+    box-shadow: inset 5px 2px 0px #333;
 }
 
 .myhair3 {
@@ -108,7 +108,7 @@
     width: 20px;
     top: 247px;
     left: 384px;
-    box-shadow: inset 2px 4px 3px #333;
+    box-shadow: inset 2px 4px 0px #333;
 }
 
 .mylefteye, .myrighteye {
@@ -173,7 +173,7 @@
     border-color:black;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    box-shadow: inset -1px -2px 3px 1px #ba996f, inset 1px 2px 3px 1px #b8a184;
+    box-shadow: inset -1px -2px 0px 1px #ba996f, inset 1px 2px 0px 1px #b8a184;
 }
 /*^ Head ^*/
 
@@ -182,7 +182,7 @@
     width: 20px;
     top: 330px;
     left: 415px;
-    box-shadow: inset -1px -2px 3px 1px #ba996f ;
+    box-shadow: inset -1px -2px 0px 1px #ba996f ;
 }
 
 .neck_shadow {
@@ -205,7 +205,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     z-index: 3;
-    box-shadow: inset -5px -3px 3px #d0d4db;
+    box-shadow: inset -5px -3px 0px #d0d4db;
     animation: bodyBreathing 3s infinite;
 }
 
@@ -257,7 +257,7 @@
 }
 
 .left_arm_shadow {
-    box-shadow: inset -1px 1px 3px 1px #ba996f;
+    box-shadow: inset -1px 1px 0px 1px #ba996f;
     animation: leftArmBreathing 3s infinite;
 }
 
@@ -275,7 +275,7 @@
     top: 347px;
     left: 440px;
     animation: rightSleeveBreathing 3s infinite;
-    box-shadow: inset -5px 1px 3px #d0d4db;
+    box-shadow: inset -5px 1px 0px #d0d4db;
 }
 
 .right_arm {
@@ -284,7 +284,7 @@
     top: 356px;
     left: 425px;
     animation: rightArmBreathing 3s infinite;
-    box-shadow: inset -1px -2px 1.5px 0cap #ba996f 
+    box-shadow: inset -1px -2px 0px 0cap #ba996f 
 }
 
 @keyframes handWave {
@@ -295,7 +295,7 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -1px 2px 1.5px 0cap #ba996f 
+        box-shadow: inset -1px 2px 0px 0cap #ba996f 
     }
 
     50%{
@@ -314,7 +314,7 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
-            box-shadow: inset -1px 2px 1.5px 0cap #ba996f 
+            box-shadow: inset -1px 2px 0px 0cap #ba996f 
         }
         
 }
@@ -330,7 +330,7 @@
     border-top-right-radius: 10px;
     animation: handWave .25s 7, rightForearmBreathing 3s infinite;
     -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
-    box-shadow: inset -1px 2px 1.5px 0cap #ba996f 
+    box-shadow: inset -1px 2px 0px 0cap #ba996f 
 }  
 
 @keyframes handWaveSafari {
@@ -375,7 +375,7 @@
     border-bottom-left-radius: 15px;
     animation: rightForearmBreathing 3s infinite;
     /* animation: handWaveSafari .5s 5, rightForearmBreathing 3s infinite; */
-    box-shadow: inset -1px 2px 1.5px 0cap #ba996f 
+    box-shadow: inset -1px 2px 0px 0cap #ba996f 
 }
 /*^ Upper Body ^*/
 
@@ -408,7 +408,7 @@
     height: 8px;
     background-color: skyblue;
     top: 459px;
-    box-shadow: inset -3px -1px 3px 1px #73b1c9;
+    box-shadow: inset -3px -1px 0px 1px #73b1c9;
 }
 
 .right_cuff {
@@ -426,7 +426,7 @@
     width: 33px;
     top: 465px;
     background-color: white;
-    box-shadow: inset -3px -1px 3px 1px #9b7676;
+    box-shadow: inset -3px -1px 0px 1px #9b7676;
     background-color: rosybrown;
 }
 

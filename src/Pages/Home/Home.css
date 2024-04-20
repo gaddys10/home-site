@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Rightwood";
+    src: url("Rightwood.ttf");
+}
+
 /*v Animations v*/
 @keyframes bodyBreathing{
     0%{
@@ -371,7 +376,7 @@ body {
     height: 300px;
     left: 150px;
     top: 200px;
-    box-shadow: inset 3px 0px 3px #ab5e27;
+    box-shadow: inset 3px 0px 0px #ab5e27;
 }
 
 #stemShadow {
@@ -380,7 +385,7 @@ body {
     background-color: #562a0b;
     left: 190px;
     top: 200px;
-    box-shadow: inset -2px 1px 3px 1px #3d1e09;
+    box-shadow: inset -2px 1px 0px 1px #3d1e09;
 }
 
 #stemHole {
@@ -390,7 +395,7 @@ body {
     border-radius: 100px;
     top: 300px;
     left: 160px;
-    box-shadow: -1px -1px 3px #562a0b;
+    box-shadow: -1px -1px 0px #562a0b;
 }
 
 #stemBranch {
@@ -399,7 +404,7 @@ body {
     transform: rotate(-40deg);
     top: 190px;
     left: 130px;
-    box-shadow: inset -1px 1px 3px 1px #61300e;   
+    box-shadow: inset -1px 1px 0px 1px #61300e;   
 }
 
 #treeTop1 {
@@ -410,7 +415,7 @@ body {
     animation: treeRustle1 4s infinite;
     animation-delay: .5s;
     border-radius: 100px;
-    box-shadow: inset -15px -20px 3px 1px #003300, inset 1px 1px 3px 1px #027002;
+    box-shadow: inset -15px -20px 0px 1px #003300, inset 1px 1px 0px 1px #027002;
 }
 
 #treeTop2 {
@@ -422,7 +427,7 @@ body {
     animation: treeRustle2 4s infinite;
     border-radius: 100px;
     z-index: 2;
-    box-shadow: inset -6px -9px 3px 1px #003300;
+    box-shadow: inset -6px -9px 0px 1px #003300;
 }
 
 #treeTop3{
@@ -433,7 +438,7 @@ body {
     border-radius: 100px;
     animation-delay: .5s;
     animation: treeRustle 4s infinite;
-    box-shadow: inset -10px -15px 3px 1px #003300, inset 20px 13px 5px 1px #027002;
+    box-shadow: inset -10px -15px 0px 1px #003300, inset 20px 13px 0px 1px #027002;
 }
 
 #treeTop4 {
@@ -444,7 +449,7 @@ body {
     animation-delay: .25s;
     animation: treeRustle3 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -10px -6px 3px 1px #003300, inset 2px 5px 3px 1px #027002;
+    box-shadow: inset -10px -6px 0px 1px #003300, inset 2px 5px 0px 1px #027002;
 }
 
 #treeTop5{
@@ -455,7 +460,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle5 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -8px -7px 3px 1px #003300, inset 10px 8px 3px 1px #027002;
+    box-shadow: inset -8px -7px 0px 1px #003300, inset 10px 8px 0px 1px #027002;
 }
 
 #treeTop6 {
@@ -466,7 +471,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle6 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -10px -15px 3px 1px #003300;
+    box-shadow: inset -10px -15px 0px 1px #003300;
 }
 
 #apple1, #apple2, #apple3 {
@@ -483,7 +488,7 @@ body {
     animation-name:appleRustle;
     top: 100px;
     left: 100px;
-    box-shadow: inset -2px -2px 3px 1px darkred, inset 6px 7px 1px 1px #fa3737;
+    box-shadow: inset -2px -2px 0px 1px darkred, inset 6px 7px 0px 1px #fa3737;
 }
 
 #apple2 {
@@ -491,7 +496,7 @@ body {
     animation-name: appleRustle1;
     top: 200px;
     left: 110px;
-    box-shadow: inset -4px -4px 3px 1px darkred, inset 2px 2px 0 1px #fa3737;
+    box-shadow: inset -4px -4px 0px 1px darkred, inset 2px 2px 0px 1px #fa3737;
 }
 
 #apple3{
@@ -499,11 +504,9 @@ body {
     animation-name: appleRustle2;
     top: 180px;
     left: 230px;
-    box-shadow: inset -4px -5px 3px 1px darkred, inset 2px 2px 0 1px #fa3737;
+    box-shadow: inset -4px -5px 0px 1px darkred, inset 2px 2px 0px 1px #fa3737;
 }
 /*^ Tree ^*/
-
-
 
 @keyframes float4 {
     0% {
@@ -525,6 +528,7 @@ body {
         top: 200px;
     }
 }
+
 /*v Bird v*/
 .bird {
     height: 50px;
@@ -594,7 +598,7 @@ body {
     top: 11px;
     transform: rotate(-5deg);
     border-bottom-left-radius: 20px;
-    box-shadow: inset 1px -1px 3px 1px darkred;
+    box-shadow: inset 1px -1px 0px 1px darkred;
 }
 
 .birdpart6 {
@@ -665,6 +669,8 @@ body {
     animation-duration: 195s;
     animation-delay: 7s;
     animation-iteration-count: infinite;
+    z-index: -3;
+
 }
 
 @keyframes float2{
@@ -684,6 +690,8 @@ body {
     animation-duration: 130s;
     animation-delay: 40s;
     animation-iteration-count: infinite;
+    z-index: -3;
+
 
 }
 
@@ -695,6 +703,8 @@ body {
     animation-name:float2;
     animation-duration: 90s;
     animation-iteration-count: infinite;
+    z-index: -3;
+
 }
 
 .cloud4 {
@@ -705,6 +715,8 @@ body {
     animation-name:float2;
     animation-duration: 180s;
     animation-iteration-count: infinite;
+    z-index: -3;
+
 }
 
 .cloud5 {
@@ -715,6 +727,7 @@ body {
     animation-name:float2;
     animation-duration: 111s;
     animation-iteration-count: infinite;
+    z-index: -3;
 }
 
 .cloud6 {
@@ -738,7 +751,9 @@ body {
     animation-duration: 160s;
     animation-name:float2;
     animation-iteration-count: infinite;
-    box-shadow:  inset -0px -1px 3px  #ddd;
+    box-shadow:  inset -0px -1px 0px  #ddd;
+    z-index: -3;
+
 }
 
 .cloud8{
@@ -752,7 +767,9 @@ body {
     animation-duration: 230s;
     animation-name:float2;
     animation-iteration-count: infinite;
-    box-shadow:  inset -0px -1px 3px  #ddd;
+    box-shadow:  inset -0px -1px 0px  #ddd;
+    z-index: -4;
+
 }
 
 .puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a, .puff3a, .puff4a {
@@ -774,7 +791,7 @@ body {
     height: 5px;
     width: 50px;
     border-radius: 50px;
-    box-shadow: inset -1px -2px 3px  #ddd;
+    box-shadow: inset -1px -2px 0px  #ddd;
 }
 
 .puff2 {
@@ -803,7 +820,7 @@ body {
     height: 10px;
     width: 100px;
     border-radius: 50px;
-    box-shadow: inset -1px -4px 3px  #ddd;
+    box-shadow: inset -1px -4px 0px  #ddd;
 }
 
 .puff2a {
@@ -866,7 +883,25 @@ body {
     margin-right: 400px;
     border-style: solid;
     border-color: white;
-    box-shadow: 3px 3px 15px #000;
+    box-shadow: 3px 3px 0px #000;
+}
+
+.back-arrow {
+    float: left;
+    margin-top: 15px;
+    margin-left:12px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.back-box{
+    float: left;
+    /* background-color: red; */
+    height: 60px;
+    width: 55px;
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 10px; 
 }
 
 .portfolioClose{
@@ -885,21 +920,6 @@ body {
     border: 2px solid #313131;
 }
 
-.portfolioContainer{
-    position: absolute;
-    width: 65vw;
-    height: 75vh;
-    background-color: #FCF5E5;
-    left: 18vw;
-    top: 10vh;
-    z-index: 100;
-    box-shadow: 15px 15px 3px rgb(0 0 0 / 10%);
-    border: 2px solid #313131;
-    padding: 0;
-    margin: 0;
-    border-radius: 5px;
-}
-
 .portfolioHeader {
     height: 75px;
     margin: 0;
@@ -910,14 +930,59 @@ body {
     text-align: center;
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
-    font-family: 'PeanutButter', sans-serif;
+    font-family: 'Rightwood', sans-serif;
     border-bottom: 2px solid #313131;
+}
+
+.portfolioContainer{
+    position: absolute;
+    width: 75vw;
+    height: 83vh;
+    background-color: #FCF5E5;
+    left: 13vw;
+    top: 8vh;
+    z-index: 100;
+    box-shadow: 15px 15px 0px rgb(0 0 0 / 10%);
+    border: 2px solid #525252;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
 }
 
 .portfolioBody{
     width: 100%;
     height: calc(100% - 87px);
-    padding-top: 10%;
+    /* padding-top: 45px; */
+    overflow-x: none;
+    overflow-y: scroll;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.portfolioBody .portfolio-body-box{
+    display: block;
+
+}
+
+.portfolioBody .img-container img {
+    height: calc(95% - 90px);
+    /* height: max-content; */
+    margin: 10px;
+}
+
+.portfolioBody .img-container {
+    height: 500px;
+    margin-bottom: 0px;
+}
+
+.picture-sub {
+    text-align: center;
+    width: 100%;
+}
+
+.portfolioBody div img {
+    /* height: calc(75% - 90px); */
+    margin: 10px;
 }
 
 .portfolioHeader p {
@@ -928,73 +993,116 @@ body {
 
 .portfolioTitle{
     font-size: 55px;
-    /* position: absolute; */
     text-align: center;
     left: 44%;
-    padding-left: 4%;
+    padding-left: 3%;
     top: 1%;
-    /* text-align: center; */
+}
+
+img {
+    border-radius: 5%;
 }
 
 .portfolio-body-box{
-    /* display: inline; */
-    position: absolute;
-    height: 35%;
-    width: 15%;
-    /* background-color: blue; */
-    border: 15px solid goldenrod;
-    border-radius: 10%;
-    box-shadow: 5px 5px 2px rgb(179, 136, 26);
+    height: 50px;
+    width: 600px;
+    border: 10px solid goldenrod;
+    box-shadow: 3px 3px 0px #313131;
     background-color: #FFF;
     background-color: rgb(241, 224, 181);
-    top: 33%;
     cursor: pointer;
-
+    margin: 4% auto;
+    display: block;
 }
 
 .portfolio-body-box p{
-    /* margin-top: 55%; */
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
     text-align: center;
-    font-family: 'PeanutButter', sans-serif;
-    font-size: 60px;
-    font-size: 300%;
+    font-family: 'Rightwood', sans-serif;
+    /* font-size: 60px; */
+    font-size: 350%;
+}
+
+.portfolio-img {
+    max-width: 500px;
+    margin: 10px;
+    cursor: pointer;
+    height: 500px;
+}
+
+.img-container{
+    float: left; 
+    /* max-height: 800px; */
+    /* height:min-content; */
+    height: 200px;
+}
+
+.logo-subtitle{
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+
+.mock-img{
+    max-width: 300px;
+    align-items: center;
+    border: 1px solid gray
+}
+
+.mock-sub{
+    width: 300px;
+    text-align: center;
+}
+
+.mock-big-container{
+    width: fit-content;
+    margin: 0px auto;
+    height: 400px;
+    display: flex;
+}
+
+.mock-container{
+    float: left;
+    margin-top: 20%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.sub-3 {
+    width: 300px;
+    text-align: center;
+}
+
+.mock-3 { 
+    margin-top: 140px;
 }
 
 .art-box {
     left: 5%;
+    margin-top: 6%;
 }
 
 .art-box p {
-    position: absolute;
-    margin-top: 53%;
-    left: 38%;
-    font-size: 220%;
+    width: 100%;
     text-align: center;
-    /* font-size: 80px; */
 }
 
 .mock-box {
     left: 28.5%;
- }
-
-.mock-box p {
-    margin-top: 53%;
-    font-size: 220%;
- }
+}
 
 .prototype-box {
     right: 28.5%;
 }
 
 .prototype-box{
-    margin-left: 0;
-    margin-right: 0;
     overflow-wrap: break-word;
 }
 
 .prototype-box p{
-    margin-top: 53%;
-    font-size: 220%;
+    /* margin-top: 53%; */
 }
 
 .graphic-box {
@@ -1002,8 +1110,6 @@ body {
  }
 
 .graphic-box p{
-    margin-top: 53%;
-    font-size: 230%;
  }
 
 #portfolioBox {
@@ -1018,7 +1124,7 @@ body {
     width: 590px;
     height: 435px;
     font-family: "Helvetica", sans-serif;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 0px #000;
     border-radius: 5px;
     text-decoration: none;
     margin-top: calc(50vh - 242px);
@@ -1157,10 +1263,8 @@ body {
     }
     
     .birdShadow{
-
         top: 1330px;
         z-index: 0;
-
     }
 
     .cloud3{

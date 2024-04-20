@@ -54,11 +54,11 @@
 }
 
 .horizonBush2, .horizonBush3, .horizonBush5, .horizonBush6, .horizonBush8 {
-    box-shadow: inset -10px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -10px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .horizonBush1, .horizonBush4, .horizonBush9 {
-    box-shadow: inset -12px -4px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -12px -4px 0px -1px rgba(15,92,20,1)
 }
 
 .horizonBush2, .horizonBush3, .horizonBush4, .horizonBush6, .horizonBush8, .horizonBush9 {
@@ -112,7 +112,7 @@
     width: 110px;
     top: 360px;
     left: 1130px;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .horizonBush8 {
@@ -137,7 +137,7 @@
     height: 110px;
     width: 119px;
     position: absolute;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .horizonBush11 {
@@ -152,7 +152,7 @@
     height: 110px;
     width: 150px;
     position: absolute;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 /******************************/
 /* ^^^^^ Horizon Bushes ^^^^^ */
@@ -176,7 +176,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 20%;
     bottom:0;
-    box-shadow: inset -35px -1px 5px -1px rgba(15,92,20,1);
+    box-shadow: inset -35px -1px 0px -1px rgba(15,92,20,1);
     
 }
 .bush1part2 {
@@ -189,7 +189,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 0;
-    box-shadow: inset -25px -1px 5px -1px rgba(15,92,20,1);
+    box-shadow: inset -25px -1px 0px -1px rgba(15,92,20,1);
 }
 
 /* box-shadow: inset -10px -15px 3px 1px #003300, inset 20px 13px 5px 1px #027002; */
@@ -204,7 +204,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -25px -3px 5px -5px rgba(15,92,20,1);
+    box-shadow: inset -25px -3px 0px -5px rgba(15,92,20,1);
 }
 
 .bush2 {
@@ -225,7 +225,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 20%;
     bottom:0;
-    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1), inset 10px -3px 5px -4px rgb(18, 111, 24);
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1), inset 10px -3px 0px -4px rgb(18, 111, 24);
 }
 
 .bush2part2 {
@@ -238,7 +238,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 0;
-    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush2part3 {
@@ -251,7 +251,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush3 {
@@ -272,7 +272,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 20%;
     bottom:0;
-    box-shadow: inset -15px -1px 5px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush3part2 {
@@ -285,7 +285,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 0;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush3part3 {
@@ -298,7 +298,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -8px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -8px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush4 {
@@ -319,7 +319,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 20%;
     bottom:0;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush4part2 {
@@ -332,7 +332,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 0;
-    box-shadow: inset -15px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -15px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush4part3 {
@@ -345,7 +345,7 @@
     border-bottom-right-radius: 20%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -10px -1px 3px -1px rgba(15,92,20,1)
+    box-shadow: inset -10px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush5 {
@@ -366,7 +366,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 8%;
     bottom:0;
-    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    box-shadow: inset -37px -5px 0px -1px rgba(15,92,20,1);
     z-index: 1;
 }
 
@@ -380,7 +380,7 @@
     border-bottom-right-radius: 5%;
     bottom:0;
     right: 0;
-    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+    box-shadow: inset -45px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush5part3 {
@@ -393,7 +393,7 @@
     border-bottom-right-radius: 8%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+    box-shadow: inset -35px -5px 0px -1px rgba(15,92,20,1)
 }
 
 .bush6 {
@@ -414,7 +414,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 8%;
     bottom:0;
-    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    box-shadow: inset -25px -1px 0px -1px rgba(15,92,20,1);
     z-index: 1;
 }
 
@@ -428,7 +428,7 @@
     border-bottom-right-radius: 5%;
     bottom:0;
     right: 0;
-    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+    box-shadow: inset -45px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush6part3 {
@@ -441,7 +441,7 @@
     border-bottom-right-radius: 8%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+    box-shadow: inset -25px -5px 0px -1px rgba(15,92,20,1)
 }
 
 .bush7 {
@@ -462,7 +462,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 8%;
     bottom:0;
-    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    box-shadow: inset -37px -5px 0px -1px rgba(15,92,20,1);
     z-index: 1;
 }
 
@@ -476,7 +476,7 @@
     border-bottom-right-radius: 5%;
     bottom:0;
     right: 0;
-    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+    box-shadow: inset -45px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush7part3 {
@@ -489,7 +489,7 @@
     border-bottom-right-radius: 8%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+    box-shadow: inset -35px -5px 0px -1px rgba(15,92,20,1)
 }
 
 .bush8 {
@@ -510,7 +510,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 8%;
     bottom:0;
-    box-shadow: inset -37px -5px 7px -1px rgba(15,92,20,1);
+    box-shadow: inset -37px -5px 0px -1px rgba(15,92,20,1);
     z-index: 1;
 }
 
@@ -524,7 +524,7 @@
     border-bottom-right-radius: 5%;
     bottom:0;
     right: 0;
-    box-shadow: inset -45px -1px 7px -1px rgba(15,92,20,1)
+    box-shadow: inset -45px -1px 0px -1px rgba(15,92,20,1)
 }
 
 .bush8part3 {
@@ -537,7 +537,7 @@
     border-bottom-right-radius: 8%;
     bottom:0;
     right: 15%;
-    box-shadow: inset -35px -5px 15px -1px rgba(15,92,20,1)
+    box-shadow: inset -35px -5px 0px -1px rgba(15,92,20,1)
 }
 
 /*********************/
@@ -555,10 +555,10 @@
 .rock1 {
     width: 100px;
     height: 55px;
-    box-shadow: inset -8px 0px 3px dimgray, inset 10px 0 3px #858585;
+    box-shadow: inset -8px 0px 0px dimgray, inset 10px 0 0px #858585;
     left: 1100px;
     top: 542px;
-    z-index: -2;
+    z-index: -3;
 }
 
 .rock2 {
@@ -593,10 +593,11 @@
     width: 110px;
     height: 35px;
     left: 1300px;
-    box-shadow: inset -15px 0px 3px dimgray, inset 5px 0 1px #858585;
+    box-shadow: inset -15px 0px 0px dimgray, inset 5px 0 0px #858585;
     background-color: gray;
     /* z-index: 4; */
     top: 800px;
+    z-index: -1;
 }
 
 .rock5 {
@@ -607,7 +608,7 @@
     background-color: gray;
     border-top-right-radius: 70px;
     border-top-left-radius: 140px;
-    box-shadow: inset -5px -1px 3px dimgray, inset 10px 2px 3px #858585;
+    box-shadow: inset -5px -1px 0px dimgray, inset 10px 2px 0px #858585;
 }
 
 .rock6 {
@@ -621,7 +622,7 @@
     background-color: gray;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    box-shadow: inset -6px -1px 3px dimgray, inset 4px 0 2px #858585;
+    box-shadow: inset -6px -1px 0px dimgray, inset 4px 0 0px #858585;
 }
 
 .rock7 {
@@ -635,7 +636,7 @@
     background-color: gray;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    box-shadow: inset -3px -1px 3px dimgray, inset 2px 0 3px #858585;
+    box-shadow: inset -3px -1px 0px dimgray, inset 2px 0 0px #858585;
 }
 
 .rock8 {
@@ -647,7 +648,7 @@
     background-color: gray;
     border-top-right-radius: 100px;
     border-top-left-radius: 80px;
-    box-shadow: inset -20px 0px 3px dimgray, inset 8px 0 3px #858585;
+    box-shadow: inset -20px 0px 0px dimgray, inset 8px 0 0px #858585;
 }
 
 .rock9 {
@@ -659,7 +660,7 @@
     background-color: gray;
     border-top-right-radius: 100px;
     border-top-left-radius: 80px;
-    box-shadow: inset -15px 0px 3px dimgray, inset 8px 0 3px #858585;
+    box-shadow: inset -15px 0px 0px dimgray, inset 8px 0 0px #858585;
     z-index: -1;
 }
 
@@ -672,7 +673,7 @@
     background-color: gray;
     border-top-right-radius: 80px;
     border-top-left-radius: 30px;
-    box-shadow: inset -13px -1px 3px dimgray, inset 11px 2px 3px #858585;
+    box-shadow: inset -13px -1px 0px dimgray, inset 11px 2px 0px #858585;
     z-index: 1;
 }
 
@@ -713,7 +714,7 @@
     top: 85px;
     left: 35px;
     background-color: darkgreen;
-    box-shadow: inset -1px 1px 1px 1px #004200;
+    box-shadow: inset -1px 1px 0px 1px #004200;
 }  
 
 .fbulb {
@@ -736,7 +737,7 @@
     height: 15px;
     width: 15px;
     background-color: #997735;
-    box-shadow: inset -2px -1px 3px .5px #775c28;
+    box-shadow: inset -2px -1px 0px .5px #775c28;
     z-index: 10;
 }
 
@@ -758,7 +759,7 @@
     top: 0px;
     left: 16px;
     border-radius: 50%;
-    box-shadow: 0px 0px 3px 1px #c6685f, inset 5px 2px 3px #fa8c64;
+    box-shadow: 0px 0px 0px 1px #c6685f, inset 5px 2px 0px #fa8c64;
     z-index: 1;
 }
 
@@ -774,7 +775,7 @@
 .fpetal2 {
     top: -5px;
     left: 16px;
-    box-shadow: inset -1px -1px 2px 1px #c6685f, inset 5px 2px 3px #fa8c64;
+    box-shadow: inset -1px -1px 0px 1px #c6685f, inset 5px 2px 0px #fa8c64;
     z-index: 4;
     border-top-left-radius:75px;
     border-top-right-radius:75px;
@@ -789,7 +790,7 @@
     transform: rotate(90deg);
     border-top-left-radius:75px;
     border-top-right-radius:75px;
-    box-shadow: inset -3px 1px 2px -2px #c6685f, inset 5px 2px 3px #fa8c64;
+    box-shadow: inset -3px 1px 0px -2px #c6685f, inset 5px 2px 0px #fa8c64;
 }
 
 .fpetal4 {
@@ -799,7 +800,7 @@
     transform: rotate(-90deg);
     border-top-left-radius:75px;
     border-top-right-radius:75px;
-    box-shadow: inset 2px -1px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    box-shadow: inset 2px -1px 0px 1px #c6685f, inset 5px 2px 0px #fa8c64;
 }
 
 .fpetal5 {
@@ -809,7 +810,7 @@
     width: 19px;
     height:22px;
     transform: rotate(45deg);
-    box-shadow:inset -1px 1px 3px -1px #c6685f, inset 1px -2px 1px #fa8c64;
+    box-shadow:inset -1px 1px 0px -1px #c6685f, inset 1px -2px 0px #fa8c64;
     border-top-left-radius:75px;
     border-top-right-radius:75px;
 }
@@ -826,7 +827,7 @@
     left: 25px;
     z-index: 3;
     transform: rotate(-45deg);
-    box-shadow: inset 0px -2px 1px 1px #c6685f, inset 5px 2px 1px #fa8c64;
+    box-shadow: inset 0px -2px 0px 1px #c6685f, inset 5px 2px 0px #fa8c64;
 }
 
 .fpetal7 {
@@ -834,7 +835,7 @@
     left: 7px;
     z-index: 1;
     transform: rotate(135deg);
-    box-shadow: inset 3px -4px 1px #fa8c64,  inset 5px 2px 1px #fa8c64;;
+    box-shadow: inset 3px -4px 0px #fa8c64,  inset 5px 2px 0px #fa8c64;;
 }
 
 .fpetal8 {
@@ -844,7 +845,7 @@
     border-top-right-radius: 100px;
     transform: rotate(-135deg);
     z-index: 1;
-    box-shadow: inset 2px -1px 1px 1px #c6685f, inset -2px -1px 1px 1px #fa8c64;
+    box-shadow: inset 2px -1px 0px 1px #c6685f, inset -2px -1px 0px 1px #fa8c64;
 }
 /**********************/
 /* ^^^^^ Flower ^^^^^ */
@@ -871,7 +872,6 @@
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-
 }
 
 .shadow1 {
@@ -1094,7 +1094,7 @@
     .rock1 {
         top: 1460px;
         transform: scale(1.5);
-        box-shadow: inset -13px 0px 3px dimgray, inset 13px 0 3px #858585;
+        box-shadow: inset -13px 0px 0px dimgray, inset 13px 0 0px #858585;
     }
 
     .horizonBush0, .horizonBush1, .horizonBush2, .horizonBush3, .horizonBush4, .horizonBush5, .horizonBush6, .horizonBush7, .horizonBush9, .horizonBush10 {
@@ -1143,7 +1143,7 @@
     .rock8 {
         top: 2750px;
         left: 950px;
-        box-shadow: inset -20px 0px 3px dimgray, inset 8px 0 3px #858585;
+        box-shadow: inset -20px 0px 0px dimgray, inset 8px 0 0px #858585;
     }
 
     .rock9 {

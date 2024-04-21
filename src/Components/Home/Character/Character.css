@@ -111,6 +111,23 @@
     box-shadow: inset 2px 4px 0px #333;
 }
 
+@keyframes blink {
+    0% {
+        height: 15px;
+        top: 283px;
+    }
+
+    3%{
+        height: 0px;
+        top: 296px;
+    }
+    6%{
+        height: 15px;
+        top: 283px;
+    }
+        
+}
+
 .mylefteye, .myrighteye {
     height: 15px;
     width: 13px;
@@ -118,6 +135,7 @@
     top: 283px;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
+    animation: blink 10s infinite;
 }
 
 .mylefteye {

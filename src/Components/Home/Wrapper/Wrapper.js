@@ -91,6 +91,7 @@ class Wrapper extends React.Component {
                         <ul className="jobBody">
                             <li className= "jobDesc"> Developed user interfaces with Java, JavaFX, CSS, Tomcat, Gradle, and Spring to improve back office and POS (Point of Sale) systems for all physical locations</li>
                             <li className= "jobDesc"> Created initial prototypes with Adobe XD, JavaFX, & CSS to kickstart development on Check Engine Light diagnostic app, now used at all stores to diagnose & offer repair options for customer car issues</li>
+                            <li className= "jobDesc"> Collaborated remotely with MS Teams, Slack, Git, & Atlassian tools to fix critical bugs and retail staff issues</li>
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">UX Software Developer,<br/>ARCOS</h3>

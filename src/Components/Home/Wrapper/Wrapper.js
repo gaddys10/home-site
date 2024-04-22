@@ -30,7 +30,6 @@ class Wrapper extends React.Component {
                         <ul className="cv-highlights">
                             <li>7.5 years of professional software engineering & testing experience</li>
                             <li>7 months of software leadership</li>
-
                             <li>Background in finance, utilities, telecommunications, asset management, & government contracting </li>       
                             {/* <li>1.5 years of professional Apple hardware and software troubleshooting</li> */}
                             <li>B.S. Computer Science Mathematics minor </li>
@@ -40,7 +39,6 @@ class Wrapper extends React.Component {
                                 </a>  
                             </li>
                             {/* <li>2 years of professional technology sales</li> */}
-                            
                             {/* <li>4 years of professional customer service</li> */}
                         </ul>
                         <p className="skill-cat">
@@ -68,7 +66,7 @@ class Wrapper extends React.Component {
                             <br/> 
                             Figma, Adobe Photoshop, Adobe XD, Browserstack, GIMP, UML 
                         </p>
-                        <br /> 
+                        <br/> 
                         <br/>
                         <img src={divida} alt="" className="divida" />
                         

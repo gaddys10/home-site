@@ -334,7 +334,6 @@
             transform: rotate(90deg);
             box-shadow: inset -1px 2px 0px 0cap #ba996f 
         }
-        
 }
 
 .right_forearm {
@@ -349,7 +348,7 @@
     animation: handWave .25s 7, rightForearmBreathing 3s infinite;
     -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
     box-shadow: inset -1px 2px 0px 0cap #ba996f 
-}  
+x }  
 
 @keyframes handWaveSafari {
     0% {

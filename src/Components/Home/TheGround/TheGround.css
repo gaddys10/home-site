@@ -891,7 +891,7 @@
     border-top-right-radius: 100px;
     animation-delay: .375s;
     animation-name:treeShadow;
-    z-index: -2;
+    z-index: -3;
 }
 
 .shadow3 {
@@ -899,7 +899,7 @@
     height:2px;
     left: 1100px;
     top: 596px;
-    z-index: -2; 
+    z-index: -3; 
 }
 
 .shadow4 {

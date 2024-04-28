@@ -331,8 +331,8 @@
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-            box-shadow: inset -1px 2px 0px 0cap #ba996f 
+        transform: rotate(90deg);
+        box-shadow: inset -1px 2px 0px 0cap #ba996f 
         }
 }
 
@@ -375,8 +375,8 @@ x }
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-            left: 456px;
+        transform: rotate(90deg);
+        left: 456px;
     }
         
 }
@@ -460,30 +460,9 @@ x }
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px)  {
-    /* put your css styles in here */
     #character {
         transform: scale(3);
         left: 50px;
         top: 1100px;
     }
-}
-
-@media all and (min-width:769px) and (max-width: 800px) {
-/* put your css styles in here */
-}
-
-@media all and (min-width:569px) and (max-width: 768px) {
-/* put your css styles in here */
-}
-
-@media all and (min-width:481px) and (max-width: 568px) {
-/* put your css styles in here */
-}
-
-@media all and (min-width:321px) and (max-width: 480px) {
-/* put your css styles in here */
-}
-
-@media all and (min-width:0px) and (max-width: 320px) {
-/* put your css styles in here */
 }

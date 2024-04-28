@@ -21,10 +21,10 @@ body {
 	margin-right: 400px;
 }
 
+
 .thumbnail2{
     max-width: 125px;
     margin-top: -400px;
-	/* padding-top: -100px; */
 	position: relative;
 	bottom: 50px;
 }
@@ -69,16 +69,14 @@ body {
 	display: block;
 }
 
-.sub3{
-    margin-top: -33px;
-    margin-left: 408px;
+.sub3 {
+	margin: -33px 0px 16px 408px;
 	position: relative;
 	bottom: 12px;
 }
 .thumbnail3{
     max-width: 125px;
-    margin-top: -200px;
-    margin-left: 408px;
+	margin: -200px 0px 16px 408px;
 }
 
 #cv-formContainer {
@@ -97,7 +95,6 @@ body {
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {
 	#cv-formContainer{
         transform: scale(3);
-        /* left: 50%; */
         margin-top: 40vh;
         margin-right: 40vw;
         

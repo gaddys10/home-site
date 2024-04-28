@@ -1,5 +1,4 @@
 import React from "react";
-import './ResumeWriting.css';
 import './MarketingSite.css';
 import './Resumepage1.css';
 import './Resumepage2.css';
@@ -134,12 +133,14 @@ class ResumeWriting extends React.Component {
                                 <form method="post" name="myemailform" action="form-to-email.php">
                                     <p>
                                         <label>Name:</label> 
-                                        <input type="text" name="name"/><br/>
+                                        <input type="text" name="name"/>
+                                        <br/>
                                     </p>
                                     <br/>
                                     <p>
                                         <label>Email: </label>    
-                                        <input type="text" name="email"/><br/>
+                                        <input type="text" name="email"/>
+                                        <br/>
                                     </p>
                                     <br/>
                                     <p>
@@ -173,7 +174,6 @@ class ResumeWriting extends React.Component {
                         crossOrigin="anonymous">
                     </script>
                     <script src = "ResumeSite.js"></script>
-
                 </body>
             </>
         )

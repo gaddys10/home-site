@@ -18,8 +18,7 @@
 }
 
 .cv-highlights {
-    margin-bottom: 25px;
-    margin-left: 10px;
+    margin: 0px 0px 25px 10px;
 }
 
 .cv-highlights li {
@@ -76,21 +75,18 @@
 }
 
 .name-position, .summary-info {
-    margin-top: 25px;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin: 25px 0px 0px 0px
 }
 
 .summary-info {
-    margin-bottom: 25px;
     font-family: 'Rightwood', sans-serif;
-    margin-left: 20px;
+    margin: 25px 0px 25px 20px;
 }
 
-.contact-info {
-    margin-top: 25px;
-    margin-left: 20px;
+.contact-info { 
+    margin: 25px 0px 25px 20px;
 }
 
 .contact-info li {
@@ -103,9 +99,7 @@
 }
 
 .coursework-classes {
-    margin-left: 50px;
-    margin-bottom: 100px;
-    margin-top: 0px;
+    margin: 0px 0px 100px 50px;
     line-height: 175%;
 }
 
@@ -117,12 +111,9 @@
 
 .experience-title {
     font-size: 36px;
-    /* margin: 0px; */
-    margin-bottom: 10px;
-    margin-top: 30px;
     font-weight: bold;
     font-family: 'Rightwood', sans-serif;
-    margin-left: 20px;
+    margin: 30px 0px 10px 20px;
 }
 
 hr {
@@ -132,7 +123,6 @@ hr {
 }
 
 .jobBody {
-    margin-top: 10px;
     line-height: 200%;
     margin-top: 45px;
     padding-right: 20px;
@@ -163,17 +153,13 @@ hr {
 }
 
 .skill-cat {
-    margin-left: 40px;
-    margin-top: 10px;
+    margin: 10px 0px 0px 40px;
     line-height: 140%;
-
 }
 
 .home-wrapper {
     font-family: 'Helvetica', sans-serif;
-    padding-top: 7px;
-    padding-left: 5px;
-    padding-bottom: 0;
+    padding: 7px 0px 0px 5px;
     margin-bottom: 0px;
     height: 100vh;
     width: 800px;
@@ -181,13 +167,11 @@ hr {
     background-color:#FFF;
     border-right: 15px solid #1666e5;
     position: absolute;
-    /* box-shadow: 1px 1px 2px #555; */
     color:#212427;
     overflow-y: scroll;
     z-index: 4;
     background-color: #FCF5E5;
 }
-
 
 .wrapper::-webkit-scrollbar {
     width: 6px;
@@ -223,10 +207,6 @@ hr {
     width: 100px;
     font-size: 16px !important;
     height: 75px;
-
-
-
-    /* z-index: 4 */
 }
 
 .ribbon {
@@ -287,7 +267,6 @@ hr {
     left: -2em;
     border-right-width: 1.2em;
     border-color: transparent;
-    /* z-index: 4;  */
 }
 
 .ribbon1:after{
@@ -295,7 +274,6 @@ hr {
 }
 
 .ribbon2:after {
-    /* z-index: 4; */
     animation-delay: 5s;
 }
 
@@ -310,7 +288,6 @@ hr {
     font-size: 38px;
     color: white;
     font-family: 'Rightwood', sans-serif;
-    /* z-index: 0; */
     margin-left: 10px;
 }
 
@@ -348,7 +325,6 @@ hr {
     100%{
         left: 903px;
         width: 75px;
-
     }
 }
 
@@ -417,7 +393,6 @@ hr {
         margin-top: 90px;
     }
     
-    /* put your css styles in here */
     .wrapper {
         width: 1000px;
         padding-left: 15px;
@@ -435,18 +410,31 @@ hr {
 
     .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
         font-size: 64px;
-        margin-top: 25px;
-        margin-left: 90px;
+        margin: 25px 0px 0px 90px;
     }
 
     .ribbon3 a {
-        margin-top: 5px;
-        margin-left: 70px; 
+        margin: 5px 0px 0px 70px;
     }
 
     .ribbonfold, .ribbonfold1, .ribbonfold2, .ribbonfold3 {
         left: 1897px;
         width: 322px;
+    }
+
+    @keyframes ribbonFoldWave {
+        0%{
+            left: 898px;
+            width: 322px;
+        }
+        50%{
+            left: 906px;
+            width: 320px;
+        }
+        100%{
+            left: 898px;
+            width: 322px;
+        }
     }
 
     .ribbonfold{
@@ -461,14 +449,17 @@ hr {
         top: 715px;
     }
 
+    .ribbonfold3{
+        top: 940px;
+    }
+
     .cv-highlights {
         line-height: 400%;
         margin-bottom: 30px;
     }
 
     .cv-highlights li{
-        margin-bottom: 7px;
-        margin-right: 10px;
+        margin: 0px 10px 7px 0px;
         list-style-type: square;
     }
 

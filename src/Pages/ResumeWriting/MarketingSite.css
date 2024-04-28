@@ -87,7 +87,7 @@ src: url("FUTRFW.TTF");
     font-family: 'FUTRFW', sans-serif;
     font-size: 48px;
     text-align: center;
-    
+
     margin-bottom: 0px;
     opacity: 0;
     animation-name: appear;
@@ -631,8 +631,7 @@ form input {
 #ig {
     height: 30px;
     float: right;
-    margin-right: -305px;
-    margin-top: 410px;
+    margin: 410px -305px 16px 0px;
     cursor: pointer;
     animation-fill-mode: forwards;
 }

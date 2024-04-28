@@ -550,7 +550,7 @@ body {
     left: 1550px;
     background-color: darkgreen;
     border-radius: 90px;
-    z-index: -2;
+    z-index: -3;
     opacity: .4;
 }
 

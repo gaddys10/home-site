@@ -427,6 +427,22 @@ hr {
         height: 100%;
     }
 
+    @keyframes ribbonFoldWave {
+        0%{
+            left: 898px;
+            width: 75px;
+        }
+        50%{
+            left: 906px;
+            width: 68px;
+        }
+        100%{
+            left: 898px;
+            width: 75px;
+
+        }
+    }
+
     .ribbon, .ribbon1, .ribbon2, .ribbon3 {
         left: 815px;
         width: 350px;
@@ -459,6 +475,10 @@ hr {
 
     .ribbonfold2{
         top: 715px;
+    }
+
+    .ribbonfold3{
+        top: 940px;
     }
 
     .cv-highlights {

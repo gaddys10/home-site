@@ -298,7 +298,7 @@
 
 .right_arm {
     height: 13px;
-    width: 50px;
+    width: 53px;
     top: 356px;
     left: 425px;
     animation: rightArmBreathing 3s infinite;
@@ -313,7 +313,9 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -1px 2px 0px 0cap #ba996f 
+        box-shadow: inset -2px 2px 0px 0cap #ba996f;
+
+        
     }
 
     50%{
@@ -324,6 +326,8 @@
         -ms-transform: rotate(110deg);
         transform: rotate(110deg);
         left: 459px;
+        box-shadow: inset 0px 3px 0px 0cap #ba996f;
+
     }
     100%{
         left: 456px;
@@ -331,24 +335,25 @@
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-            box-shadow: inset -1px 2px 0px 0cap #ba996f 
+        transform: rotate(90deg);
+        box-shadow: inset -2px 2px 0px 0cap #ba996f;
+
         }
         
 }
 
 .right_forearm {
     height: 13px;
-    width: 40px;
+    width: 41px;
     top: 345px;
     left: 456px;
     border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    /* border-bottom-right-radius: 30px; */
     border-top-right-radius: 10px;
     animation: handWave .25s 7, rightForearmBreathing 3s infinite;
     -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
-    box-shadow: inset -1px 2px 0px 0cap #ba996f 
+    box-shadow: inset -2px 2px 0px 0cap #ba996f 
 }  
 
 @keyframes handWaveSafari {

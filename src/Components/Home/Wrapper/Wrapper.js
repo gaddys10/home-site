@@ -44,7 +44,7 @@ class Wrapper extends React.Component {
                         <p className="skill-cat">
                             <b className="bold-text">Front End:</b>
                             <br/> 
-                            HTML/CSS/Javascript, SASS, Jquery, TypeScript, React.js, React Native, Angular.js, Meteor.js, JSX 
+                            HTML, CSS, SASS, Javascript, Jquery, TypeScript, React.js, Angular.js, Meteor.js, JSX, JavaFX, React Native
                         </p>
                         <p className="skill-cat">
                             <b className="bold-text">Back End:</b>
@@ -153,7 +153,6 @@ class Wrapper extends React.Component {
                             <li className= "jobDesc"> Automated Verizon apps and services with Selenium, Java, and Jenkins to fix all network outages without human intervention, reducing cellular network downtime and improving wireless hotspot performance </li>
                             <li className= "jobDesc"> Developed test automation for verizon.com UIs and APIs with Selenium, Java, JUnit, SQL, and Jenkins to optimize React enterprise app performance, find bugs based on user feedback, and aid software releases</li>
                         </ul>
-                    
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Test Engineer,<br/>Xylem Inc.</h3>
                             <h3 className= "jobDate">8/2018 - 6/2019</h3>
@@ -164,7 +163,6 @@ class Wrapper extends React.Component {
                             <li className= "jobDesc">Documented test plans, defect records, & fault recreation for appliance firmware w/ Perforce & SVN to assist developers with debugging firmware releases and to guide future development</li>
                             <li className= "jobDesc">Used power supplies, water pumps, and optical sensors to aid in manual testing digital smart grid devices, exposing equipment to all expected conditions over proposed 20 year life span</li>
                         </ul>
-                        
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Associate Software Engineer,<br/>Fidelity Investments</h3>
                             <h3 className= "jobDate">1/2017 - 5/2018</h3>
@@ -178,34 +176,36 @@ class Wrapper extends React.Component {
                             <li className= "jobDesc">Constructed full stack “Buy Local Bonds” proof of concept project with C#, CSS, JavaScript, SQL, Oracle 11g, Java, Spring, & REST APIs to let users buy and sell government bonds online & manage their holdings </li>
                             <li className= "jobDesc">Established Mocha, Chai, Selenium, Robot Framework, and Protractor UI and API test automation suites for 5 bank transfer products and teams to ensure money transfers across all qualified fidelity.com accounts </li>
                         </ul>
-                        {/* <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">Mac+ AppleCare Advisor,<br/> Apple Inc.</h3>
-                            <h4 className= "jobDate">8/2014 - 10/2015</h4>
-                        </span>
-                        <ul className="jobBody">
-                            <li className= "jobDesc">Multitasked across systems & applications to analyze, isolate & resolve a variety of technical issues</li>
-                            <li className= "jobDesc">Delivered troubleshooting for Apple OS X, iOS, & watchOS HW & SW to remotely assist customers</li>
-                            <li className= "jobDesc">Isolated and resolved technical issues with Safari web and mobile browsers; Fixed LAN/WAN issues</li>
-                            <li className= "jobDesc">Completed AppleCare Academy training to professionally troubleshoot Apple hardware & software</li>
-                        </ul>
-                        <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">Graphic Design Intern,<br/> UNCFSU</h3>
-                            <h4 className= "jobDate">1/2015 - 5/2015</h4>
-                        </span>
-                        <ul className="jobBody">
-                            <li className= "jobDesc">Worked with Director of Continuing Education using Adobe CC to promote college courses & events</li>
-                            <li className= "jobDesc">Created informational graphics to be distributed to entire student body and staff to promote events</li>
-                        </ul>
-                        
-                        <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">Freelance Web Developer,<br/> AKA Sorority Inc.</h3>
-                            <h4 className= "jobDate">9/2014 - 4/2015</h4>
-                        </span>
-                        <ul className="jobBody">
-                            <li className= "jobDesc">Collaborated with client using HTML5, CSS, JavaScript, & PHP to create website as sole developer</li>
-                            <li className= "jobDesc">Discussed end-user requirements and implementations in client meetings </li>
-                            <li className= "jobDesc">Included 12+ pages, log-in function, photo gallery, member directory, calendar, & custom graphics </li>
-                        </ul> */}
+                        {
+                            /* <span className="jobTitleContainer">
+                                <h3 className= "jobTitle">Mac+ AppleCare Advisor,<br/> Apple Inc.</h3>
+                                <h4 className= "jobDate">8/2014 - 10/2015</h4>
+                            </span>
+                            <ul className="jobBody">
+                                <li className= "jobDesc">Multitasked across systems & applications to analyze, isolate & resolve a variety of technical issues</li>
+                                <li className= "jobDesc">Delivered troubleshooting for Apple OS X, iOS, & watchOS HW & SW to remotely assist customers</li>
+                                <li className= "jobDesc">Isolated and resolved technical issues with Safari web and mobile browsers; Fixed LAN/WAN issues</li>
+                                <li className= "jobDesc">Completed AppleCare Academy training to professionally troubleshoot Apple hardware & software</li>
+                            </ul>
+                            <span className="jobTitleContainer">
+                                <h3 className= "jobTitle">Graphic Design Intern,<br/> UNCFSU</h3>
+                                <h4 className= "jobDate">1/2015 - 5/2015</h4>
+                            </span>
+                            <ul className="jobBody">
+                                <li className= "jobDesc">Worked with Director of Continuing Education using Adobe CC to promote college courses & events</li>
+                                <li className= "jobDesc">Created informational graphics to be distributed to entire student body and staff to promote events</li>
+                            </ul>
+                            
+                            <span className="jobTitleContainer">
+                                <h3 className= "jobTitle">Freelance Web Developer,<br/> AKA Sorority Inc.</h3>
+                                <h4 className= "jobDate">9/2014 - 4/2015</h4>
+                            </span>
+                            <ul className="jobBody">
+                                <li className= "jobDesc">Collaborated with client using HTML5, CSS, JavaScript, & PHP to create website as sole developer</li>
+                                <li className= "jobDesc">Discussed end-user requirements and implementations in client meetings </li>
+                                <li className= "jobDesc">Included 12+ pages, log-in function, photo gallery, member directory, calendar, & custom graphics </li>
+                            </ul> */
+                        }
                         <br/>
                         <br/>
 

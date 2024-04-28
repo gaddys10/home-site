@@ -338,10 +338,10 @@ hr {
     }
     50%{
         left: 910px;
-        width: 68px;
+        width: 67px;
     }
     100%{
-        left: 903px;
+        left: 902px;
         width: 75px;
 
     }
@@ -353,28 +353,28 @@ hr {
     border-bottom-color: transparent;
     border-right-color: transparent;
     z-index: 0;
-    width: 75px;
+    width: 73px;
     left: 902px;
     animation: ribbonFoldWave 4s infinite;
     animation-delay: 4s;
 }
 
 .ribbonfold {
-    top: 140px;
+    top: 139px;
 }
 
 .ribbonfold1 {
-    top: 263px;
+    top: 264px;
     animation-delay: 4.5s;
 }
 
 .ribbonfold2 {
-    top: 390px;
+    top: 389px;
     animation-delay: 5s;
 }
 
 .ribbonfold3 {
-    top: 515px;
+    top: 514px;
     animation-delay: 5.5s;
 }
 /*******************************/
@@ -422,6 +422,22 @@ hr {
         height: 100%;
     }
 
+    @keyframes ribbonFoldWave {
+        0%{
+            left: 898px;
+            width: 75px;
+        }
+        50%{
+            left: 906px;
+            width: 68px;
+        }
+        100%{
+            left: 898px;
+            width: 75px;
+
+        }
+    }
+
     .ribbon, .ribbon1, .ribbon2, .ribbon3 {
         left: 815px;
         width: 350px;
@@ -454,6 +470,10 @@ hr {
 
     .ribbonfold2{
         top: 715px;
+    }
+
+    .ribbonfold3{
+        top: 940px;
     }
 
     .cv-highlights {

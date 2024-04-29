@@ -402,7 +402,7 @@
     left: 1570px;
     top: 510px;
     position: absolute;
-    z-index: -1;
+    z-index: 2;
 }
 
 .bush6part1 {
@@ -877,21 +877,21 @@
 .shadow1 {
     width: 60px;
     height:2px;
-    left: 945px;
-    top: 673px;
+    left: 35px;
+    top: 143px;
     animation-name:flowerShadow;
 }
 
 .shadow2 {
     width: 360px;
     height:5px;
-    left: 1180px;
-    top: 596px;
+    left: 150px;
+    top: 498px;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
     animation-delay: .375s;
     animation-name:treeShadow;
-    z-index: -3;
+    z-index: -7;
 }
 
 .shadow3 {
@@ -913,8 +913,8 @@
 .shadow5 {
     width: 160px;
     height:3px;
-    left: 1162px;
-    top: 738px;
+    left: 10px;
+    top: 129px;
 }
 
 .shadow6 {
@@ -1113,6 +1113,7 @@
     .rock2 {
         top: 1375px;
         left: 1250px;
+        z-index: -3;
     }
 
     .rock3 {
@@ -1158,7 +1159,7 @@
 
     .shadow2 {
         top: 1545px;
-        left: 1270px;
+        left: 1070px;
     }
 
     .shadow3 {
@@ -1238,7 +1239,7 @@
     }
 
     .shadow16 {
-        top: 1864px;
+        top: 1364px;
         left: 901px;
         background-color: rgb(0, 78, 0);
     }

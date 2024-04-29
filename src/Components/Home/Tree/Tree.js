@@ -26,6 +26,7 @@ class Tree extends React.Component {
                 <div id = "apple2"></div>
                 <div id = "apple3"></div>
                 <div id = "apple4"></div>
+                <div className= "shadow2"> </div>
             </div>
         )
     }

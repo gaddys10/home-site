@@ -55,7 +55,7 @@
     }
 }
 
-@keyframes rightForearmBreathing{
+/* @keyframes rightForearmBreathing{
     0%{
         top: 344px;
     }
@@ -65,7 +65,7 @@
     100%{
         top: 344px;
     }
-}
+} */
 
 @keyframes flowerShadow{
     0%{
@@ -91,6 +91,18 @@
     }
 }
 
+@keyframes treeRustle{
+    0% {
+        left: 60px;
+    }
+    50% {
+        left: 65px;
+    }
+    100% {
+        left: 60px;
+    }
+}
+
 @keyframes bulbRustle{
     0%{
         left: 0;
@@ -103,15 +115,75 @@
     }
 }
 
-@keyframes treeRustle4{
-    0%{
+@keyframes treeRustle1{
+    0% {
+        left: 140px;
+    }
+    50% {
+        left: 145px;
+    }
+    100% {
+        left: 140px;
+    }
+}
+
+@keyframes treeRustle2{
+    0% {
+        left: 120px;
+    }
+    50% {
+        left: 123px;
+    }
+    100% {
+        left: 120px;
+    }
+}
+
+@keyframes treeRustle3{
+    0% {
         left: 200px;
     }
-    50%{
+    50% {
         left: 203px;
     }
-    100%{
+    100% {
         left: 200px;
+    }
+}
+
+@keyframes treeRustle4{
+    0% {
+        left: 200px;
+    }
+    50% {
+        left: 203px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+@keyframes treeRustle5{
+    0% {
+        left: 60px;
+    }
+    50% {
+        left: 65px;
+    }
+    100%{ 
+        left: 60px;
+    }
+}
+
+@keyframes treeRustle6{
+    0% {
+        left: 180px;
+    }
+    50% {
+        left: 185px;
+    }
+    100% {
+        left: 180px;
     }
 }
 
@@ -248,9 +320,9 @@ body {
 #tree {
     height: 500px;
     width: 350px;
-    left: 1030px;
-    top: 100px;
-    z-index: -1;
+    left: 1180px;
+    top: 83px;
+    z-index: 1;
 }
 
 #stem {
@@ -577,53 +649,25 @@ body {
 
 @keyframes flap {
     0% {
-        width: 0;
-        height: 0;
-        border-bottom: 8px solid darkred;
-        border-right: 15px solid transparent;
-        border-bottom-right-radius:0px;   
-        border-bottom-left-radius:10px;
-        border-top-left-radius:0px;
-        border-top-right-radius:10px;
         left: 19px;
         top: 5px;
-        position: absolute;
-        z-index:1;
         transform: rotate(45deg);
     }
     50% {
-        width: 0;
-        height: 0;
-        border-bottom: 8px solid darkred;
-        border-right: 15px solid transparent;
-        border-bottom-right-radius:0px;   
-        border-bottom-left-radius:10px;
-        border-top-left-radius:0px;
-        border-top-right-radius:10px;
+
         left: 15px;
         top: 14px;
-        position: absolute;
-        z-index:1;
         transform: rotate(-65deg);
     }
     100% {
-        width: 0;
-        height: 0;
-        border-bottom: 8px solid darkred;
-        border-right: 15px solid transparent;
-        border-bottom-right-radius:0px;   
-        border-bottom-left-radius:10px;
-        border-top-left-radius:0px;
-        border-top-right-radius:10px;
         left: 18px;
         top: 5px;
-        position: absolute;
-        z-index:1;
         transform: rotate(45deg);
     }
 }
 
 .birdpart8 {
+    position: absolute;
     width: 0;
     height: 0;
     border-bottom: 8px solid darkred;
@@ -634,6 +678,12 @@ body {
     transform: rotate(45deg);
     animation: flap .25s infinite;
     animation-delay: 1s;
+    border-bottom-right-radius:0px;   
+    border-bottom-left-radius:10px;
+    border-top-left-radius:0px;
+    border-top-right-radius:10px;
+    z-index:1;
+
 }
 
 .birdpart9 {
@@ -693,8 +743,6 @@ body {
     animation-delay: 40s;
     animation-iteration-count: infinite;
     z-index: -3;
-
-
 }
 
 .cloud3 {
@@ -706,7 +754,6 @@ body {
     animation-duration: 90s;
     animation-iteration-count: infinite;
     z-index: -3;
-
 }
 
 .cloud4 {
@@ -718,14 +765,12 @@ body {
     animation-duration: 180s;
     animation-iteration-count: infinite;
     z-index: -3;
-
 }
 
 .cloud5 {
     height:160px;
     width: 110px;
     top: 200px;
-    /* left: -250px; */
     animation-name:float2;
     animation-duration: 111s;
     animation-iteration-count: infinite;
@@ -735,7 +780,6 @@ body {
 .cloud6 {
     height:160px;
     width: 110px;
-    /* left: -250px; */
     top: 110px;
     animation-name:float2;
     animation-duration: 100s;
@@ -743,7 +787,7 @@ body {
     z-index: -3;
 }
 
-.cloud7{
+.cloud7 {
     background-color: white;
     border-radius: 20px;
     height: 10px;
@@ -755,10 +799,9 @@ body {
     animation-iteration-count: infinite;
     box-shadow:  inset -0px -1px 0px  #ddd;
     z-index: -3;
-
 }
 
-.cloud8{
+.cloud8 {
     background-color: white;
     border-radius: 20px;
     height: 7px;
@@ -839,7 +882,7 @@ body {
     width: 50px;
 }
 
-.puff4a{
+.puff4a {
     top: 69px;
     left: 60px;
     height: 30px;
@@ -854,7 +897,6 @@ body {
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
-
     position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -890,15 +932,12 @@ body {
 
 .back-arrow {
     float: left;
-    margin-top: 15px;
-    margin-left:12px;
-    margin-right: 0px;
+    margin: 15px 0px 16px 12px;
     cursor: pointer;
 }
 
-.back-box{
+.back-box {
     float: left;
-    /* background-color: red; */
     height: 60px;
     width: 55px;
     cursor: pointer;
@@ -906,7 +945,7 @@ body {
     margin-left: 10px; 
 }
 
-.portfolioClose{
+.portfolioClose {
     position: relative;
     float: right;
     right: 9px;
@@ -927,16 +966,16 @@ body {
     margin: 0;
     padding-top: 10px;
     background-color: #1666e5;
-    font-size: 28px;
+    font-size: 16px;
     color: white;
     text-align: center;
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
-    font-family: 'Rightwood', sans-serif;
+    font-family: 'dogica', sans-serif;
     border-bottom: 2px solid #313131;
 }
 
-.portfolioContainer{
+.portfolioContainer {
     position: absolute;
     width: 75vw;
     height: 83vh;
@@ -951,10 +990,9 @@ body {
     border-radius: 5px;
 }
 
-.portfolioBody{
+.portfolioBody {
     width: 100%;
     height: calc(100% - 87px);
-    /* padding-top: 45px; */
     overflow-x: none;
     overflow-y: scroll;
     display: flexbox;
@@ -968,7 +1006,6 @@ body {
 
 .portfolioBody .img-container img {
     height: calc(95% - 90px);
-    /* height: max-content; */
     margin: 10px;
 }
 
@@ -983,7 +1020,6 @@ body {
 }
 
 .portfolioBody div img {
-    /* height: calc(75% - 90px); */
     margin: 10px;
 }
 
@@ -993,19 +1029,18 @@ body {
     display: inline;
 }
 
-.portfolioTitle{
-    font-size: 55px;
+.portfolioTitle {
+    font-size: 36px;
     text-align: center;
     left: 44%;
     padding-left: 3%;
-    top: 1%;
 }
 
 img {
     border-radius: 5%;
 }
 
-.portfolio-body-box{
+.portfolio-body-box {
     height: 50px;
     width: 600px;
     border: 10px solid goldenrod;
@@ -1017,14 +1052,13 @@ img {
     display: block;
 }
 
-.portfolio-body-box p{
-    margin-top: auto;
-    margin-bottom: auto;
+.portfolio-body-box p {
+    margin: auto 0px;
     position: relative;
     text-align: center;
-    font-family: 'Rightwood', sans-serif;
-    /* font-size: 60px; */
-    font-size: 350%;
+    font-family: 'dogica', sans-serif;
+    font-size: 200%;
+    margin-top: 14px;
 }
 
 .portfolio-img {
@@ -1036,8 +1070,6 @@ img {
 
 .img-container{
     float: left; 
-    /* max-height: 800px; */
-    /* height:min-content; */
     height: 200px;
 }
 
@@ -1067,8 +1099,7 @@ img {
 
 .mock-container{
     float: left;
-    margin-top: 20%;
-    margin-right: 10px;
+    margin: 20% 10px 16px 0px;
     position: relative;
 }
 
@@ -1103,26 +1134,14 @@ img {
     overflow-wrap: break-word;
 }
 
-.prototype-box p{
-    /* margin-top: 53%; */
-}
-
 .graphic-box {
     right: 5%;
- }
-
-.graphic-box p{
- }
-
-#portfolioBox {
-    text-decoration: none;
 }
 
 #folio {
     padding-top: 50px;
-    margin-top: 50px;
     background-color: #fff;
-    margin: auto;
+    margin: calc(50vh - 242px) auto auto auto;
     width: 590px;
     height: 435px;
     font-family: "Helvetica", sans-serif;
@@ -1132,97 +1151,13 @@ img {
     margin-top: calc(50vh - 242px);
 }
 
-#rt, #psub1, #pt, #psub2, #ot, #psub3, #pgraph, #folio hr, #gt1, #gsub1, #gt2, #gsub2 {
+#rt, #pt, #folio hr{
     position: relative;
-}
-
-#rt, #pt, #ot, #gt1, #gt2 {
-    box-shadow: 5x 5x 5x #313131;
-}
-
-#rt {
-    width: 90px;
-    height: 65px;
-    bottom: 15px;
-    /* box-shadow: 5px 5px 5px #000; */
-    border-radius: 5%;
-    margin-right: 300px;
-}
-
-#psub1, #psub2, #psub3, #pweb, #pgraph, #gsub1, #gsub2 {
-    color: black;
-    font-size: 12px;
-}
-
-#pweb {
-    position: relative;
-    bottom: 25px;
-    font-size: 16px;
-}
-
-#psub1 {
-    margin-right: 300px;
-    bottom: -10px;
-    text-decoration-color: white;
-}
-
-#pt {
-    width: 90px;
-    height: 65px;
-    border-radius: 5%;
-    bottom: 145px;
-}
-
-#psub2 {
-    bottom: 122px;
-    text-decoration: none;
-}
-
-#ot {
-    width: 90px;
-    height: 65px;
-    bottom: 275px;
-    border-radius: 5%;
-    margin-left: 300px;
-}
-
-#psub3 {
-    bottom: 255px;
-    margin-left: 300px;
-}
-
-#pgraph {
-    bottom: 195px;
-    font-size: 16px;
 }
 
 #folio hr {
     bottom: 215px;
     border: 1px solid rgb(154, 154, 154);
-}
-
-#gt1 {
-    width: 100px;
-    bottom: 200px;
-    border-radius: 5px;
-    margin-right: 250px
-}
-
-#gsub1 {
-    bottom: 190px;
-    margin-right: 250px;
-}
-
-#gt2 {
-    width: 90px;
-    bottom: 358px;
-    border-radius: 5px;
-    margin-left: 250px;
-}
-
-#gsub2 {
-    bottom: 360px;
-    margin-left: 250px;
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {
@@ -1248,6 +1183,7 @@ img {
         top: 920px;
         position: absolute;
         left: 1040px;
+        z-index: -2;
     }
 
     #folio {
@@ -1269,22 +1205,22 @@ img {
         z-index: 0;
     }
 
-    .cloud3{
+    .cloud3 {
         top: 1100px
     }
 
-    .cloud4{
+    .cloud4 {
         top: 800px;
     }
 
-    .cloud6{
+    .cloud6 {
         top: 420px;
     }
 
-    .cloud7{
+    .cloud7 {
         top: 1000px;
     }
-    .cloud5{
+    .cloud5 {
         top: 720px;
     }
     

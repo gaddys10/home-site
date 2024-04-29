@@ -32,6 +32,8 @@ class Flower extends React.Component {
                     <div className= "fpetal13"></div>
                     <div className= "fpetal14"></div>
                 </div>
+                <div className= "shadow1"> </div>
+
             </div>
         )
     }

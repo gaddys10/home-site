@@ -3,6 +3,7 @@
     left: 675px;
     top: 160px;
     transform: scale(1);
+    z-index: 6;
 }
 
 /*v Upper Body v*/
@@ -313,9 +314,7 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -2px 2px 0px 0cap #ba996f;
-
-        
+        box-shadow: inset -2px 2px 0px #ba996f; 
     }
 
     50%{
@@ -326,7 +325,7 @@
         -ms-transform: rotate(110deg);
         transform: rotate(110deg);
         left: 459px;
-        box-shadow: inset 0px 3px 0px 0cap #ba996f;
+        box-shadow: inset 0px .5px 0px 0cap #ba996f
 
     }
     100%{
@@ -336,24 +335,35 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -2px 2px 0px 0cap #ba996f;
+        box-shadow: inset -2px 2px 0px #ba996f; 
+    }
+}
 
-        }
-        
+@keyframes rightForearmBreathing{
+    0%{
+        top: 345px;
+    }
+    50%{
+        top: 344px;
+    }
+    100%{
+        top: 345px;
+    }
+
 }
 
 .right_forearm {
     height: 13px;
-    width: 41px;
-    top: 345px;
+    width: 39px;
+    top: 346px;
     left: 456px;
     border-bottom-left-radius: 30px;
-    border-top-left-radius: 20px;
-    /* border-bottom-right-radius: 30px; */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0px;
     border-top-right-radius: 10px;
     animation: handWave .25s 7, rightForearmBreathing 3s infinite;
     -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
-    box-shadow: inset -2px 2px 0px 0cap #ba996f 
+    box-shadow: inset -2px 2px 0px #ba996f; 
 }  
 
 @keyframes handWaveSafari {
@@ -381,11 +391,13 @@
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-            left: 456px;
+        transform: rotate(90deg);
+        left: 456px;
     }
         
 }
+
+
 
 .right_forearm_safari{
     height: 13px;
@@ -396,9 +408,9 @@
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 15px;
+    box-shadow: inset -1px 2px 0px 0cap #ba996f;
     animation: rightForearmBreathing 3s infinite;
-    /* animation: handWaveSafari .5s 5, rightForearmBreathing 3s infinite; */
-    box-shadow: inset -1px 2px 0px 0cap #ba996f 
+    animation: handWaveSafari .5s 5, rightForearmBreathing 3s infinite;
 }
 /*^ Upper Body ^*/
 
@@ -465,31 +477,106 @@
     border-bottom-right-radius: 10px;
 }
 
-@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
-    /* put your css styles in here */
-    #character {
-        transform: scale(3);
-        left: 50px;
-        top: 1100px;
+@keyframes speechFloat {
+    0% {
+        top: 40px;
+    }
+
+    50% {
+        
+        top: 45px;
+    }
+    100% {
+        top: 40px;
     }
 }
 
-@media all and (min-width:769px) and (max-width: 800px) {
-/* put your css styles in here */
+@keyframes speechAppear {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
-@media all and (min-width:569px) and (max-width: 768px) {
-/* put your css styles in here */
+@font-face {
+    font-family: "dogica";
+    src: url("dogica.ttf");
 }
 
-@media all and (min-width:481px) and (max-width: 568px) {
-/* put your css styles in here */
+
+.speech-bubble {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    left: 500px;
+    border-radius: 15px;
+    z-index: 5;
+    padding: 5px;
+    animation: speechFloat 1.5s infinite, speechAppear 6s 1 forwards;
+    font-size: 14px;
+    top: 40px;
+    box-shadow: inset -2px -2px 1px #aaaaaa;
+    /* display: none; */
 }
 
-@media all and (min-width:321px) and (max-width: 480px) {
-/* put your css styles in here */
+.bubble-tail{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Adjust width as needed */
+    border-right: 10px solid transparent; /* Adjust width as needed */
+    border-bottom: 35px solid white; 
+    position: absolute;
+    top: 92px;
+    left: -14px;
+    transform: rotate(-135deg);
+    
 }
 
-@media all and (min-width:0px) and (max-width: 320px) {
-/* put your css styles in here */
+.speech-text {
+    font-family: 'dogica', sans-serif;
+}
+
+@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+    #character {
+        transform: scale(3);
+        left: 20px;
+        top: 1100px;
+    }
+
+    @keyframes speechFloat {
+        0% {
+            top: 50px;
+        }
+        50% {
+            
+            top: 55px;
+        }
+        100% {
+            top: 50px;
+        }
+    }
+
+    .bubble-tail{
+        left: -10px;
+        top: 90px;
+    }
+
+    .speech-bubble {
+        left: 406px;
+        transform: scale(.6);
+        animation: speechFloat 1.5s infinite;
+        font-size: 14px;
+        top: 60px;
+        width: 160px;
+    }
 }

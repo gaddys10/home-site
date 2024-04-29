@@ -324,22 +324,18 @@ body {
     #syrus{
         margin-top: 0px;
         top: 0vh;
-        /* left: 45vw; */
     }
 
     #services{
         top: 38vh;
-        /* left: 45vw; */
     }
 
     #subtitle{
-        /* left: 46vw; */
         top: 23vh;
     }
 
     #location {
         transform: scale(3);
-        /* left: 48vw; */
         top: 28vh;
     }
 }

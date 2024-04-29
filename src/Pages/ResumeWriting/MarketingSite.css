@@ -87,7 +87,7 @@ src: url("FUTRFW.TTF");
     font-family: 'FUTRFW', sans-serif;
     font-size: 48px;
     text-align: center;
-    
+
     margin-bottom: 0px;
     opacity: 0;
     animation-name: appear;
@@ -528,15 +528,12 @@ src: url("FUTRFW.TTF");
 }
 
 .sub3 {
-    margin-top: -33px;
-    margin-left: 408px;
-    
+    margin: -33px 0px 16px 408px;
 }
 
 .thumbnail3 {
     max-width: 125px;
-    margin-top: -200px;
-    margin-left: 408px;
+    margin: -200px 0px 16px 408px;
     border-style: solid;
     border-color: black;
     box-shadow: 3px 3px 15px #000;
@@ -567,7 +564,6 @@ src: url("FUTRFW.TTF");
     margin-right: 300px;
     border-radius: 5%;
     background-color: white;
-    /* opacity: 0; */
 }
 
 form {
@@ -631,8 +627,7 @@ form input {
 #ig {
     height: 30px;
     float: right;
-    margin-right: -305px;
-    margin-top: 410px;
+    margin: 410px -305px 16px 0px;
     cursor: pointer;
     animation-fill-mode: forwards;
 }
@@ -640,27 +635,26 @@ form input {
 #linkedIn {
     height: 30px;
     float: right;
-    margin-right: -345px;
-    margin-top: 410px;
+    margin: 410px -345px 16px 0px;
     cursor: pointer;
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px)  {
-    #formContainer{
+    #formContainer {
         transform: scale(3);
         left: 50%;
-        margin-top: 40vh;
-        margin-right: 70vw;
+        margin: 40vh 70vw 16px 0px;
     }
 
-    #twitter, #fb, #ig, #linkedin{
+    #twitter, #fb, #ig, #linkedin {
         transform: scale(3);
     }
 
-    #twitter{
+    #twitter {
         margin-right: 500px;
     }
-    #fb{
+
+    #fb {
         margin-right: 0;
     }
 }

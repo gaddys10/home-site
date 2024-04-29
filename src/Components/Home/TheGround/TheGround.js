@@ -36,6 +36,7 @@ class TheGround extends React.Component {
                     <div className='bush1part1'></div>
                     <div className='bush1part2'></div>
                     <div className='bush1part3'></div>
+                    <div className='shadow5'></div>
                 </div>
                 <div className='bush2'>
                     <div className='bush2part1'></div>
@@ -72,11 +73,10 @@ class TheGround extends React.Component {
                     <div className='bush8part1'></div>
                     <div className='bush8part2'></div>
                     <div className='bush8part3'></div>
+                    <div className='shadow17'></div>
                 </div>
 
-
                 <div id = "grass"></div>
-                
             </div>
         )
     }

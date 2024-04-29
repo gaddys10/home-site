@@ -537,11 +537,8 @@ class Home extends React.Component {
 
                 <div id = "sky"></div>
                 <div id = "ground_container"></div>
-                <div className= "shadow1"> </div>
-                <div className= "shadow2"> </div>
                 <div className= "shadow3"> </div>
                 <div className= "shadow4"> </div>
-                <div className='shadow5'></div>
                 <div className='shadow6'></div>
                 <div className='shadow7'></div>
                 <div className='shadow8'></div>
@@ -553,7 +550,6 @@ class Home extends React.Component {
                 <div className='shadow14'></div>
                 <div className='shadow15'></div>
                 <div className='shadow16'></div>
-                <div className='shadow17'></div>
                 <div className='shadow18'></div>
                 <div className= "birdShadow"></div>
                 <div id = "character_container"></div>

@@ -15,7 +15,8 @@ class Wrapper extends React.Component {
         return(
                 <div className= "home-wrapper">
                     <div className="cvHeader">
-                        <p className="name-position">Syrus Gaddy, Software Engineer</p>
+                        <p className="name-position">Syrus Gaddy, <br /><br /> Software Engineer</p>
+                        <br />
                         <ul className="contact-info">
                             <li> <b>Mobile:</b> (910) 308-3896 </li>
                             <li> <b>E-mail:</b> gaddys10@gmail.com </li>

@@ -61,9 +61,7 @@
 }
 
 .bio-wrappertext {
-    margin-top: 70px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin: 70px 7px 16px 7px;
     text-wrap: wrap;
 }
 
@@ -77,8 +75,7 @@
     width: 800px;
     height: 20px;
     background-color: #85BF7E;
-    margin-top: 40px;
     border-radius: 45px;
-    margin-left: -20px;
+    margin: 40px 0px 0px -20px;
     box-shadow: -1px 2px 3px #080809;
 }

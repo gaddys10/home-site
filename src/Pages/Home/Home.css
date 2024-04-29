@@ -320,9 +320,9 @@ body {
 #tree {
     height: 500px;
     width: 350px;
-    left: 1030px;
-    top: 100px;
-    z-index: -2;
+    left: 1180px;
+    top: 83px;
+    z-index: 1;
 }
 
 #stem {
@@ -894,12 +894,12 @@ body {
     margin: 0;
     padding-top: 10px;
     background-color: #1666e5;
-    font-size: 28px;
+    font-size: 16px;
     color: white;
     text-align: center;
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
-    font-family: 'Rightwood', sans-serif;
+    font-family: 'dogica', sans-serif;
     border-bottom: 2px solid #313131;
 }
 
@@ -958,11 +958,10 @@ body {
 }
 
 .portfolioTitle {
-    font-size: 55px;
+    font-size: 36px;
     text-align: center;
     left: 44%;
     padding-left: 3%;
-    top: 1%;
 }
 
 img {
@@ -985,8 +984,9 @@ img {
     margin: auto 0px;
     position: relative;
     text-align: center;
-    font-family: 'Rightwood', sans-serif;
-    font-size: 350%;
+    font-family: 'dogica', sans-serif;
+    font-size: 200%;
+    margin-top: 14px;
 }
 
 .portfolio-img {
@@ -1198,6 +1198,7 @@ img {
         top: 920px;
         position: absolute;
         left: 1040px;
+        z-index: -2;
     }
 
     #folio {

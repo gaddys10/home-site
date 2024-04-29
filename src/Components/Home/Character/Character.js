@@ -55,11 +55,7 @@ class Character extends React.Component {
                 <div className="left_arm_shadow"></div>
                 <div className="right_arm"></div>
                 <div className="right_arm_shadow"></div>
-
-
                 <div className={this.isSafari()}></div>
-
-
                 <div className="right_sleeve"></div>
                 <div className="right_sleeve_shadow"></div>
                 <div className="right_shoe"></div>
@@ -67,6 +63,10 @@ class Character extends React.Component {
                 <div className="right_cuff"></div>
                 <div className="left_shoe"></div> 
                 <div className="shadow"></div>
+                <div className="speech-bubble">
+                    <div className="bubble-tail"></div>
+                    <p className="speech-text">Hello! <br /><br /> Welcome to my home page!</p>
+                </div>
             </div>
         )
     }

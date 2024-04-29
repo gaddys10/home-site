@@ -8,6 +8,11 @@
     src: url("Rightwood.ttf");
 }
 
+@font-face {
+    font-family: "dogica";
+    src: url("dogica.ttf");
+}
+
 
 /**********************/
 /* vvvvv Resume vvvvv */
@@ -75,13 +80,13 @@
 }
 
 .name-position, .summary-info {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     margin: 25px 0px 0px 0px
 }
 
 .summary-info {
-    font-family: 'Rightwood', sans-serif;
+    font-family: 'dogica', sans-serif;
     margin: 25px 0px 25px 20px;
 }
 
@@ -106,13 +111,13 @@
 .educationTitle {
     float: left;
     width: 325px;
-    font-family: 'Rightwood', sans-serif;
+    font-family: 'dogica', sans-serif;
 }
 
 .experience-title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
-    font-family: 'Rightwood', sans-serif;
+    font-family: 'dogica', sans-serif;
     margin: 30px 0px 10px 20px;
 }
 
@@ -148,8 +153,8 @@ hr {
 
 .name-position {
     margin-left: 20px;
-    font-family: 'Rightwood', sans-serif;
-    font-size: 48px;
+    font-family: 'dogica', sans-serif;
+    font-size: 24px;
 }
 
 .skill-cat {
@@ -285,27 +290,30 @@ hr {
     position: absolute;
     top: 30px;
     text-decoration: none;
-    font-size: 38px;
+    font-size: 16px;
     color: white;
-    font-family: 'Rightwood', sans-serif;
-    margin-left: 10px;
+    font-family: 'dogica', sans-serif;
+    /* margin-left: 10px; */
 }
 
 .ribbon a {
-    left:30px;
+    left:15px;
+    top: 45px;
 }
 
 .ribbon1 a {
-    left:40px;
+    top: 45px;
+    left:33px;
 }
 
 .ribbon2 a {
-    left:31px;
+    top: 45px;
+    left:11px;
 }
 
 .ribbon3 a {
-    left: 25px;
-    top: 10px;
+    left: 18px;
+    top: 35px;
 }
 
 .ribbon a:visited, .ribbon2 a:visited {
@@ -409,12 +417,24 @@ hr {
     } 
 
     .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
-        font-size: 64px;
-        margin: 25px 0px 0px 90px;
+        font-size: 36px;
+        margin: 25px 0px 0px 30px;
+    }
+
+    .ribbon a {
+        margin-left: 45px;
+    }
+
+    .ribbon1 a {
+        margin-left: 65px;
+    }
+
+    .ribbon2 a {
+        margin-left: 35px;
     }
 
     .ribbon3 a {
-        margin: 5px 0px 0px 70px;
+        margin: 17px 0px 0px 45px;
     }
 
     .ribbonfold, .ribbonfold1, .ribbonfold2, .ribbonfold3 {
@@ -509,12 +529,12 @@ hr {
     }
 
     .experience-title, .summary-info, .name-position {
-        font-size: 700%;
+        font-size: 500%;
         margin-left: 30px;
     }
 
     .name-position {
-        font-size: 850%;
+        font-size: 500%;
     }
 
     .contact-info li {

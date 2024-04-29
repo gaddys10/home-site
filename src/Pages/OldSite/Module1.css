@@ -108,23 +108,19 @@ table {
 }
 
 .blog {
-    margin-top: 420px;
-    margin-left: 1063px;
+    margin: 420px 0px 16px 1063px;
 }
 
 .folio {
-    margin-top: 385px;
-    margin-left: 705px;
+    margin: 385px 0px 16px 705px;
 }
 
 .video {
-    margin-top: 20px;
-    margin-left: 690px;
+    margin: 20px 0px 16px 690px;
 }
 
 .audio {
-    margin-top: 136px;
-    margin-left: 645px;
+    margin: 136px 0px 16px 645px;
 }
 
 .name {
@@ -134,8 +130,7 @@ table {
 }
 
 .template {
-    margin-top: 45px;
-    margin-left: 10px;
+    margin: 45px 0px 16px 10px;
 }
 
 .template:active {
@@ -143,14 +138,12 @@ table {
 }
 
 .template1, .template3 {
-    margin-top: 40px;
-    margin-right: 10px;
+    margin: 40px 10px 16px 0px;
     float: right;
 }
 
 .template2 {
-    margin-top: 40px;
-    margin-left: 10px;
+    margin: 40px 0px 16px 10px;
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {

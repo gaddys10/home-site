@@ -132,10 +132,8 @@ body {
 }
 
 #centerBox {
-    /* height: 100%; */
-    margin-top: 25vh;
+    margin: 25vh 0px 16px 0px;
     font-family: "arial"; 
-    margin-right: 0px;
     width: fit-content;
 }
 

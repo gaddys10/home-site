@@ -55,7 +55,7 @@
     }
 }
 
-@keyframes rightForearmBreathing{
+/* @keyframes rightForearmBreathing{
     0%{
         top: 344px;
     }
@@ -65,7 +65,7 @@
     100%{
         top: 344px;
     }
-}
+} */
 
 @keyframes flowerShadow{
     0%{
@@ -1066,14 +1066,10 @@ img {
     right: 5%;
 }
 
-#portfolioBox {
-    text-decoration: none;
-}
-
 #folio {
     padding-top: 50px;
     background-color: #fff;
-    margin: auto;
+    margin: calc(50vh - 242px) auto auto auto;
     width: 590px;
     height: 435px;
     font-family: "Helvetica", sans-serif;
@@ -1083,96 +1079,13 @@ img {
     margin-top: calc(50vh - 242px);
 }
 
-#rt, #psub1, #pt, #psub2, #ot, #psub3, #pgraph, #folio hr, #gt1, #gsub1, #gt2, #gsub2 {
+#rt, #pt, #folio hr{
     position: relative;
-}
-
-#rt, #pt, #ot, #gt1, #gt2 {
-    box-shadow: 5x 5x 5x #313131;
-}
-
-#rt {
-    width: 90px;
-    height: 65px;
-    bottom: 15px;
-    border-radius: 5%;
-    margin-right: 300px;
-}
-
-#psub1, #psub2, #psub3, #pweb, #pgraph, #gsub1, #gsub2 {
-    color: black;
-    font-size: 12px;
-}
-
-#pweb {
-    position: relative;
-    bottom: 25px;
-    font-size: 16px;
-}
-
-#psub1 {
-    margin-right: 300px;
-    bottom: -10px;
-    text-decoration-color: white;
-}
-
-#pt {
-    width: 90px;
-    height: 65px;
-    border-radius: 5%;
-    bottom: 145px;
-}
-
-#psub2 {
-    bottom: 122px;
-    text-decoration: none;
-}
-
-#ot {
-    width: 90px;
-    height: 65px;
-    bottom: 275px;
-    border-radius: 5%;
-    margin-left: 300px;
-}
-
-#psub3 {
-    bottom: 255px;
-    margin-left: 300px;
-}
-
-#pgraph {
-    bottom: 195px;
-    font-size: 16px;
 }
 
 #folio hr {
     bottom: 215px;
     border: 1px solid rgb(154, 154, 154);
-}
-
-#gt1 {
-    width: 100px;
-    bottom: 200px;
-    border-radius: 5px;
-    margin-right: 250px
-}
-
-#gsub1 {
-    bottom: 190px;
-    margin-right: 250px;
-}
-
-#gt2 {
-    width: 90px;
-    bottom: 358px;
-    border-radius: 5px;
-    margin-left: 250px;
-}
-
-#gsub2 {
-    bottom: 360px;
-    margin-left: 250px;
 }
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px) {

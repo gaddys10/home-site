@@ -299,7 +299,7 @@
 
 .right_arm {
     height: 13px;
-    width: 50px;
+    width: 53px;
     top: 356px;
     left: 425px;
     animation: rightArmBreathing 3s infinite;
@@ -326,6 +326,7 @@
         transform: rotate(110deg);
         left: 459px;
         box-shadow: inset 0px .5px 0px 0cap #ba996f
+
     }
     100%{
         left: 456px;
@@ -348,6 +349,7 @@
     100%{
         top: 345px;
     }
+
 }
 
 .right_forearm {

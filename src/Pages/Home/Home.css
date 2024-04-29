@@ -784,7 +784,7 @@ body {
     animation-name:float2;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    z-index: -3;
+    z-index: -4;
 }
 
 .cloud7 {

@@ -932,7 +932,7 @@ body {
 
 .back-arrow {
     float: left;
-    margin: 15px 0px 16px 12px;
+    margin: 25px 0px 16px 12px;
     cursor: pointer;
 }
 
@@ -952,13 +952,22 @@ body {
     top: 0px;
     font-size: 38px;
     background-color: red;
-    height: 55px;
+    height: 50px;
     width: 60px;
     border-radius: 5px;
     box-shadow: inset -2px -2px 0px 0px darkred;
-    padding-top: 7px;
+    padding-top: 12px;
     cursor: pointer;
     border: 2px solid #313131;
+}
+
+.portfolioClose:hover {
+    background-color: rgb(132, 0, 0);
+    box-shadow: inset 2px 2px 0px 0px rgb(63, 0, 0);
+}
+
+.xx {
+    padding-top: 15px;
 }
 
 .portfolioHeader {
@@ -983,8 +992,7 @@ body {
     left: 13vw;
     top: 8vh;
     z-index: 100;
-    box-shadow: 15px 15px 0px rgb(0 0 0 / 10%);
-    border: 2px solid #525252;
+    border: 3px solid black;
     padding: 0;
     margin: 0;
     border-radius: 5px;
@@ -1032,7 +1040,9 @@ body {
 .portfolioTitle {
     font-size: 36px;
     text-align: center;
-    left: 44%;
+    position: relative;
+    top: 15px;
+    /* left: 44%; */
     padding-left: 3%;
 }
 
@@ -1223,5 +1233,22 @@ img {
     .cloud5 {
         top: 720px;
     }
+
+    .portfolio-body-box {
+        height: 200px;
+        width: 800px;
+        border: 10px solid goldenrod;
+        box-shadow: 3px 3px 0px #313131;
+        background-color: #FFF;
+        background-color: rgb(241, 224, 181);
+        cursor: pointer;
+        margin: 15% auto;
+        display: block;
+        /* margin-bottom: 10%; */
+    }
     
+    .portfolio-body-box p {
+        margin-top: 85px;
+        font-size: 36px;
+    }
 }

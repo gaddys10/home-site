@@ -217,7 +217,7 @@ class Home extends React.Component {
                                 {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
                                 <div className='back-box' onClick={this.turnOffPages}><FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} /></div>
                                 <p className='portfolioTitle' >Portfolio</p>
-                                <p className='portfolioClose' onClick={ this.closePortfolio }>X</p>
+                                <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
                             <div className='portfolioBody'>
                                 {

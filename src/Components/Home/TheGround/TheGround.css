@@ -36,7 +36,7 @@
     z-index: -3;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(25,102,30,1) 0%,rgba(34,139,34,1) 50%, rgba(34,139,34,1) 100%);;
+    background: linear-gradient(to bottom, rgba(25,102,30,1) 0%,rgba(34,139,34,1) 50%, rgba(34,139,34,1) 100%);
 }
 
 /******************************/
@@ -714,7 +714,7 @@
     top: 85px;
     left: 35px;
     background-color: darkgreen;
-    box-shadow: inset -1px 1px 0px 1px #004200;
+    box-shadow: inset -1px 1px 0px 1px #004200,;
 }  
 
 .fbulb {
@@ -1047,8 +1047,8 @@
 .shadow17 {
     width: 43px;
     height:3px;
-    left: 1702px;
-    top: 468px;
+    left: 2px;
+    top: 28px;
     position: absolute;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100px;

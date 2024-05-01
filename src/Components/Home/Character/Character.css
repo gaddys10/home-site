@@ -1,6 +1,6 @@
 /*v CHARACTER v*/
 #character {
-    left: 675px;
+    left: 705px;
     top: 160px;
     transform: scale(1);
     z-index: 6;
@@ -157,6 +157,7 @@
     left: 382px;
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
+    background-color: #dcc5a8;
 }
 
 .myrightear {
@@ -192,7 +193,7 @@
     border-color:black;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    box-shadow: inset -1px -2px 0px 1px #ba996f, inset 1px 2px 0px 1px #b8a184;
+    box-shadow: inset -2px -1px 0px 1px #ba996f, inset 7px 2px 0px 1px #d9c0a2;
 }
 /*^ Head ^*/
 
@@ -201,7 +202,7 @@
     width: 20px;
     top: 330px;
     left: 415px;
-    box-shadow: inset -1px -2px 0px 1px #ba996f ;
+    box-shadow: inset -1px -2px 0px 1px #ba996f, inset 2px 1px 0px 0px #d9c0a2 ;
 }
 
 .neck_shadow {
@@ -276,7 +277,7 @@
 }
 
 .left_arm_shadow {
-    box-shadow: inset -1px 1px 0px 1px #ba996f;
+    box-shadow: inset -1px 1px 0px 1px #ba996f, inset 3px 1px 0px 0px #d9c0a2;
     animation: leftArmBreathing 3s infinite;
 }
 
@@ -303,7 +304,7 @@
     top: 356px;
     left: 425px;
     animation: rightArmBreathing 3s infinite;
-    box-shadow: inset -1px -2px 0px 0cap #ba996f 
+    box-shadow: inset 0px -2px 0px 0cap #ba996f 
 }
 
 @keyframes handWave {
@@ -314,7 +315,7 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -2px 2px 0px #ba996f; 
+        box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2;; 
     }
 
     50%{
@@ -325,7 +326,7 @@
         -ms-transform: rotate(110deg);
         transform: rotate(110deg);
         left: 459px;
-        box-shadow: inset 0px .5px 0px 0cap #ba996f
+        box-shadow: inset 0px .5px 0px 0cap #ba996f, inset 2px -2px 0px 0px #d9c0a2;
 
     }
     100%{
@@ -335,7 +336,7 @@
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        box-shadow: inset -2px 2px 0px #ba996f; 
+        box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2;
     }
 }
 
@@ -363,7 +364,8 @@
     border-top-right-radius: 10px;
     animation: handWave .25s 7, rightForearmBreathing 3s infinite;
     -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
-    box-shadow: inset -2px 2px 0px #ba996f; 
+    box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2; 
+    z-index: -1;
 }  
 
 @keyframes handWaveSafari {
@@ -429,6 +431,7 @@
     width: 35px;
     background-color: #75aaf9;
     left: 407px;
+    box-shadow: inset 5px -0px 0px 0px #83b4fd;
 }
 
 .leg_leftShadow {
@@ -468,6 +471,7 @@
 .left_shoe {
     left: 425px; 
     border-top-right-radius: 15px;
+
 }
 
 .right_shoe {
@@ -475,6 +479,8 @@
     border-top-left-radius: 45px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 10px;
+    box-shadow: inset -3px -1px 0px 1px #9b7676, inset 3px 1px 0px 0px #b99a9a;
+
 }
 
 @keyframes speechFloat {

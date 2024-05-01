@@ -1113,7 +1113,6 @@ img {
     width: 300px;
     text-align: center;
     font-family: 'dogica', sans-serif;
-
 }
 
 .mock-big-container{
@@ -1212,6 +1211,21 @@ img {
         z-index: -2;
     }
 
+    .leaf {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 40px 20px;
+        border-color: transparent transparent #78a43e transparent;
+        border-radius: 50%/30px 30px 0 0;
+        transform: rotate(45deg);
+        position: relative;
+        left: 1000px;
+        margin-left: 1000px;
+        top: 500px;
+        z-index: 3;
+    }      
+
     #folio {
         transform: scale(2);
     }
@@ -1221,7 +1235,6 @@ img {
     }
 
     .bird {
-
         left: 1990px;
         top:  900px;
     }
@@ -1246,6 +1259,7 @@ img {
     .cloud7 {
         top: 1000px;
     }
+
     .cloud5 {
         top: 720px;
     }

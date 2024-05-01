@@ -24,7 +24,7 @@ class Wrapper extends React.Component {
                         </ul>
                     </div>
                     <br/>
-                    <img src={divida} alt="" className="divida" />
+                    {/* <img src={divida} alt="" className="divida" /> */}
                     <div className="section-divider">---</div>
                     <div className="cvBody">
                         <p className="summary-info">Skills</p>
@@ -69,9 +69,8 @@ class Wrapper extends React.Component {
                         </p>
                         <br/> 
                         <br/>
-                        <img src={divida} alt="" className="divida" />
-                        
-                        
+                        <div className="section-divider">---</div>
+
                         <p className="experience-title">Experience</p>
                         
                         <span className="jobTitleContainer">
@@ -211,7 +210,9 @@ class Wrapper extends React.Component {
                         <br/>
                         <br/>
 
-                        <img src={divida} alt="" className="divida" />
+                        {/* <img src={divida} alt="" className="divida" /> */}
+                        <div className="section-divider">---</div>
+
                         <p className="experience-title"> Education </p>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">B.S. Computer Science, <span className="minor">Math Minor</span> <br/> Fayetteville State University</h3>

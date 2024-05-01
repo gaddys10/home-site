@@ -335,7 +335,7 @@ body {
     height: 300px;
     left: 150px;
     top: 200px;
-    box-shadow: inset 3px 0px 0px #ab5e27;
+    box-shadow: inset 5px 0px 0px #ab5e27, inset -12px 0px 0px 0px #60300d;
 }
 
 #stemShadow {
@@ -364,6 +364,7 @@ body {
     top: 190px;
     left: 130px;
     box-shadow: inset -1px 1px 0px 1px #61300e;   
+    background-color: #ab5e27;
 }
 
 @keyframes treeRustle1{

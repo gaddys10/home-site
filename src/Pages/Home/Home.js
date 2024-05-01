@@ -210,7 +210,7 @@ class Home extends React.Component {
                 <Wrapper />
                 <Flower />
                 <Bird />
-
+                <div class = "leaf"></div>
                 { 
                     this.state.showPortfolio &&
                         <div className='portfolioContainer'>
@@ -429,7 +429,7 @@ class Home extends React.Component {
 
                                             <div className="img-container">
                                                 <img className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG")}/>
-                                                <p className='picture-sub'>Google PIxel 5</p>
+                                                <p className='picture-sub'>Google Pixel 5</p>
                                             </div>
 
                                             <div className='img-container'>

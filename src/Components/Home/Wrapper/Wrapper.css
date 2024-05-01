@@ -280,7 +280,7 @@ hr {
     border-color: transparent;
 }
 
-.ribbon1:after{
+/* .ribbon1:after{
     animation-delay: 4.5s;
 }
 
@@ -290,7 +290,7 @@ hr {
 
 .ribbon3:after {
     animation-delay: 5.5s;
-}
+} */
 
 .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
     position: absolute;
@@ -360,17 +360,17 @@ hr {
 
 .ribbonfold1 {
     top: 264px;
-    animation-delay: 4.5s;
+    /* animation-delay: 4.5s; */
 }
 
 .ribbonfold2 {
     top: 389px;
-    animation-delay: 5s;
+    /* animation-delay: 5s; */
 }
 
 .ribbonfold3 {
     top: 514px;
-    animation-delay: 5.5s;
+    /* animation-delay: 5.5s; */
 }
 /*******************************/
 /* ^^^^^ Wrapper Ribbons ^^^^^ */

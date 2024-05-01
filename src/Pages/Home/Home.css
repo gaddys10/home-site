@@ -266,7 +266,7 @@
 
 /*^ Animations ^*/
 
-html {
+html, body {
     width: 100%;
     height: 100vh;
     padding: 0;
@@ -287,7 +287,7 @@ body {
 #sky {
     background: linear-gradient(to bottom, rgba(67,160,165,1) 0%,rgba(83,199,204,1) 100%);
     height: 60%;
-    width: 100%;
+    width: 100vw;
     z-index: -6;
 }
 
@@ -335,7 +335,7 @@ body {
     height: 300px;
     left: 150px;
     top: 200px;
-    box-shadow: inset 5px 0px 0px #ab5e27, inset -12px 0px 0px 0px #60300d;
+    box-shadow: inset 5px 0px 0px #ab5e27, inset -12px 0px 0px 0px #70401e;
 }
 
 #stemShadow {
@@ -363,7 +363,7 @@ body {
     transform: rotate(-40deg);
     top: 190px;
     left: 130px;
-    box-shadow: inset -1px 1px 0px 1px #61300e;   
+    box-shadow: inset -1px 1px 0px 1px #70401e;   
     background-color: #ab5e27;
 }
 
@@ -387,7 +387,7 @@ body {
     animation: treeRustle1 4s infinite;
     animation-delay: .5s;
     border-radius: 100px;
-    box-shadow: inset -15px -20px 0px 1px #003300, inset 1px 1px 0px 1px #027002;
+    box-shadow: inset -15px -20px 0px 1px rgb(15, 92, 20, 1), inset 1px 1px 0px 1px #027002;
 }
 
 @keyframes treeRustle2{
@@ -411,7 +411,7 @@ body {
     animation: treeRustle2 4s infinite;
     border-radius: 100px;
     z-index: 2;
-    box-shadow: inset -6px -9px 0px 1px #003300;
+    box-shadow: inset -6px -9px 0px 1px rgb(15, 92, 20, 1);
 }
 
 @keyframes treeRustle{
@@ -434,7 +434,7 @@ body {
     border-radius: 100px;
     animation-delay: .5s;
     animation: treeRustle 4s infinite;
-    box-shadow: inset -10px -15px 0px 1px #003300, inset 20px 13px 0px 1px #027002;
+    box-shadow: inset -10px -15px 0px 1px rgb(15, 92, 20, 1), inset 20px 13px 0px 1px #027002;
 }
 
 @keyframes treeRustle3{
@@ -457,7 +457,7 @@ body {
     animation-delay: .25s;
     animation: treeRustle3 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -10px -6px 0px 1px #003300, inset 2px 5px 0px 1px #027002;
+    box-shadow: inset -10px -6px 0px 1px rgb(15, 92, 20, 1), inset 2px 5px 0px 1px #027002;
 }
 
 @keyframes treeRustle5{
@@ -480,7 +480,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle5 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -8px -7px 0px 1px #003300, inset 10px 8px 0px 1px #027002;
+    box-shadow: inset -8px -7px 0px 1px rgb(15, 92, 20, 1), inset 10px 8px 0px 1px #027002;
 }
 
 @keyframes treeRustle6{
@@ -503,7 +503,7 @@ body {
     animation-delay: .375s;
     animation: treeRustle6 4s infinite;
     border-radius: 100px;
-    box-shadow: inset -10px -15px 0px 1px #003300;
+    box-shadow: inset -10px -15px 0px 1px rgb(15, 92, 20, 1);
 }
 
 #apple1, #apple2, #apple3 {
@@ -520,7 +520,7 @@ body {
     animation-name:appleRustle;
     top: 100px;
     left: 100px;
-    box-shadow: inset -2px -2px 0px 1px darkred, inset 6px 7px 0px 1px #fa3737;
+    box-shadow: inset -2px -2px 0px 1px  rgb(188, 2, 2), inset 6px 7px 0px 1px #fa3737;
 }
 
 #apple2 {
@@ -528,7 +528,7 @@ body {
     animation-name: appleRustle1;
     top: 200px;
     left: 110px;
-    box-shadow: inset -4px -4px 0px 1px darkred, inset 2px 2px 0px 1px #fa3737;
+    box-shadow: inset -4px -4px 0px 1px  rgb(188, 2, 2), inset 2px 2px 0px 1px #fa3737;
 }
 
 #apple3{
@@ -536,7 +536,7 @@ body {
     animation-name: appleRustle2;
     top: 180px;
     left: 230px;
-    box-shadow: inset -4px -5px 0px 1px darkred, inset 2px 2px 0px 1px #fa3737;
+    box-shadow: inset -4px -5px 0px 1px rgb(188, 2, 2), inset 2px 2px 0px 1px #fa3737;
 }
 /*^ Tree ^*/
 
@@ -728,6 +728,7 @@ body {
     animation-delay: 7s;
     animation-iteration-count: infinite;
     z-index: -3;
+    
 
 }
 
@@ -749,6 +750,7 @@ body {
     animation-delay: 40s;
     animation-iteration-count: infinite;
     z-index: -3;
+
 }
 
 .cloud3 {
@@ -760,6 +762,7 @@ body {
     animation-duration: 90s;
     animation-iteration-count: infinite;
     z-index: -3;
+    
 }
 
 .cloud4 {
@@ -790,7 +793,7 @@ body {
     animation-name:float2;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    z-index: -3;
+    z-index: -5;
 }
 
 .cloud7 {
@@ -803,7 +806,7 @@ body {
     animation-duration: 160s;
     animation-name:float2;
     animation-iteration-count: infinite;
-    box-shadow:  inset -0px -1px 0px  #ddd;
+    box-shadow:  inset -1px -1px 0px  #ddd;
     z-index: -3;
 }
 
@@ -818,7 +821,7 @@ body {
     animation-duration: 230s;
     animation-name:float2;
     animation-iteration-count: infinite;
-    box-shadow:  inset -0px -1px 0px  #ddd;
+    box-shadow:  inset -1px -1px 0px  #ddd;
     z-index: -4;
 
 }
@@ -842,7 +845,7 @@ body {
     height: 5px;
     width: 50px;
     border-radius: 50px;
-    box-shadow: inset -1px -2px 0px  #ddd;
+    box-shadow: inset -2px -2px 0px  #ddd;
 }
 
 .puff2 {
@@ -850,6 +853,7 @@ body {
     left: 30px;
     height: 15px;
     width: 20px;
+    box-shadow: inset -1px -4px 0px  #ddd;
 }
 
 .puff3 {
@@ -864,6 +868,7 @@ body {
     left: 10px;
     height: 15px;
     width: 20px;
+    box-shadow: inset -1px -4px 0px  #ddd;
 }
 
 .puff1a {
@@ -871,7 +876,7 @@ body {
     height: 10px;
     width: 100px;
     border-radius: 50px;
-    box-shadow: inset -1px -4px 0px  #ddd;
+    box-shadow: inset -2px -4px 0px  #ddd;
 }
 
 .puff2a {
@@ -893,6 +898,7 @@ body {
     left: 60px;
     height: 30px;
     width: 40px;
+    box-shadow: inset -3px -4px 0px  #ddd;
 }
 /*^ Sky ^*/
 

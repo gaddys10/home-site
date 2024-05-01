@@ -13,6 +13,26 @@
     src: url("dogica.ttf");
 }
 
+
+/* Track */
+::-webkit-scrollbar {
+  width: 13px; /* Width of the entire scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1666e5; /* Color of the scrollbar handle */
+    box-shadow: inset -3px -1px 0px 0px #104aa6;
+    outline: #212427;
+    border-radius: 3px; /* Rounded corners of the scrollbar handle */
+    width: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #104aa6; /* Color of the scrollbar handle on hover */
+}
+
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
@@ -37,7 +57,7 @@
 
 .cv-highlights, .contact-info {
     line-height: 200%;
-    list-style-type: circle;
+    list-style-type: square;
 }
 .divida {
     width: 300px;
@@ -145,8 +165,8 @@ hr {
 .jobDesc {
     font-weight: normal;
     margin-left: 15px;
-    list-style-type: circle;
-    margin-bottom: 15px;
+    list-style-type: square;
+    margin: 16px 0px 15px 15px;
 }
 
 .jobTitleContainer {

@@ -25,7 +25,7 @@ class Wrapper extends React.Component {
                     </div>
                     <br/>
                     <img src={divida} alt="" className="divida" />
-
+                    <div className="section-divider">---</div>
                     <div className="cvBody">
                         <p className="summary-info">Skills</p>
                         <ul className="cv-highlights">
@@ -70,6 +70,7 @@ class Wrapper extends React.Component {
                         <br/> 
                         <br/>
                         <img src={divida} alt="" className="divida" />
+                        
                         
                         <p className="experience-title">Experience</p>
                         

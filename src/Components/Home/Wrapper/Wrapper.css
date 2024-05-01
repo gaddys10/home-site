@@ -16,6 +16,12 @@
 /**********************/
 /* vvvvv Resume vvvvv */
 /**********************/
+.section-divider{
+    font-size: 36px;
+    font-family: 'dogica', sans-serif;
+    text-align: center;
+}
+
 .contact-info li, .coursework-classes, .skill-cat, .cv-highlights li, .jobDesc {
     font-size: 16px;
     color: #212427;

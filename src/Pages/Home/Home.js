@@ -210,6 +210,7 @@ class Home extends React.Component {
                 <Wrapper />
                 <Flower />
                 <Bird />
+
                 { 
                     this.state.showPortfolio &&
                         <div className='portfolioContainer'>

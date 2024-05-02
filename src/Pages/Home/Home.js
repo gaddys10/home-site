@@ -550,8 +550,6 @@ class Home extends React.Component {
                     this.state.showResumes &&
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
-                                {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
-                                {/* <div className='back-box' onClick={this.turnOffPages}><FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} /></div> */}
                                 <p className='portfolioTitle resume-title' >Click to Download Resume</p>
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>

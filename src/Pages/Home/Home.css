@@ -321,6 +321,8 @@ body {
     color: white;
 }
 
+
+
 /*v Tree v*/
 #tree {
     height: 500px;
@@ -906,34 +908,6 @@ body {
 /********** Light Box **********/
 /*******************************/
 
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-    position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-}
-
-.lightbox div {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
-}
-
-.lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
-}
-
 .thumbnail1 {
     max-width: 125px;
     margin-right: 400px;
@@ -955,6 +929,38 @@ body {
     cursor: pointer;
     z-index: 5;
     margin-left: 10px; 
+}
+
+.resumeContainer {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    /* padding-top: 25vh; */
+}
+
+.resumeContainer div {
+    /* transform: scale(.25); */
+    float: left;
+    height: 100%;
+    /* outline: #000 1px solid; */
+    border-radius: 5px;
+    margin: 150px 25px;
+}
+
+.resume-thumbnail {
+    /* transform: scale(.25); */
+    float: left;
+    height: 15vw;
+    outline: #000 1px solid;
+    border-radius: 5px;
+    margin: 25px 25px;
+    cursor: pointer;
+}
+
+.resume-subtitle {
+    text-align: center;
+    font-family: 'dogica', sans-serif;
+    margin-top: 5px;
 }
 
 .portfolioClose {
@@ -979,7 +985,7 @@ body {
     padding-left: 3px;
     right: 9px;
     padding-top: 17px;
-    width: 55px;
+    width: 57px;
     height: 45px;
 }
 
@@ -1062,6 +1068,14 @@ body {
     top: 15px;
     /* left: 44%; */
     /* padding-left: 3%; */
+}
+
+.resume-title {
+    left: 30px;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: 15px;
 }
 
 img {

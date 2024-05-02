@@ -23,7 +23,7 @@ class Home extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            showResumes: true,
+            showResumes: false,
             showPortfolio: false,
             showArt: false,
             showMocks: false,
@@ -224,7 +224,9 @@ class Home extends React.Component {
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
                                 {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
-                                <div className='back-box' onClick={this.turnOffPages}><FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} /></div>
+                                <div className='back-box' onClick={this.turnOffPages}>
+                                    <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
+                                </div>
                                 <p className='portfolioTitle' >Portfolio</p>
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
@@ -579,7 +581,7 @@ class Home extends React.Component {
                                                 </div>
                                                 <div>
                                                     <a  href = '/QACV.pdf' download='Syrus_Gaddy_QA_Resume.pdf'>
-                                                        <img className="resume-thumbnail" src='./QACV_Thumbnail.png' />
+                                                        <img className="resume-thumbnail" src='./QACV.png' />
                                                     </a>
                                                         <p className='resume-subtitle'>QA Engineer</p>
                                                 </div>

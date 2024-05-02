@@ -596,33 +596,11 @@ class Home extends React.Component {
                                                     <p className='resume-subtitle'>UI/UX Engineer</p>
                                                 </div>
                                             </div>
-
-
-                                            {/* <div onClick={this.showArt} className='art-box portfolio-body-box'>
-                                                <p className='art-box-title'> Art </p>
-                                            </div>
-
-                                            <div onClick={this.turnOnPrototypeCategories} className='prototype-box portfolio-body-box'>
-                                                <p className='prototype-box-title'> Prototypes </p>
-                                            </div>
-
-                                            <div onClick={this.turnOnGraphicsCategories} className='graphic-box portfolio-body-box'>
-                                                <p className='graphics-box-title'> Graphics </p>
-                                            </div>
-
-                                            <div onClick={this.showMocks} className='mock-box portfolio-body-box'>
-                                                <p className='mock-box-title'> Mock Websites </p>
-                                            </div> */}
                                         </>
-                                }
-                                
+                                } 
                             </div>
-        
                         </div>
                 }
-
-                
-
                 <div id = "sky"></div>
                 <div id = "ground_container"></div>
                 <div className= "shadow3"> </div>
@@ -734,10 +712,7 @@ class Home extends React.Component {
                 <div className= "ribbon3"
                     onClick={this.showResumes}
                 >
-                    <a 
-                        // href="/FullCV.pdf" 
-                        // download="SyrusGaddy_FullResume.pdf"
-                    >
+                    <a href = "#">
                         Download <br /> Resume
                     </a>
                 </div>

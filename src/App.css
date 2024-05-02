@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+html, body {
+  touch-action: manipulation;
+}
+
+#root{
+  height: 0px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

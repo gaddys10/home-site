@@ -289,6 +289,7 @@ body {
     height: 60%;
     width: 100vw;
     z-index: -6;
+    top: 0;
 }
 
 #sky, #react, #tree, #stem, #stemShadow, #stemHole, #stemBranch, #treeTop1, #treeTop2,
@@ -744,7 +745,7 @@ body {
 }
 
 .cloud2 {
-    height: 160px;
+    height: 100px;
     width: 110px;
     left: 100vw;
     animation-name:float2;
@@ -752,6 +753,7 @@ body {
     animation-delay: 40s;
     animation-iteration-count: infinite;
     z-index: -3;
+
 
 }
 

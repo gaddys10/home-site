@@ -23,6 +23,7 @@ class Home extends React.Component {
     constructor(props){
         super(props);
         this.state = {
+            showResumes: false,
             showPortfolio: false,
             showArt: false,
             showMocks: false,
@@ -35,6 +36,7 @@ class Home extends React.Component {
             showFeature: false,
             showIPad: false
         }
+        this.showResumes = this.showResumes.bind(this);
         this.showPortfolio = this.showPortfolio.bind(this);
         this.closePortfolio = this.closePortfolio.bind(this);
 
@@ -65,6 +67,10 @@ class Home extends React.Component {
         this.setState(prevState => ({ showPortfolio: !prevState.showPortfolio }))
     }
 
+    showResumes(){
+        this.setState(prevState => ({ showResumes: !prevState.showResumes }))
+    }
+
     closePortfolio(){
         this.setState(prevState => (
             {
@@ -78,7 +84,8 @@ class Home extends React.Component {
                 showLogos: false,
                 showResponsive: false,
                 showFeature: false,
-                showIPad: false
+                showIPad: false,
+                showResumes: false
             })
         )
     }
@@ -192,7 +199,8 @@ class Home extends React.Component {
                 showLogos: false,
                 showResponsive: false,
                 showFeature: false,
-                showIPad: false
+                showIPad: false,
+                showResumes: false
             }))
         }
         console.log(this.state);
@@ -216,7 +224,9 @@ class Home extends React.Component {
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
                                 {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
-                                <div className='back-box' onClick={this.turnOffPages}><FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} /></div>
+                                <div className='back-box' onClick={this.turnOffPages}>
+                                    <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
+                                </div>
                                 <p className='portfolioTitle' >Portfolio</p>
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
@@ -536,6 +546,61 @@ class Home extends React.Component {
                         </div>
                 }
 
+                { 
+                    this.state.showResumes &&
+                        <div className='portfolioContainer'>
+                            <div className='portfolioHeader'>
+                                <p className='portfolioTitle resume-title' >Click to Download Resume</p>
+                                <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
+                            </div>
+                            <div className='portfolioBody'>
+                                {
+                                    // Resumes splash
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes &&
+                                    !this.state.showGraphics &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showFeature &&
+                                    !this.state.showIPad &&
+                                    !this.state.showPortfolio &&
+                                        <>
+                                            <div className='resumeContainer'>
+                                                <div>
+                                                    <a  href = '/FullCV.pdf' download='Syrus_Gaddy_Resume.pdf'>
+
+                                                        <img className="resume-thumbnail" src='./FullCV_Thumbnail.png' />
+                                                    </a>
+                                                    <p className='resume-subtitle'>Full Resume</p>
+                                                </div>
+                                                <div>
+                                                    <a  href = '/QACV.pdf' download='Syrus_Gaddy_QA_Resume.pdf'>
+                                                        <img className="resume-thumbnail" src='./QACV.png' />
+                                                    </a>
+                                                        <p className='resume-subtitle'>QA Engineer</p>
+                                                </div>
+                                                <div>
+                                                    <a  href = '/FrontendCV.pdf' download='Syrus_Gaddy_Frontend_Resume.pdf'>
+                                                        <img className="resume-thumbnail" src='./FrontendCV_Thumbnail.png' />
+                                                    </a>
+                                                    <p className='resume-subtitle'>Frontend Engineer</p>
+                                                </div>
+                                                <div>
+                                                    <a  href = '/UICV.pdf' download='Syrus_Gaddy_UI/UX_Resume.pdf'>
+                                                        <img className="resume-thumbnail" download='./UICV.pdf' src='./UICV_Thumbnail.png' />
+                                                    </a>
+                                                    <p className='resume-subtitle'>UI/UX Engineer</p>
+                                                </div>
+                                            </div>
+                                        </>
+                                } 
+                            </div>
+                        </div>
+                }
                 <div id = "sky"></div>
                 <div id = "ground_container"></div>
                 <div className= "shadow3"> </div>
@@ -644,8 +709,10 @@ class Home extends React.Component {
                 </div>
                 <div className= "ribbonfold2"></div>
 
-                <div className= "ribbon3">
-                    <a href="/FullCV.pdf" download="SyrusGaddy_FullResume.pdf">
+                <div className= "ribbon3"
+                    onClick={this.showResumes}
+                >
+                    <a href = "#">
                         Download <br /> Resume
                     </a>
                 </div>

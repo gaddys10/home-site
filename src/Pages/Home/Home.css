@@ -289,6 +289,7 @@ body {
     height: 60%;
     width: 100vw;
     z-index: -6;
+    top: 0;
 }
 
 #sky, #react, #tree, #stem, #stemShadow, #stemHole, #stemBranch, #treeTop1, #treeTop2,
@@ -320,6 +321,8 @@ body {
     right: 15px;
     color: white;
 }
+
+
 
 /*v Tree v*/
 #tree {
@@ -742,7 +745,7 @@ body {
 }
 
 .cloud2 {
-    height: 160px;
+    height: 100px;
     width: 110px;
     left: 100vw;
     animation-name:float2;
@@ -750,6 +753,7 @@ body {
     animation-delay: 40s;
     animation-iteration-count: infinite;
     z-index: -3;
+
 
 }
 
@@ -906,34 +910,6 @@ body {
 /********** Light Box **********/
 /*******************************/
 
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-    position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-}
-
-.lightbox div {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
-}
-
-.lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
-}
-
 .thumbnail1 {
     max-width: 125px;
     margin-right: 400px;
@@ -955,6 +931,34 @@ body {
     cursor: pointer;
     z-index: 5;
     margin-left: 10px; 
+}
+
+.resumeContainer {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.resumeContainer div {
+    float: left;
+    height: 100%;
+    border-radius: 5px;
+    margin: 150px 25px;
+}
+
+.resume-thumbnail {
+    float: left;
+    height: 15vw;
+    outline: #000 1px solid;
+    border-radius: 5px;
+    margin: 25px 25px;
+    cursor: pointer;
+}
+
+.resume-subtitle {
+    text-align: center;
+    font-family: 'dogica', sans-serif;
+    margin-top: 5px;
 }
 
 .portfolioClose {
@@ -979,7 +983,7 @@ body {
     padding-left: 3px;
     right: 9px;
     padding-top: 17px;
-    width: 55px;
+    width: 57px;
     height: 45px;
 }
 
@@ -1060,8 +1064,14 @@ body {
     text-align: center;
     position: relative;
     top: 15px;
-    /* left: 44%; */
-    /* padding-left: 3%; */
+}
+
+.resume-title {
+    left: 30px;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: 15px;
 }
 
 img {
@@ -1209,7 +1219,6 @@ img {
         overflow-y: hidden;
     }
 
-    /* put your css styles in here */
     #tree {
         transform: scale(1.5);
         top: 920px;
@@ -1282,7 +1291,6 @@ img {
         cursor: pointer;
         margin: 15% auto;
         display: block;
-        /* margin-bottom: 10%; */
     }
     
     .portfolio-body-box p {

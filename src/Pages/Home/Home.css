@@ -935,20 +935,16 @@ body {
     height: fit-content;
     width: fit-content;
     margin: auto;
-    /* padding-top: 25vh; */
 }
 
 .resumeContainer div {
-    /* transform: scale(.25); */
     float: left;
     height: 100%;
-    /* outline: #000 1px solid; */
     border-radius: 5px;
     margin: 150px 25px;
 }
 
 .resume-thumbnail {
-    /* transform: scale(.25); */
     float: left;
     height: 15vw;
     outline: #000 1px solid;
@@ -1066,8 +1062,6 @@ body {
     text-align: center;
     position: relative;
     top: 15px;
-    /* left: 44%; */
-    /* padding-left: 3%; */
 }
 
 .resume-title {
@@ -1223,7 +1217,6 @@ img {
         overflow-y: hidden;
     }
 
-    /* put your css styles in here */
     #tree {
         transform: scale(1.5);
         top: 920px;
@@ -1296,7 +1289,6 @@ img {
         cursor: pointer;
         margin: 15% auto;
         display: block;
-        /* margin-bottom: 10%; */
     }
     
     .portfolio-body-box p {

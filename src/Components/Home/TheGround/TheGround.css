@@ -540,7 +540,7 @@
     box-shadow: inset -35px -5px 0px -1px rgba(15,92,20,1)
 }
 
-.fallen-apple{
+/* .fallen-apple{
     position: absolute;
     left: 1450px;
     top: 550px;
@@ -565,6 +565,43 @@
     border-top-right-radius:10px;
     box-shadow: inset -3px 0px 0px 1px rgb(188, 2, 2), inset 6px 7px 0px 1px #fa3737;
 
+
+} */
+
+.fallen-leaf {
+    position: absolute;
+    left: 1300px;
+    top: 580px;
+    width: 0;
+    background: darkgreen;
+    width: 18px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fallen-leaf2 {
+    position: absolute;
+    left: 1330px;
+    top: 585px;
+    width: 0;
+    background: darkgreen;
+    width: 18px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fallen-leaf3 {
+    position: absolute;
+    left: 1378px;
+    top: 595px;
+    width: 0;
+    background: darkgreen;
+    width: 18px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 /*********************/

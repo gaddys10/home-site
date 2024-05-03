@@ -3,7 +3,7 @@
 }
 
 html, body {
-  touch-action: manipulation;
+  touch-action: none;
 }
 
 #root{

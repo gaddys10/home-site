@@ -540,6 +540,33 @@
     box-shadow: inset -35px -5px 0px -1px rgba(15,92,20,1)
 }
 
+.fallen-apple{
+    position: absolute;
+    left: 1450px;
+    top: 550px;
+    height: 13px;
+    width: 23px;
+    background-color: red;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: inset -3px 0px 0px 1px  rgb(188, 2, 2), inset 6px 7px 0px 1px #fa3737;
+    box-shadow: none;
+
+}
+
+.fallen-apple2{
+    position: absolute;
+    left: 1300px;
+    top: 600px;
+    height: 14px;
+    width: 25px;
+    background-color: red;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: inset -3px 0px 0px 1px rgb(188, 2, 2), inset 6px 7px 0px 1px #fa3737;
+
+}
+
 /*********************/
 /* vvvvv Rocks vvvvv */
 /*********************/

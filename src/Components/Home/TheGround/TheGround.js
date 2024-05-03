@@ -75,6 +75,8 @@ class TheGround extends React.Component {
                     <div className='bush8part3'></div>
                     <div className='shadow17'></div>
                 </div>
+                
+
 
                 <div id = "grass"></div>
             </div>

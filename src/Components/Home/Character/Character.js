@@ -46,6 +46,8 @@ class Character extends React.Component {
                 <div className="neck"></div>
                 <div className="neck_shadow"></div>
                 <div className="mybody"></div>
+                <div className="mybody-pocket"></div>
+
                 <div className="mybody_highlight"></div>
                 <div className="legs"></div>
                 <div className="leg_leftShadow"></div>

@@ -217,6 +217,21 @@
 }
 
 /*v Torso v*/
+@keyframes bodyBreathing{
+    0%{
+        top: 350px;
+        width: 50px;
+    }
+    50%{
+        top: 349px;
+        width: 51px;
+    }
+    100%{
+        top: 350px;
+        width: 50px;
+    }
+}
+
 .mybody {
     height: 76px;
     width: 50px;
@@ -227,6 +242,34 @@
     z-index: 3;
     box-shadow: inset -5px -3px 0px #d0d4db;
     animation: bodyBreathing 3s infinite;
+}
+
+@keyframes pocketBreathing {
+    0%{
+        top: 365px;
+    }
+    50% {
+        top: 364px;
+    }
+    100% {
+        top: 365px;
+    }
+}
+
+.mybody-pocket {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 365px;
+    left: 430px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: pocketBreathing 3s infinite;
+
+    background-color: #e8eaed;
+    box-shadow: inset -2px -2px 0px #d0d4db;
+
+    z-index: 4;
 }
 
 .left_sleeve {

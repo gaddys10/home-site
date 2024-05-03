@@ -650,6 +650,13 @@ class Home extends React.Component {
                 <div className= "rock10">
                     <div className= "rock10highlight"></div>
                 </div>
+                <div className="fallen-apple"></div>
+                <div className="fallen-apple2"></div>
+
+                <div className='fallen-leaf'></div>
+                <div className='fallen-leaf2'></div>
+                <div className='fallen-leaf3'></div>
+
                 <div id = "flower_container"></div>
                 <div id = "bird_container"></div>
                 <div className= "cloud1"> 

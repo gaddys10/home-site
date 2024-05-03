@@ -9,20 +9,7 @@
 }
 
 /*v Animations v*/
-@keyframes bodyBreathing{
-    0%{
-        top: 350px;
-        width: 50px;
-    }
-    50%{
-        top: 349px;
-        width: 51px;
-    }
-    100%{
-        top: 350px;
-        width: 50px;
-    }
-}
+
 
 @keyframes leftSleeveBreathing{
     0%{

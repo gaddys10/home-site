@@ -627,5 +627,6 @@
         font-size: 14px;
         top: 60px;
         width: 160px;
+        animation: speechFloat 1.5s infinite, speechAppear 6s 1 forwards;
     }
 }

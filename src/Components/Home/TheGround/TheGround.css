@@ -1126,6 +1126,42 @@
 
 @media only screen and (max-width: 3300px) and (min-height: 1500px)  {
     /* put your css styles in here */
+    .fallen-leaf {
+        position: absolute;
+        left: 1300px;
+        top: 1580px;
+        width: 0;
+        background: darkgreen;
+        width: 18px;
+        height: 5px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .fallen-leaf2 {
+        position: absolute;
+        left: 1330px;
+        top: 1585px;
+        width: 0;
+        background: darkgreen;
+        width: 18px;
+        height: 5px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .fallen-leaf3 {
+        position: absolute;
+        left: 1378px;
+        top: 1595px;
+        width: 0;
+        background: darkgreen;
+        width: 18px;
+        height: 5px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
     #grass {
         top: 1250px;
         height: 100%;

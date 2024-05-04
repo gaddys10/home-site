@@ -253,6 +253,14 @@
 
 /*^ Animations ^*/
 
+@viewport {
+    zoom: 1.0 !important;
+    width: device-width;
+    initial-scale: 1.0 !important;
+    maximum-scale: 1.0 !important;
+    user-scalable: no !important;
+}
+
 html, body {
     width: 100%;
     height: 100vh;

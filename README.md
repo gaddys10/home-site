@@ -7,10 +7,9 @@
 ## My website is responsive for both desktop and mobile
 
 ### I built this site with HTML, CSS, JavaScript, JQuery, and React.js
+<img width="1918" alt="Screenshot 2024-05-05 at 5 49 04 AM" src="https://github.com/gaddys10/home-site/assets/6856144/18f4a0d6-6769-4b86-b591-b97b5dc07097">
 
-<img width="1918" alt="Screenshot 2024-04-28 at 6 40 05 PM" src="https://github.com/gaddys10/home-site/assets/6856144/f3993c03-1a44-4dae-aa2f-c655c79a80f4">
-
-<img width="371" alt="Screenshot 2024-04-28 at 6 59 15 PM" src="https://github.com/gaddys10/home-site/assets/6856144/7ca66a75-3ae2-4ec8-811e-dca582dda1dc">
+<img width="372" alt="Screenshot 2024-05-05 at 5 50 26 AM" src="https://github.com/gaddys10/home-site/assets/6856144/477c3630-3b86-450f-a695-c4bfec88bd28">
 
 
 ## This site is used primarily to host my resume, my designs, mock websites, and other items of engineering interest that I've created

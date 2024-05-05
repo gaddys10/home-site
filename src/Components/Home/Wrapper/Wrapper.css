@@ -56,7 +56,7 @@
 }
 
 .cv-highlights, .contact-info {
-    line-height: 200%;
+    line-height: 250%;
     list-style-type: square;
 }
 .divida {
@@ -130,7 +130,7 @@
 
 .coursework-classes {
     margin: 0px 0px 100px 50px;
-    line-height: 175%;
+    line-height: 250%;
 }
 
 .educationTitle {

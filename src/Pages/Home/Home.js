@@ -572,28 +572,27 @@ class Home extends React.Component {
                                             <div className='resumeContainer'>
                                                 <div>
                                                     <a  href = '/FullCV.pdf' download='Syrus_Gaddy_Resume.pdf'>
-
                                                         <img className="resume-thumbnail" src='./FullCV_Thumbnail.png' />
                                                     </a>
-                                                    <p className='resume-subtitle'>Full Resume</p>
+                                                    <p className='resume-subtitle'>Full <br /> Resume</p>
                                                 </div>
                                                 <div>
                                                     <a  href = '/QACV.pdf' download='Syrus_Gaddy_QA_Resume.pdf'>
                                                         <img className="resume-thumbnail" src='./QACV.png' />
                                                     </a>
-                                                        <p className='resume-subtitle'>QA Engineer</p>
+                                                        <p className='resume-subtitle'>Quality Assurance <br />Engineer</p>
                                                 </div>
                                                 <div>
                                                     <a  href = '/FrontendCV.pdf' download='Syrus_Gaddy_Frontend_Resume.pdf'>
                                                         <img className="resume-thumbnail" src='./FrontendCV_Thumbnail.png' />
                                                     </a>
-                                                    <p className='resume-subtitle'>Frontend Engineer</p>
+                                                    <p className='resume-subtitle'>Frontend <br /> Developer</p>
                                                 </div>
                                                 <div>
                                                     <a  href = '/UICV.pdf' download='Syrus_Gaddy_UI/UX_Resume.pdf'>
                                                         <img className="resume-thumbnail" download='./UICV.pdf' src='./UICV_Thumbnail.png' />
                                                     </a>
-                                                    <p className='resume-subtitle'>UI/UX Engineer</p>
+                                                    <p className='resume-subtitle'>UI/UX <br /> Engineer</p>
                                                 </div>
                                             </div>
                                         </>

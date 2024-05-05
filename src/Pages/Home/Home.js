@@ -141,7 +141,6 @@ class Home extends React.Component {
         }))
     }
 
-
     turnOffGraphicsCategories(){
         this.setState(prevState => ({ showPrototypeCategories: false }))
     }
@@ -175,12 +174,21 @@ class Home extends React.Component {
 
 
     turnOffPages(){
+        //Return back to Design Types page
         if(this.state.showGraphics === true || this.state.showLogos === true){
             this.setState(prevState => ({
                 showGraphics: false,
                 showLogos: false,
                 showGraphicCategories: true
             }))
+        } else if(this.state.showResponsive || this.state.showFeature || this.state.showIPad){
+            this.setState(prevState => ({
+                showResponsive: false,
+                showFeature: false,
+                showIPad: false,
+                showPrototypeCategories: true
+            }))
+
         } else if (this.state.showPrototypes === true ){
             this.setState(prevState => ({
                 showPrototypes: false,
@@ -218,7 +226,7 @@ class Home extends React.Component {
                 <Wrapper />
                 <Flower />
                 <Bird />
-                <div class = "leaf"></div>
+                <div className = "leaf"></div>
                 { 
                     this.state.showPortfolio &&
                         <div className='portfolioContainer'>
@@ -227,7 +235,148 @@ class Home extends React.Component {
                                 <div className='back-box' onClick={this.turnOffPages}>
                                     <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
                                 </div>
-                                <p className='portfolioTitle' >Portfolio</p>
+
+                                {
+                                    // Portfolio splash
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes &&
+                                    !this.state.showGraphics &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showFeature &&
+                                    !this.state.showIPad &&
+                                        <p className='portfolioTitle' >Portfolio</p>
+                                }
+                                {
+                                    //Art Page
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    this.state.showArt && 
+                                        <p className='portfolioTitle' >Art</p>
+                                }
+
+                                {
+                                    //Graphic design categories
+                                    !this.state.showArt && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    this.state.showGraphicCategories &&
+                                        <p className='portfolioTitle' >Design Types</p>
+                                }
+
+                                {
+                                    //Graphic Designs page
+                                    !this.state.showArt && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes && 
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    this.state.showGraphics && 
+                                        <p className='portfolioTitle' >Graphic Designs</p>
+                                }
+                                {
+                                    //Logo design page
+                                    !this.state.showArt && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes && 
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    this.state.showLogos &&
+                                    !this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showResponsive &&
+                                    !this.state.showFeature &&
+                                        <p className='portfolioTitle' >Logo Designs</p>
+                                }
+                                {
+                                    //Mock websites page
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypes &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponse &&
+                                    !this.state.showIPad &&
+                                    !this.state.showResponsive &&
+                                    this.state.showMocks && 
+                                        <p className='portfolioTitle' >Mock Websites</p>
+                                }
+
+                                {
+                                    //Prototype Categories
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypes && 
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    this.state.showPrototypeCategories &&
+                                        <p className='portfolioTitle' >Prototypes</p>
+                                }
+{
+                                    //Responsive Mobile Design
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypes && 
+                                        <p className='portfolioTitle' >Responsive Mobile Prototypes</p>
+                                }
+                                {
+                                    //feature walkthrough
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    this.state.showFeature && 
+                                    <p className='portfolioTitle' >Feature Walkthrough Prototypes</p>
+                                }
+                                {
+                                    //iPad feature walkthrough
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypes && 
+                                        <p className='portfolioTitle' >Tablet Feature Prototypes</p>
+                                }
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
                             <div className='portfolioBody'>

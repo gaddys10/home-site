@@ -901,10 +901,6 @@ body {
 }
 /*^ Sky ^*/
 
-/*******************************/
-/********** Light Box **********/
-/*******************************/
-
 .thumbnail1 {
     max-width: 125px;
     margin-right: 400px;
@@ -917,6 +913,8 @@ body {
     float: left;
     margin: 25px 0px 16px 12px;
     cursor: pointer;
+    margin-left: 30px;
+    transform: scale(2);
 }
 
 .back-box {
@@ -1364,38 +1362,9 @@ img {
         width: 114px;
         height: 100px;
     }
-
-    /* .portfolioClose {
-        position: relative;
-        float: right;
-        right: 9px;
-        top: 0px;
-        font-size: 38px;
-        background-color: red;
-        height: 50px;
-        width: 60px;
-        border-radius: 5px;
-        box-shadow: inset -3px -3px 0px 0px darkred;
-        padding-top: 12px;
-        cursor: pointer;
-        border: 2px solid  rgb(63, 0, 0);
-    }
-    
-    .portfolioClose:hover {
-        background-color: rgb(132, 0, 0);
-        box-shadow: inset 3px 3px 0px 0px rgb(63, 0, 0);
-        padding-left: 3px;
-        right: 9px;
-        padding-top: 17px;
-        width: 57px;
-        height: 45px;
-    } */
-    
-
     .xx {
         /* margin-top: 55px; */
         font-size: 64px;
-
     }
     .portfolioTitle{
         left: 30px;

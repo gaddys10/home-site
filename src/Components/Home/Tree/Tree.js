@@ -13,7 +13,6 @@ class Tree extends React.Component {
         return(
             <div id = "tree">
                 <div id = "stem"></div>
-                {/* <div id = "stemShadow"></div> */}
                 <div id = "stemHole"></div>
                 <div id = "treeTop1"></div>
                 <div id = "treeTop2"></div>

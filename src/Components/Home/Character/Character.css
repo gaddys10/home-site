@@ -31,6 +31,7 @@
 /*v Head v*/
 .myhair1, .myhair2, .myhair3, .myhair4, .myhair5, .myhair6, .myhair7 {
     background-color: black;
+    background-color: #161616;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
 }
@@ -65,7 +66,8 @@
     width: 65px;
     top: 240px;
     left: 390px;
-    box-shadow: inset 5px 2px 0px #333;
+    box-shadow: inset 5px 2px 0px #333, inset -7px -2px 0px black;
+    z-index: 3;
 }
 
 .myhair2 {
@@ -74,6 +76,7 @@
     top: 255px;
     left: 377px;
     box-shadow: inset 5px 2px 0px #333;
+    z-index: 3;
 }
 
 .myhair3 {
@@ -88,6 +91,8 @@
     width: 25px;
     top: 255px;
     left: 443px;
+    box-shadow: inset -5px -2px 0px black;
+    z-index: 3;
 }
 
 .myhair5 {
@@ -95,6 +100,8 @@
     width: 3px;
     top: 270px;
     left: 457px;
+    background-color: black;
+    z-index: 1;
 }
 
 .myhair6 {
@@ -102,6 +109,8 @@
     width: 20px;
     top: 247px;
     left: 440px;
+    box-shadow: inset -5px -2px 0px black;
+
 }
 
 .myhair7 {
@@ -110,6 +119,7 @@
     top: 247px;
     left: 384px;
     box-shadow: inset 2px 4px 0px #333;
+    z-index: 4;
 }
 
 @keyframes blink {
@@ -117,7 +127,6 @@
         height: 15px;
         top: 283px;
     }
-
     3%{
         height: 0px;
         top: 296px;
@@ -126,7 +135,6 @@
         height: 15px;
         top: 283px;
     }
-        
 }
 
 .mylefteye, .myrighteye {
@@ -265,10 +273,8 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     animation: pocketBreathing 3s infinite;
-
     background-color: #e8eaed;
     box-shadow: inset -2px -2px 0px #d0d4db;
-
     z-index: 4;
 }
 
@@ -360,9 +366,7 @@
         transform: rotate(90deg);
         box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2;; 
     }
-
     50%{
-        
         -webkit-transform: rotate(110deg);
         -moz-transform: rotate(110deg);
         -o-transform: rotate(110deg);
@@ -393,7 +397,6 @@
     100%{
         top: 345px;
     }
-
 }
 
 .right_forearm {
@@ -441,8 +444,6 @@
     }
         
 }
-
-
 
 .right_forearm_safari{
     height: 13px;
@@ -514,7 +515,6 @@
 .left_shoe {
     left: 425px; 
     border-top-right-radius: 15px;
-
 }
 
 .right_shoe {
@@ -523,14 +523,12 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 10px;
     box-shadow: inset -3px -1px 0px 1px #9b7676, inset 3px 1px 0px 0px #b99a9a;
-
 }
 
 @keyframes speechFloat {
     0% {
         top: 40px;
     }
-
     50% {
         
         top: 45px;
@@ -561,7 +559,6 @@
     src: url("dogica.ttf");
 }
 
-
 .speech-bubble {
     position: relative;
     height: 100px;
@@ -575,7 +572,6 @@
     font-size: 14px;
     top: 40px;
     box-shadow: inset -2px -2px 1px #aaaaaa;
-    /* display: none; */
 }
 
 .bubble-tail{

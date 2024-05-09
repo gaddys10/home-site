@@ -10,11 +10,7 @@ import Shark from '../../Components/Home/Shark/Shark';
 import Wrapper from '../../Components/Home/Wrapper/Wrapper';
 import Flower from '../../Components/Home/Flower/Flower';
 import Bird from '../../Components/Home/Bird/Bird';
-// import logo from './index-images/ResumeThumbnail.png';
-// import photo from './index-images/PhotoThumbnail.png';
-// import old from './index-images/OldThumbnail.png';
-// import london from './index-images/LunchAndLearn_flyer2-Recovered.png'
-// import london2 from './index-images/Londonflyerplustext.png';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeftLong } from '@fortawesome/free-solid-svg-icons';
 
@@ -119,7 +115,6 @@ class Home extends React.Component {
         this.setState(prevState => ({ showPrototypeCategories: true }))
     }
 
-
     turnOnResponsive(){
         this.setState(prevState => ({
             showResponsive: true,
@@ -171,7 +166,6 @@ class Home extends React.Component {
             showLogos: true
         }))
     }
-
 
     turnOffPages(){
         //Return back to Design Types page
@@ -231,7 +225,6 @@ class Home extends React.Component {
                     this.state.showPortfolio &&
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
-                                {/* <div className='back-box' onClick={ this.turnOffPages }></div> */}
                                 <div className='back-box' onClick={this.turnOffPages}>
                                     <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
                                 </div>
@@ -620,7 +613,6 @@ class Home extends React.Component {
                                     !this.state.showIPad &&
                                     !this.state.showGraphics && 
                                     this.state.showFeature && 
-
                                         //Responsive Mobile Login Prototypes
                                         <>
                                             <div className='img-container'>
@@ -640,7 +632,6 @@ class Home extends React.Component {
                                     this.state.showIPad &&
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypes && 
-
                                         //Responsive Mobile Login Prototypes
                                         <>
                                             <div className='img-container'>
@@ -691,10 +682,8 @@ class Home extends React.Component {
                                         </>
                                 }
                             </div>
-        
                         </div>
                 }
-
                 { 
                     this.state.showResumes &&
                         <div className='portfolioContainer'>
@@ -800,11 +789,9 @@ class Home extends React.Component {
                 </div>
                 <div className="fallen-apple"></div>
                 <div className="fallen-apple2"></div>
-
                 <div className='fallen-leaf'></div>
                 <div className='fallen-leaf2'></div>
                 <div className='fallen-leaf3'></div>
-
                 <div id = "flower_container"></div>
                 <div id = "bird_container"></div>
                 <div className= "cloud1"> 
@@ -827,14 +814,15 @@ class Home extends React.Component {
                 </div>
                 <div className= "cloud4"> 
                     <div className= "puff1"></div>
-                    <div className= "puff2"></div>
                     <div className= "puff3"></div>
                     <div className= "puff4"></div>
+                    <div className= "puff2"></div>
                 </div>
                 <div className= "cloud5">
                     <div className= "puff1a"></div>
                     <div className= "puff2a"></div>
                     <div className= "puff3a"></div>
+
                     <div className= "puff4a"></div>
                 </div>  
                 <div className= "cloud6">
@@ -860,14 +848,12 @@ class Home extends React.Component {
                 <div className= "ribbonfold1"></div>
 
                 <div className= "ribbon2" onClick={this.showPortfolio}>
-                    <a href="#">Portfolio</a>
+                    <a href="#" onClick={this.showPortfolio}>Portfolio</a>
                 </div>
                 <div className= "ribbonfold2"></div>
 
-                <div className= "ribbon3"
-                    onClick={this.showResumes}
-                >
-                    <a href = "#">
+                <div className= "ribbon3" onClick={this.showResumes}>
+                    <a href = "#" onClick={this.showResumes}>
                         Download <br /> Resume
                     </a>
                 </div>

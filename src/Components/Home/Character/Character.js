@@ -31,10 +31,11 @@ class Character extends React.Component {
                 <div className="myhair1"></div>
                 <div className="myhair2"></div>
                 <div className="myhair3"></div>
-                <div className="myhair4"></div>
                 <div className="myhair5"></div>
                 <div className="myhair6"></div>
                 <div className="myhair7"></div>
+                <div className="myhair4"></div>
+
                 <div className="mylefteye"></div>
                 <div className="myrighteye"></div>
                 <div className="mynose"></div>
@@ -47,7 +48,6 @@ class Character extends React.Component {
                 <div className="neck_shadow"></div>
                 <div className="mybody"></div>
                 <div className="mybody-pocket"></div>
-
                 <div className="mybody_highlight"></div>
                 <div className="legs"></div>
                 <div className="leg_leftShadow"></div>

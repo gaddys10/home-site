@@ -13,13 +13,10 @@
     src: url("dogica.ttf");
 }
 
-
-/* Track */
 ::-webkit-scrollbar {
   width: 13px; /* Width of the entire scrollbar */
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #1666e5; /* Color of the scrollbar handle */
     box-shadow: inset -3px -1px 0px 0px #104aa6;
@@ -28,7 +25,6 @@
     width: 3px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #104aa6; /* Color of the scrollbar handle on hover */
 }
@@ -64,7 +60,6 @@
     height: 20px;
     stroke: black 3px;
     margin-left: 250px;
-
 }
 
 .coursework, .jobDate, .edu-date, .jobTitle, .edu-title {
@@ -80,7 +75,6 @@
     font-weight: bold;
 }
 
-
 .coursework, .experience-title, .name-position, .summary-info, .contact-info {
     margin-left: 10px;
 
@@ -88,10 +82,6 @@
 
 .coursework {
     margin-left: 20px;
-}
-
-.coursework-classes {
-    margin-left: 50px;
 }
 
 .educationDate, .jobDate, .edu-date {
@@ -131,6 +121,8 @@
 .coursework-classes {
     margin: 0px 0px 100px 50px;
     line-height: 250%;
+    margin-left: 50px;
+    padding-right: 50px;
 }
 
 .educationTitle {
@@ -214,7 +206,7 @@ hr {
 }
 
 .wrapper::-webkit-scrollbar-track {
-    background-color: #fff; /* color of the tracking area */
+    background-color: #fff; 
 }
 /**********************/
 /* ^^^^^ Resume ^^^^^ */
@@ -238,6 +230,7 @@ hr {
     width: 100px;
     font-size: 16px !important;
     height: 75px;
+    cursor: pointer;
 }
 
 .ribbon {
@@ -250,6 +243,7 @@ hr {
 
 .ribbon2 {
     top: 250px;
+    cursor: pointer;
 }
 
 .ribbon3 {
@@ -300,18 +294,6 @@ hr {
     border-color: transparent;
 }
 
-/* .ribbon1:after{
-    animation-delay: 4.5s;
-}
-
-.ribbon2:after {
-    animation-delay: 5s;
-}
-
-.ribbon3:after {
-    animation-delay: 5.5s;
-} */
-
 .ribbon a, .ribbon1 a, .ribbon2 a, .ribbon3 a {
     position: absolute;
     top: 30px;
@@ -319,7 +301,7 @@ hr {
     font-size: 16px;
     color: white;
     font-family: 'dogica', sans-serif;
-    /* margin-left: 10px; */
+    cursor: pointer;
 }
 
 .ribbon a {
@@ -380,17 +362,14 @@ hr {
 
 .ribbonfold1 {
     top: 264px;
-    /* animation-delay: 4.5s; */
 }
 
 .ribbonfold2 {
     top: 389px;
-    /* animation-delay: 5s; */
 }
 
 .ribbonfold3 {
     top: 514px;
-    /* animation-delay: 5.5s; */
 }
 /*******************************/
 /* ^^^^^ Wrapper Ribbons ^^^^^ */
@@ -419,7 +398,7 @@ hr {
 
     .coursework-classes {
         line-height: 150%;
-        padding-right: 15px;
+        padding-right: 25px;
         margin-bottom: 400px;
     }
 

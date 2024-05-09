@@ -9,8 +9,6 @@
 }
 
 /*v Animations v*/
-
-
 @keyframes leftSleeveBreathing{
     0%{
         top: 355px;
@@ -46,18 +44,6 @@
         top: 358px;
     }
 }
-
-/* @keyframes rightForearmBreathing{
-    0%{
-        top: 344px;
-    }
-    50%{
-        top: 343px;
-    }
-    100%{
-        top: 344px;
-    }
-} */
 
 @keyframes flowerShadow{
     0%{
@@ -249,8 +235,6 @@
         width: 17px;
     }
 }
-
-
 /*^ Animations ^*/
 
 @viewport {
@@ -316,8 +300,6 @@ body {
     right: 15px;
     color: white;
 }
-
-
 
 /*v Tree v*/
 #tree {
@@ -565,7 +547,6 @@ body {
     width: 50px;
     left: 1990px;
     top:  200px;
-    /*flip the bird*/
     transform:scaleX(-1);
     animation: float4 19s infinite, flutter 1s infinite;
     z-index: -3;
@@ -687,7 +668,6 @@ body {
     border-top-left-radius:0px;
     border-top-right-radius:10px;
     z-index:1;
-
 }
 
 .birdpart9 {
@@ -721,18 +701,17 @@ body {
     width: 55px;
     left: 0vw;
     top: 200px;
+    left: 200px;
     animation-name: float;
     animation-duration: 195s;
     animation-delay: 7s;
     animation-iteration-count: infinite;
     z-index: -3;
-    
-
 }
 
 @keyframes float2{
     0% {
-        left: 20vw;
+        left: 18vw;
     }
     100%{
         left: 104vw;
@@ -748,8 +727,6 @@ body {
     animation-delay: 40s;
     animation-iteration-count: infinite;
     z-index: -3;
-
-
 }
 
 .cloud3 {
@@ -770,7 +747,7 @@ body {
     left: 150px;
     top: 270px;
     animation-name:float2;
-    animation-duration: 180s;
+    animation-duration: 160s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -779,8 +756,9 @@ body {
     height:160px;
     width: 110px;
     top: 200px;
+    left: 40vw;
     animation-name:float2;
-    animation-duration: 111s;
+    animation-duration: 101s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -826,12 +804,12 @@ body {
 }
 
 .puff1, .puff2, .puff3, .puff4, .puff1a, .puff2a, .puff3a, .puff4a {
-    background-color: white;
+    background-color: #ECECEC;
 }
 
 .puff2, .puff3, .puff4, .puff2a, .puff3a, .puff4a {
     border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 50px; 
 }
 
 .puff2, .puff3, .puff2a, .puff3a {
@@ -844,15 +822,15 @@ body {
     height: 5px;
     width: 50px;
     border-radius: 50px;
-    box-shadow: inset -2px -2px 0px  #ddd;
+    box-shadow: inset -4px -2px 0px  #ddd, inset 12px -1px 0px 0px white;
 }
 
 .puff2 {
     top: 65px;
-    left: 30px;
+    left: 27px;
     height: 15px;
-    width: 20px;
-    box-shadow: inset -1px -4px 0px  #ddd;
+    width: 22px;
+    box-shadow: inset -2px -2px 0px  #ddd;
 }
 
 .puff3 {
@@ -860,6 +838,7 @@ body {
     left: 18px;
     height: 25px;
     width: 25px;
+    box-shadow: inset 3px 1px 0px white;
 }
 
 .puff4 {
@@ -867,7 +846,7 @@ body {
     left: 10px;
     height: 15px;
     width: 20px;
-    box-shadow: inset -1px -4px 0px  #ddd;
+    box-shadow: inset 0px -4px 0px  #ddd, inset 5px -1px 0px 0px white;
 }
 
 .puff1a {
@@ -875,7 +854,8 @@ body {
     height: 10px;
     width: 100px;
     border-radius: 50px;
-    box-shadow: inset -2px -4px 0px  #ddd;
+    box-shadow: inset -5px -5px 0px  #ddd, inset 30px -1px 0px 0px white;
+    z-index: 2;
 }
 
 .puff2a {
@@ -883,6 +863,8 @@ body {
     left: 20px;
     height: 30px;
     width: 40px;
+    box-shadow:  inset 10px 1px 0px white;
+    z-index: 0;
 }
 
 .puff3a {
@@ -890,6 +872,8 @@ body {
     left: 38px;
     height: 50px;
     width: 50px;
+    box-shadow: inset 11px 1px 0px white;
+    z-index: -1;
 }
 
 .puff4a {
@@ -897,7 +881,8 @@ body {
     left: 60px;
     height: 30px;
     width: 40px;
-    box-shadow: inset -3px -4px 0px  #ddd;
+    box-shadow: inset -5px -4px 0px  #ddd, inset 13px -1px 0px 0px white;
+    z-index: -2;
 }
 /*^ Sky ^*/
 
@@ -1362,8 +1347,8 @@ img {
         width: 114px;
         height: 100px;
     }
+
     .xx {
-        /* margin-top: 55px; */
         font-size: 64px;
     }
     .portfolioTitle{

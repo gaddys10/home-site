@@ -662,7 +662,6 @@ body {
     top: 5px;
     transform: rotate(45deg);
     animation: flap .25s infinite;
-    animation-delay: 1s;
     border-bottom-right-radius:0px;   
     border-bottom-left-radius:10px;
     border-top-left-radius:0px;

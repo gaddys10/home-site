@@ -993,7 +993,6 @@ body {
         top: 8vh;
         opacity: 100%;
     }
-
 }
 
 .portfolioContainer {
@@ -1011,8 +1010,6 @@ body {
     animation: fadein .5s 1;
 }
 
-
-
 .portfolioBody {
     width: 100%;
     height: calc(100% - 87px);
@@ -1020,11 +1017,6 @@ body {
     overflow-y: scroll;
     display: flexbox;
     flex-wrap: wrap;
-}
-
-.portfolioBody .portfolio-body-box{
-    display: block;
-
 }
 
 .portfolioBody .img-container img {
@@ -1082,6 +1074,13 @@ img {
     cursor: pointer;
     margin: 4% auto;
     display: block;
+}
+
+.portfolio-body-box:hover{
+    background-color:  rgb(137, 126, 101);
+    border: 10px solid rgb(126, 96, 18);
+    box-shadow: 1px 1px 0px #313131;
+
 }
 
 .portfolio-body-box p {
@@ -1281,12 +1280,13 @@ img {
         width: 800px;
         border: 10px solid goldenrod;
         box-shadow: 3px 3px 0px #313131;
-        background-color: #FFF;
         background-color: rgb(241, 224, 181);
         cursor: pointer;
         margin: 15% auto;
         display: block;
     }
+
+
     
     .portfolio-body-box p {
         margin-top: 85px;

@@ -225,10 +225,24 @@ class Home extends React.Component {
                     this.state.showPortfolio &&
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
+
+                            {
+                                [this.state.showArt,
+                                this.state.showGraphics,
+                                this.state.showMocks,
+                                this.state.showPrototypes,
+                                this.state.showGraphics,
+                                this.state.showGraphicCategories,
+                                this.state.showPrototypeCategories,
+                                this.state.showLogos,
+                                this.state.showResponsive,
+                                this.state.showFeature,
+                                this.state.showIPad].some(state => state) &&
                                 <div className='back-box' onClick={this.turnOffPages}>
                                     <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
                                 </div>
-
+                            }
+                                
                                 {
                                     // Portfolio splash
                                     !this.state.showArt && 

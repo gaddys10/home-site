@@ -226,22 +226,22 @@ class Home extends React.Component {
                         <div className='portfolioContainer'>
                             <div className='portfolioHeader'>
 
-                            {
-                                [this.state.showArt,
-                                this.state.showGraphics,
-                                this.state.showMocks,
-                                this.state.showPrototypes,
-                                this.state.showGraphics,
-                                this.state.showGraphicCategories,
-                                this.state.showPrototypeCategories,
-                                this.state.showLogos,
-                                this.state.showResponsive,
-                                this.state.showFeature,
-                                this.state.showIPad].some(state => state) &&
-                                <div className='back-box' onClick={this.turnOffPages}>
-                                    <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
-                                </div>
-                            }
+                                {
+                                    [this.state.showArt,
+                                    this.state.showGraphics,
+                                    this.state.showMocks,
+                                    this.state.showPrototypes,
+                                    this.state.showGraphics,
+                                    this.state.showGraphicCategories,
+                                    this.state.showPrototypeCategories,
+                                    this.state.showLogos,
+                                    this.state.showResponsive,
+                                    this.state.showFeature,
+                                    this.state.showIPad].some(state => state) &&
+                                        <div className='back-box' onClick={this.turnOffPages}>
+                                            <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
+                                        </div>
+                                }
                                 
                                 {
                                     // Portfolio splash
@@ -354,7 +354,7 @@ class Home extends React.Component {
                                     !this.state.showIPad &&
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypes && 
-                                        <p className='portfolioTitle' >Responsive Mobile Prototypes</p>
+                                        <p className='portfolioTitle' >Responsive Mobile Login</p>
                                 }
                                 {
                                     //feature walkthrough
@@ -571,7 +571,7 @@ class Home extends React.Component {
                                             </div> */}
 
                                             <div className='graphic-box portfolio-body-box' onClick={this.turnOnIPad}>
-                                                <p className='graphics-box-title'> iPad feature walkthrough </p>
+                                                <p className='graphics-box-title'> iPad Feature Walkthrough </p>
                                             </div>
                                         </>
                                 }

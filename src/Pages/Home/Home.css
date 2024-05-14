@@ -541,6 +541,7 @@ body {
     }
 }
 
+
 /*v Bird v*/
 .bird {
     height: 50px;
@@ -578,7 +579,7 @@ body {
 }
 
 .birdpart2 {
-    height:11px;
+    height:10px;
     width: 11px;
     border-radius: 50%;
     left: 22px;
@@ -634,39 +635,40 @@ body {
 
 @keyframes flap {
     0% {
-        left: 19px;
-        top: 5px;
-        transform: rotate(45deg);
+        left: 20px;
+        top: 2px;
+        transform: rotate(-20deg);
     }
     50% {
 
-        left: 15px;
-        top: 14px;
-        transform: rotate(-65deg);
+        left: 20px;
+        top: 13px;
+        transform: rotate(-140deg);
     }
     100% {
-        left: 18px;
-        top: 5px;
-        transform: rotate(45deg);
+        left: 21px;
+        top: 2px;
+        transform: rotate(-20deg);
     }
 }
 
 .birdpart8 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 8px solid darkred;
-    border-right: 15px solid transparent;
+    width: 8px;
+    height: 15px;
+    background-color: darkred;
+    /* border-bottom: 8px solid darkred;
+    border-right: 15px solid transparent; */
     border: 0px 10px 10px 0px;
-    left: 19px;
-    top: 5px;
+    /* left: 19px;
+    top: 5px; */
+    top: -15px;
     transform: rotate(45deg);
     animation: flap .25s infinite;
     border-bottom-right-radius:0px;   
     border-bottom-left-radius:10px;
     border-top-left-radius:0px;
     border-top-right-radius:10px;
-    z-index:1;
+    /* z-index:2; */
 }
 
 .birdpart9 {
@@ -982,6 +984,17 @@ body {
     border-bottom: 2px solid #313131;
 }
 
+@keyframes fadein {
+    0%{
+        top: 13vh;
+        opacity: 0%;
+    }
+    100% {
+        top: 8vh;
+        opacity: 100%;
+    }
+}
+
 .portfolioContainer {
     position: absolute;
     width: 75vw;
@@ -994,6 +1007,7 @@ body {
     padding: 0;
     margin: 0;
     border-radius: 5px;
+    animation: fadein .5s 1;
 }
 
 .portfolioBody {
@@ -1003,11 +1017,6 @@ body {
     overflow-y: scroll;
     display: flexbox;
     flex-wrap: wrap;
-}
-
-.portfolioBody .portfolio-body-box{
-    display: block;
-
 }
 
 .portfolioBody .img-container img {
@@ -1065,6 +1074,13 @@ img {
     cursor: pointer;
     margin: 4% auto;
     display: block;
+}
+
+.portfolio-body-box:hover{
+    background-color:  rgb(137, 126, 101);
+    border: 10px solid rgb(126, 96, 18);
+    box-shadow: 1px 1px 0px #313131;
+
 }
 
 .portfolio-body-box p {
@@ -1231,6 +1247,7 @@ img {
     .bird {
         left: 1990px;
         top:  900px;
+        transform: scaleX(-1) scale(2);
     }
     
     .birdShadow{
@@ -1263,12 +1280,13 @@ img {
         width: 800px;
         border: 10px solid goldenrod;
         box-shadow: 3px 3px 0px #313131;
-        background-color: #FFF;
         background-color: rgb(241, 224, 181);
         cursor: pointer;
         margin: 15% auto;
         display: block;
     }
+
+
     
     .portfolio-body-box p {
         margin-top: 85px;

@@ -984,6 +984,18 @@ body {
     border-bottom: 2px solid #313131;
 }
 
+@keyframes fadein {
+    0%{
+        top: 13vh;
+        opacity: 0%;
+    }
+    100% {
+        top: 8vh;
+        opacity: 100%;
+    }
+
+}
+
 .portfolioContainer {
     position: absolute;
     width: 75vw;
@@ -996,7 +1008,10 @@ body {
     padding: 0;
     margin: 0;
     border-radius: 5px;
+    animation: fadein .5s 1;
 }
+
+
 
 .portfolioBody {
     width: 100%;

@@ -1195,7 +1195,7 @@ img {
     border: 1px solid rgb(154, 154, 154);
 }
 
-@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+@media only screen and (max-width: 3300px) and (min-height: 1725px) {
     @keyframes flutter{
         0%{
             top:  900px;

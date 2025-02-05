@@ -639,7 +639,7 @@ form input {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 3300px) and (min-height: 1500px)  {
+@media only screen and (max-width: 3300px) and (min-height: 1725px)  {
     #formContainer {
         transform: scale(3);
         left: 50%;

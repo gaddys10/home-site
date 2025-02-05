@@ -30,7 +30,8 @@ class Home extends React.Component {
             showLogos: false,
             showResponsive: false,
             showFeature: false,
-            showIPad: false
+            showIPad: false,
+            showInit: false
         }
         this.showResumes = this.showResumes.bind(this);
         this.showPortfolio = this.showPortfolio.bind(this);
@@ -48,6 +49,7 @@ class Home extends React.Component {
         this.turnOnFeature = this.turnOnFeature.bind(this);
         this.turnOnResponsive = this.turnOnResponsive.bind(this);
         this.turnOnIPad = this.turnOnIPad.bind(this);
+        this.turnOnInit = this.turnOnInit.bind(this);
 
         this.turnOnGraphics = this.turnOnGraphics.bind(this);
         this.turnOffGraphics = this.turnOffGraphics.bind(this);
@@ -132,6 +134,15 @@ class Home extends React.Component {
     turnOnIPad(){
         this.setState(prevState => ({
             showIPad: true,
+            showInit: false,
+            showPrototypeCategories: false
+        }))
+    }
+
+    turnOnInit(){
+        this.setState(prevState => ({
+            showInit: true,
+            showIPad: false,
             showPrototypeCategories: false
         }))
     }
@@ -175,12 +186,13 @@ class Home extends React.Component {
                 showLogos: false,
                 showGraphicCategories: true
             }))
-        } else if(this.state.showResponsive || this.state.showFeature || this.state.showIPad){
+        } else if(this.state.showResponsive || this.state.showFeature || this.state.showIPad || this.state.showInit){
             this.setState(prevState => ({
                 showResponsive: false,
                 showFeature: false,
                 showIPad: false,
-                showPrototypeCategories: true
+                showPrototypeCategories: true,
+                showInit: false
             }))
 
         } else if (this.state.showPrototypes === true ){
@@ -202,7 +214,8 @@ class Home extends React.Component {
                 showResponsive: false,
                 showFeature: false,
                 showIPad: false,
-                showResumes: false
+                showResumes: false,
+                showInit: false
             }))
         }
         console.log(this.state);
@@ -227,17 +240,20 @@ class Home extends React.Component {
                             <div className='portfolioHeader'>
 
                                 {
-                                    [this.state.showArt,
-                                    this.state.showGraphics,
-                                    this.state.showMocks,
-                                    this.state.showPrototypes,
-                                    this.state.showGraphics,
-                                    this.state.showGraphicCategories,
-                                    this.state.showPrototypeCategories,
-                                    this.state.showLogos,
-                                    this.state.showResponsive,
-                                    this.state.showFeature,
-                                    this.state.showIPad].some(state => state) &&
+                                    [
+                                        this.state.showArt,
+                                        this.state.showGraphics,
+                                        this.state.showMocks,
+                                        this.state.showPrototypes,
+                                        this.state.showGraphics,
+                                        this.state.showGraphicCategories,
+                                        this.state.showPrototypeCategories,
+                                        this.state.showLogos,
+                                        this.state.showResponsive,
+                                        this.state.showFeature,
+                                        this.state.showIPad,
+                                        this.state.showInit
+                                    ].some(state => state) &&
                                         <div className='back-box' onClick={this.turnOffPages}>
                                             <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={this.turnOffPages} />
                                         </div>
@@ -253,6 +269,7 @@ class Home extends React.Component {
                                     !this.state.showGraphicCategories &&
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showLogos &&
+                                    !this.state.showInit &&
                                     !this.state.showResponsive &&
                                     !this.state.showFeature &&
                                     !this.state.showIPad &&
@@ -266,6 +283,7 @@ class Home extends React.Component {
                                     !this.state.showGraphicCategories &&
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showLogos &&
+                                    !this.state.showInit &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
                                     this.state.showArt && 
@@ -280,6 +298,7 @@ class Home extends React.Component {
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showLogos &&
+                                    !this.state.showInit &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
                                     this.state.showGraphicCategories &&
@@ -295,6 +314,7 @@ class Home extends React.Component {
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
+                                    !this.state.showInit &&
                                     !this.state.showIPad &&
                                     this.state.showGraphics && 
                                         <p className='portfolioTitle' >Graphic Designs</p>
@@ -309,6 +329,7 @@ class Home extends React.Component {
                                     this.state.showLogos &&
                                     !this.state.showIPad &&
                                     !this.state.showGraphics && 
+                                    !this.state.showInit &&
                                     !this.state.showResponsive &&
                                     !this.state.showFeature &&
                                         <p className='portfolioTitle' >Logo Designs</p>
@@ -322,6 +343,7 @@ class Home extends React.Component {
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showLogos &&
                                     !this.state.showResponse &&
+                                    !this.state.showInit &&
                                     !this.state.showIPad &&
                                     !this.state.showResponsive &&
                                     this.state.showMocks && 
@@ -332,6 +354,7 @@ class Home extends React.Component {
                                     //Prototype Categories
                                     !this.state.showArt && 
                                     !this.state.showGraphics && 
+                                    !this.state.showInit &&
                                     !this.state.showMocks && 
                                     !this.state.showPrototypes && 
                                     !this.state.showGraphicCategories &&
@@ -350,6 +373,7 @@ class Home extends React.Component {
                                     !this.state.showPrototypeCategories &&
                                     !this.state.showGraphicCategories &&
                                     !this.state.showLogos &&
+                                    !this.state.showInit &&
                                     this.state.showResponsive &&
                                     !this.state.showIPad &&
                                     !this.state.showGraphics && 
@@ -366,6 +390,7 @@ class Home extends React.Component {
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
+                                    !this.state.showInit &&
                                     !this.state.showGraphics && 
                                     this.state.showFeature && 
                                     <p className='portfolioTitle' >Feature Walkthrough Prototypes</p>
@@ -380,9 +405,41 @@ class Home extends React.Component {
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
                                     this.state.showIPad &&
+                                    !this.state.showInit &&
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypes && 
                                         <p className='portfolioTitle' >Tablet Feature Prototypes</p>
+                                }
+                                {
+                                    //iPad feature walkthrough
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    !this.state.showInit &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypes && 
+                                    this.state.showInit &&
+                                        <p className='portfolioTitle' >iPad Feature Walkthrough</p>
+                                }
+                                {
+                                    //Initial prototypes walkthrough
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    this.state.showInit &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showPrototypes && 
+                                        <p className='portfolioTitle' >Initial Product Prototypes</p>
                                 }
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
@@ -400,6 +457,7 @@ class Home extends React.Component {
                                     !this.state.showResponsive &&
                                     !this.state.showFeature &&
                                     !this.state.showIPad &&
+                                    !this.state.showInit &&
                                         <>
                                             <div onClick={this.showArt} className='art-box portfolio-body-box'>
                                                 <p className='art-box-title'> Art </p>
@@ -428,6 +486,7 @@ class Home extends React.Component {
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
+                                    !this.state.showInit &&
                                     this.state.showArt && 
                                         <>
                                             {/* <div className='imageContainer'> */}
@@ -447,6 +506,7 @@ class Home extends React.Component {
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
+                                    !this.state.showInit &&
                                     this.state.showGraphicCategories &&
                                         <>
                                             <div onClick={this.turnOnGraphics } className='art-box portfolio-body-box'>
@@ -468,6 +528,7 @@ class Home extends React.Component {
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
                                     !this.state.showIPad &&
+                                    !this.state.showInit &&
                                     this.state.showGraphics && 
                                         //Graphic Designs 
                                         <>
@@ -489,6 +550,7 @@ class Home extends React.Component {
                                     !this.state.showGraphics && 
                                     !this.state.showResponsive &&
                                     !this.state.showFeature &&
+                                    !this.state.showInit &&
                                         //Logo Designs 
                                         <>
                                             <p className='logo-subtitle'>Logo Design for MAG Aerospace's Software Technology Operations Division</p>
@@ -520,6 +582,7 @@ class Home extends React.Component {
                                     !this.state.showResponse &&
                                     !this.state.showIPad &&
                                     !this.state.showResponsive &&
+                                    !this.state.showInit &&
                                     this.state.showMocks && 
                                         <>
                                         {/* <div className="img-container">
@@ -573,6 +636,10 @@ class Home extends React.Component {
                                             <div className='graphic-box portfolio-body-box' onClick={this.turnOnIPad}>
                                                 <p className='graphics-box-title'> iPad Feature Walkthrough </p>
                                             </div>
+
+                                            <div className='graphic-box portfolio-body-box' onClick={this.turnOnInit}>
+                                                <p className='graphics-box-title'> Initial Prototypes </p>
+                                            </div>
                                         </>
                                 }
                                 {
@@ -589,27 +656,27 @@ class Home extends React.Component {
                                     !this.state.showPrototypes && 
                                         <>
                                             <div className="img-container">
-                                                <img className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 4 XL fixed.png" onClick={() => window.open("/ActualPrototypes/android_pixel_4_XL fixed.png")} />
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 4 XL fixed.png" onClick={() => window.open("/ActualPrototypes/android_pixel_4_XL fixed.png")} />
                                                 <p className='picture-sub'>Google Pixel 4 XL</p>
                                             </div>
 
                                             <div className="img-container">
-                                                <img className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG")}/>
                                                 <p className='picture-sub'>Google Pixel 5</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img className="portfolio-img" src="/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png")}/>
                                                 <p className='picture-sub'>iPhone 12 Pro</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.PNG")}/>
                                                 <p className='picture-sub'>Nexus 6</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 10 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 10 fixed.PNG")}/>
                                                 <p className='picture-sub'>Nexus 10</p>
                                             </div>
                                             
@@ -630,7 +697,7 @@ class Home extends React.Component {
                                         //Responsive Mobile Login Prototypes
                                         <>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/iosDevice fixed.png"/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/iosDevice fixed.png"/>
                                             </div>
                                         </>
                                 }
@@ -649,49 +716,72 @@ class Home extends React.Component {
                                         //Responsive Mobile Login Prototypes
                                         <>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png")}/>
+                                            </div>
+                                        </>
+                                }
+                                {
+                                    //initial prototypes
+                                    !this.state.showArt && 
+                                    !this.state.showGraphics && 
+                                    !this.state.showMocks && 
+                                    !this.state.showPrototypeCategories &&
+                                    !this.state.showGraphicCategories &&
+                                    !this.state.showLogos &&
+                                    !this.state.showResponsive &&
+                                    !this.state.showIPad &&
+                                    !this.state.showGraphics && 
+                                    !this.state.showFeature && 
+                                    this.state.showInit &&
+                                        //Responsive Mobile Login Prototypes
+                                        <>
+                                            <div className='img-container'>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/initial1.png" onClick={() => window.open("/ActualPrototypes/initial1.png")}/>
+                                            </div>
+                                            <div className='img-container'>
+                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/initial2.png" onClick={() => window.open("/ActualPrototypes/initial2.png")}/>
                                             </div>
                                         </>
                                 }

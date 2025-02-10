@@ -378,7 +378,7 @@ hr {
 /*****************************/
 /* ^^^^^ Mobile Styles ^^^^^ */
 /*****************************/
-@media only screen and (max-width: 3300px) and (min-height: 1500px) {
+@media only screen and (max-width: 3300px) and (min-height: 1725px) {
     .scroll-relief {
         height: 200px;
     }

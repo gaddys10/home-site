@@ -15,7 +15,7 @@ class Wrapper extends React.Component {
         return(
                 <div className= "home-wrapper">
                     <div className="cvHeader">
-                        <p className="name-position">Syrus Gaddy, <br /><br /> Software Engineer</p>
+                        <p className="name-position">Syrus Gaddy, <br /><br /> Senior Software Engineer</p>
                         <br />
                         <ul className="contact-info">
                             <li> <b>Mobile:</b> (910) 308-3896 </li>
@@ -23,14 +23,13 @@ class Wrapper extends React.Component {
                             <li> <b>Location:</b> Fayetteville, North Carolina </li>
                         </ul>
                     </div>
-                    <br/>
                     {/* <img src={divida} alt="" className="divida" /> */}
                     <div className="section-divider">---</div>
                     <div className="cvBody">
                         <p className="summary-info">Skills</p>
                         <ul className="cv-highlights">
-                            <li>7.5 years of professional software engineering & testing experience</li>
-                            <li>7 months of software leadership</li>
+                            <li>8 years of professional software engineering & testing experience</li>
+                            <li>1 year of software leadership</li>
                             <li>Background in finance, utilities, telecommunications, asset management, & government contracting </li>       
                             {/* <li>1.5 years of professional Apple hardware and software troubleshooting</li> */}
                             <li>B.S. Computer Science Mathematics minor </li>
@@ -74,8 +73,30 @@ class Wrapper extends React.Component {
                         <p className="experience-title">Experience</p>
                         
                         <span className="jobTitleContainer">
+                            <h3 className= "jobTitle">Senior Software Engineer,<br/>General Dynamics</h3>
+                            <h3 className= "jobDate">October 2024 - Present</h3>
+                        </span>
+                        <ul className="jobBody">
+                            <li className= "jobDesc"> 
+                            Developing and testing Node web application as technical lead of 8 member team to create and display Helm charts with CSS, JavaScript, React.js, and TypeScript UIs, providing an entity management solution to DoD stakeholders
+                            </li>
+                            <li className= "jobDesc"> 
+                            Creating Docker containers and their pytest automation using multi-stage builds to independently run PostgreSQL, ElasticSearch, Kafka, & Redis services with Docker Compose to ease development flow and improve project integrity
+                            </li>
+                            <li className= "jobDesc"> 
+                            Building and maintaining GitLab CI CI/CD pipelines with Gitlab CLI to test and deploy distributed web application on Kubernetes platform for container orchestration, ensuring performant operation on all cleared DoD desktop devices
+                            </li>
+                            <li className= "jobDesc"> 
+                            Facilitating Agile ceremonies as Scrum Master including daily stand-ups, sprint planning, sprint reviews, retrospectives, Jira backlog refinement sessions, and additional Miro white-boarding design sessions 
+                            </li>
+                            <li className= "jobDesc"> 
+                            Using Figma to create initial prototypes for desktop text-to-speech and image-to-text translation software 
+                            </li>
+                        </ul>
+
+                        <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Engineer,<br/>Cisco Systems</h3>
-                            <h3 className= "jobDate">1/2023 - Present</h3>
+                            <h3 className= "jobDate">January 2023 - October 2023</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
@@ -93,7 +114,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Sr. UI/UX Developer,<br/> O'Reilly Auto Parts</h3>
-                            <h3 className= "jobDate">9/2022 - 6/2023</h3>
+                            <h3 className= "jobDate">September 2022 - June 2023</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
@@ -109,7 +130,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">UX Software Developer,<br/>ARCOS</h3>
-                            <h3 className= "jobDate">10/2021 - 7/2022</h3>
+                            <h3 className= "jobDate">October 2021 - July 2022</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> Built TypeScript-based React Native and Angular UIs for "Mobile Workbench" mobile apps and "Callout" & "Crew Manager" web apps to manage utilities for 141,000+ Connexus Energy clients starting May 2022</li>
@@ -120,7 +141,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Technical Lead,<br/>MAG Aerospace</h3>
-                            <h3 className= "jobDate">3/2021 - 9/2021</h3>
+                            <h3 className= "jobDate">March 2021 - September 2021</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> Redesigned Node information portal web app UIs and functionality while leading 4-person team with CSS, JavaScript, and Meteor.js including messaging, alerting, and real-time data to earn client contract extension</li>
@@ -136,7 +157,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Engineer,<br/>MAG Aerospace</h3>
-                            <h3 className= "jobDate">1/2020 - 3/2021</h3>
+                            <h3 className= "jobDate">January 2020 - March 2021</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> Developed full stack Node information & communication portal web app dashboards using JavaScript and Meteor.js on an Agile team to assist federal clients, meeting SDLC criteria with limited information</li>
@@ -148,7 +169,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className="jobTitle">Automation Engineer,<br/>Verizon</h3>
-                            <h3 className= "jobDate">10/2019 - 1/2020</h3>
+                            <h3 className= "jobDate">October 2019 - January 2020</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> Automated Verizon apps and services with Selenium, Java, and Jenkins to fix all network outages without human intervention, reducing cellular network downtime and improving wireless hotspot performance </li>
@@ -156,7 +177,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Test Engineer,<br/>Xylem Inc.</h3>
-                            <h3 className= "jobDate">8/2018 - 6/2019</h3>
+                            <h3 className= "jobDate">August 2018 - June 2019</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc">Developed test automation scripts with Python to ensure quality of ally® water meter firmware, saving the city of Dallas, TX 12 million gallons of water after deployment from 2019 to 2020 </li>
@@ -166,7 +187,7 @@ class Wrapper extends React.Component {
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Associate Software Engineer,<br/>Fidelity Investments</h3>
-                            <h3 className= "jobDate">1/2017 - 5/2018</h3>
+                            <h3 className= "jobDate">January 2017 - May 2018</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc">Built bank transfer UIs and APIs using Node, TypeScript, Angular 2 & 4, SASS, Redux, and Git to enhance fidelity.com, allowing 50 million customers to transfer funds across external checking and ETF accounts</li>

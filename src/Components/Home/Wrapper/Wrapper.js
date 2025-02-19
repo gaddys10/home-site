@@ -1,6 +1,31 @@
 import React from "react";
 import "./Wrapper.css";
-import divida from './homedivider.png';
+import {html, css, LitElement} from 'lit';
+
+export class CVHeadline extends LitElement {
+    constructor() {
+        super();
+        this.text = 'Resume Headline';
+    }
+    
+    static styles = css`
+        p { 
+            margin-left: 20px;
+            font-family: 'dogica', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }`;
+
+    static properties = {
+        text: {type: String},
+    };
+
+    render() {
+        return html`<p>${this.text}</p>`;
+    }
+}
+
+customElements.define('cv-headline', CVHeadline);
 
 class Wrapper extends React.Component {
     constructor(props){
@@ -15,6 +40,7 @@ class Wrapper extends React.Component {
         return(
                 <div className= "home-wrapper">
                     <div className="cvHeader">
+                        
                         <p className="name-position">Syrus Gaddy, <br /><br /> Senior Software Engineer</p>
                         <br />
                         <ul className="contact-info">
@@ -25,8 +51,12 @@ class Wrapper extends React.Component {
                     </div>
                     {/* <img src={divida} alt="" className="divida" /> */}
                     <div className="section-divider">---</div>
+
+                    
                     <div className="cvBody">
-                        <p className="summary-info">Skills</p>
+
+                        <div className="section-divider">---</div>
+                        <cv-headline text= "Skills"></cv-headline>
                         <ul className="cv-highlights">
                             <li>8 years of professional software engineering & testing experience</li>
                             <li>1 year of software leadership</li>
@@ -69,9 +99,36 @@ class Wrapper extends React.Component {
                         <br/> 
                         <br/>
                         <div className="section-divider">---</div>
+                        <cv-headline text= "Education"></cv-headline>
+                        <span className="jobTitleContainer">
+                            <h3 className= "jobTitle">B.S. Computer Science, <span className="minor">Math Minor</span> <br/> Fayetteville State University</h3>
+                            <h4 className= "jobDate"> May 2016</h4>
+                        </span>   
+                        <ul className="jobBody">
+                            <li className= "jobDesc">Developed A.I. & computer vision to win inaugural NASA Swarmathon Robotics Challenge, 2016</li>
+                            <li className= "jobDesc">Developed an web application (HTML5/CSS/Javascript/Query) for senior project, 2015</li>
+                            <li className= "jobDesc">Honorable Mention in ACM ICPC Mid-Atlantic Regionals sponsored by IBM (Java), 2015</li>
+                        </ul>
+                    
+                        <p className="coursework">Relevant Coursework</p>
+                        <p className="coursework-classes"> 
+                            A.I. &bull; 
+                            Software Engineering &bull; 
+                            Algorithm Design & Analysis 
+                            Discrete Mathematics &bull;
+                            Data Structures & Algorithms 
+                            OOP Design &bull; 
+                            Competive Programming &bull; 
+                            Linear Algebra 
+                            Program Design & Implementation &bull; 
+                            Programming Languages &bull; 
+                            Java Applications
+                        </p>
 
-                        <p className="experience-title">Experience</p>
-                        
+                        <div className="section-divider">---</div>
+
+
+                        <cv-headline text="Experience"></cv-headline>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Senior Software Engineer,<br/>General Dynamics</h3>
                             <h3 className= "jobDate">October 2024 - Present</h3>
@@ -233,8 +290,7 @@ class Wrapper extends React.Component {
 
                         {/* <img src={divida} alt="" className="divida" /> */}
                         <div className="section-divider">---</div>
-
-                        <p className="experience-title"> Education </p>
+                        <cv-headline text= "Education"></cv-headline>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">B.S. Computer Science, <span className="minor">Math Minor</span> <br/> Fayetteville State University</h3>
                             <h4 className= "jobDate"> May 2016</h4>
@@ -246,7 +302,7 @@ class Wrapper extends React.Component {
                         </ul>
                     
                         <p className="coursework">Relevant Coursework</p>
-                        <p className="coursework-classes"> <br/>
+                        <p className="coursework-classes"> 
                             A.I. &bull; 
                             Software Engineering &bull; 
                             Algorithm Design & Analysis 

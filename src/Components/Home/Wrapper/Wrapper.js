@@ -55,7 +55,6 @@ class Wrapper extends React.Component {
                     
                     <div className="cvBody">
 
-                        <div className="section-divider">---</div>
                         <cv-headline text= "Skills"></cv-headline>
                         <ul className="cv-highlights">
                             <li>8 years of professional software engineering & testing experience</li>

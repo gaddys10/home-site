@@ -242,7 +242,7 @@ class Wrapper extends React.Component {
                             <li className= "jobDesc">Used power supplies, water pumps, and optical sensors to aid in manual testing digital smart grid devices, exposing equipment to all expected conditions over proposed 20 year life span</li>
                         </ul>
                         <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">Associate Software Engineer,<br/>Fidelity Investments</h3>
+                            <h3 className= "jobTitle" id="fidelity-title">Associate Software Engineer,<br/>Fidelity Investments</h3>
                             <h3 className= "jobDate">January 2017 - May 2018</h3>
                         </span>
                         <ul className="jobBody">
@@ -287,34 +287,6 @@ class Wrapper extends React.Component {
                         <br/>
                         <br/>
 
-                        {/* <img src={divida} alt="" className="divida" /> */}
-                        <div className="section-divider">---</div>
-                        <cv-headline text= "Education"></cv-headline>
-                        <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">B.S. Computer Science, <span className="minor">Math Minor</span> <br/> Fayetteville State University</h3>
-                            <h4 className= "jobDate"> May 2016</h4>
-                        </span>   
-                        <ul className="jobBody">
-                            <li className= "jobDesc">Developed A.I. & computer vision to win inaugural NASA Swarmathon Robotics Challenge, 2016</li>
-                            <li className= "jobDesc">Developed an web application (HTML5/CSS/Javascript/Query) for senior project, 2015</li>
-                            <li className= "jobDesc">Honorable Mention in ACM ICPC Mid-Atlantic Regionals sponsored by IBM (Java), 2015</li>
-                        </ul>
-                    
-                        <p className="coursework">Relevant Coursework</p>
-                        <p className="coursework-classes"> 
-                            A.I. &bull; 
-                            Software Engineering &bull; 
-                            Algorithm Design & Analysis 
-                            Discrete Mathematics &bull;
-                            Data Structures & Algorithms 
-                            OOP Design &bull; 
-                            Competive Programming &bull; 
-                            Linear Algebra 
-                            Program Design & Implementation &bull; 
-                            Programming Languages &bull; 
-                            Java Applications
-                        </p>
-                        <div className="scroll-relief"></div>
                     </div>
                 </div>
         )

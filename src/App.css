@@ -1,3 +1,10 @@
+body[data-cy-test='true'] * {
+  transition: none !important;
+  animation: none !important;
+  position: relative !important;
+  max-width: 100% !important;
+}
+
 .App {
   text-align: center;
 }

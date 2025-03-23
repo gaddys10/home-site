@@ -460,19 +460,19 @@ class Home extends React.Component {
                                     !this.state.showInit &&
                                         <>
                                             <div onClick={this.showArt} className='art-box portfolio-body-box'>
-                                                <p className='art-box-title'> Art </p>
+                                                <p className='art-box-title'>Art</p>
                                             </div>
 
                                             <div onClick={this.turnOnPrototypeCategories} className='prototype-box portfolio-body-box'>
-                                                <p className='prototype-box-title'> Prototypes </p>
+                                                <p className='prototype-box-title'>Prototypes</p>
                                             </div>
 
                                             <div onClick={this.turnOnGraphicsCategories} className='graphic-box portfolio-body-box'>
-                                                <p className='graphics-box-title'> Graphics </p>
+                                                <p className='graphics-box-title'>Graphics</p>
                                             </div>
 
                                             <div onClick={this.showMocks} className='mock-box portfolio-body-box'>
-                                                <p className='mock-box-title'> Mock Websites </p>
+                                                <p className='mock-box-title'>Mock Websites</p>
                                             </div>
                                         </>
                                 }
@@ -490,9 +490,9 @@ class Home extends React.Component {
                                     this.state.showArt && 
                                         <>
                                             {/* <div className='imageContainer'> */}
-                                                <img className="portfolio-img" src="/ActualArt/IMG_0339.jpeg" onClick={() => window.open("/ActualArt/IMG_0339.jpeg")} />
-                                                <img className="portfolio-img" src="/ActualArt/IMG_0346.jpeg" onClick={() => window.open("/ActualArt/IMG_0346.jpeg")}/>
-                                                <img className="portfolio-img" src="/ActualArt/IMG_0347.jpeg" onClick={() => window.open("/ActualArt/IMG_0347.jpeg")}/>
+                                                <img className="portfolio-img art-1" src="/ActualArt/IMG_0339.jpeg" onClick={() => window.location.href = "/ActualArt/IMG_0339.jpeg"} />
+                                                <img className="portfolio-img art-2" src="/ActualArt/IMG_0346.jpeg" onClick={() => window.location.href = "/ActualArt/IMG_0346.jpeg"}/>
+                                                <img className="portfolio-img art-3" src="/ActualArt/IMG_0347.jpeg" onClick={() => window.location.href = "/ActualArt/IMG_0347.jpeg"}/>
                                             {/* </div> */}
                                         </>
                                 }
@@ -533,9 +533,9 @@ class Home extends React.Component {
                                         //Graphic Designs 
                                         <>
                                             <p className='logo-subtitle'> Fayetteville State University Class & Event Infographics</p>
-                                            <img className="portfolio-img" src="/ActualDesigns/IMG_0338_fixed.png" onClick={() => window.open("/ActualArt/IMG_0338_fixed.png")} />
-                                            <img className="portfolio-img" src="/ActualDesigns/LunchAndLearn_flyer2-Recovered.png" onClick={() => window.open("/ActualArt/LunchAndLearn_flyer2-Recovered.png")} />
-                                            <img className="portfolio-img" src="/ActualDesigns/Londonflyerplustext.png" onClick={() => window.open("/ActualDesigns/Londonflyerplustext.png")} />
+                                            <img className="portfolio-img" src="/ActualDesigns/IMG_0338_fixed.png" onClick={() => window.location.href= "/ActualArt/IMG_0338_fixed.png"} />
+                                            <img className="portfolio-img" src="/ActualDesigns/LunchAndLearn_flyer2-Recovered.png" onClick={() => window.location.href = "/ActualArt/LunchAndLearn_flyer2-Recovered.png"} />
+                                            <img className="portfolio-img" src="/ActualDesigns/Londonflyerplustext.png" onClick={() => window.location.href = "/ActualDesigns/Londonflyerplustext.png"} />
                                         </>
                                 }
                                 {
@@ -555,19 +555,19 @@ class Home extends React.Component {
                                         <>
                                             <p className='logo-subtitle'>Logo Design for MAG Aerospace's Software Technology Operations Division</p>
                                             <div className='img-container'>
-                                                <img src="/ActualDesigns/IMG_0348.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0348.jpeg")} />
+                                                <img src="/ActualDesigns/IMG_0348.jpeg" onClick={() => window.location.href = "/ActualDesigns/IMG_0348.jpeg"} />
                                             </div>
                                             <div className='img-container'>
-                                                <img src="/ActualDesigns/IMG_0349.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0349.jpeg")}/>   
+                                                <img src="/ActualDesigns/IMG_0349.jpeg" onClick={() => window.location.href = "/ActualDesigns/IMG_0349.jpeg"}/>   
                                             </div>             
                                             <div className='img-container'>                      
-                                                <img src="/ActualDesigns/IMG_0350.jpeg" onClick={() => window.open("/ActualDesigns/IMG_0350.jpeg")}/>
+                                                <img src="/ActualDesigns/IMG_0350.jpeg" onClick={() => window.location.href = "/ActualDesigns/IMG_0350.jpeg"}/>
                                             </div>
                                             <div className='img-container'>                      
-                                                <img src="/ActualDesigns/STOPS logo Profile A.png" onClick={() => window.open("/ActualDesigns/STOPS logo Profile A.png")}/>
+                                                <img src="/ActualDesigns/STOPS logo Profile A.png" onClick={() => window.location.href = "/ActualDesigns/STOPS logo Profile A.png"}/>
                                             </div>
                                             <div className='img-container'>                      
-                                                <img src="/ActualDesigns/STOPS logo.png" onClick={() => window.open("/ActualDesigns/STOPS logo.png")}/>
+                                                <img src="/ActualDesigns/STOPS logo.png" onClick={() => window.location.href = "/ActualDesigns/STOPS logo.png"}/>
                                             </div>
                                         </>
                                 }
@@ -626,7 +626,7 @@ class Home extends React.Component {
                                         //Prototypes
                                         <>
                                             <div className='art-box portfolio-body-box' onClick={this.turnOnResponsive}>
-                                                <p className='art-box-title'> Responsive Mobile Login </p>
+                                                <p className='art-box-title prototype-title-1'>Responsive Mobile Login</p>
                                             </div>
 
                                             {/* <div className='prototype-box portfolio-body-box' onClick={this.turnOnFeature}>
@@ -634,11 +634,11 @@ class Home extends React.Component {
                                             </div> */}
 
                                             <div className='graphic-box portfolio-body-box' onClick={this.turnOnIPad}>
-                                                <p className='graphics-box-title'> iPad Feature Walkthrough </p>
+                                                <p className='graphics-box-title prototype-title-2'>iPad Feature Walkthrough</p>
                                             </div>
 
                                             <div className='graphic-box portfolio-body-box' onClick={this.turnOnInit}>
-                                                <p className='graphics-box-title'> Initial Prototypes </p>
+                                                <p className='graphics-box-title prototype-title-3'>Initial Prototypes</p>
                                             </div>
                                         </>
                                 }
@@ -656,27 +656,27 @@ class Home extends React.Component {
                                     !this.state.showPrototypes && 
                                         <>
                                             <div className="img-container">
-                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 4 XL fixed.png" onClick={() => window.open("/ActualPrototypes/android_pixel_4_XL fixed.png")} />
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img responsive-1" alt="prototype" src="/ActualPrototypes/call-1729 android pixel 4 XL fixed.png" onClick={() => window.location.href= "/ActualPrototypes/call-1729 android pixel 4 XL fixed.png"} />
                                                 <p className='picture-sub'>Google Pixel 4 XL</p>
                                             </div>
 
                                             <div className="img-container">
-                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img responsive-2" alt="prototype" src="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG" onClick={() => window.location.href="/ActualPrototypes/call-1729 android pixel 5 22.24 fixed.PNG"}/>
                                                 <p className='picture-sub'>Google Pixel 5</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img responsive-3" alt="prototype" src="/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png" onClick={() => window.location.href= "/ActualPrototypes/call-1729 iPhone 12 Pro 22.28 fixed.png"}/>
                                                 <p className='picture-sub'>iPhone 12 Pro</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.png" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img responsive-4" alt="prototype" src="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.png" onClick={() => window.location.href="/ActualPrototypes/call-1792 Nexus 6 22.26 fixed.PNG"}/>
                                                 <p className='picture-sub'>Nexus 6</p>
                                             </div>
 
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} className="portfolio-img" src="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG" onClick={() => window.open("/ActualPrototypes/call-1792 Nexus 10 fixed.PNG")}/>
+                                                <img style={{cursor: 'pointer'}} className="portfolio-img responsive-5" alt="prototype" src="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG" onClick={() => window.location.href="/ActualPrototypes/call-1792 Nexus 10 fixed.PNG"}/>
                                                 <p className='picture-sub'>Nexus 10</p>
                                             </div>
                                             
@@ -716,49 +716,49 @@ class Home extends React.Component {
                                         //Responsive Mobile Login Prototypes
                                         <>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
+                                                <img className="ipad-1" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png")}/>
+                                                <img className="ipad-2" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.40 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png")}/>
+                                                <img className="ipad-3" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.51 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png")}/>
+                                                <img className="ipad-4" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.00 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png")}/>
+                                                <img className="ipad-5" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.15 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png")}/>
+                                                <img className="ipad-6" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.27 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png")}/>
+                                                <img className="ipad-7" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.41 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png")}/>
+                                                <img className="ipad-8" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.20.54 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png")}/>
+                                                <img className="ipad-9" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.07 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png")}/>
+                                                <img className="ipad-10" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.21.19 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png")}/>
+                                                <img className="ipad-11" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.10 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png")}/>
+                                                <img className="ipad-12" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.22.48 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png")}/>
+                                                <img className="ipad-13" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.22 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png")}/>
+                                                <img className="ipad-14" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.18.35 PM fixed.png")}/>
                                             </div>
                                             <div className='img-container'>
-                                                <img style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png")}/>
+                                                <img className="ipad-15" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.23.10 PM fixed.png")}/>
                                             </div>
                                         </>
                                 }
@@ -952,7 +952,7 @@ class Home extends React.Component {
                 <div className= "ribbonfold1"></div>
 
                 <div className= "ribbon2" onClick={this.showPortfolio}>
-                    <a href="#" onClick={this.showPortfolio}>Portfolio</a>
+                    <a>Portfolio</a>
                 </div>
                 <div className= "ribbonfold2"></div>
 

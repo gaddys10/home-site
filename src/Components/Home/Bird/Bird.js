@@ -24,4 +24,4 @@ function Bird(){
 }
 
 
-export default Bird;
+export default React.memo(Bird);

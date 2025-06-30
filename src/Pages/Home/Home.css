@@ -704,8 +704,8 @@ body {
     top: 200px;
     left: 200px;
     animation-name: float;
-    animation-duration: 195s;
-    animation-delay: 7s;
+    animation-duration: 105s;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -724,8 +724,8 @@ body {
     width: 110px;
     left: 100vw;
     animation-name:float2;
-    animation-duration: 130s;
-    animation-delay: 40s;
+    animation-duration: 90s;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -748,7 +748,7 @@ body {
     left: 150px;
     top: 270px;
     animation-name:float2;
-    animation-duration: 160s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -759,7 +759,7 @@ body {
     top: 200px;
     left: 40vw;
     animation-name:float2;
-    animation-duration: 101s;
+    animation-duration: 51s;
     animation-iteration-count: infinite;
     z-index: -3;
 }
@@ -769,7 +769,7 @@ body {
     width: 110px;
     top: 110px;
     animation-name:float2;
-    animation-duration: 100s;
+    animation-duration: 80s;
     animation-iteration-count: infinite;
     z-index: -5;
 }
@@ -781,7 +781,7 @@ body {
     width: 40px;
     top: 70px;
     position: absolute;
-    animation-duration: 160s;
+    animation-duration: 80s;
     animation-name:float2;
     animation-iteration-count: infinite;
     box-shadow:  inset -1px -1px 0px  #ddd;
@@ -796,7 +796,7 @@ body {
     top: 350px;
     position: absolute;
     z-index: -3;
-    animation-duration: 230s;
+    animation-duration: 130s;
     animation-name:float2;
     animation-iteration-count: infinite;
     box-shadow:  inset -1px -1px 0px  #ddd;

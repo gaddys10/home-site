@@ -399,22 +399,6 @@
         top: 345px;
     }
 }
-
-.right_forearm {
-    height: 13px;
-    width: 39px;
-    top: 346px;
-    left: 456px;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 10px;
-    animation: handWave .25s 7, rightForearmBreathing 3s infinite;
-    -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
-    box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2; 
-    z-index: -1;
-}  
-
 @keyframes handWaveSafari {
     0% {
         left: 456px;
@@ -446,6 +430,23 @@
         
 }
 
+.right_forearm {
+    height: 13px;
+    width: 39px;
+    top: 346px;
+    left: 456px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;
+    animation: handWave .25s 7, rightForearmBreathing 3s infinite;
+    -webkit-animation: handWave .3s 7, rightForearmBreathing 3s infinite;
+    box-shadow: inset -2px 2px 0px #ba996f, inset 1px -2px 0px 0px #d9c0a2; 
+    z-index: -1;
+}  
+
+
+
 .right_forearm_safari{
     height: 13px;
     width: 40px;
@@ -458,6 +459,16 @@
     box-shadow: inset -1px 2px 0px 0cap #ba996f;
     animation: rightForearmBreathing 3s infinite;
     animation: handWaveSafari .5s 5, rightForearmBreathing 3s infinite;
+}
+
+.wave-animation{
+    animation: handWave .25s 7;
+    -webkit-animation: handWave .3s 7
+}
+
+.wave-animation-safari{
+
+    animation: handWaveSafari .5s 5
 }
 /*^ Upper Body ^*/
 
@@ -569,10 +580,14 @@
     border-radius: 15px;
     z-index: 5;
     padding: 5px;
-    animation: speechFloat 1.5s infinite, speechAppear 6s 1 forwards;
     font-size: 14px;
     top: 40px;
     box-shadow: inset -2px -2px 1px #aaaaaa;
+    opacity: 0;
+}
+
+.speech-bubble-intro {
+    animation: speechFloat 1.5s infinite, speechAppear 6s 1 forwards;
 }
 
 .bubble-tail{

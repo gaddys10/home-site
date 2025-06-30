@@ -61,6 +61,7 @@ class Home extends React.Component {
         this.turnOffPages = this.turnOffPages.bind(this);
     }
 
+
     showPortfolio(){
         this.setState(prevState => ({ showPortfolio: !prevState.showPortfolio }))
     }
@@ -245,7 +246,6 @@ class Home extends React.Component {
                                         this.state.showGraphics,
                                         this.state.showMocks,
                                         this.state.showPrototypes,
-                                        this.state.showGraphics,
                                         this.state.showGraphicCategories,
                                         this.state.showPrototypeCategories,
                                         this.state.showLogos,
@@ -365,7 +365,7 @@ class Home extends React.Component {
                                     this.state.showPrototypeCategories &&
                                         <p className='portfolioTitle' >Prototypes</p>
                                 }
-{
+                                {
                                     //Responsive Mobile Design
                                     !this.state.showArt && 
                                     !this.state.showGraphics && 
@@ -419,11 +419,11 @@ class Home extends React.Component {
                                     !this.state.showGraphicCategories &&
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
-                                    !this.state.showIPad &&
+                                    this.state.showIPad &&
                                     !this.state.showInit &&
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypes && 
-                                    this.state.showInit &&
+                                    !this.state.showInit &&
                                         <p className='portfolioTitle' >iPad Feature Walkthrough</p>
                                 }
                                 {
@@ -443,6 +443,8 @@ class Home extends React.Component {
                                 }
                                 <p className='portfolioClose' onClick={ this.closePortfolio }> <span className='xx'>X</span></p>
                             </div>
+
+
                             <div className='portfolioBody'>
                                 {
                                     // Portfolio splash

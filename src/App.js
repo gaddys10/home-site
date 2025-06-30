@@ -11,7 +11,7 @@ import React, {Suspense, lazy} from 'react';
 // import OldSiteBio from './Pages/OldSite/OldSiteBio/OldSiteBio';
 // import OldSiteSorry from './Pages/OldSite/OldSiteSorry/OldSiteSorry';
 
-const Home = lazy(() => import('./Pages/Home/Home'));
+const HomePage = lazy(() => import('./Pages/Home/HomePage'));
 const ResumeWriting = lazy(() => import('./Pages/ResumeWriting/ResumeWriting'));
 const PhotoSite = lazy(() => import('./Pages/PhotoSite/PhotoSite'));
 const OldSite = lazy(() => import('./Pages/OldSite/OldSite'));
@@ -31,7 +31,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/" element={ <Home/> } />
+              <Route path="/" element={ <HomePage/> } />
               <Route path="/Portfolio/MockResumeWriting" element={ <ResumeWriting/> } />
               <Route path="/Portfolio/MockPhotography" element={ <PhotoSite /> } />
               <Route path="/Portfolio/OldHomeSite" element={ <OldSite /> } />

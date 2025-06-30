@@ -419,11 +419,11 @@ class Home extends React.Component {
                                     !this.state.showGraphicCategories &&
                                     !this.state.showLogos &&
                                     !this.state.showResponsive &&
-                                    !this.state.showIPad &&
+                                    this.state.showIPad &&
                                     !this.state.showInit &&
                                     !this.state.showGraphics && 
                                     !this.state.showPrototypes && 
-                                    this.state.showInit &&
+                                    !this.state.showInit &&
                                         <p className='portfolioTitle' >iPad Feature Walkthrough</p>
                                 }
                                 {

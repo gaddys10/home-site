@@ -181,4 +181,4 @@ class Shark extends React.Component {
     }
 }
 
-export default Shark;
+export default React.memo(Shark);

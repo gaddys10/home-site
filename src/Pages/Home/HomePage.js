@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, createContext, useReducer } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
@@ -65,6 +65,27 @@ const HomePage = () => {
             ]);
         }
     };
+
+    const showBackArrow = useMemo(() => {
+        return [
+            state.showArt,
+            state.showGraphics,
+            state.showMocks,
+            state.showPrototypes,
+            state.showGraphicCategories,
+            state.showPrototypeCategories,
+            state.showLogos,
+            state.showResponsive,
+            state.showFeature,
+            state.showIPad,
+            state.showInit
+        ].some(state => state);
+    }, [
+        state.showArt, state.showGraphics, state.showMocks, state.showPrototypes,
+        state.showGraphicCategories, state.showPrototypeCategories, state.showLogos,
+        state.showResponsive, state.showFeature, state.showIPad, state.showInit
+    ]);
+    
 
     return (
         <>
@@ -174,20 +195,7 @@ const HomePage = () => {
                 <div className='portfolioContainer'>
                     <div className='portfolioHeader'>
                         {
-                            [
-                                state.showArt,
-                                state.showGraphics,
-                                state.showMocks,
-                                state.showPrototypes,
-                                state.showGraphics,
-                                state.showGraphicCategories,
-                                state.showPrototypeCategories,
-                                state.showLogos,
-                                state.showResponsive,
-                                state.showFeature,
-                                state.showIPad,
-                                state.showInit
-                            ].some(state => state) &&
+                            showBackArrow &&
                                 <div className='back-box' onClick={turnOffPages}>
                                     <FontAwesomeIcon icon={faLeftLong} className='back-arrow' onClick={turnOffPages} />
                                 </div>
@@ -284,9 +292,9 @@ const HomePage = () => {
                             !state.showIPad &&
                             !state.showInit &&
                                 <>
-                                    <div onClick={() => setTrue(['showArt'])} className='art-box portfolio-body-box'>
+                                    {/* <div onClick={() => setTrue(['showArt'])} className='art-box portfolio-body-box'>
                                         <p className='art-box-title'>Art</p>
-                                    </div>
+                                    </div> */}
 
                                     <div onClick={() => setTrue(['showPrototypeCategories'])} className='prototype-box portfolio-body-box'>
                                         <p className='prototype-box-title'>Prototypes</p>

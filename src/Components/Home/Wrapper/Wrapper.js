@@ -14,6 +14,9 @@ export class CVHeadline extends LitElement {
             font-family: 'dogica', sans-serif;
             font-size: 24px;
             font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 15px;
+
         }`;
 
     static properties = {
@@ -41,12 +44,12 @@ class Wrapper extends React.Component {
                 <div className= "home-wrapper">
                     <div className="cvHeader">
                         
-                        <p className="name-position">Syrus Gaddy, <br /><br /> Senior Software Engineer</p>
+                        <p className="name-position">Syrus Gaddy<br /><br /> <span className="my-title">UI-Focused Full Stack Software Engineer</span></p>
                         <br />
                         <ul className="contact-info">
                             <li> <b>Mobile:</b> (910) 308-3896 </li>
                             <li> <b>E-mail:</b> gaddys10@gmail.com </li>
-                            <li> <b>Location:</b> Fayetteville, North Carolina </li>
+                            <li> <b>Location:</b> Charlotte, North Carolina </li>
                         </ul>
                     </div>
                     {/* <img src={divida} alt="" className="divida" /> */}
@@ -54,7 +57,6 @@ class Wrapper extends React.Component {
 
                     
                     <div className="cvBody">
-
                         <cv-headline text= "Skills"></cv-headline>
                         <ul className="cv-highlights">
                             <li>8 years of professional software engineering & testing experience</li>
@@ -95,7 +97,6 @@ class Wrapper extends React.Component {
                             <br/> 
                             Figma, Adobe Photoshop, Adobe XD, Browserstack, GIMP, UML 
                         </p>
-                        <br/> 
                         <br/>
                         <div className="section-divider">---</div>
                         <cv-headline text= "Education"></cv-headline>
@@ -109,7 +110,7 @@ class Wrapper extends React.Component {
                             <li className= "jobDesc">Honorable Mention in ACM ICPC Mid-Atlantic Regionals sponsored by IBM (Java), 2015</li>
                         </ul>
                     
-                        <p className="coursework">Relevant Coursework</p>
+                        {/* <p className="coursework">Relevant Coursework</p>
                         <p className="coursework-classes"> 
                             A.I. &bull; 
                             Software Engineering &bull; 
@@ -122,10 +123,9 @@ class Wrapper extends React.Component {
                             Program Design & Implementation &bull; 
                             Programming Languages &bull; 
                             Java Applications
-                        </p>
+                        </p> */}
 
                         <div className="section-divider">---</div>
-
 
                         <cv-headline text="Experience"></cv-headline>
                         <span className="jobTitleContainer">

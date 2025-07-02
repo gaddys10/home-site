@@ -17,7 +17,7 @@ function Character() {
 
         const timer = setTimeout(() => {
             setWaveClass('');
-        }, 6000)
+        }, 10000)
 
         return () => clearTimeout(timer)
     }, []);
@@ -69,7 +69,9 @@ function Character() {
             {/* Speech Bubble  */}
             <div className={`speech-bubble ${waveClass}`}>
                 <div className="bubble-tail"></div>
-                <p className="speech-text">Hello! <br /><br /> Welcome to my home page!</p>
+                <p className="speech-text">Hello! <br /><br /> Welcome to my home page and portfolio!</p>
+
+                
             </div>
         </div>
     )

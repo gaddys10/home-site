@@ -573,13 +573,15 @@
 
 .speech-bubble {
     position: relative;
-    height: 98px;
+    height: 108px;
     width: 185px;
     background-color: white;
     left: 480px;
     border-radius: 15px;
     z-index: 5;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 14px;
     top: 40px;
     box-shadow: inset -2px -2px 1px #aaaaaa;
@@ -587,7 +589,7 @@
 }
 
 .speech-bubble-intro {
-    animation: speechFloat 1.5s infinite, speechAppear 6s 1 forwards;
+    animation: speechFloat 1.5s infinite, speechAppear 9s 1 forwards;
 }
 
 .bubble-tail{
@@ -597,7 +599,7 @@
     border-right: 10px solid transparent; /* Adjust width as needed */
     border-bottom: 25px solid white; 
     position: absolute;
-    top: 95px;
+    top: 105px;
     left: -10px;
     transform: rotate(-135deg);
     

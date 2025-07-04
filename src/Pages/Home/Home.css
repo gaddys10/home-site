@@ -1014,7 +1014,7 @@ body {
 
 .portfolioBody {
     width: 100%;
-    height: calc(100% - 87px);
+    height: calc(100% - 80px);
     overflow-x: none;
     overflow-y: scroll;
     display: flexbox;
@@ -1048,10 +1048,19 @@ body {
 }
 
 .portfolioTitle {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     position: relative;
     top: 15px;
+    left: 27px;
+}
+
+.portfolioTitleWArrow {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    right: 20px;
 }
 
 .resume-title {
@@ -1178,12 +1187,8 @@ img {
     text-align: center;
 }
 
-.mock-box {
+.mock-box, .prototype-box {
     left: 28.5%;
-}
-
-.prototype-box {
-    right: 28.5%;
 }
 
 .prototype-box{

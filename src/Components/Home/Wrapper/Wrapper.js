@@ -134,19 +134,22 @@ class Wrapper extends React.Component {
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
-                            Developing and testing Node web application as technical lead of 8 member team to create and display Helm charts with CSS, JavaScript, React.js, and TypeScript UIs, providing an entity management solution to DoD stakeholders
+                                Developing a full stack React + Node web application with a Python-powered OpenAI Whisper backend to transcribe voice input into structured DoD field reports, streamlining manual reporting time and reducing errors
                             </li>
                             <li className= "jobDesc"> 
-                            Creating Docker containers and their pytest automation using multi-stage builds to independently run PostgreSQL, ElasticSearch, Kafka, & Redis services with Docker Compose to ease development flow and improve project integrity
+                                Leading 8-member team to develop a role-based entity management web application in Node and React, visualizing DoD objective assets from PostgreSQL for DoD operational planning
                             </li>
                             <li className= "jobDesc"> 
-                            Building and maintaining GitLab CI CI/CD pipelines with Gitlab CLI to test and deploy distributed web application on Kubernetes platform for container orchestration, ensuring performant operation on all cleared DoD desktop devices
+                                Containerized PostgreSQL, Kafka, Redis, and ElasticSearch environments using Docker Compose and automated pytest flows, enabling consistent local development and raising test coverage
                             </li>
                             <li className= "jobDesc"> 
-                            Facilitating Agile ceremonies as Scrum Master including daily stand-ups, sprint planning, sprint reviews, retrospectives, Jira backlog refinement sessions, and additional Miro white-boarding design sessions 
+                                Set up Agile ceremonies, Jira workflows, and Confluence project docs to launch a 4-person data science team
                             </li>
                             <li className= "jobDesc"> 
-                            Using Figma to create initial prototypes for desktop text-to-speech and image-to-text translation software 
+                                Configured GitLab pipelines to test and deploy containerized apps on Kubernetes to ensure operation on DoD devices
+                            </li>
+                            <li className= "jobDesc"> 
+                                Using Figma to create initial and ongoing prototypes for NLP transcription and image-to-text translation software 
                             </li>
                         </ul>
 
@@ -156,16 +159,16 @@ class Wrapper extends React.Component {
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
-                                Developed internal Webex chatbots using NLP, Python, botkit, Snowflake, Flask, JavaScript, Nest.js, Docker, MySQL, JSON, and YAML to automate employee desktop device onboarding, refresh, and health reporting
+                                Developed Webex chatbot UIs and conversational APIs using JavaScript, Python, botkit, and Nest.js to automate device IT support, onboarding, and returns; cutting employee laptop-related support tickets by 18%
                             </li>
                             <li className= "jobDesc"> 
-                                Created Python RESTful API suite reading from a MySQL backend & their Pytest test automation to maintain and validate user device data alongside displaying an accurate status report of all internal staff devices
+                                Unified Mac and Windows chatbot management systems into a single, OS-independent, Dockerized codebase using Python, Swagger, Kubernetes, Flask, and MySQL, cutting code duplication by 45% and reducing deployment overhead
                             </li>
                             <li className= "jobDesc"> 
-                                Rewrote OS-specific projects in Python and Docker to construct an OS-independent chatbot management system to simplify code, improve ease of debugging, and standardize deployment for all desktop OS
+                                Created chatbot management REST APIs & their pytest automated API tests to display integrated device status reports
                             </li>
                             <li className= "jobDesc"> 
-                                Guided team through Agile process and Jira board implementation, including an 1 hour long recorded audit, resulting in 30% velocity boost over 4 sprints
+                                Documented 12 member team’s Agile processes and led sprint audits to improve increase velocity by 20% in 2 months
                             </li>
                         </ul>
                         <span className="jobTitleContainer">
@@ -174,11 +177,11 @@ class Wrapper extends React.Component {
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
-                                Designed and developed UIs with Adobe XD, Java, JavaFX, CSS, Tomcat, Gradle, Spring Framework, and Git to modernize and simplify back office and Point of Sale (POS) systems for all 6,000+ retail locations
+                                Modernized and simplified usability of 6,000+ retail back office desktop apps and keyboard-based Point of Sale systems by designing and developing front-end UIs with Adobe XD, CSS, Git, Gradle, Java, JavaFX, Spring Framework, & Tomcat
 
                             </li>
                             <li className= "jobDesc"> 
-                                Built early functional prototypes with Adobe XD, Java, JavaFX, and CSS to begin development on Check Engine Light diagnostic app, now utilized at 6,000+ retail stores to diagnose and repair customer car issues
+                                Created initial Adobe XD, CSS, Java, & JavaFX functional prototypes for employee UI/UX of “Check Engine Light” vehicle diagnostic application now used at 6,000+ retail locations
                             </li>   
                             <li className= "jobDesc"> 
                                 Collaborated remotely with MS Teams, Slack, Git, & Atlassian tools to fix critical bugs and retail staff issues
@@ -189,10 +192,10 @@ class Wrapper extends React.Component {
                             <h3 className= "jobDate">October 2021 - July 2022</h3>
                         </span>
                         <ul className="jobBody">
-                            <li className= "jobDesc"> Built TypeScript-based React Native and Angular UIs for "Mobile Workbench" mobile apps and "Callout" & "Crew Manager" web apps to manage utilities for 141,000+ Connexus Energy clients starting May 2022</li>
-                            <li className= "jobDesc"> Created a React-based single login solution from scratch with TypeScript, JSX, and CSS as sole developer to integrate newly purchased workforce management software authentication with current applications </li>
-                            <li className= "jobDesc"> Expanded internal Storybook design system to standardize mobile and web application styling, eliminating CSS and improving team development speed by 20% over 5 sprints</li>
-                            <li className= "jobDesc"> Created Adobe XD and Figma early prototypes for form building software to kickstart product development and allow clients to generate custom solutions while reducing overall administrative costs</li>
+                            <li className= "jobDesc">Built Angular & React Native UIs for mobile/web apps managing utility crews for 141,000+ Connexus Energy clients</li>
+                            <li className= "jobDesc"> Developed React-based single login solution to integrate newly acquired software authentication with current apps</li>
+                            <li className= "jobDesc"> Centralized UI components in Storybook design system, removing duplicate styles & boosting velocity 20% in 3 sprints</li>
+                            <li className= "jobDesc"> CLaunched custom form builder product development by creating initial Figma and Adobe XD product design prototypes</li>
                             <li className= "jobDesc"> Contributing to multiple projects using MS Teams, Slack, & Atlassian tool suite to collaborate remotely</li>
                         </ul>
                         <span className="jobTitleContainer">
@@ -200,28 +203,31 @@ class Wrapper extends React.Component {
                             <h3 className= "jobDate">March 2021 - September 2021</h3>
                         </span>
                         <ul className="jobBody">
-                            <li className= "jobDesc"> Redesigned Node information portal web app UIs and functionality while leading 4-person team with CSS, JavaScript, and Meteor.js including messaging, alerting, and real-time data to earn client contract extension</li>
-                            <li className= "jobDesc"> Developed heat mapping tools with Python and PyQGIS to facilitate large-scale firefighting, allowing the company to negotiate software services to the Canadian and Australian governments</li>
-                            <li className= "jobDesc"> Directed MongoDB database/collection creation, schema, and implementation to maintain web application speed as additional features required more frequent and more complex queries</li>
-                            <li className= "jobDesc"> Created weekly prototypes using Figma, BrowserStack, Adobe Photoshop, and GNU Image Manipulation Program to lead team’s UI design, improve project documentation, and clarify tasks before development </li>
-                            <li className= "jobDesc"> Configured Red Hat Enterprise and Ubuntu Linux virtual machines with Docker, shell/bash, and VirtualBox, including containerized web applications and development environments</li>
-                            <li className= "jobDesc"> Led Integration of React component-based architecture into Meteor.js information portal web app to boost rendering speed by 40% and React Hooks to simplify state management & fetching data from database</li>
-                            <li className= "jobDesc"> Deployed automated and A/B tests with BrowserStack and Cypress to validate web application UIs and their responsiveness across different browsers and devices</li>
-                            <li className= "jobDesc"> Constructed login authentication system with Keycloak, Active Directory (ADFS), and SAML to improve web app security by enabling role-based access & seamless Citrix integration for client's user management needs </li>
-                            <li className= "jobDesc"> Set up Bamboo pipelines to incorporate Cypress UI test automation stages and generate .iso files for secure deployment into Citrix-enabled Azure environments, allowing for seamless interface with client infrastructure</li>
-                            <li className= "jobDesc"> Met with stakeholders to gather requirements, present updates, and propose solutions virtually and on-site</li>
+                            <li className= "jobDesc"> Led a 4-person team to upgrade Meteor.js crisis-management web app including new UIs + real-time messaging, event tracking, and notifications; reducing field communication latency by 35% and securing a 1-year DoD program extension</li>
+                            <li className= "jobDesc"> Orchestrated integration of React architecture with Hooks into Meteor.js web app to streamline state management, component-based development, and reduce MongoDB query complexity, improving page rendering speed by 30%</li>
+                            <li className= "jobDesc"> Developed a PyQGIS heat mapping tool from airborne infrared data to streamline firefighting coordination and reduce overall firefighting effort cost, enabling MAG to offer scalable mapping services to international government clients</li>
+                            <li className= "jobDesc"> Established web app UI responsiveness with Browserstack manual testing and Cypress test automation to simulate and debug user interactions with MongoDB NoSQL database across browsers</li>
+                            <li className= "jobDesc"> Directed MongoDB NoSQL database management and JSON data modeling to enable new data visualization features, improve scalability for concurrent users, and improve application integrity via replica sets in case of backend failure</li>
+                            <li className= "jobDesc"> Diagnosed and fixed failover bug in MongoDB NoSQL database host logic, restoring 80% production performance loss by configuring Azure replica set fallback and host location auto-recovery</li>
+                            <li className= "jobDesc"> Led team’s product design by creating weekly Figma, Adobe Photoshop, and BrowserStack prototypes to demonstrate product development, capture requirements, and strengthen project documentation</li>
+                            <li className= "jobDesc"> Enabled role-based web app access by constructing IAM login system with Keycloak, Active Directory, and SAML tokens</li>
+                            <li className= "jobDesc"> Secured app deployment by containerizing production & dev environments in Linux VMs with Docker, bash, & VMware</li>
+                            <li className= "jobDesc"> Set up Bamboo pipelines to deploy containers to Citrix-enabled Azure environments for DoD infrastructure integration</li>
+                            <li className= "jobDesc"> Facilitated product development by managing Agile ceremonies as Scrum Master using Confluence, Jira, and MS Teams</li>
+                            <li className= "jobDesc"> Led interview process and hired junior engineer; mentored him through Keycloak role integration task within 2 months</li>
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle">Software Engineer,<br/>MAG Aerospace</h3>
                             <h3 className= "jobDate">January 2020 - March 2021</h3>
                         </span>
                         <ul className="jobBody">
-                            <li className= "jobDesc"> Developed full stack Node information & communication portal web app dashboards using JavaScript and Meteor.js on an Agile team to assist federal clients, meeting SDLC criteria with limited information</li>
-                            <li className= "jobDesc"> Administered MongoDB databases with Meteor.js & mongo shell while building custom UI components with MongoDB data & BlazeJS templating to create dashboards based on user roles & event classification</li>
-                            <li className= "jobDesc"> Obtained consensus on direction and explained potential solutions to clients and team by using Photoshop, Figma, BrowserStack, and GNU Image Manipulation Program prototypes to represent customer needs </li>
-                            <li className= "jobDesc"> Standardized styling and aided rapid prototyping using Bootstrap while leveraging pure CSS for pixel-perfect design and browser responsiveness to make web app accessible for all user levels of technical experience</li>
-                            <li className= "jobDesc"> Wrote unit tests and test automation with Python and Cypress to test MeteorJS web app UIs and functionality across different browsers and desktop devices along with BrowserStack A/B testing </li>
-                            <li className= "jobDesc">Containerized application and development environment with Docker to ensure proper software functionality and operation on classified systems and desktops</li>
+                            <li className= "jobDesc"> Developed collaborative information portal web application on an Agile team with CSS, JavaScript, and React UIs using a Node, MongoDB, and Meteor.js backend to assist DoD client with real-time crisis data collection solution</li>
+                            <li className= "jobDesc"> Redesigned & upgraded Meteor.js information portal web application to add first-ever dashboard customization with responsive, resizable drag-and-drop CSS + Bootstrap widgets saved per user in MongoDB; cutting support tickets 25%</li>
+                            <li className= "jobDesc"> Created a JavaScript archival & deletion workflow that flagged dashboard events (Bootstrap/CSS) for DoD-compliant deletion and generated zipped PDF event logs from MongoDB data upon deletion; cutting production overhead by 50%</li>
+                            <li className= "jobDesc"> Administered MongoDB databases to provide custom functionality & UIs based on user role & event classification</li>
+                            <li className= "jobDesc"> Implemented unit tests, automated end-to-end UI test suites, and manual A/B testing with Cypress + BrowserStack to validate app behavior and responsiveness, catching UI errors between Google Chrome, Firefox, & Internet Explorer</li>
+                            <li className= "jobDesc">Ensured web app responsiveness on all desktops of minimum resolution 1024px x 768px with Bootstrap & pure CSS</li>
+                            <li className= "jobDesc">Designed/demonstrated solutions for stakeholders with Figma and Photoshop to gain and share product requirements</li>
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className="jobTitle">Automation Engineer,<br/>Verizon</h3>
@@ -236,23 +242,23 @@ class Wrapper extends React.Component {
                             <h3 className= "jobDate">August 2018 - June 2019</h3>
                         </span>
                         <ul className="jobBody">
-                            <li className= "jobDesc">Developed test automation scripts with Python to ensure quality of ally® water meter firmware, saving the city of Dallas, TX 12 million gallons of water after deployment from 2019 to 2020 </li>
-                            <li className= "jobDesc">Ensured tandem functionality of SmartPoint® radio transceiver firmware & FlexNet® communication protocol with Python test scripts, now deployed in Columbus, OH to manage energy use for 1.2 million residents</li>
-                            <li className= "jobDesc">Documented test plans, defect records, & fault recreation for appliance firmware w/ Perforce & SVN to assist developers with debugging firmware releases and to guide future development</li>
-                            <li className= "jobDesc">Used power supplies, water pumps, and optical sensors to aid in manual testing digital smart grid devices, exposing equipment to all expected conditions over proposed 20 year life span</li>
+                            <li className= "jobDesc">Saved Dallas, TX 12 million gallons of water after solution deployment from 2019 to 2020 by assuring ally® water meter product’s embedded firmware quality assurance using test cases and automation scripts with Perforce and Python</li>
+                            <li className= "jobDesc">Ensured tandem functionality of SmartPoint® radio transceiver firmware & FlexNet® communication protocol with Python test automation scripts, now deployed in Columbus, OH to manage energy use for over 1.2 million residents</li>
+                            <li className= "jobDesc">Collaborated with developers to debug firmware releases & guide future development by documenting test plans, defect records, and fault recreation for water meter and radio transceiver appliance firmware using Perforce and SVN</li>
+                            <li className= "jobDesc">Simulated all expected digital smart grid devices conditions over proposed 20-year lifespan with power supplies, water pumps, and optical sensors to aid in manual testing of smart water meter and digital transceiver hardware & firmware</li>
                         </ul>
                         <span className="jobTitleContainer">
                             <h3 className= "jobTitle" id="fidelity-title">Associate Software Engineer,<br/>Fidelity Investments</h3>
                             <h3 className= "jobDate">January 2017 - May 2018</h3>
                         </span>
                         <ul className="jobBody">
-                            <li className= "jobDesc">Built bank transfer UIs and APIs using Node, TypeScript, Angular 2 & 4, SASS, Redux, and Git to enhance fidelity.com, allowing 50 million customers to transfer funds across external checking and ETF accounts</li>
-                            <li className= "jobDesc">Developed a Javascript-powered JSON to CSV web application to import and log REST API test results into spreadsheets for at least 20 bank transfer software developers</li>
-                            <li className= "jobDesc">Created “Canary Service” app health dashboard with Node, JavaScript, TypeScript, D3.js, Angular, SVG, and Selenium to let call center advisors visualize app suite performance and reduce app issue downtime</li>
-                            <li className= "jobDesc">Owned Jenkins pipeline testing stages of QA, development, and release servers for 3 teams by orchestrating API/UI test automation and implementing smoke tests to ensure code integrity and adherence to standards</li>
-                            <li className= "jobDesc">Monitored 5 Agile teams' Angular web applications concurrently by using Splunk and Sonar to observe and document software deployment results and artifacts for fault recreation and debugging support</li>
-                            <li className= "jobDesc">Constructed full stack “Buy Local Bonds” proof of concept project with C#, CSS, JavaScript, SQL, Oracle 11g, Java, Spring, & REST APIs to let users buy and sell government bonds online & manage their holdings </li>
-                            <li className= "jobDesc">Established Mocha, Chai, Selenium, Robot Framework, and Protractor UI and API test automation suites for 5 bank transfer products and teams to ensure money transfers across all qualified fidelity.com accounts </li>
+                            <li className= "jobDesc">Contributed to TypeScript, Angular, Express, and Node UIs and APIs to enable external fund transfers to & from Fidelity ETF accounts for 20+ million Fidelity.com users and investors, with full SASS styling and Redux state management</li>
+                            <li className= "jobDesc">Reduced call center downtime 15% by building Angular + D3 dashboard to visualize real-time app suite health metrics</li>
+                            <li className= "jobDesc">Developed proof of concept product to manage and trade bonds online with JavaScript, Java, SQL, C#, .NET, CSS, JUnit, Oracle 11g relational databases, RESTful APIs, and Spring Framework</li>
+                            <li className= "jobDesc">Built JavaScript web app to convert REST API test results from JSON to CSV, cutting manual QA reporting time by 90%</li>
+                            <li className= "jobDesc">Created test plans + unit & integration automation suites for 5 fidelity.com engineering teams with Selenium, Mocha, Postman, & Chai; catching critical bank transfer bugs and API-based errors including navigation & custom widgets</li>
+                            <li className= "jobDesc">Took ownership of Jenkins pipeline testing stages of QA, development, and release servers to provide smoke testing for new features and a consistent 80% minimum test code coverage for scheduled releases</li>
+                            <li className= "jobDesc">Monitored 5 web apps with Splunk and Sonar to document deployment results and artifacts to support bug fixes</li>
                         </ul>
                         {
                             /* <span className="jobTitleContainer">

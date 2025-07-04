@@ -49,7 +49,8 @@ const HomePage = () => {
     const closePortfolio = () => setTrue([], [
         'showArt', 'showPortfolio', 'showGraphics', 'showMocks', 'showPrototypes',
         'showGraphicCategories', 'showPrototypeCategories', 'showLogos',
-        'showResponsive', 'showFeature', 'showTabletSignIn', 'showResumes', 'showVoice'
+        'showResponsive', 'showFeature', 'showTabletSignIn', 'showResumes', 'showVoice',
+        'showBooking', 'showCareer'
     ]);
     
     const turnOffPages = () => {
@@ -232,60 +233,60 @@ const HomePage = () => {
                         {
                             //Prototype Categories
                             state.showPrototypeCategories &&
-                                <p className='portfolioTitle' >Prototypes</p>
+                                <p className='portfolioTitleWArrow' >Prototypes</p>
                         }
 
                         {
                             //Graphic design categories
                             state.showGraphicCategories &&
-                                <p className='portfolioTitle' >Design Types</p>
+                                <p className='portfolioTitleWArrow' >Design Types</p>
                         }
 
                         {
                             //Graphic Designs page
                             state.showGraphics && 
-                                <p className='portfolioTitle' >Graphic Designs</p>
+                                <p className='portfolioTitleWArrow' >Graphic Designs</p>
                         }
                         {
                             //Logo design page
                             state.showLogos &&
-                                <p className='portfolioTitle' >Logo Designs</p>
+                                <p className='portfolioTitleWArrow' >Logo Designs</p>
                         }
                         {
                             //Mock websites page
                             state.showMocks && 
-                                <p className='portfolioTitle' >Mock Websites</p>
+                                <p className='portfolioTitleWArrow' >Mock Websites</p>
                         }
                         {
                             //Responsive Mobile Design
                             state.showResponsive &&
-                                <p className='portfolioTitle' >Responsive Mobile Login</p>
+                                <p className='portfolioTitleWArrow' >Responsive Mobile Login</p>
                         }
                         {
                             //feature walkthrough
                             state.showFeature && 
-                            <p className='portfolioTitle' >Feature Walkthrough Prototype</p>
+                            <p className='portfolioTitleWArrow' >Feature Walkthrough Prototype</p>
                         }
                         {
                             //iPad feature walkthrough
                             state.showTabletSignIn &&
-                                <p className='portfolioTitle' >Tablet Sign in Prototypes</p>
+                                <p className='portfolioTitleWArrow' >Tablet Sign in Prototypes</p>
                         }
                         {
                             //Initial prototypes walkthrough
                             state.showVoice &&
-                                <p className='portfolioTitle' >Voice Transcription Prototype</p>
+                                <p className='portfolioTitleWArrow' >Voice Transcription Prototype</p>
                         }
                         
                         {
                             //iPad feature walkthrough
                             state.showBooking &&
-                                <p className='portfolioTitle' >Appointment Booker Prototype</p>
+                                <p className='portfolioTitleWArrow' >Appointment Booker Prototype</p>
                         }
                         {
                             //Initial prototypes walkthrough
                             state.showCareer &&
-                                <p className='portfolioTitle' >Career Planner App Prototype</p>
+                                <p className='portfolioTitleWArrow' >Career Planner Prototype</p>
                         }
                         <p className='portfolioClose' onClick={closePortfolio}><span className='xx'>X</span></p>
                     </div>
@@ -341,7 +342,6 @@ const HomePage = () => {
                             state.showPrototypeCategories &&
                                 //Prototypes
                                 <>
-
                                     <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showBooking'], ['showPrototypeCategories'])}>
                                         <p className='graphics-box-title prototype-title-3'>Mobile Appointment Booking App</p>
                                     </div>
@@ -364,7 +364,6 @@ const HomePage = () => {
                                         <p className='graphics-box-title prototype-title-3'>Voice Transcriber Web App</p>
                                     </div>
 
-                                    
                                 </>
                         }
                         {
@@ -483,7 +482,7 @@ const HomePage = () => {
                             //Graphic design categories
                             state.showGraphicCategories &&
                                 <>
-                                    <div onClick={() => setTrue(['showGraphics'], ['showGraphicCategories'])} className='art-box portfolio-body-box'>
+                                    <div onClick={() => setTrue(['showGraphics'], ['showGraphicCategories'])} className='prototype-box portfolio-body-box'>
                                         <p className='art-box-title'> Graphic Designs </p>
                                     </div>
 

@@ -16,7 +16,6 @@ export class CVHeadline extends LitElement {
             font-weight: bold;
             margin-top: 5px;
             margin-bottom: 15px;
-
         }`;
 
     static properties = {

@@ -922,15 +922,15 @@ body {
     float: left;
     height: 100%;
     border-radius: 5px;
-    margin: 150px 25px;
+    margin: 150px 20px;
 }
 
 .resume-thumbnail {
     float: left;
-    height: 15vw;
+    height: 17.5vw;
     outline: #000 1px solid;
     border-radius: 5px;
-    margin: 25px 25px;
+    margin: 20px 20px;
     cursor: pointer;
 }
 

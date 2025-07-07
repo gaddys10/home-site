@@ -964,9 +964,9 @@ class Home extends React.Component {
                 <div className= "ribbonfold2"></div>
 
                 <div className= "ribbon3" onClick={this.showResumes}>
-                    <a href = "#" onClick={this.showResumes}>
+                    <p onClick={this.showResumes}>
                         Download <br /> Resume
-                    </a>
+                    </p>
                 </div>
                 <div className= "ribbonfold3"></div>
                 <script

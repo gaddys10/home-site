@@ -27,8 +27,10 @@ const HomePage = () => {
         showLogos: false,
         showResponsive: false,
         showFeature: false,
-        showIPad: false,
-        showInit: false
+        showTabletSignIn: false,
+        showVoice: false,
+        showBooking: false,
+        showCareer: false
     });
 
     const toggleState = (key) => {
@@ -47,21 +49,22 @@ const HomePage = () => {
     const closePortfolio = () => setTrue([], [
         'showArt', 'showPortfolio', 'showGraphics', 'showMocks', 'showPrototypes',
         'showGraphicCategories', 'showPrototypeCategories', 'showLogos',
-        'showResponsive', 'showFeature', 'showIPad', 'showResumes', 'showInit'
+        'showResponsive', 'showFeature', 'showTabletSignIn', 'showResumes', 'showVoice',
+        'showBooking', 'showCareer'
     ]);
     
     const turnOffPages = () => {
         if (state.showGraphics || state.showLogos) {
             setTrue(['showGraphicCategories'], ['showGraphics', 'showLogos']);
-        } else if (state.showResponsive || state.showFeature || state.showIPad || state.showInit) {
-            setTrue(['showPrototypeCategories'], ['showResponsive', 'showFeature', 'showIPad', 'showInit']);
+        } else if (state.showResponsive || state.showFeature || state.showTabletSignIn || state.showVoice) {
+            setTrue(['showPrototypeCategories'], ['showResponsive', 'showFeature', 'showTabletSignIn', 'showVoice']);
         } else if (state.showPrototypes) {
             setTrue(['showPrototypeCategories'], ['showPrototypes']);
         } else {
             setTrue(['showPortfolio'], [
             'showArt', 'showGraphics', 'showMocks', 'showPrototypes',
             'showGraphicCategories', 'showPrototypeCategories', 'showLogos',
-            'showResponsive', 'showFeature', 'showIPad', 'showResumes', 'showInit'
+            'showResponsive', 'showFeature', 'showTabletSignIn', 'showResumes', 'showVoice', 'showBooking', 'showCareer'
             ]);
         }
     };
@@ -77,13 +80,16 @@ const HomePage = () => {
             state.showLogos,
             state.showResponsive,
             state.showFeature,
-            state.showIPad,
-            state.showInit
+            state.showTabletSignIn,
+            state.showVoice,
+            state.showCareer,
+            state.showBooking,
         ].some(state => state);
     }, [
         state.showArt, state.showGraphics, state.showMocks, state.showPrototypes,
         state.showGraphicCategories, state.showPrototypeCategories, state.showLogos,
-        state.showResponsive, state.showFeature, state.showIPad, state.showInit
+        state.showResponsive, state.showFeature, state.showTabletSignIn, state.showVoice, 
+        state.showCareer, state.showBooking
     ]);
     
 
@@ -203,7 +209,7 @@ const HomePage = () => {
                         
                         {
                             // Portfolio splash
-                            !state.showArt && 
+                            // !state.showArt && 
                             !state.showGraphics && 
                             !state.showMocks && 
                             !state.showPrototypes &&
@@ -211,10 +217,12 @@ const HomePage = () => {
                             !state.showGraphicCategories &&
                             !state.showPrototypeCategories &&
                             !state.showLogos &&
-                            !state.showInit &&
+                            !state.showVoice &&
                             !state.showResponsive &&
                             !state.showFeature &&
-                            !state.showIPad &&
+                            !state.showTabletSignIn &&
+                            !state.showBooking &&
+                            !state.showCareer &&
                                 <p className='portfolioTitle' >Portfolio</p>
                         }
                         {
@@ -225,54 +233,60 @@ const HomePage = () => {
                         {
                             //Prototype Categories
                             state.showPrototypeCategories &&
-                                <p className='portfolioTitle' >Prototypes</p>
+                                <p className='portfolioTitleWArrow' >Prototypes</p>
                         }
 
                         {
                             //Graphic design categories
                             state.showGraphicCategories &&
-                                <p className='portfolioTitle' >Design Types</p>
+                                <p className='portfolioTitleWArrow' >Design Types</p>
                         }
 
                         {
                             //Graphic Designs page
                             state.showGraphics && 
-                                <p className='portfolioTitle' >Graphic Designs</p>
+                                <p className='portfolioTitleWArrow' >Graphic Designs</p>
                         }
                         {
                             //Logo design page
                             state.showLogos &&
-                                <p className='portfolioTitle' >Logo Designs</p>
+                                <p className='portfolioTitleWArrow' >Logo Designs</p>
                         }
                         {
                             //Mock websites page
                             state.showMocks && 
-                                <p className='portfolioTitle' >Mock Websites</p>
+                                <p className='portfolioTitleWArrow' >Mock Websites</p>
                         }
                         {
                             //Responsive Mobile Design
                             state.showResponsive &&
-                                <p className='portfolioTitle' >Responsive Mobile Login</p>
+                                <p className='portfolioTitleWArrow' >Responsive Mobile Login</p>
                         }
                         {
                             //feature walkthrough
                             state.showFeature && 
-                            <p className='portfolioTitle' >Feature Walkthrough Prototypes</p>
+                            <p className='portfolioTitleWArrow' >Feature Walkthrough Prototype</p>
                         }
                         {
                             //iPad feature walkthrough
-                            state.showIPad &&
-                                <p className='portfolioTitle' >Tablet Feature Prototypes</p>
-                        }
-                        {
-                            //iPad feature walkthrough
-                            state.showInit &&
-                                <p className='portfolioTitle' >iPad Feature Walkthrough</p>
+                            state.showTabletSignIn &&
+                                <p className='portfolioTitleWArrow' >Tablet Sign in Prototypes</p>
                         }
                         {
                             //Initial prototypes walkthrough
-                            state.showInit &&
-                                <p className='portfolioTitle' >Initial Product Prototypes</p>
+                            state.showVoice &&
+                                <p className='portfolioTitleWArrow' >Voice Transcription Prototype</p>
+                        }
+                        
+                        {
+                            //iPad feature walkthrough
+                            state.showBooking &&
+                                <p className='portfolioTitleWArrow' >Appointment Booker Prototype</p>
+                        }
+                        {
+                            //Initial prototypes walkthrough
+                            state.showCareer &&
+                                <p className='portfolioTitleWArrow' >Career Planner Prototype</p>
                         }
                         <p className='portfolioClose' onClick={closePortfolio}><span className='xx'>X</span></p>
                     </div>
@@ -289,8 +303,10 @@ const HomePage = () => {
                             !state.showLogos &&
                             !state.showResponsive &&
                             !state.showFeature &&
-                            !state.showIPad &&
-                            !state.showInit &&
+                            !state.showTabletSignIn &&
+                            !state.showVoice &&
+                            !state.showBooking &&
+                            !state.showCareer &&
                                 <>
                                     {/* <div onClick={() => setTrue(['showArt'])} className='art-box portfolio-body-box'>
                                         <p className='art-box-title'>Art</p>
@@ -320,11 +336,18 @@ const HomePage = () => {
                                     {/* </div> */}
                                 </>
                         }
+                        
                         {
                             //Prototype Categories
                             state.showPrototypeCategories &&
                                 //Prototypes
                                 <>
+                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showBooking'], ['showPrototypeCategories'])}>
+                                        <p className='graphics-box-title prototype-title-3'>Mobile Appointment Booking App</p>
+                                    </div>
+                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showCareer'], ['showPrototypeCategories'])}>
+                                        <p className='graphics-box-title prototype-title-3'>Mobile Career Planning Platform</p>
+                                    </div>
                                     <div className='art-box portfolio-body-box' onClick={() => setTrue(['showResponsive'], ['showPrototypeCategories'])}>
                                         <p className='art-box-title prototype-title-1'>Responsive Mobile Login</p>
                                     </div>
@@ -333,13 +356,14 @@ const HomePage = () => {
                                         <p className='prototype-box-title'> Feature Walkthrough </p>
                                     </div> */}
 
-                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showIPad'], ['showPrototypeCategories'])}>
-                                        <p className='graphics-box-title prototype-title-2'>iPad Feature Walkthrough</p>
+                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showTabletSignIn'], ['showPrototypeCategories'])}>
+                                        <p className='graphics-box-title prototype-title-2'>Tablet Sign In/Sign Up</p>
                                     </div>
 
-                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showInit'], ['showPrototypeCategories'])}>
-                                        <p className='graphics-box-title prototype-title-3'>Initial Prototypes</p>
+                                    <div className='graphic-box portfolio-body-box' onClick={() => setTrue(['showVoice'], ['showPrototypeCategories'])}>
+                                        <p className='graphics-box-title prototype-title-3'>Voice Transcriber Web App</p>
                                     </div>
+
                                 </>
                         }
                         {
@@ -375,7 +399,7 @@ const HomePage = () => {
                         }
                         {
                             //iPad feature walkthrough
-                            state.showIPad &&
+                            state.showTabletSignIn &&
                                 <>
                                     <div className='img-container'>
                                         <img className="ipad-1" alt="ipad" style={{cursor: 'pointer'}} src="/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM.png" onClick={() => window.open("/ActualPrototypes/Screenshot 2023-12-01 at 9.17.54 PM fixed.png")}/>
@@ -426,7 +450,7 @@ const HomePage = () => {
                         }
                         {
                             //initial prototypes
-                            state.showInit &&
+                            state.showVoice &&
                                 //Responsive Mobile Login Prototypes
                                 <>
                                     <div className='img-container'>
@@ -436,12 +460,29 @@ const HomePage = () => {
                                         <img style={{cursor: 'pointer'}} src="/ActualPrototypes/initial2.png" onClick={() => window.open("/ActualPrototypes/initial2.png")}/>
                                     </div>
                                 </>
-                            }
+                        }
+                        {
+                            state.showBooking &&
+                                <>  
+                                    <div className='iframe-container'>
+                                        <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)', margin: 'auto'}} width="90%" height="90%" title="Appointment Booker Application Prototype" src="https://embed.figma.com/design/Hdhpx87eg4bCSpC0Bn8EjY/bookity?node-id=0-1&embed-host=share" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </>
+                        }
+                        {
+                            state.showCareer &&
+                                <>
+                                    <div className='iframe-container'>
+                                        <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="90%" height="90%" title="Career Planner App Prototype" src="https://embed.figma.com/design/WrZEw3i3lg8oBIfFyTOjjP/Vovis-Mobile--Copy-?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                                    </div>
+                                </>
+                        }
                         {
                             //Graphic design categories
                             state.showGraphicCategories &&
                                 <>
-                                    <div onClick={() => setTrue(['showGraphics'], ['showGraphicCategories'])} className='art-box portfolio-body-box'>
+                                    <div onClick={() => setTrue(['showGraphics'], ['showGraphicCategories'])} className='prototype-box portfolio-body-box'>
                                         <p className='art-box-title'> Graphic Designs </p>
                                     </div>
 

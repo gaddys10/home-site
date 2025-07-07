@@ -84,7 +84,10 @@ class Home extends React.Component {
                 showResponsive: false,
                 showFeature: false,
                 showIPad: false,
-                showResumes: false
+                showResumes: false,
+                showBooking: false,
+                showVoice: false,
+                showCareer: false
             })
         )
     }
@@ -216,7 +219,9 @@ class Home extends React.Component {
                 showFeature: false,
                 showIPad: false,
                 showResumes: false,
-                showInit: false
+                showVoice: false,
+                showCareer: false,
+                showBooking: false
             }))
         }
         console.log(this.state);

@@ -70,8 +70,6 @@ function Character() {
             <div className={`speech-bubble ${waveClass}`}>
                 <div className="bubble-tail"></div>
                 <p className="speech-text">Hello! <br /><br /> Welcome to my home page and portfolio!</p>
-
-                
             </div>
         </div>
     )

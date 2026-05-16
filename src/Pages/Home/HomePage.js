@@ -31,8 +31,6 @@ const HomePage = () => {
         showVoice: false,
         showBooking: false,
         showCareer: false,
-        showResumes: false,
-
     });
 
     const toggleState = (key) => {
@@ -107,58 +105,58 @@ const HomePage = () => {
             <Bird />
             <div className = "leaf"></div>
             { 
-                    state.showResumes &&
-                        <div className='portfolioContainer'>
-                            <div className='portfolioHeader'>
-                                <p className='portfolioTitle resume-title' >Click to Download Resume</p>
-                                <p className='portfolioClose' onClick={ closePortfolio }> <span className='xx'>X</span></p>
-                            </div>
-                            <div className='portfolioBody'>
-                                {
-                                    // Resumes splash
-                                    !state.showArt && 
-                                    !state.showGraphics && 
-                                    !state.showMocks && 
-                                    !state.showPrototypes &&
-                                    !state.showGraphics &&
-                                    !state.showGraphicCategories &&
-                                    !state.showPrototypeCategories &&
-                                    !state.showLogos &&
-                                    !state.showResponsive &&
-                                    !state.showFeature &&
-                                    !state.showIPad &&
-                                    !state.showPortfolio &&
-                                        <>
-                                            <div className='resumeContainer'>
-                                                <div>
-                                                    <a  href = '/Full_CV_2025.pdf' target="_blank" rel="noopener noreferrer">
-                                                        <img className="resume-thumbnail" src='./fcv2025tn.png' />
-                                                    </a>
-                                                    <p className='resume-subtitle'>Full <br /> Resume <br /><br /> July 2025</p>
-                                                </div>
-                                                {/* <div>
-                                                    <a  href = '/QACV.pdf' target="_blank" rel="noopener noreferrer">
-                                                        <img className="resume-thumbnail" src='./QACV.png' />
-                                                    </a>
-                                                    <p className='resume-subtitle'>Quality Assurance <br />Engineer <br /><br /> June 2024</p>
-                                                </div> */}
-                                                <div>
-                                                    <a  href = '/Syrus_Gaddy_Resume_Frontend.pdf' target="_blank" rel="noopener noreferrer">
-                                                        <img className="resume-thumbnail" src='./frontendtn.png' />
-                                                    </a>
-                                                    <p className='resume-subtitle'>Frontend <br /> Developer <br /><br /> Jan 2025</p>
-                                                </div>
-                                                {/* <div>
-                                                    <a  href = '/UICV.pdf' target="_blank" rel="noopener noreferrer">
-                                                        <img className="resume-thumbnail" download='./UICV.pdf' src='./UICV_Thumbnail.png' />
-                                                    </a>
-                                                    <p className='resume-subtitle'>UI/UX <br /> Engineer <br /><br /> June 2024</p>
-                                                </div> */}
-                                            </div>
-                                        </>
-                                } 
-                            </div>
+                state.showResumes &&
+                    <div className='portfolioContainer'>
+                        <div className='portfolioHeader'>
+                            <p className='portfolioTitle resume-title' >Click to Download Resume</p>
+                            <p className='portfolioClose' onClick={ closePortfolio }> <span className='xx'>X</span></p>
                         </div>
+                        <div className='portfolioBody'>
+                            {
+                                // Resumes splash
+                                !state.showArt && 
+                                !state.showGraphics && 
+                                !state.showMocks && 
+                                !state.showPrototypes &&
+                                !state.showGraphics &&
+                                !state.showGraphicCategories &&
+                                !state.showPrototypeCategories &&
+                                !state.showLogos &&
+                                !state.showResponsive &&
+                                !state.showFeature &&
+                                !state.showIPad &&
+                                !state.showPortfolio &&
+                                <>
+                                    <div className='resumeContainer'>
+                                        <div>
+                                            <a  href = '/Full_CV_2025.pdf' target="_blank" rel="noopener noreferrer">
+                                                <img className="resume-thumbnail" src='./fcv2025tn.png' />
+                                            </a>
+                                            <p className='resume-subtitle'>Full <br /> Resume <br /><br /> July 2025</p>
+                                        </div>
+                                        {/* <div>
+                                            <a  href = '/QACV.pdf' target="_blank" rel="noopener noreferrer">
+                                                <img className="resume-thumbnail" src='./QACV.png' />
+                                            </a>
+                                            <p className='resume-subtitle'>Quality Assurance <br />Engineer <br /><br /> June 2024</p>
+                                        </div> */}
+                                        <div>
+                                            <a  href = '/Syrus_Gaddy_Resume_Frontend.pdf' target="_blank" rel="noopener noreferrer">
+                                                <img className="resume-thumbnail" src='./frontendtn.png' />
+                                            </a>
+                                            <p className='resume-subtitle'>Frontend <br /> Developer <br /><br /> Jan 2025</p>
+                                        </div>
+                                        {/* <div>
+                                            <a  href = '/UICV.pdf' target="_blank" rel="noopener noreferrer">
+                                                <img className="resume-thumbnail" download='./UICV.pdf' src='./UICV_Thumbnail.png' />
+                                            </a>
+                                            <p className='resume-subtitle'>UI/UX <br /> Engineer <br /><br /> June 2024</p>
+                                        </div> */}
+                                    </div>
+                                </>
+                            } 
+                        </div>
+                    </div>
                 }
             <div id = "sky"></div>
             <div id = "ground_container"></div>

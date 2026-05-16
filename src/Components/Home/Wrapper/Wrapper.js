@@ -58,7 +58,7 @@ class Wrapper extends React.Component {
                     <div className="cvBody">
                         <cv-headline text= "Skills"></cv-headline>
                         <ul className="cv-highlights">
-                            <li>8 years of professional software engineering & testing experience</li>
+                            <li>9 years of professional software engineering & testing experience</li>
                             <li>1 year of software leadership</li>
                             <li>Background in finance, utilities, telecommunications, asset management, & government contracting </li>       
                             {/* <li>1.5 years of professional Apple hardware and software troubleshooting</li> */}
@@ -128,8 +128,56 @@ class Wrapper extends React.Component {
 
                         <cv-headline text="Experience"></cv-headline>
                         <span className="jobTitleContainer">
-                            <h3 className= "jobTitle">Senior Software Engineer,<br/>General Dynamics</h3>
+                            <h3 className= "jobTitle">Contract Senior Software Engineer,<br/>LexisNexis Risk Solutions</h3>
+                            <h3 className= "jobDate">January 2026 - April 2026</h3>
+                        </span>
+                        <ul className="jobBody">
+                            <li className= "jobDesc"> 
+                                Developed responsive Ringmaster patent image comparison web application UI with Node, Next.js, TypeScript, and GitHub Copilot from recorded prototypes, including light/dark mode support
+                            </li>
+                            <li className= "jobDesc"> 
+                                Containerized Next.js web application with Docker and Podman for deployment through Azure DevOps pipelines
+                            </li>
+                            <li className= "jobDesc"> 
+                                Resolved high-priority Veracode Findings in C#/.NET OCR projects by updating vulnerable software components using Visual Studio Professional and addressing software composition issues
+                            </li>
+                            <li className= "jobDesc"> 
+                                Contributed across 2 engineering teams building patent software for image analysis and OCR-based review
+                            </li>
+                            <li className= "jobDesc"> 
+                                Collaborated in a remote Agile environment in engineering teams of 10+ people while using Azure DevOps, Kanban, Microsoft Teams, daily standup, pull requests, story pointing, retrospectives, and demos
+                            </li>
+                            <li className= "jobDesc"> 
+                                Delivered Ringmaster UI demonstrations to engineers, management, and stakeholders to showcase progress, gather feedback, and support project alignment
+                            </li>
+                        </ul>
+                        <span className="jobTitleContainer">
+                            <h3 className= "jobTitle">Jira Technical Specialist,<br/>Brite Group</h3>
                             <h3 className= "jobDate">October 2024 - Present</h3>
+                        </span>
+                        <ul className="jobBody">
+                            <li className= "jobDesc"> 
+                                Designed and implemented a 5-level Atlassian Jira project work type hierarchy using custom issue types, fields, and workflows aligned to stakeholder requirements                            
+                            </li>
+                            <li className= "jobDesc"> 
+                                Configured dashboards, boards, and automation rules to improve visibility and reduce manual project tracking work
+                            </li>
+                            <li className= "jobDesc"> 
+                                Administered Jira access and governance including user provisioning, permission schemes, and workflow changes while resolving access and configuration issues
+                            </li>
+                            <li className= "jobDesc"> 
+                                Built Excel-based planning matrices to map, document, and validate Jira project structures before initial configuration to ensure consistent taxonomy and traceability
+                            </li>
+                            <li className= "jobDesc"> 
+                                Developed interactive Jira prototypes (backlog structure, workflow automation, permissions model) and presented end-to-end flows via live Microsoft Teams demos
+                            </li>
+                            <li className= "jobDesc"> 
+                                Produced technical documentation for hierarchy standards, configuration decisions, and governance practicices
+                            </li>
+                        </ul>
+                        <span className="jobTitleContainer">
+                            <h3 className= "jobTitle">Senior Software Engineer,<br/>General Dynamics</h3>
+                            <h3 className= "jobDate">October 2024 - March 2025</h3>
                         </span>
                         <ul className="jobBody">
                             <li className= "jobDesc"> 
